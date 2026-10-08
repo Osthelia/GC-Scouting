@@ -18,8 +18,12 @@ const STATUS = { ok: 200, notFound: 404, alreadyTweeted: 409, awaitingAuthor: 40
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   // The Access cookie rides along cross site requests too: only the tweets page itself may post.
+  // Sec-Fetch-Site is set by the browser and reliable behind proxies, where request.url may not be the public origin.
+  const site = request.headers.get("sec-fetch-site");
   const from = request.headers.get("origin");
-  if (from && from !== new URL(request.url).origin) return Response.json({ ok: false, error: "forbidden" }, { status: 403 });
+  const host = request.headers.get("x-forwarded-host") ?? request.headers.get("host");
+  const sameOrigin = site ? site === "same-origin" : !from || (host !== null && URL.canParse(from) && new URL(from).host === host);
+  if (!sameOrigin) return Response.json({ ok: false, error: "forbidden" }, { status: 403 });
 
   const identity = await verifyAccess(request.headers);
   if (!identity) return Response.json({ ok: false, error: "unauthorized" }, { status: 401 });
