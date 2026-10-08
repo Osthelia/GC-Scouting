@@ -1,0 +1,294 @@
+{
+  "commands": {
+    "ping": {
+      "description": "Comprueba que el bot responde"
+    },
+    "feed": {
+      "description": "Envía los anuncios de Scouting a un canal",
+      "add": {
+        "description": "Envía los nuevos anuncios a un canal y luego elige sus filtros",
+        "channel": "Canal que recibe los anuncios",
+        "language": "Idioma de los mensajes (idioma del servidor por defecto)"
+      },
+      "remove": "Deja de enviar los anuncios a un canal",
+      "pause": "Pausa el envío de anuncios a un canal",
+      "resume": "Reanuda el envío de anuncios a un canal",
+      "list": "Lista los canales que reciben anuncios",
+      "channel": "Canal que recibe los anuncios"
+    },
+    "moderation": {
+      "description": "Configura el canal de moderación de Scouting",
+      "setup": {
+        "description": "Elige el canal de moderación y el rol autorizado a moderar",
+        "channel": "Canal que recibe todos los anuncios y reportes",
+        "role": "Rol autorizado a usar los botones de moderación",
+        "language": "Idioma de los mensajes (idioma del servidor por defecto)"
+      },
+      "remove": "Quita el canal de moderación"
+    }
+  },
+  "ping": {
+    "reply": "¡Pong! El bot está en línea."
+  },
+  "languages": {
+    "en": "Inglés",
+    "fr": "Francés",
+    "es": "Español"
+  },
+  "errors": {
+    "generic": "Algo salió mal, inténtalo de nuevo en un momento.",
+    "unknownInteraction": "Esta acción ya no está disponible.",
+    "guildOnly": "Este comando solo funciona en un servidor.",
+    "manageGuild": "Necesitas el permiso Gestionar servidor para usar este comando.",
+    "administrator": "Necesitas el permiso Administrador para usar este comando.",
+    "channelRequired": "Elige un canal de texto o de anuncios.",
+    "channelUnreachable": "No puedo escribir en {channel}. Comprueba que puedo ver este canal y enviar mensajes en él."
+  },
+  "feed": {
+    "added": "{channel} recibirá a partir de ahora los nuevos anuncios de Scouting.",
+    "updated": "Los ajustes de {channel} están actualizados.",
+    "ignored": "Parámetros del enlace ignorados: {params}",
+    "removed": "{channel} ya no recibirá los anuncios de Scouting.",
+    "paused": "Los anuncios están en pausa en {channel}. Usa /feed resume o el botón Reanudar para volver a empezar.",
+    "resumed": "Los anuncios se envían de nuevo a {channel}.",
+    "welcome": {
+      "title": "Anuncios de Scouting",
+      "text": "Los nuevos anuncios que coincidan con estos filtros aparecerán en este canal.",
+      "button": "Ver estos anuncios",
+      "edit": "Editar filtros",
+      "pause": "Pausar",
+      "resume": "Reanudar",
+      "pausedState": "⏸️ En pausa, no se envía ningún anuncio aquí hasta que se reanude."
+    },
+    "list": {
+      "title": "Canales que reciben los anuncios de Scouting",
+      "empty": "Ningún canal recibe todavía los anuncios de Scouting. Usa /feed add para configurar uno.",
+      "paused": "en pausa",
+      "invalidFilters": "Los filtros ya no son válidos, configura el canal de nuevo con /feed add."
+    },
+    "errors": {
+      "invalidUrl": "Este enlace no es una URL válida.",
+      "wrongSite": "Este enlace debe venir de {site}.",
+      "notPostsPage": "Este enlace debe apuntar a una página de anuncios, por ejemplo {example}",
+      "invalidFilters": "Los filtros de este enlace no son válidos. Ajústalos de nuevo en el sitio y copia el nuevo enlace.",
+      "moderationChannel": "{channel} es el canal de moderación, elige otro.",
+      "limit": "Este servidor ya tiene {max} canales que reciben anuncios. Quita uno con /feed remove primero.",
+      "notFound": "{channel} no recibe los anuncios de Scouting.",
+      "invalidValue": "{field}: un valor elegido no está disponible, elígelo de nuevo.",
+      "agentsMax": "Elige {max} agentes como máximo, elegiste {count}.",
+      "rankOrder": "El rango mínimo debe ser menor o igual que el rango máximo.",
+      "invalidDraft": "Estos filtros no son válidos, revísalos e inténtalo de nuevo.",
+      "expired": "Esta configuración ya no es válida, vuelve a usar /feed add."
+    },
+    "setup": {
+      "title": "Filtros de {channel}",
+      "text": "Elige qué anuncios recibe {channel}, de una de estas dos formas.",
+      "site": {
+        "title": "Opción 1, desde el sitio",
+        "steps": "1. Abre la página de anuncios con el botón de abajo y ajusta tus filtros.\n2. Copia la dirección de la página desde la barra de direcciones de tu navegador.\n3. Haz clic en **{button}** y pégala.",
+        "open": "Abrir la página de anuncios",
+        "paste": "Pegar el enlace"
+      },
+      "manual": {
+        "title": "Opción 2, aquí en Discord",
+        "text": "Elige los filtros grupo por grupo y luego guarda. La disponibilidad solo se ajusta en el sitio, la que ya está ajustada se conserva.",
+        "button": "Ajustar los filtros aquí"
+      }
+    },
+    "link": {
+      "title": "Pegar el enlace",
+      "label": "Enlace de la página de anuncios",
+      "hint": "Dirección copiada desde tu navegador en {site}, con tus filtros."
+    },
+    "editor": {
+      "hint": "Abre un grupo para cambiar sus filtros. Nada se aplica antes de guardar.",
+      "save": "Guardar",
+      "clear": "Borrar todo",
+      "back": "Volver",
+      "groups": {
+        "posts": "Anuncios",
+        "profile": "Perfil",
+        "terms": "Condiciones y ritmo",
+        "level": "Rango y experiencia",
+        "agents": "Agentes"
+      },
+      "placeholder": "Cualquiera",
+      "languagesMore": "Más idiomas",
+      "rankMin": "Rango mínimo",
+      "rankMax": "Rango máximo",
+      "levels": "Niveles de experiencia",
+      "minMonths": "Experiencia mínima",
+      "minMonthsHint": "En uno de los niveles elegidos, o en cualquier nivel si no se elige ninguno.",
+      "agentsHint": "Los anuncios deben jugar cada agente elegido, {max} como máximo en total.",
+      "classes": {
+        "duelist": "Duelistas",
+        "initiator": "Iniciadores",
+        "controller": "Controladores",
+        "sentinel": "Centinelas"
+      }
+    }
+  },
+  "filters": {
+    "none": "Todos los anuncios",
+    "types": "Tipos",
+    "regions": "Regiones",
+    "languages": "Idiomas",
+    "spots": "Puesto",
+    "roles": "Roles",
+    "igl": "Shotcall",
+    "staffRoles": "Staff",
+    "compensation": "Remuneración",
+    "lan": "LAN",
+    "rank": "Rango",
+    "agents": "Agentes",
+    "experience": "Experiencia",
+    "anyLevel": "Cualquier nivel",
+    "experienceValue": "{levels}, {duration} mínimo",
+    "minHours": "Ritmo",
+    "minHoursValue": "{hours} h por semana mínimo",
+    "minDays": "Días activos",
+    "minDaysValue_one": "{count} día por semana mínimo",
+    "minDaysValue_other": "{count} días por semana mínimo",
+    "availability": "Disponibilidad",
+    "availabilityValue": "Horarios definidos ({timezone})",
+    "ages": "Edad"
+  },
+  "post": {
+    "view": "Ver el anuncio",
+    "tracker": "Tracker.gg",
+    "roles": "Roles",
+    "staffRoles": "Staff",
+    "rank": "Rango",
+    "rankWanted": "Rango buscado",
+    "peak": "peak {rank}",
+    "rankRange": "{min} a {max}",
+    "agents": "Agentes",
+    "tierlist": "Tierlist de agentes de {name}",
+    "compensation": "Remuneración",
+    "lan": "LAN",
+    "experience": "Experiencia",
+    "languages": "Idiomas",
+    "rhythm": "Ritmo",
+    "rhythmValue": "{hours} h por semana en {days} días",
+    "published": "publicado {date}",
+    "renewed": "renovado {date}",
+    "ageGroup": "Edad",
+    "minorsAccepted": "Menores",
+    "agent": "Contacto a través de"
+  },
+  "duration": {
+    "months_one": "{count} mes",
+    "months_other": "{count} meses",
+    "years_one": "{count} año",
+    "years_other": "{count} años"
+  },
+  "moderation": {
+    "setupDone": "{channel} es ahora el canal de moderación. Los miembros con {role} pueden usar sus botones.",
+    "removed": "El canal de moderación se ha quitado. Los anuncios y reportes ya no se envían.",
+    "welcome": {
+      "title": "Moderación de Scouting",
+      "text": "Cada anuncio publicado o renovado y cada reporte aparecen aquí. Los miembros con {role} pueden retirar, restaurar y tuitear los anuncios."
+    },
+    "errors": {
+      "wrongGuild": "El canal de moderación solo se puede configurar en el servidor de Osthelia.",
+      "notConfigured": "No hay ningún canal de moderación configurado.",
+      "roleRequired": "Elige el rol autorizado a moderar.",
+      "everyone": "Elige un rol dedicado, no @everyone.",
+      "feedChannel": "{channel} ya recibe los anuncios. Quítalo con /feed remove primero."
+    }
+  },
+  "mod": {
+    "author": "Autor",
+    "tweet": "Tuit",
+    "tweetedBy": "Tuiteado por {user}",
+    "tweetedOn": "Tuiteado {date}",
+    "tweetTooLong": "⚠️ {length}/{max} caracteres, demasiado largo para Twitter. Acórtalo antes de publicar.",
+    "status": {
+      "label": "Estado",
+      "active": "En línea",
+      "closed": "Cerrado por su autor",
+      "expired": "Caducado",
+      "deleted": "Eliminado por su autor",
+      "removed": "Retirado por {user}",
+      "removedReason": "Retirado por {user}: {reason}"
+    },
+    "buttons": {
+      "remove": "Retirar",
+      "restore": "Restaurar",
+      "openKasm": "Abrir KASM",
+      "markTweeted": "Marcar como tuiteado",
+      "tweeted": "Tuiteado",
+      "markRetweeted": "Marcar como retuiteado",
+      "retweeted": "Retuiteado"
+    },
+    "modal": {
+      "title": "Retirar el anuncio",
+      "reason": "Motivo",
+      "reasonHint": "Se guarda en el historial de moderación, entre {min} y {max} caracteres."
+    },
+    "errors": {
+      "notModerationChannel": "Estos botones solo funcionan en el canal de moderación.",
+      "forbidden": "Necesitas el rol {role} para moderar los anuncios.",
+      "notFound": "Este anuncio ya no existe.",
+      "notActive": "Este anuncio ya no está en línea.",
+      "notRemoved": "Solo se puede restaurar un anuncio retirado por la moderación.",
+      "activeExists": "Su autor ha publicado otro anuncio de este tipo desde entonces, este no se puede restaurar.",
+      "alreadyTweeted": "Este anuncio ya está marcado como tuiteado.",
+      "reasonLength": "El motivo debe tener entre {min} y {max} caracteres.",
+      "invalidCharacters": "Quita los caracteres de control o invisibles del motivo.",
+      "awaitingAuthor": "La persona autora todavía no ha dado el enlace de su tweet."
+    },
+    "viewTweet": "ver el tweet",
+    "retweetedBy": "Retuiteado por {user}",
+    "retweetedOn": "Retuiteado {date}",
+    "authorTweeted": "Publicado por la persona autora ({link}), por retuitear",
+    "awaitingAuthor": "La persona autora publica el tweet, todavía no ha dado su enlace"
+  },
+  "report": {
+    "title": "Reporte #{id}",
+    "post": "Anuncio",
+    "reason": "Motivo",
+    "reporter": "Reportado por",
+    "dismissed": "El reporte se ha archivado.",
+    "status": {
+      "open": "Por tratar",
+      "handled": "Tratado por {user}",
+      "dismissed": "Archivado por {user}"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "fake": "Anuncio falso",
+      "inappropriate": "Contenido inapropiado",
+      "harassment": "Acoso",
+      "other": "Otro"
+    },
+    "buttons": {
+      "remove": "Retirar el anuncio",
+      "dismiss": "Archivar"
+    },
+    "errors": {
+      "notFound": "Este reporte ya no existe.",
+      "alreadyHandled": "Este reporte ya está tratado."
+    }
+  },
+  "tweet": {
+    "peak": "Peak {rank}",
+    "sub": "Suplente",
+    "rankRange": "{min} a {max}",
+    "rankFrom": "{rank} o más",
+    "rankUpTo": "Hasta {rank}",
+    "lookingFor": "Buscamos {wanted}",
+    "players_one": "{count} jugador",
+    "players_other": "{count} jugadores",
+    "subs_one": "{count} suplente",
+    "subs_other": "{count} suplentes",
+    "rhythm_one": "{hours} h/semana en {count} día",
+    "rhythm_other": "{hours} h/semana en {count} días",
+    "contact": "Para contactar y tener más información ->",
+    "contactShort": "Más info ->",
+    "years_one": "{count} año",
+    "years_other": "{count} años",
+    "months_one": "{count} mes",
+    "months_other": "{count} meses"
+  }
+}

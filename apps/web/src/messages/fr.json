@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "Les annonces LFT, LFP, LFS et LFO de la scène Valorant Game Changers, liées à GC Stats."
+  },
+  "nav": {
+    "home": "Accueil",
+    "posts": "Annonces",
+    "newPost": "Créer une annonce",
+    "login": "Connexion avec GC Stats",
+    "loginShort": "Connexion",
+    "menu": "Menu",
+    "language": "Langue"
+  },
+  "home": {
+    "hero": {
+      "title": "Trouve ton équipe. <accent>Complète ton roster.</accent>",
+      "subtitle": "Les annonces LFT, LFP, LFS et LFO de la scène Valorant Game Changers au même endroit. Filtre par rôle, rank, langue ou agent, et poste en deux minutes avec ton profil GC Stats.",
+      "ctaBrowse": "Voir les annonces",
+      "ctaPost": "Créer une annonce",
+      "demo": {
+        "lfp": "Roster espagnol en OQ Playoffs, on cherche une smoke capable de shotcall et un·e initiateur·ice flash en remplaçant·e. Entraînements du lundi au jeudi, de 20 h à 23 h.",
+        "lfs": "Notre équipe cherche un·e coach et un·e analyste pour le prochain split. Poste rémunéré, 3 soirs par semaine, reviews de VOD comprises."
+      }
+    },
+    "types": {
+      "heading": "Un type d'annonce pour chaque besoin",
+      "sub": "Tu cherches, ou on te cherche. Chaque annonce porte son type, et tu ne vois que ce qui t'intéresse.",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "Joueur·se à la recherche d'une équipe."
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "Équipe qui recrute un·e ou plusieurs joueur·ses."
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "Équipe qui cherche un coach, un·e analyste ou un·e manager."
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "Roster qui cherche une structure."
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "Coach ou analyste disponible pour une équipe."
+      }
+    },
+    "how": {
+      "heading": "Comment ça marche",
+      "step1": {
+        "title": "Connecte toi avec GC Stats",
+        "body": "Si ton profil GC Stats est lié, ton historique de tournois est ajouté automatiquement. Sinon, retrouve le en quelques clics."
+      },
+      "step2": {
+        "title": "Crée ton annonce",
+        "body": "Rôle, rank, langues, région, expérience, et ta tierlist d'agents. Tout est structuré, rien à rédiger."
+      },
+      "step3": {
+        "title": "Sois vu·e partout",
+        "body": "Ton annonce est publiée sur le site, envoyée aux serveurs Discord abonnés et relayée sur Twitter."
+      },
+      "freshTitle": "Toujours à jour",
+      "freshBody": "Les annonces expirent après 10 jours. On te prévient à J+7, un clic suffit pour renouveler."
+    },
+    "tierlist": {
+      "heading": "Ta tierlist d'agents, lisible en un coup d'œil",
+      "body": "Fini les \"je joue un peu de tout\". Chaque joueur·se classe ses agents sur cinq niveaux, et les équipes filtrent directement par agent.",
+      "filterHint": "Exemple de filtre : \"sait jouer Viper\" = Viper dans les deux premiers niveaux."
+    },
+    "verified": {
+      "heading": "Des profils liés à GC Stats",
+      "body": "Lie ton annonce à ton profil GC Stats, qui recense les tournois Game Changers, et ton parcours s'affiche : tournois joués, équipes, résultats. Tant que notre staff n'a pas validé le lien, l'annonce le mentionne.",
+      "verified": "Profil vérifié",
+      "verifiedHint": "Lien validé, historique GC Stats affiché.",
+      "pending": "Non vérifié",
+      "pendingHint": "Demande de liaison en attente de validation par le staff.",
+      "none": "Sans profil GC Stats",
+      "noneHint": "Pas encore de tournoi, l'annonce reste visible normalement."
+    },
+    "discord": {
+      "eyebrow": "Bot Discord",
+      "heading": "Les annonces arrivent direct sur ton serveur",
+      "body": "Ajoute le bot à ton serveur Discord et choisis ce que tu reçois. Chaque nouvelle annonce qui correspond à tes critères est postée automatiquement, avec sa tierlist et un lien vers l'annonce.",
+      "cta": "Ajouter le bot",
+      "steps": {
+        "add": {
+          "title": "Ajoute le bot",
+          "body": "Invite le sur ton serveur en un clic, il n'a besoin que d'écrire dans les salons que tu choisis."
+        },
+        "channel": {
+          "title": "Choisis un ou plusieurs salons",
+          "body": "Un salon pour les LFT EU, un autre pour le staff : chaque salon a sa propre configuration."
+        },
+        "filters": {
+          "title": "Règle ce que tu reçois",
+          "body": "Types d'annonce, régions, rôles, rank, langues, agents, expérience, disponibilités. Les mêmes filtres que sur le site."
+        },
+        "receive": {
+          "title": "Reçois les annonces en direct",
+          "body": "Les nouvelles annonces et celles renouvelées sont postées dès leur publication, sans doublon."
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "Config de #{channel} :",
+        "filterType": "LFT",
+        "filterRole": "Controller",
+        "filterRank": "Ascendant et plus",
+        "app": "APP",
+        "time": "Aujourd'hui à 21:04",
+        "published": "publiée il y a 2 heures",
+        "rank": "Rank",
+        "peak": "peak {rank}",
+        "roles": "Rôles",
+        "agents": "Agents",
+        "experience": "Expérience",
+        "languages": "Langues",
+        "rhythm": "Rythme",
+        "rhythmValue": "{hours} h par semaine sur {days} jours",
+        "tierlistAlt": "Tierlist d'agents de {name}"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "Suis nous sur Twitter",
+      "body": "Les annonces sont relayées sur notre compte avec la tierlist en image, pour toucher toute la scène.",
+      "cta": "Suivre le compte"
+    },
+    "cta": {
+      "title": "Prêt·e à scouter ?",
+      "body": "Des filtres sauvegardés sur ton navigateur, aucune inscription pour consulter.",
+      "button": "Parcourir les annonces"
+    }
+  },
+  "post": {
+    "verified": "Vérifié",
+    "pending": "Non vérifié",
+    "igl": "IGL",
+    "tournaments": "{count, plural, one {# tournoi} other {# tournois}}",
+    "lookingFor": "Recherche",
+    "anyRole": "Tous rôles",
+    "view": "Voir l'annonce",
+    "confident": "À l'aise sur"
+  },
+  "duration": {
+    "months": "{count} mois",
+    "years": "{count, plural, one {# an} other {# ans}}"
+  },
+  "compensation": {
+    "paid": "Rémunéré",
+    "free": "Bénévole"
+  },
+  "lan": {
+    "lan": "LAN possible",
+    "online": "En ligne uniquement"
+  },
+  "preferences": {
+    "title": "Préférences",
+    "theme": "Thème",
+    "themes": {
+      "system": "Auto",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "timezone": "Fuseau horaire",
+    "timezoneAuto": "Automatique ({timezone})",
+    "timezoneHint": "Utilisé pour afficher les disponibilités et chercher par horaires.",
+    "search": "Rechercher",
+    "noOption": "Aucun résultat"
+  },
+  "roles": {
+    "duelist": "Duelist",
+    "initiator_reveal": "Ini Reveal",
+    "initiator_flash": "Ini Flash",
+    "controller": "Controller",
+    "sentinel": "Sentinel",
+    "flex": "Flex"
+  },
+  "agentClasses": {
+    "duelist": "Duelist",
+    "initiator": "Initiator",
+    "controller": "Controller",
+    "sentinel": "Sentinel"
+  },
+  "tiers": {
+    "confident": "À l'aise",
+    "improve": "À améliorer",
+    "canLearn": "Peut apprendre"
+  },
+  "footer": {
+    "tagline": "La plateforme de scouting Valorant de l'écosystème GC Stats.",
+    "product": "Produit",
+    "postTypes": "Types d'annonces",
+    "resources": "Ressources",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "Fait par <link>Osthelia</link>, une association au service de l'esport éthique, inclusif et équitable."
+  },
+  "levels": {
+    "cash_cup": "Open Qualifiers",
+    "playoffs": "OQ Playoffs",
+    "main_event": "Main event"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "Co-IGL"
+  },
+  "rosterSpots": {
+    "player": "Joueur·se",
+    "sub": "Remplaçant·e"
+  },
+  "staffRoles": {
+    "coach": "Coach",
+    "assistant_coach": "Coach assistant·e",
+    "performance_coach": "Coach de performance",
+    "mental_coach": "Coach mental",
+    "analyst": "Analyste",
+    "manager": "Manager"
+  },
+  "regions": {
+    "eu": "Europe",
+    "na": "Amérique du Nord",
+    "latam": "Amérique latine",
+    "br": "Brésil",
+    "apac": "Asie Pacifique",
+    "kr": "Corée",
+    "jp": "Japon",
+    "oce": "Océanie",
+    "mena": "Moyen Orient et Afrique du Nord",
+    "cn": "Chine"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {Aucune annonce} one {# annonce} other {# annonces}}",
+    "sortLabel": "Tri",
+    "sort": {
+      "recent": "Plus récentes",
+      "rank": "Meilleur rank",
+      "experience": "Plus d'expérience",
+      "availability": "Plus disponibles"
+    },
+    "filters": "Filtres",
+    "reset": "Effacer",
+    "resetAll": "Réinitialiser les filtres",
+    "apply": "Voir les résultats",
+    "any": "Tous",
+    "selected": "{count} sélectionné(s)",
+    "search": "Rechercher",
+    "noOption": "Aucun résultat",
+    "removeFilter": "Retirer le filtre",
+    "group": {
+      "region": "Région",
+      "language": "Langue",
+      "spot": "Place recherchée",
+      "spotWanted": "Place proposée",
+      "role": "Rôle",
+      "staffRole": "Rôle staff",
+      "compensation": "Rémunération",
+      "lan": "LAN",
+      "rank": "Rank",
+      "experience": "Expérience",
+      "agents": "Sait jouer",
+      "rhythm": "Rythme",
+      "availability": "Disponibilités",
+      "age": "Âge"
+    },
+    "rankFrom": "De",
+    "rankTo": "À",
+    "minDuration": "{duration} ou plus",
+    "experienceHint": "Temps joué à une des phases choisies, ou à n'importe quelle phase.",
+    "minHours": "{count, plural, =0 {Toutes} other {# h/semaine ou plus}}",
+    "minDays": "{count, plural, =0 {Tous} one {# jour/semaine ou plus} other {# jours/semaine ou plus}}",
+    "rhythmHours": "Heures",
+    "rhythmDays": "Jours",
+    "rhythmHint": "Temps et jours par semaine accordés à l'équipe.",
+    "agentsHint": "Agents dans les deux premiers niveaux de la tierlist.",
+    "agentsMax": "5 agents maximum",
+    "slot": {
+      "days": "Jours",
+      "from": "De",
+      "to": "À",
+      "everyDay": "Tous les jours",
+      "mode": "Mode de recherche",
+      "simple": "Simple",
+      "advanced": "Jour par jour",
+      "notSearched": "Non recherché",
+      "hint": "Tes horaires de jeu. Une annonce correspond dès qu'elle a une demi heure en commun.",
+      "hintAdvanced": "Choisis les jours et règle les horaires de chacun. Une annonce correspond dès qu'elle a une demi heure en commun.",
+      "hintTimezone": "Horaires en {timezone}. Une annonce correspond dès qu'elle a une demi heure en commun."
+    },
+    "empty": "Aucune annonce ne correspond à ces filtres.",
+    "emptyHint": "Retire un filtre, ou repasse plus tard : de nouvelles annonces arrivent chaque jour.",
+    "loading": "Chargement des annonces",
+    "close": "Fermer"
+  },
+  "postPage": {
+    "back": "Toutes les annonces {code}",
+    "expired": "Cette annonce a expiré",
+    "expiredHint": "Elle n'apparaît plus dans la liste. Son auteur·ice peut la renouveler à tout moment.",
+    "closed": "Cette annonce est clôturée",
+    "closedHint": "Son auteur·ice ne cherche plus.",
+    "published": "Publiée {date}",
+    "renewed": "Renouvelée {date}",
+    "expires": "Expire {date}",
+    "about": "Présentation",
+    "tierlist": "Tierlist d'agents",
+    "availability": "Disponibilités",
+    "profile": "Profil",
+    "similar": "Annonces similaires",
+    "seeAll": "Tout voir",
+    "region": "Région",
+    "country": "Pays",
+    "languages": "Langues",
+    "roles": "Rôles",
+    "rosterSpot": "Place recherchée",
+    "rosterSpotWanted": "Place proposée",
+    "playersWanted": "{count, plural, one {# joueur·se} other {# joueur·ses}}",
+    "subsWanted": "{count, plural, one {# remplaçant·e} other {# remplaçant·es}}",
+    "lookingFor": "Recherche",
+    "staffRoles": "Postes staff",
+    "igl": "Shotcall",
+    "rank": "Rank",
+    "peak": "Peak {rank}",
+    "rankWanted": "Rank recherché",
+    "tracker": "Tracker.gg",
+    "compensation": "Rémunération",
+    "lan": "LAN",
+    "experience": "Expérience",
+    "experienceWanted": "Expérience recherchée",
+    "noExperience": "Aucun tournoi pour l'instant",
+    "rhythm": "Rythme",
+    "rhythmValue": "{hours, number} h par semaine, {days, plural, one {# jour} other {# jours}}",
+    "contact": "Contact",
+    "copyDiscord": "Copier le pseudo Discord",
+    "copyDiscordId": "Copier l'ID Discord",
+    "discordProfile": "Discord",
+    "discordServer": "Rejoindre le serveur",
+    "copied": "Copié",
+    "share": "Copier le lien",
+    "linkCopied": "Lien copié",
+    "twitter": "Profil X",
+    "email": "Envoyer un email",
+    "bestResult": "Meilleur résultat",
+    "viewProfile": "Voir sur GC Stats",
+    "pendingNote": "La liaison à ce profil GC Stats attend la validation du staff.",
+    "noProfile": "Aucun profil GC Stats lié à cette annonce.",
+    "yourTime": "Votre heure",
+    "authorTime": "Heure de l'auteur·ice",
+    "timezoneNote": "Horaires en {timezone}",
+    "noAvailability": "Aucune disponibilité renseignée.",
+    "loading": "Chargement de l'annonce",
+    "gcsHistory": "Historique GC Stats",
+    "latestTeams": "Dernières équipes",
+    "latestTournaments": "Derniers tournois",
+    "present": "Aujourd'hui",
+    "unknownDate": "?",
+    "noTournaments": "Aucun tournoi sur GC Stats.",
+    "wins": "{n}V",
+    "losses": "{n}D",
+    "recordTitle": "{wins, plural, one {# victoire} other {# victoires}}, {losses, plural, one {# défaite} other {# défaites}}",
+    "place": "{n, selectordinal, one {#er} other {#e}}",
+    "top": "Top {n}",
+    "viewTeamProfile": "Équipe sur GC Stats",
+    "teamRoles": {
+      "player": "{pronoun, select, feminine {Joueuse} masculine {Joueur} other {Joueur·se}}",
+      "player-igl": "{pronoun, select, feminine {Joueuse} masculine {Joueur} other {Joueur·se}}, IGL",
+      "sub": "{pronoun, select, feminine {Remplaçante} masculine {Remplaçant} other {Remplaçant·e}}",
+      "coach": "Coach",
+      "assistant coach": "{pronoun, select, feminine {Coach assistante} masculine {Coach assistant} other {Coach assistant·e}}",
+      "performance coach": "Coach de performance",
+      "analyst": "Analyste",
+      "manager": "Manager"
+    },
+    "syncedAt": "Mis à jour {date}",
+    "gcsPending": {
+      "loading": "Récupération de l'historique GC Stats…",
+      "timeout": "L'historique GC Stats n'est pas encore disponible, reviens dans quelques minutes."
+    },
+    "gcsRefresh": {
+      "label": "Actualiser",
+      "pending": "Actualisation…",
+      "done": "Actualisé",
+      "errors": {
+        "invalid": "Annonce invalide.",
+        "auth": "Connecte toi pour actualiser l'historique.",
+        "notFound": "Cette annonce n'existe plus.",
+        "forbidden": "Seul·e l'auteur·ice de l'annonce peut l'actualiser.",
+        "cooldown": "{minutes, plural, one {Réessaie dans # minute.} other {Réessaie dans # minutes.}}",
+        "noProfile": "Aucun profil ni équipe GC Stats lié à cette annonce.",
+        "notConfigured": "La connexion à GC Stats n'est pas configurée.",
+        "failed": "GC Stats n'a pas répondu, réessaie plus tard."
+      }
+    },
+    "agentContact": "Contact via l'agent",
+    "staffEdit": "Modifier (modération)",
+    "ageGroup": "Âge",
+    "minorsAccepted": "Mineur·es"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page introuvable",
+      "body": "Cette page n'existe pas, ou l'annonce a été retirée.",
+      "back": "Voir les annonces"
+    },
+    "serverError": {
+      "title": "Une erreur est survenue",
+      "body": "Cette page n'a pas pu se charger. Réessaie dans un instant.",
+      "retry": "Réessayer",
+      "back": "Voir les annonces"
+    }
+  },
+  "auth": {
+    "account": "Mon compte",
+    "logout": "Déconnexion",
+    "profile": {
+      "verified": "Profil GC Stats vérifié",
+      "pending": "Profil GC Stats en attente de vérification",
+      "none": "Aucun profil GC Stats lié"
+    },
+    "error": {
+      "title": "Connexion impossible",
+      "retry": "Réessayer",
+      "home": "Retour à l'accueil",
+      "reasons": {
+        "denied": "Tu as refusé l'accès sur GC Stats. Pour poster une annonce, la connexion avec GC Stats est nécessaire.",
+        "state": "La tentative de connexion a expiré ou vient d'un autre onglet. Relance la connexion.",
+        "exchange": "GC Stats n'a pas pu confirmer ta connexion. Réessaie dans quelques instants.",
+        "provider": "GC Stats a renvoyé une erreur pendant la connexion. Réessaie dans quelques instants.",
+        "config": "La connexion avec GC Stats n'est pas encore configurée sur ce site."
+      }
+    },
+    "settings": "Paramètres du compte",
+    "gcsAccount": "Mon compte GC Stats",
+    "actAs": "Profil actif",
+    "yourself": "{name} (toi)",
+    "switchFailed": "Ce profil n'est plus disponible, recharge la page.",
+    "actingAs": "Tu agis en tant que {name}.",
+    "backToSelf": "Revenir à ton profil",
+    "myPosts": "Mes annonces",
+    "messages": "Messages",
+    "admin": "Administration"
+  },
+  "newPost": {
+    "title": "Nouvelle annonce",
+    "intro": {
+      "lft": "Montre aux équipes qui tu es : rôles, rank, agents et quand tu peux jouer.",
+      "lfp": "Décris le ou la joueur·se que ton équipe recherche et vos horaires d'entraînement.",
+      "lfs": "Décris le staff que ton équipe recherche (coach, analyste, manager).",
+      "lfo": "Présente ton roster aux structures qui cherchent une équipe.",
+      "lfst": "Montre aux équipes ce que tu apportes en tant que coach, analyste ou manager."
+    },
+    "login": {
+      "title": "Connecte toi pour poster",
+      "text": "Les annonces sont liées à un compte GC Stats, pour que les équipes et joueur·ses sachent à qui ils parlent. Ton historique de tournois est affiché si ton profil est lié.",
+      "cta": "Se connecter avec GC Stats"
+    },
+    "activeExists": {
+      "title": "Tu as déjà une annonce {code} active",
+      "text": "Une seule peut être en ligne à la fois. Clôture la ou attends son expiration avant d'en poster une nouvelle."
+    },
+    "viewExisting": "Voir mon annonce",
+    "sections": {
+      "identity": "Identité",
+      "identityHint": "Comment tu apparais sur l'annonce.",
+      "identityTeamHint": "Comment ton équipe apparaît sur l'annonce.",
+      "profile": {
+        "lft": "Ton profil",
+        "lfp": "Joueur·se recherché·e",
+        "lfs": "Staff recherché",
+        "lfo": "Ton roster",
+        "lfst": "Ton profil"
+      },
+      "tierList": "Tierlist d'agents",
+      "tierListHint": "Mets en avant les agents que tu sais jouer, de ceux que tu maîtrises à ceux que tu peux apprendre. Les deux premières lignes servent au filtre \"sait jouer\".",
+      "availability": "Disponibilités",
+      "availabilityHint": "Tes créneaux habituels de la semaine, dans ton fuseau horaire. Les visiteur·ses les voient convertis dans leur heure.",
+      "availabilityTeamHint": "Vos créneaux d'entraînement, dans ton fuseau horaire. Les visiteur·ses les voient convertis dans leur heure.",
+      "rhythm": "Rythme",
+      "rhythmHint": "Le temps maximum que tu peux accorder à une équipe chaque semaine, dans la limite de tes disponibilités.",
+      "rhythmTeamHint": "Le temps que ton équipe demande chaque semaine, dans la limite de vos créneaux d'entraînement.",
+      "about": "Présentation et contact",
+      "aboutHint": "Quelques mots pour te démarquer, et comment te joindre.",
+      "reminders": "Rappels d'expiration",
+      "remindersHint": "Une annonce reste en ligne 10 jours. Au bout de 7 jours, on t'envoie un rappel avec un lien pour la renouveler en un clic.",
+      "remindersDelegatedHint": "Une annonce reste en ligne 10 jours. Les rappels partent au ou à la titulaire du profil, sur les canaux de son compte.",
+      "tweet": "Publication sur X",
+      "tweetHint": "Chaque annonce est partagée sur le compte X de GC Scouting. Tu peux aussi la publier toi même, on la retweete ensuite.",
+      "moderation": "Raison de la modification",
+      "moderationHint": "Envoyée à l'auteur·ice de l'annonce et gardée dans l'historique de modération."
+    },
+    "fields": {
+      "displayName": "Pseudo",
+      "teamName": "Nom de l'équipe",
+      "region": "Région",
+      "country": "Pays",
+      "noCountry": "Non précisé",
+      "languages": "Langues parlées",
+      "languagesMax": "{max} langues maximum",
+      "choose": "Choisir",
+      "rosterSpot": "Place recherchée",
+      "rosterSpotWanted": "Place proposée",
+      "rosterSpotHint": "Joueur·se par défaut. Choisis remplaçant·e pour un rôle de sub.",
+      "playersWanted": "Joueur·ses recherché·es",
+      "subsWanted": "Remplaçant·es recherché·es",
+      "wantedHint": "Combien de titulaires et de remplaçant·es ton roster recherche.",
+      "playersCount": "{count, plural, =0 {Aucun·e joueur·se} one {# joueur·se} other {# joueur·ses}}",
+      "subsCount": "{count, plural, =0 {Aucun·e remplaçant·e} one {# remplaçant·e} other {# remplaçant·es}}",
+      "roles": "Rôles",
+      "rolesWanted": "Rôles recherchés",
+      "flexHint": "Flex correspond à tous les rôles dans les recherches.",
+      "igl": "Shotcall",
+      "iglWanted": "Shotcaller recherché·e",
+      "staffRoles": "Postes",
+      "staffRolesWanted": "Postes recherchés",
+      "rankCurrent": "Rank actuel",
+      "rankPeak": "Peak rank",
+      "rankMin": "Rank minimum",
+      "rankMax": "Rank maximum",
+      "rankRangeHint": "Fourchette de rank du ou de la joueur·se recherché·e.",
+      "compensation": "Accord recherché",
+      "compensationHint": "Rémunéré si tu cherches un contrat payé, bénévole si un projet sans rémunération te convient.",
+      "compensationOffered": "Accord proposé",
+      "compensationOfferedHint": "Rémunéré si le poste comprend un salaire ou une compensation, bénévole sinon.",
+      "lan": "Événements LAN",
+      "lanHint": "Si tu peux te déplacer pour jouer des LAN.",
+      "lanTeamHint": "Si l'équipe prévoit de se déplacer pour des LAN.",
+      "experience": "Expérience en tournoi",
+      "experienceHint": "Depuis combien de temps tu joues à chaque phase. Laisse sur aucune les phases que tu n'as pas jouées.",
+      "experienceWanted": "Expérience recherchée",
+      "experienceWantedHint": "Temps minimum joué à chaque phase, laisse sur aucune si ça n'a pas d'importance.",
+      "notPlayed": "Aucune",
+      "notSpecified": "Non précisé",
+      "rhythmHours": "Heures par semaine",
+      "rhythmDays": "Jours par semaine",
+      "hoursPerWeek": "{count} h",
+      "daysPerWeek": "{count, plural, one {# jour} other {# jours}}",
+      "rhythmMax": "Tes disponibilités couvrent {hours} h sur {days, plural, one {# jour} other {# jours}}, le rythme ne peut pas aller au delà.",
+      "rhythmNoAvailability": "Ajoute d'abord tes disponibilités, le rythme ne peut pas les dépasser.",
+      "timezone": "Fuseau horaire",
+      "description": "Présentation",
+      "descriptionPlaceholder": {
+        "player": "Tes objectifs, ton style de jeu, ce que tu cherches dans une équipe...",
+        "team": "Votre projet, vos objectifs, ce que vous attendez du ou de la joueur·se..."
+      },
+      "contact": "Contact (au moins un)",
+      "discord": "ID Discord",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "Utiliser mon compte lié",
+      "discordInvite": "Invitation au serveur Discord",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "pseudo",
+      "email": "Email",
+      "emailPlaceholder": "toi@exemple.com",
+      "contactHint": "Affiché publiquement sur l'annonce.",
+      "notifyEmail": "Par email",
+      "notifyDiscord": "Par message privé Discord",
+      "noEmail": "Aucun email vérifié sur ton compte GC Stats",
+      "discordLinked": "Compte Discord lié sur GC Stats",
+      "noDiscord": "Aucun compte Discord lié sur GC Stats",
+      "noReminderWarning": "Sans rappel, ton annonce expirera au bout de 10 jours sans que tu sois prévenu·e.",
+      "iglHint": "Sélectionne les deux si tu peux tenir les deux rôles.",
+      "iglWantedHint": "Sélectionne les deux si l'un ou l'autre vous convient.",
+      "gcsTeam": "Page GC Stats de l'équipe",
+      "gcsTeamPlaceholder": "https://gc-stats.app/fr/team/...",
+      "gcsTeamHint": "Si ton équipe a déjà joué un tournoi Game Changers, colle le lien de sa page GC Stats. Ton profil GC Stats doit être lié et faire partie de son roster actuel.",
+      "agent": "Contact via un agent",
+      "agentHint": "Les moyens de contact ci dessous sont ceux de ton agent.",
+      "agentName": "Nom de l'agent",
+      "agentAgency": "Agence",
+      "agentAgencyPlaceholder": "Indépendant·e si vide",
+      "contactAgent": "Contact de l'agent (au moins un)",
+      "contactAgentHint": "Affiché publiquement sur l'annonce, avec le nom de l'agent.",
+      "chatEnabled": "Autoriser les messages privés",
+      "chatEnabledHint": "Les personnes connectées peuvent t'écrire depuis l'annonce, sur GC Scouting.",
+      "contactChatHint": "Avec les messages privés activés, ces contacts sont facultatifs.",
+      "tweetBySite": "GC Scouting la publie",
+      "tweetBySiteHint": "On publie ton annonce sur notre compte X, avec ton @ si tu en donnes un.",
+      "tweetByAuthor": "Je la publie moi même",
+      "tweetByAuthorHint": "Après la publication, on te donne le tweet prêt à poster. Tu nous envoies son lien et on le retweete.",
+      "tweetByLocked": "L'annonce est déjà sur X, ce choix ne peut plus changer.",
+      "moderationReason": "Raison",
+      "moderationReasonPlaceholder": "Ex. : lien Discord invalide retiré, description hors sujet raccourcie",
+      "ageGroup": "Âge",
+      "ageGroupHint": "Affiché sur l'annonce. Clique à nouveau pour ne pas l'indiquer.",
+      "tracker": "Profil Tracker.gg",
+      "trackerHint": "Colle le lien de ton profil Valorant tracker.gg, sans connexion.",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "Mineur·es",
+      "minorsAcceptedHint": "Les joueur·ses mineur·es peuvent filtrer les annonces qui les acceptent."
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "invalid": "Valeur invalide.",
+      "tooLong": "{max} caractères maximum.",
+      "tooMany": "{max} maximum.",
+      "peakBelowCurrent": "Le peak rank ne peut pas être inférieur au rank actuel.",
+      "rangeOrder": "Le rank maximum doit être supérieur ou égal au rank minimum.",
+      "wantedEmpty": "Recherche au moins un·e joueur·se ou un·e remplaçant·e.",
+      "tierEmpty": "Classe au moins un agent.",
+      "slotInvalid": "Un des créneaux est invalide.",
+      "slotOverlap": "Deux créneaux du même jour se chevauchent.",
+      "rhythmAboveAvailability": "Plus que tes disponibilités ({max} maximum).",
+      "contactRequired": "Indique au moins un moyen de te contacter.",
+      "discordInvalid": "ID Discord invalide (17 à 20 chiffres). Ton pseudo ne marche pas ici, regarde comment trouver ton ID en dessous.",
+      "discordInviteInvalid": "Lien d'invitation invalide (discord.gg/code ou discord.com/invite/code).",
+      "twitterInvalid": "Pseudo invalide (15 caractères maximum : lettres, chiffres, tiret bas).",
+      "emailInvalid": "Adresse email invalide.",
+      "notifyUnavailable": "Ce canal n'est pas disponible sur ton compte.",
+      "gcsTeamInvalid": "Lien invalide, colle l'adresse d'une page d'équipe GC Stats.",
+      "gcsTeamNoProfile": "Lie d'abord ton profil GC Stats (en haut de la page) : seul un membre de l'équipe peut ajouter sa page.",
+      "gcsTeamNotMember": "Ton profil GC Stats ne fait pas partie du roster actuel de cette équipe.",
+      "gcsTeamCheckFailed": "GC Stats n'a pas pu vérifier l'équipe, réessaie dans quelques instants.",
+      "trackerInvalid": "Ce n'est pas un lien de profil Valorant tracker.gg.",
+      "reasonLength": "La raison doit faire entre {min} et {max} caractères.",
+      "invalidCharacters": "Retire les caractères de contrôle ou invisibles."
+    },
+    "formErrors": {
+      "auth": "Ta session a expiré. Reconnecte toi pour publier.",
+      "activeExists": "Tu as déjà une annonce {code} active.",
+      "expiredExists": "Ton ancienne annonce {code} a expiré. Recharge la page pour la remplacer.",
+      "limitReached": "Tu as déjà {max} annonces {code} en ligne. Clôture en une pour en publier une nouvelle.",
+      "server": "L'annonce n'a pas pu être publiée. Réessaie dans quelques instants.",
+      "notFound": "Cette annonce n'existe plus ou ne t'appartient pas.",
+      "notEditable": "Cette annonce ne peut plus être modifiée.",
+      "sanctioned": "Ton compte GC Stats est sanctionné (mute, suspension ou ban) : tu ne peux pas publier ni modifier d'annonce pour le moment.",
+      "rateLimited": "Tu publies ou modifies trop souvent. Patiente un peu avant de réessayer.",
+      "sanctionedUntil": "Ton compte GC Stats est sanctionné (mute, suspension ou ban) jusqu'au {date} : tu ne peux pas publier ni modifier d'annonce d'ici là."
+    },
+    "errorCount": "{count, plural, one {# champ à corriger} other {# champs à corriger}}",
+    "replacesExpired": "Ton annonce {code} expirée sera clôturée.",
+    "publish": "Publier",
+    "publishing": "Publication...",
+    "tierList": {
+      "hint": "Glisse les agents que tu joues dans les lignes, ou clique sur un agent puis sur une ligne. Les agents laissés de côté ne sont pas affichés.",
+      "pickedHint": "Clique maintenant sur la ligne où placer l'agent.",
+      "progress": "{count, plural, =0 {Aucun agent classé} one {# agent classé} other {# agents classés}}",
+      "reset": "Réinitialiser",
+      "poolEmpty": "Tous les agents sont classés.",
+      "guide": "Comprendre notre tierlist",
+      "guideTooltip": "Pourquoi ces trois paliers, et comment les remplir. S'ouvre dans un nouvel onglet."
+    },
+    "availability": {
+      "hint": "Clique ou glisse sur les heures pour les ajouter, recommence pour les retirer. Tu joues après minuit ? Continue au début du jour suivant.",
+      "copyAll": "Copier sur tous les jours",
+      "clearDay": "Vider ce jour",
+      "clearAll": "Tout effacer",
+      "summary": "{hours} h par semaine, {days, plural, one {# jour} other {# jours}}"
+    },
+    "typeTabs": "Type d'annonce",
+    "save": "Enregistrer",
+    "saving": "Enregistrement...",
+    "cancel": "Annuler",
+    "delegatedNoProfile": "Aucun profil GC Stats n'est lié à {name}. Seul·e {name} peut en lier un, depuis son propre compte.",
+    "editTitle": "Modifier l'annonce",
+    "editIntro": "Les modifications sont en ligne tout de suite. La date d'expiration ne change pas.",
+    "backToPost": "Retour à l'annonce",
+    "closedTitle": "Cette annonce est clôturée",
+    "closedText": "Une annonce clôturée ne peut plus être modifiée. Crée une nouvelle annonce si tu recherches à nouveau.",
+    "loading": "Chargement du formulaire",
+    "moderationTitle": "Modification par la modération",
+    "moderationText": "Tu modifies l'annonce de {name}. Iel reçoit un email et un message Discord avec la raison indiquée.",
+    "discordHelp": {
+      "toggle": "Comment trouver mon ID Discord ?",
+      "step1": "Dans Discord, ouvre Paramètres utilisateur, Avancés, et active le Mode développeur.",
+      "step2": "Fais un clic droit sur ton avatar ou ton pseudo (appui long sur mobile).",
+      "step3": "Clique sur Copier l'identifiant de l'utilisateur, puis colle le ici.",
+      "menuProfile": "Profil",
+      "menuMention": "Mentionner",
+      "menuCopyId": "Copier l'identifiant de l'utilisateur"
+    }
+  },
+  "playerLink": {
+    "question": "Aucun profil GC Stats n'est lié à ton compte. As tu déjà joué un tournoi Game Changers ?",
+    "questionTeam": "Aucun profil GC Stats n'est lié à ton compte. Pour ajouter la page GC Stats de ton équipe, lie d'abord ton profil. As tu déjà joué un tournoi Game Changers ?",
+    "declined": "Pas de souci, ton annonce sera publiée sans historique de tournois.",
+    "declinedTeam": "Pas de souci, ton annonce sera publiée sans la page GC Stats de l'équipe.",
+    "yes": "Oui, retrouver mon profil",
+    "no": "Non, pas encore",
+    "title": "Retrouve ton profil GC Stats",
+    "intro": "Cherche ton pseudo, ou passe par un tournoi que tu as joué. Le staff GC Stats valide ensuite la liaison.",
+    "cancel": "Fermer",
+    "modeLabel": "Méthode de recherche",
+    "mode": {
+      "name": "Par pseudo",
+      "tournament": "Par tournoi"
+    },
+    "namePlaceholder": "Ton pseudo en tournoi",
+    "tournamentPlaceholder": "Nom du tournoi",
+    "teamPlaceholder": "Filtrer les équipes ou joueur·ses",
+    "minChars": "{min} caractères minimum.",
+    "players": "{count, plural, =0 {Aucun·e joueur·se} one {# joueur·se} other {# joueur·ses}}",
+    "pickPlayer": "Choisis ton pseudo dans le roster.",
+    "empty": "Aucun résultat.",
+    "emptyTeams": "Aucune équipe trouvée pour ce tournoi.",
+    "emptyRoster": "Aucun·e joueur·se enregistré·e pour cette équipe.",
+    "loading": "Chargement",
+    "back": "Retour à la recherche",
+    "viewOnGcs": "Voir sur GC Stats",
+    "claimed": "Déjà lié à un compte",
+    "confirmText": "Vérifie que c'est bien ton profil. La demande part au staff GC Stats, et tes annonces sont marquées \"Non vérifié\" jusqu'à sa validation.",
+    "send": "Envoyer la demande",
+    "sending": "Envoi...",
+    "relogin": "Se reconnecter",
+    "done": {
+      "pending": "Demande envoyée. Ton profil apparaît sur tes annonces, marqué \"Non vérifié\" jusqu'à la validation du staff.",
+      "approved": "Ce profil est déjà lié à ton compte GC Stats, il est maintenant vérifié."
+    },
+    "lookupErrors": {
+      "auth": "Ta session a expiré, reconnecte toi.",
+      "invalid": "Recherche invalide.",
+      "notConfigured": "La recherche GC Stats n'est pas configurée sur ce site.",
+      "notFound": "Ce tournoi n'existe plus sur GC Stats.",
+      "failed": "GC Stats n'a pas répondu, réessaie dans quelques instants."
+    },
+    "errors": {
+      "auth": "Ta session a expiré, reconnecte toi.",
+      "invalid": "Profil invalide.",
+      "linkExists": "Un profil est déjà lié ou en attente sur ton compte. Recharge la page.",
+      "reauth": "Ta connexion GC Stats doit être renouvelée pour envoyer la demande.",
+      "notFound": "Ce profil n'existe plus sur GC Stats.",
+      "taken": "Ce profil est déjà lié à un autre compte GC Stats. Si c'est bien le tien, contacte le staff GC Stats.",
+      "requestPending": "Une demande de liaison est déjà en attente sur ton compte GC Stats.",
+      "rateLimited": "Trop de demandes, réessaie dans une minute.",
+      "failed": "La demande n'a pas pu être envoyée, réessaie dans quelques instants.",
+      "delegated": "Seul·e le ou la titulaire du profil peut lier un profil GC Stats."
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "Ton annonce {code} expire bientôt",
+      "title": "Ton annonce {code} « {name} » expire dans {left, plural, one {# jour} other {# jours}}",
+      "body": "Elle disparaîtra de la liste et des salons Discord le {date}.",
+      "renewHint": "Tu cherches toujours ? Renouvelle la pour {days} jours de plus, elle remontera en haut de la liste.",
+      "deleteHint": "Tu as trouvé ? Supprime la pour ne plus être contacté·e.",
+      "renew": "Renouveler",
+      "delete": "Supprimer",
+      "view": "Voir l'annonce",
+      "footer": "Tu reçois ce rappel car tu l'as activé en publiant sur GC Scouting. Les liens fonctionnent 14 jours sans connexion, ne les partage pas."
+    },
+    "manage": {
+      "metaTitle": "Gérer mon annonce",
+      "renew": {
+        "title": "Renouveler ton annonce",
+        "text": "{expired, select, true {Elle a expiré.} other {Elle expire bientôt.}} Elle sera de nouveau en ligne pour 10 jours et remontera en haut de la liste.",
+        "confirm": "Renouveler",
+        "pending": "Renouvellement...",
+        "done": "Annonce renouvelée jusqu'au {date}"
+      },
+      "delete": {
+        "title": "Supprimer ton annonce",
+        "text": "Elle sera retirée du site et des salons Discord, son lien ne fonctionnera plus. Cette action est définitive.",
+        "confirm": "Supprimer",
+        "pending": "Suppression...",
+        "done": "Annonce supprimée"
+      },
+      "view": "Voir l'annonce",
+      "newPost": "Créer une annonce",
+      "home": "Retour à l'accueil",
+      "errorTitle": "Lien indisponible",
+      "errors": {
+        "invalid": "Ce lien n'est pas valide. Vérifie qu'il a été copié en entier.",
+        "used": "Ce lien a déjà été utilisé. Chaque rappel ne sert qu'une fois.",
+        "expired": "Ce lien a expiré. Connecte toi et ouvre ton annonce pour la renouveler.",
+        "unavailable": "Cette annonce a été clôturée ou supprimée.",
+        "limitReached": "Tu as déjà le maximum d'annonces en ligne pour ce type. Clôture en une pour renouveler celle ci.",
+        "server": "L'action n'a pas pu aboutir. Réessaie dans quelques instants."
+      }
+    },
+    "renew": {
+      "title": "Ton annonce expire {date}",
+      "expiredTitle": "Ton annonce a expiré",
+      "hint": "Renouvelle la pour {days} jours de plus, elle remontera en haut de la liste.",
+      "label": "Renouveler",
+      "pending": "Renouvellement...",
+      "done": "Renouvelée",
+      "errors": {
+        "invalid": "Annonce invalide.",
+        "auth": "Ta session a expiré. Reconnecte toi pour renouveler.",
+        "notFound": "Cette annonce n'est plus active.",
+        "tooEarly": "Le renouvellement ouvre 3 jours avant l'expiration.",
+        "limitReached": "Tu as déjà le maximum d'annonces en ligne pour ce type. Clôture en une pour renouveler celle ci.",
+        "server": "Le renouvellement a échoué. Réessaie dans quelques instants."
+      }
+    },
+    "noReminder": {
+      "title": "Aucun rappel d'expiration activé",
+      "text": "Ton annonce expirera au bout de {days} jours sans que tu sois prévenu·e. Active le rappel par email ou Discord dans le formulaire de l'annonce."
+    }
+  },
+  "account": {
+    "title": "Paramètres du compte",
+    "loading": "Chargement de ton compte",
+    "intro": "Gère qui peut publier en ton nom, et tes données sur GC Scouting. Ton compte GC Stats se gère sur GC Stats.",
+    "gcsAccount": "Mon compte GC Stats",
+    "since": "Depuis le {date}",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "login": {
+      "title": "Connecte toi pour gérer ton compte",
+      "text": "Ton compte GC Scouting est créé avec ton compte GC Stats.",
+      "cta": "Se connecter avec GC Stats"
+    },
+    "delegates": {
+      "title": "Accès à ton profil",
+      "hint": "Des personnes de confiance (agent, manager, staff) peuvent publier et gérer des annonces en ton nom. {max} personnes maximum, tu peux retirer un accès à tout moment.",
+      "empty": "Personne n'a accès à ton profil.",
+      "remove": "Retirer",
+      "pendingInvite": "Lien d'invitation en attente, valable jusqu'au {date}",
+      "revokeInvite": "Annuler",
+      "inviteReady": "Lien d'invitation créé",
+      "inviteHint": "Envoie le à la personne, elle l'ouvre en étant connectée. Il fonctionne une fois, pendant {days} jours.",
+      "copy": "Copier",
+      "copied": "Copié",
+      "create": "Créer un lien d'invitation"
+    },
+    "managed": {
+      "title": "Profils que tu gères",
+      "hint": "Choisis le profil actif dans le menu en haut à droite pour publier en son nom.",
+      "empty": "Personne ne t'a encore donné accès à son profil.",
+      "active": "Profil actif",
+      "use": "Utiliser ce profil",
+      "leave": "Quitter"
+    },
+    "errors": {
+      "auth": "Ta session a expiré, reconnecte toi.",
+      "invalid": "Requête invalide.",
+      "notFound": "Cet accès n'existe plus, recharge la page.",
+      "server": "L'action a échoué, réessaie dans quelques instants.",
+      "full": "Ton profil a déjà {max} personnes avec un accès.",
+      "tooManyInvites": "Trop de liens d'invitation en attente, annules en un d'abord."
+    },
+    "data": {
+      "title": "Tes données",
+      "hint": "Télécharge tout ce que GC Scouting conserve sur ton compte (profil, annonces, accès), dans un fichier JSON.",
+      "export": "Télécharger mes données",
+      "exporting": "Préparation...",
+      "exportFailed": "L'export a échoué, réessaie dans quelques instants."
+    },
+    "delete": {
+      "title": "Supprimer mon compte",
+      "hint": "Ton compte GC Scouting, tes annonces et les accès à ton profil sont supprimés définitivement. Ton compte GC Stats n'est pas touché.",
+      "confirmLabel": "Tape {name} pour confirmer",
+      "submit": "Supprimer mon compte",
+      "pending": "Suppression...",
+      "errors": {
+        "auth": "Ta session a expiré, reconnecte toi.",
+        "confirmation": "Le pseudo ne correspond pas.",
+        "server": "La suppression a échoué, réessaie dans quelques instants."
+      }
+    },
+    "chatNotifications": {
+      "title": "Notifications de messages",
+      "text": "Une alerte par conversation quand tu reçois un message, puis plus rien tant que tu ne l'as pas ouverte. Le contenu du message n'est jamais copié dans l'alerte.",
+      "email": "Par email",
+      "discord": "En message privé Discord",
+      "noEmail": "Aucun email vérifié sur ton compte GC Stats",
+      "discordLinked": "Compte Discord lié à GC Stats",
+      "noDiscord": "Aucun compte Discord lié à GC Stats",
+      "save": "Enregistrer",
+      "saved": "Préférences enregistrées.",
+      "errors": {
+        "auth": "Ta session a expiré. Reconnecte toi.",
+        "invalid": "Préférences invalides.",
+        "noEmail": "Ajoute et vérifie un email sur GC Stats pour activer les alertes par email.",
+        "noDiscord": "Lie un compte Discord sur GC Stats pour activer les alertes Discord.",
+        "server": "L'enregistrement a échoué. Réessaie dans un instant."
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "Invitation à un profil",
+    "title": "{name} t'invite à gérer son profil",
+    "text": "Tu pourras publier et gérer des annonces au nom de {name}. Tu peux quitter à tout moment depuis les paramètres de ton compte.",
+    "loginText": "Connecte toi avec ton compte GC Stats pour accepter l'invitation.",
+    "loginCta": "Se connecter avec GC Stats",
+    "accept": "Accepter",
+    "accepting": "Acceptation...",
+    "done": "Tu gères maintenant le profil de {name}, c'est ton profil actif.",
+    "newPost": "Créer une annonce",
+    "settings": "Paramètres du compte",
+    "home": "Retour à l'accueil",
+    "errorTitle": "Invitation indisponible",
+    "errors": {
+      "invalid": "Ce lien n'est pas valide. Vérifie qu'il a été copié en entier.",
+      "used": "Cette invitation a déjà été utilisée. Demande un nouveau lien.",
+      "expired": "Cette invitation a expiré. Demande un nouveau lien.",
+      "self": "C'est ton propre lien d'invitation, envoie le à la personne qui gérera ton profil.",
+      "already": "Tu gères déjà ce profil.",
+      "full": "Ce profil a atteint sa limite de personnes avec un accès.",
+      "auth": "Ta session a expiré, reconnecte toi.",
+      "server": "L'invitation n'a pas pu être acceptée, réessaie dans quelques instants."
+    }
+  },
+  "postAuthor": {
+    "edit": "Modifier",
+    "close": "Clôturer",
+    "closeConfirm": "Clôturer l'annonce",
+    "cancel": "Annuler",
+    "errors": {
+      "invalid": "Annonce invalide.",
+      "auth": "Ta session a expiré. Reconnecte toi.",
+      "notFound": "Cette annonce n'est plus active.",
+      "server": "L'annonce n'a pas pu être clôturée. Réessaie dans un instant."
+    }
+  },
+  "myPosts": {
+    "title": "Mes annonces",
+    "intro": "Tes annonces restent en ligne {days} jours. Renouvelle les avant qu'elles expirent, ou clôture les quand tu as trouvé.",
+    "new": "Créer une annonce",
+    "loading": "Chargement de tes annonces",
+    "published": "Publiée {date}",
+    "expires": "Expire {date}",
+    "expired": "Expirée {date}",
+    "groups": {
+      "active": "En ligne",
+      "expired": "Expirées",
+      "closed": "Clôturées"
+    },
+    "empty": {
+      "title": "Aucune annonce pour l'instant",
+      "text": "Tes annonces apparaîtront ici, avec de quoi les modifier, les renouveler ou les clôturer."
+    },
+    "login": {
+      "title": "Connecte toi pour voir tes annonces",
+      "text": "Tes annonces sont liées à ton compte GC Stats.",
+      "cta": "Se connecter avec GC Stats"
+    }
+  },
+  "report": {
+    "button": "Signaler",
+    "title": "Signaler l'annonce",
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "submit": "Envoyer le signalement",
+    "sending": "Envoi…",
+    "loginHint": "Connecte toi pour signaler une annonce. Ça nous permet d'éviter les abus.",
+    "login": "Se connecter avec GC Stats",
+    "reason": "Raison",
+    "message": "Détails",
+    "messageHint": "Ce qui pose problème, ce qui aide la modération à trancher vite.",
+    "sent": "Signalement envoyé",
+    "sentHint": "Merci, l'équipe de modération va regarder l'annonce.",
+    "reasons": {
+      "spam": {
+        "label": "Spam ou publicité",
+        "hint": "Annonce en double, pub, contenu sans rapport"
+      },
+      "fake": {
+        "label": "Fausse annonce",
+        "hint": "Usurpation d'identité, infos inventées"
+      },
+      "inappropriate": {
+        "label": "Contenu inapproprié",
+        "hint": "Propos choquants, contenu NSFW"
+      },
+      "harassment": {
+        "label": "Harcèlement",
+        "hint": "Vise ou insulte une personne"
+      },
+      "other": {
+        "label": "Autre",
+        "hint": "Explique le problème dans les détails"
+      }
+    },
+    "errors": {
+      "reasonRequired": "Choisis une raison.",
+      "message": {
+        "required": "Explique le problème pour la raison \"Autre\".",
+        "tooShort": "Au moins {min} caractères, ou laisse vide.",
+        "tooLong": "{max} caractères maximum.",
+        "invalidCharacters": "Retire les caractères de contrôle ou invisibles."
+      },
+      "form": {
+        "invalid": "Annonce invalide.",
+        "auth": "Ta session a expiré. Reconnecte toi.",
+        "notFound": "Cette annonce n'existe plus.",
+        "ownPost": "Tu ne peux pas signaler ta propre annonce.",
+        "already": "Tu as déjà signalé cette annonce, la modération s'en occupe.",
+        "rateLimited": "Trop de signalements en une heure. Réessaie plus tard.",
+        "server": "Le signalement n'a pas pu être envoyé. Réessaie dans un instant."
+      },
+      "messageForm": {
+        "invalid": "Message invalide.",
+        "auth": "Ta session a expiré. Reconnecte toi.",
+        "notFound": "Ce message n'est plus disponible.",
+        "ownMessage": "Tu ne peux pas signaler ton propre message.",
+        "already": "Tu as déjà signalé ce message, la modération s'en occupe.",
+        "rateLimited": "Trop de signalements en une heure. Réessaie plus tard.",
+        "server": "Le signalement n'a pas pu être envoyé. Réessaie dans un instant."
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "Tweets à publier",
+    "title": "Tweets à publier",
+    "subtitle": "Annonces en ligne pas encore sur X, les plus anciennes d'abord. Ouvre le tweet sur X, publie le, puis marque le comme publié.",
+    "count": "{count, plural, one {# tweet restant} other {# tweets restants}}",
+    "empty": "Plus rien à tweeter.",
+    "unavailable": "Les tweets n'ont pas pu être chargés, le bot Discord est injoignable. Recharge la page dans quelques instants.",
+    "forbidden": "Accès refusé : cette page ne s'ouvre qu'à travers Cloudflare Access.",
+    "published": "Publiée {date}",
+    "viewPost": "Voir l'annonce",
+    "length": "{length}/{max} caractères",
+    "tooLong": "Trop long pour X, raccourcis le avant de publier.",
+    "open": "Ouvrir sur X",
+    "opened": "Ouvert sur X",
+    "markPublished": "Marquer comme publié",
+    "marking": "Enregistrement...",
+    "done": "Publié",
+    "errors": {
+      "unauthorized": "Ta session Cloudflare Access a expiré, recharge la page.",
+      "forbidden": "Cette requête ne vient pas de la page des tweets, rechargez la page et réessayez.",
+      "invalid": "L'identifiant de cette annonce n'est pas valide.",
+      "notFound": "Cette annonce n'existe plus.",
+      "alreadyTweeted": "Cette annonce est déjà marquée comme publiée.",
+      "unavailable": "Le bot Discord est injoignable, réessaie dans quelques instants.",
+      "network": "La requête a échoué, vérifie ta connexion et réessaie.",
+      "awaitingAuthor": "L'auteur·ice n'a pas encore donné le lien de son tweet."
+    },
+    "toTweet": "À tweeter",
+    "toRetweet": "À retweeter",
+    "toRetweetHint": "Annonces publiées par leurs auteur·ices sur leur propre compte.",
+    "countRetweets": "{count, plural, one {# retweet restant} other {# retweets restants}}",
+    "sectionDone": "Tout est fait ici.",
+    "authorTweeted": "Publiée par l'auteur·ice sur son compte, à retweeter.",
+    "viewTweet": "Voir le tweet",
+    "openRetweet": "Retweeter sur X",
+    "markRetweeted": "Marquer comme retweetée",
+    "retweetDone": "Retweetée"
+  },
+  "legalNotice": {
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour : {date}",
+    "editor": {
+      "title": "Éditeur du site",
+      "identity": "Identité",
+      "status": "Statut",
+      "statusValue": "Association loi 1901",
+      "email": "Email",
+      "director": "Direction de la publication",
+      "ecosystem": "GC Scouting fait partie de l'écosystème GC Stats, édité par la même association. La connexion et les historiques de tournois s'appuient sur GC Stats."
+    },
+    "hosting": {
+      "title": "Hébergement et prestataires",
+      "site": "Site, bot Discord et images de partage",
+      "database": "Base de données",
+      "email": "Envoi des emails",
+      "emailValue": "Resend, uniquement pour les rappels d'expiration que tu as activés",
+      "discord": "Messages Discord",
+      "discordValue": "Discord Inc., via notre bot (salons d'annonces, modération et messages privés de rappel)"
+    },
+    "property": {
+      "title": "Propriété intellectuelle",
+      "site": "La structure du site, son design et ses textes originaux appartiennent à Osthelia.",
+      "posts": "Le contenu d'une annonce (présentation, tierlist, disponibilités) reste celui de son auteur·ice, qui nous autorise à l'afficher sur le site et à le relayer sur Discord et X tant que l'annonce est en ligne.",
+      "thirdParty": "<b>Contenus tiers :</b> les noms, logos et visuels d'équipes, de tournois, d'agents et de rangs appartiennent à leurs titulaires respectifs et sont affichés à titre purement informatif. GC Scouting n'est pas approuvé par Riot Games et ne reflète pas les opinions de Riot Games ni de quiconque officiellement impliqué dans la production ou la gestion des propriétés de Riot Games. Riot Games et toutes les propriétés associées sont des marques commerciales ou déposées de Riot Games, Inc.",
+      "takedown": "Tu es titulaire de droits sur un contenu et souhaites son retrait ? Écris nous à <mail>cette adresse</mail>, ou utilise le bouton <b>Signaler</b> présent sur chaque annonce."
+    },
+    "rules": {
+      "title": "Règles de publication",
+      "intro": "En publiant une annonce, tu t'engages à :",
+      "truthful": "donner des informations exactes sur ton profil, ton rang et ton expérience",
+      "respect": "ne publier aucun contenu haineux, discriminant, harcelant ou illégal",
+      "contact": "n'indiquer que des moyens de contact qui t'appartiennent, ou que ton agent·e t'a autorisé à afficher",
+      "ads": "ne pas utiliser les annonces pour de la publicité, des paris ou toute activité sans lien avec le recrutement",
+      "moderation": "Notre équipe peut retirer sans préavis une annonce qui ne respecte pas ces règles. Les annonces sont fournies telles quelles : Osthelia ne vérifie pas chaque information et n'intervient pas dans les échanges entre joueur·ses et équipes."
+    },
+    "privacy": {
+      "title": "Données personnelles",
+      "text": "Le traitement de tes données est détaillé dans notre <policy>politique de confidentialité</policy>. Conformément au RGPD, tu disposes d'un droit d'accès, de rectification et de suppression, que tu peux exercer en écrivant à <mail>{email}</mail>."
+    },
+    "credits": {
+      "title": "Crédits",
+      "gcs": "Historiques de tournois, équipes et profils vérifiés : <link>GC Stats</link>.",
+      "valorantApi": "Icônes des agents et des rangs : <link>valorant-api.com</link>.",
+      "riot": "VALORANT est une marque de Riot Games, Inc."
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : {date}",
+    "intro": "GC Scouting collecte le strict nécessaire pour publier des annonces, échanger avec les équipes et te prévenir quand tes annonces expirent. Voici ce que nous stockons, pourquoi, et comment le supprimer.",
+    "login": {
+      "title": "Connexion avec GC Stats",
+      "text": "Tu te connectes avec ton compte GC Stats : nous ne voyons jamais ton mot de passe. À chaque connexion, GC Stats nous transmet, avec ton accord :",
+      "identity": "<b>Identité :</b> ton identifiant GC Stats, ton pseudo et ton avatar.",
+      "email": "<b>Email :</b> ton adresse vérifiée, utilisée seulement pour les rappels d'expiration si tu les actives.",
+      "discord": "<b>Discord :</b> l'identifiant de ton compte Discord lié, pour les rappels en message privé et l'identification lors d'un signalement.",
+      "player": "<b>Profil de joueur·se :</b> le profil GC Stats lié à ton compte, pour afficher le badge vérifié et ton historique de tournois.",
+      "tokens": "Les jetons d'accès GC Stats sont chiffrés en base et servent uniquement à agir pour toi auprès de GC Stats (par exemple une demande de liaison de profil). Ils sont révoqués quand tu supprimes ton compte.",
+      "created": "<b>Ancienneté :</b> la date de création de ton compte GC Stats, pour afficher le badge \"Compte récent\" dans la messagerie pendant ses 7 premiers jours.",
+      "sanctions": "<b>Sanctions :</b> les sanctions GC Stats en cours (mute, suspension, ban) et leur date de fin, relues avant chaque message ou publication pour bloquer l'envoi le temps de la sanction. Un avertissement actif affiche le badge \"Averti·e\" dans la messagerie."
+    },
+    "public": {
+      "title": "Ce qui est public",
+      "text": "Une annonce est visible par tout le monde, sans connexion : pseudo, type d'annonce, région, pays, langues, rang, rôles, tierlist, expérience, disponibilités et présentation.",
+      "contact": "<b>Moyens de contact :</b> le Discord, le compte X ou l'email que tu renseignes dans une annonce sont affichés publiquement pour que les équipes puissent te joindre. N'indique que ce que tu acceptes de rendre public.",
+      "gcs": "Si ton profil est lié, l'historique affiché (équipes, tournois, résultats) provient des données publiques de GC Stats."
+    },
+    "relay": {
+      "title": "Diffusion sur Discord et X",
+      "text": "Les annonces actives sont envoyées automatiquement dans les salons Discord qui ont configuré notre bot, et peuvent être relayées sur notre compte X avec leur image de partage. Quand une annonce est clôturée, supprimée ou retirée, ou quand tu supprimes ton compte, notre bot supprime aussi ses messages de ces salons. Une annonce expirée y reste jusque là. Les annonces déjà relayées sur X restent en ligne, tout comme les copies faites par d'autres personnes."
+    },
+    "private": {
+      "title": "Données techniques",
+      "sessions": "<b>Sessions :</b> une empreinte de ton jeton de session (jamais le jeton lui même), le navigateur utilisé (user agent) et les dates de création et d'expiration, pour te permettre de voir et de sécuriser tes connexions.",
+      "country": "<b>Pays :</b> le pays de ta connexion, fourni par Cloudflare, sert seulement à présélectionner ta région dans les filtres. Il n'est jamais enregistré.",
+      "logs": "<b>Journaux :</b> notre hébergeur conserve des journaux techniques de courte durée (erreurs, requêtes) pour le diagnostic.",
+      "noTracking": "Aucune mesure d'audience, aucune publicité, aucun traceur tiers et aucune revente de données."
+    },
+    "notifications": {
+      "title": "Rappels d'expiration",
+      "text": "Les rappels par email et par message privé Discord sont désactivés par défaut et ne s'envoient que si tu les actives. Ils contiennent des liens pour renouveler ou supprimer ton annonce sans te connecter, valables 14 jours. Tu peux les couper à tout moment."
+    },
+    "delegation": {
+      "title": "Accès délégué",
+      "text": "Si tu donnes accès à ton profil à une autre personne (agent·e, manager), nous enregistrons ce lien pour lui permettre de publier et gérer des annonces en ton nom. Tu peux retirer cet accès quand tu veux depuis ton compte. Dans la messagerie, iel écrit sous son propre nom, avec le profil qu'iel gère affiché à côté."
+    },
+    "messages": {
+      "title": "Messagerie",
+      "text": "Quand tu écris à un membre depuis une annonce, nous enregistrons la conversation : les deux profils, l'annonce de départ, chaque message avec sa date, et le compte qui l'a réellement écrit si tu gères le profil d'une autre personne. Nous enregistrons aussi la date de ta dernière lecture, pour les messages non lus, et la liste des membres que tu bloques.",
+      "staff": "Les conversations ne sont pas chiffrées de bout en bout : notre équipe de modération peut les lire pour traiter un signalement, vérifier un message retenu ou enquêter sur un abus. Elle peut masquer un message. N'y partage rien de sensible.",
+      "automod": "<b>Modération automatique :</b> chaque message est envoyé à l'API de modération d'OpenAI (États Unis) avant d'être délivré, sans ton pseudo ni ton identifiant. OpenAI ne l'utilise pas pour entraîner ses modèles et le conserve au plus 30 jours. Un message jugé problématique est retenu jusqu'à la décision de l'équipe.",
+      "links": "<b>Liens :</b> seuls les liens Discord, X, GC Stats, VLR et Liquipedia sont cliquables. Les autres sont masqués derrière un avertissement, rien n'est vérifié ni enregistré à part le message.",
+      "alerts": "<b>Alertes :</b> un email ou un message privé Discord te prévient des nouveaux messages, une fois par série de non lus, sans recopier leur contenu. Elles sont activées par défaut et se coupent depuis la page <account>Mon compte</account>. Si tu gères le profil de quelqu'un, tu reçois aussi les alertes de ses conversations, selon tes propres réglages."
+    },
+    "moderation": {
+      "title": "Signalements et modération",
+      "text": "Quand tu signales une annonce ou un message, nous enregistrons la raison, ton message et ton compte. La modération se fait dans un salon Discord privé et dans un espace d'administration du site : chaque action (retrait, restauration, message masqué, publication sur X) est enregistrée avec le compte du membre de l'équipe qui l'a faite.",
+      "reporter": "Ton identité n'est jamais montrée à l'auteur·ice de l'annonce ou du message signalé. Elle est seulement visible de notre équipe de modération."
+    },
+    "retention": {
+      "title": "Durée de conservation",
+      "posts": "Une annonce expire 10 jours après sa publication ou son dernier renouvellement. Elle quitte alors la liste et les salons Discord, mais son lien reste accessible avec un bandeau tant que tu ne la supprimes pas.",
+      "sessions": "Une session dure 30 jours, ou jusqu'à ta déconnexion.",
+      "account": "Ton compte et tout ce qui y est rattaché (annonces, messages envoyés, blocages, sessions, accès délégués, liaison de profil) sont conservés jusqu'à sa suppression depuis la page <account>Mon compte</account>. Les signalements que tu as faits et les messages Discord de tes annonces sont alors supprimés eux aussi.",
+      "messages": "Les messages sont conservés tant que la conversation existe. Quand tu supprimes ton compte, les messages que tu as envoyés sont supprimés. Ceux de l'autre membre restent dans sa liste."
+    },
+    "rights": {
+      "title": "Tes droits (RGPD)",
+      "text": "Tu disposes d'un droit d'accès, de rectification, d'opposition et de suppression de tes données. Depuis la page <account>Mon compte</account>, tu peux exporter toutes tes données en JSON ou supprimer ton compte en un clic. Ton compte GC Stats n'est jamais touché.",
+      "contact": "Pour toute autre demande : <mail>{email}</mail>. Tu peux aussi saisir la CNIL si tu estimes que tes droits ne sont pas respectés."
+    },
+    "cookies": {
+      "title": "Cookies et stockage local",
+      "text": "Nous n'utilisons que des cookies techniques, nécessaires au fonctionnement du site. Aucun bandeau de consentement n'est donc requis.",
+      "session": "<b>__Host-sc_session :</b> ta session de connexion (30 jours).",
+      "profile": "<b>sc_profile :</b> le profil actif quand tu gères le profil d'une autre personne.",
+      "oauth": "<b>sc_oauth :</b> sécurise la connexion avec GC Stats, supprimé juste après.",
+      "theme": "<b>sc_theme :</b> ton thème clair ou sombre.",
+      "storage": "<b>Stockage local :</b> tes filtres d'annonces et ton fuseau horaire, qui restent dans ton navigateur."
+    }
+  },
+  "chat": {
+    "title": "Messages",
+    "unreadLabel": "Messages, {count, plural, one {# non lu} other {# non lus}}",
+    "seeAll": "Voir tous les messages",
+    "writtenBy": "<strong>{name}</strong>, gère le profil de {profile}",
+    "managerName": "{name} (gère le profil de {profile})",
+    "delegateNotice": "Tu écris pour {profile} : tes messages affichent ton propre nom ({name}) et précisent que tu gères ce profil.",
+    "you": "Toi :",
+    "hiddenMessage": "Message retiré par la modération",
+    "held": "En attente de vérification",
+    "back": "Retour aux conversations",
+    "fromPost": "Depuis l'annonce {code} de {name}",
+    "block": "Bloquer",
+    "blockConfirm": "Confirmer le blocage",
+    "unblock": "Débloquer",
+    "unblockConfirm": "Confirmer",
+    "cancel": "Annuler",
+    "loadOlder": "Charger les messages plus anciens",
+    "loadMoreConversations": "Afficher plus de conversations",
+    "loading": "Chargement des conversations",
+    "emptyConversation": "Aucun message pour l'instant.",
+    "blockedByMe": "Tu as bloqué {name}. Débloque cette personne pour lui écrire à nouveau.",
+    "blockedByPeer": "Tu ne peux plus écrire à cette personne.",
+    "reportTitle": "Signaler un message de {name}",
+    "staffNotice": "L'équipe de modération de GC Scouting peut lire les conversations, uniquement à des fins de modération.",
+    "placeholder": "Écris ton message",
+    "send": "Envoyer",
+    "errors": {
+      "body": {
+        "required": "Écris un message avant d'envoyer.",
+        "tooLong": "{max} caractères maximum.",
+        "invalidCharacters": "Retire les caractères de contrôle ou invisibles."
+      },
+      "auth": "Ta session a expiré. Reconnecte toi.",
+      "notFound": "Cette conversation ou cette annonce n'est plus disponible.",
+      "ownPost": "Tu ne peux pas t'écrire à toi même.",
+      "chatDisabled": "L'auteur·ice de cette annonce n'accepte pas les messages privés.",
+      "blockedByMe": "Tu as bloqué cette personne.",
+      "blockedByPeer": "Tu ne peux plus écrire à cette personne.",
+      "sanctioned": "Ton compte GC Stats est sanctionné (mute, suspension ou ban) : tu ne peux pas envoyer de message pour le moment.",
+      "sanctionedUntil": "Ton compte GC Stats est sanctionné (mute, suspension ou ban) jusqu'au {date} : tu ne peux pas envoyer de message d'ici là.",
+      "rateLimited": "Tu envoies trop de messages. Attends une minute.",
+      "tooManyConversations": "Tu as démarré trop de conversations aujourd'hui. Réessaie demain.",
+      "server": "Le message n'a pas pu être envoyé. Réessaie dans un instant."
+    },
+    "empty": {
+      "title": "Aucune conversation",
+      "text": "Écris à l'auteur·ice d'une annonce depuis sa page pour démarrer une conversation."
+    },
+    "pick": {
+      "title": "Choisis une conversation",
+      "text": "Tes échanges avec les joueur·ses, équipes et staffs apparaissent à gauche."
+    },
+    "login": {
+      "title": "Connecte toi pour voir tes messages",
+      "text": "La messagerie utilise ton compte GC Stats.",
+      "cta": "Se connecter avec GC Stats"
+    },
+    "link": {
+      "hidden": "Lien masqué",
+      "hiddenHint": "Ce lien ne vient pas d'un site de confiance, il est masqué par défaut.",
+      "warning": "Ce lien ne mène pas vers un site de confiance (Discord, X, GC Stats, VLR, Liquipedia). Il peut servir à voler ton compte ou tes informations. Ne l'ouvre que si tu connais cette personne.",
+      "show": "Afficher le lien",
+      "cancel": "Laisser masqué"
+    },
+    "peer": {
+      "recent": "Compte récent",
+      "recentHint": "Compte GC Stats créé il y a moins de {days} jours",
+      "warned": "Averti·e",
+      "warnedHint": "Cette personne a reçu un avertissement de la modération GC Stats",
+      "warnedNotice": "{name} a reçu un avertissement de la modération GC Stats. Reste prudent·e et signale tout message déplacé.",
+      "recentNotice": "Le compte GC Stats de {name} a moins de {days} jours. Méfie toi des demandes inhabituelles (liens, paiements, identifiants)."
+    },
+    "posts": {
+      "title": "Annonces ouvertes de {name}",
+      "toggle": "{count, plural, =0 {Aucune annonce ouverte} one {# annonce ouverte} other {# annonces ouvertes}}",
+      "none": "Aucune annonce ouverte.",
+      "published": "Mise à jour {date}"
+    },
+    "start": {
+      "button": "Envoyer un message",
+      "open": "Voir la conversation",
+      "title": "Écrire à {name}",
+      "close": "Fermer",
+      "loginHint": "Connecte toi avec GC Stats pour écrire à l'auteur·ice de cette annonce.",
+      "login": "Se connecter"
+    },
+    "alert": {
+      "subject": "Nouveau message de {name} sur GC Scouting",
+      "title": "{name} t'a envoyé un message",
+      "body": "Tu as reçu un message de {name} sur GC Scouting. Réponds depuis le site, la conversation reste privée entre vous deux et la modération.",
+      "managedSubject": "Nouveau message pour {profile} sur GC Scouting",
+      "managedTitle": "{name} a envoyé un message à {profile}",
+      "managedBody": "{profile}, un profil que tu gères, a reçu un message de {name} sur GC Scouting. Réponds depuis le site : ta réponse affiche ton propre nom.",
+      "open": "Voir la conversation",
+      "footer": "Tu reçois cette alerte car les notifications de messages sont activées dans tes paramètres GC Scouting."
+    },
+    "switch": {
+      "title": "Cette conversation appartient à {name}",
+      "managedText": "Tu gères ce profil. Bascule dessus pour lire la conversation et répondre, tes messages affichent ton propre nom.",
+      "selfText": "Tu agis en tant que profil géré. Reviens sur ton propre profil pour lire la conversation et répondre.",
+      "button": "Basculer sur {name}",
+      "error": "Le changement de profil a échoué. Réessaie dans un instant."
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "Administration",
+      "dashboard": "Tableau de bord",
+      "groupChat": "Messagerie",
+      "conversations": "Conversations",
+      "automod": "Modération automatique",
+      "messageReports": "Messages signalés",
+      "groupPosts": "Annonces",
+      "posts": "Annonces",
+      "postReports": "Annonces signalées",
+      "groupAdmin": "Administration",
+      "users": "Utilisateur·ices",
+      "access": "Accès",
+      "backToSite": "Retour au site",
+      "toggle": "Afficher ou masquer le menu",
+      "menuTitle": "Menu",
+      "menuDescription": "Navigation de l'admin."
+    },
+    "roles": {
+      "user": "Membre",
+      "staff": "Staff",
+      "admin": "Admin"
+    },
+    "common": {
+      "cancel": "Annuler",
+      "total": "{count, plural, =0 {Aucun résultat} one {# résultat} other {# résultats}}",
+      "previous": "Page précédente",
+      "next": "Page suivante",
+      "gcsAdmin": "Ouvrir dans l'admin GC Stats",
+      "search": "Rechercher",
+      "close": "Fermer"
+    },
+    "sanctions": {
+      "note": "Note",
+      "warning": "Avertissement",
+      "mute": "Mute",
+      "suspension": "Suspension",
+      "ban": "Ban"
+    },
+    "errors": {
+      "auth": "Ta session a expiré ou tu n'as plus accès à l'administration.",
+      "invalid": "Requête invalide.",
+      "notFound": "Introuvable.",
+      "conflict": "Déjà traité par quelqu'un d'autre. La page a été rechargée.",
+      "reasonLength": "La raison doit faire entre {min} et {max} caractères.",
+      "reasonInvalidCharacters": "Retire les caractères de contrôle ou invisibles de la raison.",
+      "activeExists": "L'auteur·ice a déjà une autre annonce de ce type en ligne.",
+      "selfDemote": "Tu ne peux pas retirer ton propre rôle admin.",
+      "bootstrap": "Ce compte est admin par la configuration du site, son rôle ne peut pas être changé ici.",
+      "server": "L'action a échoué. Réessaie dans un instant."
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "subtitle": "Ce qui attend la modération, et l'activité des 7 derniers jours.",
+      "todo": "À traiter",
+      "held": "Messages retenus par l'automod",
+      "messageReports": "Messages signalés",
+      "postReports": "Annonces signalées",
+      "activity": "Activité",
+      "activePosts": "Annonces en ligne",
+      "newPosts": "Annonces publiées (7 jours)",
+      "activeConversations": "Conversations actives (7 jours)",
+      "messagesWeek": "Messages envoyés (7 jours)",
+      "users": "Comptes",
+      "staff": "Staff et admins"
+    },
+    "conversations": {
+      "title": "Conversations",
+      "subtitle": "Toutes les conversations privées, la plus récente en premier.",
+      "search": "Pseudo d'un·e membre",
+      "empty": "Aucune conversation.",
+      "members": "Membres",
+      "messages": "Messages",
+      "flags": "À vérifier",
+      "lastMessage": "Dernier message",
+      "held": "{count, plural, one {# retenu} other {# retenus}}",
+      "reports": "{count, plural, one {# signalement} other {# signalements}}",
+      "open": "Ouvrir",
+      "back": "Retour aux conversations",
+      "detailTitle": "Conversation n°{id}",
+      "older": "Messages plus anciens",
+      "latest": "Derniers messages",
+      "fromPost": "Démarrée depuis l'annonce {code} de {name}",
+      "noMessages": "Aucun message."
+    },
+    "messages": {
+      "status": {
+        "visible": "Visible",
+        "blocked": "Retenu par l'automod",
+        "hidden": "Masqué"
+      },
+      "unchecked": "Non vérifié par l'automod",
+      "writtenBy": "écrit par {name} (gère le profil)",
+      "reported": "{count, plural, one {# signalement} other {# signalements}}",
+      "reviewedBy": "Traité par {name} {date}",
+      "approve": "Laisser passer",
+      "reject": "Garder bloqué",
+      "hide": "Masquer",
+      "hideConfirm": "Confirmer",
+      "show": "Rendre visible"
+    },
+    "automod": {
+      "title": "Modération automatique",
+      "subtitle": "Messages retenus par l'automod OpenAI. Laisser passer les délivre (et prévient le ou la destinataire), garder bloqué les retire pour de bon.",
+      "empty": "Aucun message en attente.",
+      "context": "Voir la conversation"
+    },
+    "messageReports": {
+      "title": "Messages signalés",
+      "subtitle": "Signalements envoyés depuis la messagerie. Pour bannir quelqu'un, passe par son profil dans l'admin GC Stats.",
+      "empty": "Aucun signalement.",
+      "by": "par",
+      "hide": "Masquer le message",
+      "dismiss": "Classer"
+    },
+    "reportStatus": {
+      "label": "Statut",
+      "open": "Ouverts",
+      "handled": "Traités",
+      "dismissed": "Classés",
+      "handledBy": "Traité par {name}",
+      "dismissedBy": "Classé par {name}"
+    },
+    "postReports": {
+      "title": "Annonces signalées",
+      "subtitle": "Les mêmes signalements que dans le salon de modération Discord, traités ici ou là bas.",
+      "empty": "Aucun signalement.",
+      "by": "Signalé par {name}",
+      "dismiss": "Classer",
+      "postState": {
+        "active": "Expirée",
+        "closed": "Clôturée",
+        "removed": "Retirée"
+      }
+    },
+    "posts": {
+      "title": "Annonces",
+      "subtitle": "Toutes les annonces, retirer ici les retire aussi des salons Discord.",
+      "search": "Nom de l'annonce ou pseudo",
+      "stateLabel": "État",
+      "anyState": "Tous les états",
+      "typeLabel": "Type",
+      "anyType": "Tous les types",
+      "state": {
+        "visible": "En ligne",
+        "expired": "Expirée",
+        "closed": "Clôturée",
+        "removed": "Retirée par la modération",
+        "deleted": "Supprimée par l'auteur·ice"
+      },
+      "post": "Annonce",
+      "author": "Auteur·ice",
+      "bumped": "Mise à jour",
+      "actions": "Actions",
+      "reports": "{count, plural, one {# signalement} other {# signalements}}",
+      "remove": "Retirer",
+      "restore": "Restaurer",
+      "restoreConfirm": "Confirmer la restauration",
+      "removeTitle": "Retirer l'annonce {name}",
+      "removeHint": "L'annonce disparaît du site et des salons Discord, ses signalements ouverts sont traités. La raison est visible par la modération.",
+      "reason": "Raison",
+      "edit": "Modifier"
+    },
+    "users": {
+      "title": "Utilisateur·ices",
+      "subtitle": "Comptes connectés au moins une fois. Les sanctions se gèrent sur GC Stats.",
+      "search": "Pseudo",
+      "anyRole": "Tous les rôles",
+      "empty": "Aucun compte.",
+      "user": "Compte",
+      "posts": "Annonces",
+      "gcsAccount": "Compte GC Stats créé le",
+      "lastLogin": "Dernière connexion",
+      "back": "Retour aux utilisateur·ices",
+      "joined": "Arrivé·e sur GC Scouting",
+      "email": "Email",
+      "discord": "Discord",
+      "sanctions": "Sanctions GC Stats actives",
+      "noSanction": "Aucune sanction active.",
+      "sanctionUntil": "jusqu'au {date}",
+      "sanctionPermanent": "définitive",
+      "sanctionsChecked": "Relues sur GC Stats {date}.",
+      "sanctionsNever": "Jamais relues sur GC Stats.",
+      "sanctionsHint": "Un mute, une suspension ou un ban bloque les messages et les annonces.",
+      "conversations": "Conversations",
+      "noConversation": "Aucune conversation.",
+      "seePosts": "Voir ses annonces"
+    },
+    "access": {
+      "title": "Accès",
+      "subtitle": "Le staff a accès à toute l'administration sauf cette page. Les admins peuvent en plus donner ou retirer les rôles.",
+      "current": "Staff et admins",
+      "grant": "Donner un rôle",
+      "search": "Pseudo du compte",
+      "noResult": "Aucun compte ne correspond.",
+      "hint": "Le compte doit s'être connecté au moins une fois sur GC Scouting.",
+      "role": "Rôle",
+      "save": "Enregistrer",
+      "locked": "Ton propre rôle et les admins définis par la configuration ne se changent pas ici."
+    },
+    "error": {
+      "title": "Cette page n'a pas pu se charger",
+      "body": "Une erreur serveur est survenue. Réessaie, ou retourne au tableau de bord.",
+      "retry": "Réessayer"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting va publier ton annonce sur X",
+    "siteText": "Elle sera postée sur notre compte, avec ton @ si tu en as donné un.",
+    "switchToAuthor": "Je préfère la publier moi même",
+    "switchToSite": "Laisser GC Scouting la publier",
+    "switching": "Enregistrement...",
+    "tweeted": "Ton annonce a été publiée sur le compte X de GC Scouting.",
+    "retweeted": "GC Scouting a retweeté ton annonce.",
+    "authorTitle": "Publie ton annonce sur X",
+    "authorText": "Poste ce tweet depuis ton compte, puis colle son lien ici : GC Scouting le retweetera.",
+    "authorSavedTitle": "Lien reçu, on va retweeter ton annonce",
+    "authorSavedText": "Tu peux encore remplacer le lien tant que le retweet n'est pas fait.",
+    "language": "Langue du tweet",
+    "draftUnavailable": "Le texte du tweet n'a pas pu être préparé. Recharge la page dans quelques instants.",
+    "length": "{length}/{max} caractères",
+    "tooLong": "Trop long pour X, raccourcis le avant de poster.",
+    "open": "Publier sur X",
+    "opened": "Ouvert sur X",
+    "linkLabel": "Lien de ton tweet",
+    "linkPlaceholder": "https://x.com/pseudo/status/...",
+    "save": "Envoyer le lien",
+    "saving": "Envoi...",
+    "saved": "Lien envoyé",
+    "viewTweet": "Voir le tweet",
+    "errors": {
+      "invalid": "Cette annonce n'est pas valide.",
+      "required": "Colle le lien de ton tweet.",
+      "tweetUrlInvalid": "Ce lien n'est pas celui d'un tweet. Il doit ressembler à https://x.com/pseudo/status/123.",
+      "auth": "Ta session a expiré, reconnecte toi.",
+      "notFound": "Cette annonce n'est plus en ligne.",
+      "alreadyTweeted": "L'annonce est déjà sur X, ce choix ne peut plus changer.",
+      "notAuthorTweet": "GC Scouting publie cette annonce, choisis d'abord de la publier toi même.",
+      "server": "Une erreur est survenue, réessaie dans quelques instants."
+    }
+  },
+  "tweetImage": {
+    "share": "Partager avec l'image",
+    "copy": "Copier l'image",
+    "preparing": "Préparation...",
+    "shared": "Partagé",
+    "copied": "Image copiée",
+    "pasteHint": "Une fois X ouvert, colle l'image dans le tweet (Ctrl+V ou ⌘V).",
+    "failed": "Impossible de préparer l'image.",
+    "download": "La télécharger"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "Ton annonce {code} a été modifiée par la modération",
+      "title": "Ton annonce {code} « {name} » a été modifiée",
+      "body": "Un membre de l'équipe de modération de GC Scouting a modifié ton annonce. Elle reste en ligne, avec la même date d'expiration.",
+      "reason": "Raison : {reason}",
+      "open": "Voir l'annonce",
+      "footer": "Tu reçois ce message car ton annonce sur GC Scouting a été modifiée par la modération."
+    }
+  },
+  "ageGroups": {
+    "minor": "Mineur·e",
+    "adult": "Majeur·e"
+  },
+  "minorsPolicy": {
+    "accepted": "Mineur·es accepté·es",
+    "adultsOnly": "Majeur·es uniquement"
+  },
+  "tierListGuide": {
+    "title": "Comprendre notre tierlist",
+    "intro": "Chaque annonce de joueur·se contient une tierlist d'agents. Voici pourquoi elle a cette forme, et comment remplir la tienne pour qu'elle aide vraiment les équipes.",
+    "scene": {
+      "title": "Pensée avec la scène",
+      "text": "Le format n'a pas été choisi au hasard : il a été conçu avec <b>des joueur·ses, coachs et managers expérimenté·es de la scène Game Changers</b>, des personnes qui scoutent et recrutent à chaque split.",
+      "why": "Leur retour était clair : une longue liste d'agents n'apprend rien à une équipe. Ce qu'elle veut savoir, c'est quels agents tu peux jouer en match demain, lesquels demandent encore du travail, et lesquels tu es prêt·e à apprendre pour l'équipe.",
+      "credit": "La tier list a notamment été travaillée avec <b>LittleBigSpy</b>, IGL chez ZennIT Orange GC, dont l'expérience de la scène a aidé à définir comment classer les agents."
+    },
+    "tiers": {
+      "title": "Les trois paliers",
+      "confident": "Les agents que tu peux jouer en match officiel dès maintenant, avec les lineups, l'utilitaire et les automatismes qui vont avec.",
+      "improve": "Les agents que tu sais déjà jouer, mais qui demandent de l'entraînement avant d'être à l'aise dessus en match.",
+      "canLearn": "Les agents que tu ne joues pas encore, mais que tu es prêt·e à apprendre si l'équipe en a besoin.",
+      "aside": "Les agents laissés de côté ne sont simplement pas affichés sur ton annonce. Il n'y a pas de ligne \"mauvais\" : une case vide en dit plus qu'une approximation."
+    },
+    "highlight": {
+      "title": "Mets en avant les agents que tu sais jouer",
+      "text": "La tierlist sert à <b>mettre en avant les agents que tu sais jouer</b>, pas à classer tous les agents du jeu ni à donner ton avis sur la méta.",
+      "honest": "Sois honnête : les équipes la vérifient pendant les tryouts, et une tierlist courte et juste vaut mieux qu'une tierlist pleine.",
+      "notMeta": "Classe ton propre niveau sur chaque agent, pas la force de l'agent sur le patch actuel.",
+      "filter": "Tes deux premières lignes servent au filtre \"sait jouer\", sur le site et sur Discord : elles décident des recherches dans lesquelles ton annonce apparaît.",
+      "example": "Exemple : un·e joueur·se controller et sentinel, à l'aise sur son pool principal, avec quelques initiators à peaufiner."
+    }
+  }
+}

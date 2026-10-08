@@ -1,0 +1,294 @@
+{
+  "commands": {
+    "ping": {
+      "description": "Check that the bot is responding"
+    },
+    "feed": {
+      "description": "Send Scouting posts to a channel",
+      "add": {
+        "description": "Send new posts to a channel, then pick their filters",
+        "channel": "Channel that receives the posts",
+        "language": "Language of the messages (server language by default)"
+      },
+      "remove": "Stop sending posts to a channel",
+      "pause": "Pause the posts sent to a channel",
+      "resume": "Resume the posts sent to a channel",
+      "list": "List the channels receiving posts",
+      "channel": "Channel receiving the posts"
+    },
+    "moderation": {
+      "description": "Set up the Scouting moderation channel",
+      "setup": {
+        "description": "Pick the moderation channel and the role allowed to moderate",
+        "channel": "Channel receiving every post and report",
+        "role": "Role allowed to use the moderation buttons",
+        "language": "Language of the messages (server language by default)"
+      },
+      "remove": "Remove the moderation channel"
+    }
+  },
+  "ping": {
+    "reply": "Pong! The bot is online."
+  },
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "es": "Spanish"
+  },
+  "errors": {
+    "generic": "Something went wrong, try again in a moment.",
+    "unknownInteraction": "This action is not available anymore.",
+    "guildOnly": "This command only works in a server.",
+    "manageGuild": "You need the Manage Server permission to use this command.",
+    "administrator": "You need the Administrator permission to use this command.",
+    "channelRequired": "Pick a text or announcement channel.",
+    "channelUnreachable": "I cannot post in {channel}. Check that I can see this channel and send messages there."
+  },
+  "feed": {
+    "added": "{channel} will now receive the new Scouting posts.",
+    "updated": "The settings of {channel} are updated.",
+    "ignored": "Ignored link parameters: {params}",
+    "removed": "{channel} will not receive Scouting posts anymore.",
+    "paused": "Posts are paused in {channel}. Use /feed resume or the Resume button to start again.",
+    "resumed": "Posts are sent to {channel} again.",
+    "welcome": {
+      "title": "Scouting posts",
+      "text": "New posts matching these filters will show up in this channel.",
+      "button": "See these posts",
+      "edit": "Edit filters",
+      "pause": "Pause",
+      "resume": "Resume",
+      "pausedState": "⏸️ Paused, no post is sent here until it is resumed."
+    },
+    "list": {
+      "title": "Channels receiving Scouting posts",
+      "empty": "No channel receives Scouting posts yet. Use /feed add to set one up.",
+      "paused": "paused",
+      "invalidFilters": "Filters no longer valid, set the channel up again with /feed add."
+    },
+    "errors": {
+      "invalidUrl": "This link is not a valid URL.",
+      "wrongSite": "This link must come from {site}.",
+      "notPostsPage": "This link must point to a posts page, for example {example}",
+      "invalidFilters": "The filters of this link are not valid. Set them again on the site and copy the new link.",
+      "moderationChannel": "{channel} is the moderation channel, pick another one.",
+      "limit": "This server already has {max} channels receiving posts. Remove one with /feed remove first.",
+      "notFound": "{channel} does not receive Scouting posts.",
+      "invalidValue": "{field}: a picked value is not available, pick it again.",
+      "agentsMax": "Pick {max} agents at most, you picked {count}.",
+      "rankOrder": "The minimum rank must be lower than or equal to the maximum rank.",
+      "invalidDraft": "These filters are not valid, check them and try again.",
+      "expired": "This setup is not valid anymore, run /feed add again."
+    },
+    "setup": {
+      "title": "Filters of {channel}",
+      "text": "Pick which posts {channel} receives, in one of these two ways.",
+      "site": {
+        "title": "Option 1, from the site",
+        "steps": "1. Open the posts page with the button below and set your filters there.\n2. Copy the address of the page from the address bar of your browser.\n3. Click **{button}** and paste it.",
+        "open": "Open the posts page",
+        "paste": "Paste the link"
+      },
+      "manual": {
+        "title": "Option 2, here on Discord",
+        "text": "Pick the filters group by group, then save. Availability can only be set on the site, an availability already set is kept.",
+        "button": "Set the filters here"
+      }
+    },
+    "link": {
+      "title": "Paste the link",
+      "label": "Link of the posts page",
+      "hint": "Address copied from your browser on {site}, with your filters."
+    },
+    "editor": {
+      "hint": "Open a group to change its filters. Nothing is applied before you save.",
+      "save": "Save",
+      "clear": "Clear all",
+      "back": "Back",
+      "groups": {
+        "posts": "Posts",
+        "profile": "Profile",
+        "terms": "Terms and rhythm",
+        "level": "Rank and experience",
+        "agents": "Agents"
+      },
+      "placeholder": "Any",
+      "languagesMore": "More languages",
+      "rankMin": "Minimum rank",
+      "rankMax": "Maximum rank",
+      "levels": "Experience levels",
+      "minMonths": "Minimum experience",
+      "minMonthsHint": "At one of the picked levels, or at any level when none is picked.",
+      "agentsHint": "Posts must play every picked agent, {max} at most in total.",
+      "classes": {
+        "duelist": "Duelists",
+        "initiator": "Initiators",
+        "controller": "Controllers",
+        "sentinel": "Sentinels"
+      }
+    }
+  },
+  "filters": {
+    "none": "Every post",
+    "types": "Types",
+    "regions": "Regions",
+    "languages": "Languages",
+    "spots": "Spot",
+    "roles": "Roles",
+    "igl": "Shotcalling",
+    "staffRoles": "Staff",
+    "compensation": "Compensation",
+    "lan": "LAN",
+    "rank": "Rank",
+    "agents": "Agents",
+    "experience": "Experience",
+    "anyLevel": "Any level",
+    "experienceValue": "{levels}, {duration} minimum",
+    "minHours": "Rhythm",
+    "minHoursValue": "{hours} h per week minimum",
+    "minDays": "Active days",
+    "minDaysValue_one": "{count} day per week minimum",
+    "minDaysValue_other": "{count} days per week minimum",
+    "availability": "Availability",
+    "availabilityValue": "Set hours ({timezone})",
+    "ages": "Age"
+  },
+  "post": {
+    "view": "View the post",
+    "tracker": "Tracker.gg",
+    "roles": "Roles",
+    "staffRoles": "Staff",
+    "rank": "Rank",
+    "rankWanted": "Rank wanted",
+    "peak": "peak {rank}",
+    "rankRange": "{min} to {max}",
+    "agents": "Agents",
+    "tierlist": "Agent tierlist of {name}",
+    "compensation": "Compensation",
+    "lan": "LAN",
+    "experience": "Experience",
+    "languages": "Languages",
+    "rhythm": "Rhythm",
+    "rhythmValue": "{hours} h per week over {days} days",
+    "published": "published {date}",
+    "renewed": "renewed {date}",
+    "ageGroup": "Age",
+    "minorsAccepted": "Minors",
+    "agent": "Contact through"
+  },
+  "duration": {
+    "months_one": "{count} month",
+    "months_other": "{count} months",
+    "years_one": "{count} year",
+    "years_other": "{count} years"
+  },
+  "moderation": {
+    "setupDone": "{channel} is now the moderation channel. Members with {role} can use its buttons.",
+    "removed": "The moderation channel is removed. Posts and reports are not sent anymore.",
+    "welcome": {
+      "title": "Scouting moderation",
+      "text": "Every published or renewed post and every report shows up here. Members with {role} can remove, restore and tweet posts."
+    },
+    "errors": {
+      "wrongGuild": "The moderation channel can only be set up on the Osthelia server.",
+      "notConfigured": "No moderation channel is set up.",
+      "roleRequired": "Pick the role allowed to moderate.",
+      "everyone": "Pick a dedicated role, not @everyone.",
+      "feedChannel": "{channel} already receives posts. Remove it with /feed remove first."
+    }
+  },
+  "mod": {
+    "author": "Author",
+    "tweet": "Tweet",
+    "tweetedBy": "Tweeted by {user}",
+    "tweetedOn": "Tweeted {date}",
+    "tweetTooLong": "⚠️ {length}/{max} characters, too long for Twitter. Shorten it before posting.",
+    "status": {
+      "label": "Status",
+      "active": "Online",
+      "closed": "Closed by the author",
+      "expired": "Expired",
+      "deleted": "Deleted by the author",
+      "removed": "Removed by {user}",
+      "removedReason": "Removed by {user}: {reason}"
+    },
+    "buttons": {
+      "remove": "Remove",
+      "restore": "Restore",
+      "openKasm": "Open KASM",
+      "markTweeted": "Mark as tweeted",
+      "tweeted": "Tweeted",
+      "markRetweeted": "Mark as retweeted",
+      "retweeted": "Retweeted"
+    },
+    "modal": {
+      "title": "Remove the post",
+      "reason": "Reason",
+      "reasonHint": "Kept in the moderation log, {min} to {max} characters."
+    },
+    "errors": {
+      "notModerationChannel": "These buttons only work in the moderation channel.",
+      "forbidden": "You need the {role} role to moderate posts.",
+      "notFound": "This post does not exist anymore.",
+      "notActive": "This post is not online anymore.",
+      "notRemoved": "Only a post removed by a moderator can be restored.",
+      "activeExists": "The author has published another post of this type since, this one cannot be restored.",
+      "alreadyTweeted": "This post is already marked as tweeted.",
+      "reasonLength": "The reason must be between {min} and {max} characters.",
+      "invalidCharacters": "Remove control or invisible characters from the reason.",
+      "awaitingAuthor": "The author has not given the link of their tweet yet."
+    },
+    "viewTweet": "view the tweet",
+    "retweetedBy": "Retweeted by {user}",
+    "retweetedOn": "Retweeted {date}",
+    "authorTweeted": "Posted by the author ({link}), to retweet",
+    "awaitingAuthor": "The author posts the tweet, their link is not given yet"
+  },
+  "report": {
+    "title": "Report #{id}",
+    "post": "Post",
+    "reason": "Reason",
+    "reporter": "Reported by",
+    "dismissed": "The report is dismissed.",
+    "status": {
+      "open": "To handle",
+      "handled": "Handled by {user}",
+      "dismissed": "Dismissed by {user}"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "fake": "Fake post",
+      "inappropriate": "Inappropriate content",
+      "harassment": "Harassment",
+      "other": "Other"
+    },
+    "buttons": {
+      "remove": "Remove the post",
+      "dismiss": "Dismiss"
+    },
+    "errors": {
+      "notFound": "This report does not exist anymore.",
+      "alreadyHandled": "This report is already handled."
+    }
+  },
+  "tweet": {
+    "peak": "Peak {rank}",
+    "sub": "Sub",
+    "rankRange": "{min} to {max}",
+    "rankFrom": "{rank} and up",
+    "rankUpTo": "Up to {rank}",
+    "lookingFor": "Looking for {wanted}",
+    "players_one": "{count} player",
+    "players_other": "{count} players",
+    "subs_one": "{count} sub",
+    "subs_other": "{count} subs",
+    "rhythm_one": "{hours} h/week over {count} day",
+    "rhythm_other": "{hours} h/week over {count} days",
+    "contact": "To contact & get more information ->",
+    "contactShort": "More info ->",
+    "years_one": "{count} year",
+    "years_other": "{count} years",
+    "months_one": "{count} month",
+    "months_other": "{count} months"
+  }
+}

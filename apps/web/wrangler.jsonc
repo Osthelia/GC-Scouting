@@ -1,0 +1,52 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "scouting-web",
+  "main": "./custom-worker.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "bfeb715893084155892358c428574ada"
+    }
+  ],
+  // Share images of the posts (OG, Twitter, Discord), rendered on first request.
+  "r2_buckets": [
+    {
+      "binding": "SHARE_IMAGES",
+      "bucket_name": "scouting-posts-images"
+    }
+  ],
+  // Worker to Worker without a public URL: Discord DMs (expiry reminders) and the Scouting bot (feeds, moderation).
+  "services": [
+    {
+      "binding": "DISCORD_NOTIFICATIONS",
+      "service": "discord-notifications-worker"
+    },
+    {
+      "binding": "SCOUTING_BOT",
+      "service": "scouting-bot"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 * * * *"]
+  },
+  // Secrets (wrangler secret put): GCS_OAUTH_CLIENT_ID, GCS_OAUTH_CLIENT_SECRET, TOKEN_ENCRYPTION_KEY,
+  // GCS_API_KEY, CRON_SECRET, RESEND_API_KEY, DISCORD_NOTIFICATIONS_WORKER_KEY, SCOUTING_BOT_KEY, OPENAI_API_KEY, ADMIN_GCS_USER_IDS,
+  // and GCS_ACCESS_CLIENT_ID / GCS_ACCESS_CLIENT_SECRET if GC Stats is behind Access.
+  "vars": {
+    "DEPLOY_TARGET": "cloudflare",
+    "APP_URL": "https://scouting.gc-stats.app",
+    // Discord bot invite (OAuth2 URL with the bot scope) and the X account, links hidden while empty.
+    "DISCORD_BOT_INVITE_URL": "https://discord.com/oauth2/authorize?client_id=1555669379654357073",
+    "TWITTER_URL": "https://x.com/GC_Scouting_"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": true }
+  }
+}

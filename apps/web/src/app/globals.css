@@ -1,0 +1,275 @@
+/**
+ * GC-Scouting - globals
+ *
+ * Global styles: Tailwind, theme tokens and base rules.
+ *
+ * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
+ * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
+ * @link      https://github.com/Osthelia/GC-Scouting
+ */
+
+@import "tailwindcss";
+/* Admin components (shadcn base-nova on Base UI, same stack as the GC Stats admin). */
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Dark theme follows the site choice (data-theme), or the system when none is set. */
+@custom-variant dark {
+  &:where([data-theme="dark"] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+}
+
+/* Neutrals follow GC Stats, accent pair is the "Ultraviolet" palette. */
+:root {
+  color-scheme: dark;
+
+  --sc-bg: #0e0e0e;
+  --sc-surface: #161616;
+  --sc-surface-2: #111111;
+  --sc-surface-3: #171717;
+  --sc-hover: #1f1f1f;
+  --sc-hover-2: #2a2a2a;
+  --sc-border: #232323;
+
+  --sc-text: #f2f2f2;
+  --sc-text-dim: #d4d4d4;
+  --sc-text-secondary: #9a9a9a;
+  --sc-text-tertiary: #7a7a7a;
+
+  --sc-accent: #9b7bff;
+  --sc-accent-2: #35d4ff;
+  --sc-accent-ink: #140a33;
+
+  /* Discord client palette, for message mocks. */
+  --dc-bg: #313338;
+  --dc-header: #2b2d31;
+  --dc-container: #2b2d31;
+  --dc-border: #3f4147;
+  --dc-text: #dbdee1;
+  --dc-strong: #f2f3f5;
+  --dc-muted: #949ba4;
+  --dc-button: #4e5058;
+  --dc-button-hover: #6d6f78;
+  --dc-button-text: #ffffff;
+}
+
+/*
+ * Light theme: the neutral scale is flipped (neutral-50 becomes the darkest), so every
+ * text-neutral-* / border-neutral-* keeps its role. Status colors get darker shades for contrast.
+ * Applied when chosen, or when the system is light and no theme was chosen (same block twice).
+ */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --sc-bg: #f5f5f7;
+  --sc-surface: #ffffff;
+  --sc-surface-2: #f9f9fb;
+  --sc-surface-3: #ffffff;
+  --sc-hover: #efeff2;
+  --sc-hover-2: #e4e4e9;
+  --sc-border: #e2e2e7;
+
+  --sc-text: #141414;
+  --sc-text-dim: #2e2e33;
+  --sc-text-secondary: #5c5c64;
+  --sc-text-tertiary: #85858c;
+
+  --sc-accent: #6f4ee6;
+  --sc-accent-2: #0284a8;
+  --sc-accent-ink: #ffffff;
+
+  --dc-bg: #ffffff;
+  --dc-header: #f2f3f5;
+  --dc-container: #f2f3f5;
+  --dc-border: #e1e2e4;
+  --dc-text: #313338;
+  --dc-strong: #060607;
+  --dc-muted: #5c5e66;
+  --dc-button: #6d6f78;
+  --dc-button-hover: #4e5058;
+  --dc-button-text: #ffffff;
+
+  --color-neutral-50: oklch(14.5% 0 0);
+  --color-neutral-100: oklch(20.5% 0 0);
+  --color-neutral-200: oklch(26.9% 0 0);
+  --color-neutral-300: oklch(34% 0 0);
+  --color-neutral-400: oklch(43.9% 0 0);
+  --color-neutral-500: oklch(51% 0 0);
+  --color-neutral-600: oklch(62% 0 0);
+  --color-neutral-700: oklch(80% 0 0);
+  --color-neutral-800: oklch(91% 0 0);
+  --color-neutral-900: oklch(95% 0 0);
+  --color-neutral-950: oklch(97.5% 0 0);
+
+  --color-red-100: oklch(39.6% 0.141 25.723);
+  --color-red-200: oklch(44.4% 0.177 26.899);
+  --color-red-400: oklch(57.7% 0.245 27.325);
+  --color-amber-200: oklch(47.3% 0.137 46.201);
+  --color-amber-300: oklch(55.5% 0.163 48.998);
+  --color-amber-400: oklch(66.6% 0.179 58.318);
+  --color-emerald-200: oklch(43.2% 0.095 166.913);
+  --color-emerald-400: oklch(59.6% 0.145 163.225);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+
+    --sc-bg: #f5f5f7;
+    --sc-surface: #ffffff;
+    --sc-surface-2: #f9f9fb;
+    --sc-surface-3: #ffffff;
+    --sc-hover: #efeff2;
+    --sc-hover-2: #e4e4e9;
+    --sc-border: #e2e2e7;
+
+    --sc-text: #141414;
+    --sc-text-dim: #2e2e33;
+    --sc-text-secondary: #5c5c64;
+    --sc-text-tertiary: #85858c;
+
+    --sc-accent: #6f4ee6;
+    --sc-accent-2: #0284a8;
+    --sc-accent-ink: #ffffff;
+
+    --dc-bg: #ffffff;
+    --dc-header: #f2f3f5;
+    --dc-container: #f2f3f5;
+    --dc-border: #e1e2e4;
+    --dc-text: #313338;
+    --dc-strong: #060607;
+    --dc-muted: #5c5e66;
+    --dc-button: #6d6f78;
+    --dc-button-hover: #4e5058;
+    --dc-button-text: #ffffff;
+
+    --color-neutral-50: oklch(14.5% 0 0);
+    --color-neutral-100: oklch(20.5% 0 0);
+    --color-neutral-200: oklch(26.9% 0 0);
+    --color-neutral-300: oklch(34% 0 0);
+    --color-neutral-400: oklch(43.9% 0 0);
+    --color-neutral-500: oklch(51% 0 0);
+    --color-neutral-600: oklch(62% 0 0);
+    --color-neutral-700: oklch(80% 0 0);
+    --color-neutral-800: oklch(91% 0 0);
+    --color-neutral-900: oklch(95% 0 0);
+    --color-neutral-950: oklch(97.5% 0 0);
+
+    --color-red-100: oklch(39.6% 0.141 25.723);
+    --color-red-200: oklch(44.4% 0.177 26.899);
+    --color-red-400: oklch(57.7% 0.245 27.325);
+    --color-amber-200: oklch(47.3% 0.137 46.201);
+    --color-amber-300: oklch(55.5% 0.163 48.998);
+    --color-amber-400: oklch(66.6% 0.179 58.318);
+    --color-emerald-200: oklch(43.2% 0.095 166.913);
+    --color-emerald-400: oklch(59.6% 0.145 163.225);
+  }
+}
+
+/* shadcn tokens of the admin, mapped on the site palette so they follow the theme. */
+:root {
+  --background: var(--sc-bg);
+  --foreground: var(--sc-text);
+  --card: var(--sc-surface);
+  --card-foreground: var(--sc-text);
+  --popover: var(--sc-surface-3);
+  --popover-foreground: var(--sc-text);
+  --primary: var(--sc-accent);
+  --primary-foreground: var(--sc-accent-ink);
+  --secondary: var(--sc-hover);
+  --secondary-foreground: var(--sc-text);
+  --muted: var(--sc-surface-2);
+  --muted-foreground: var(--sc-text-secondary);
+  --accent: var(--sc-hover);
+  --accent-foreground: var(--sc-text);
+  --destructive: oklch(0.65 0.21 25);
+  --border: var(--sc-border);
+  --input: var(--sc-hover-2);
+  --ring: var(--sc-accent);
+  --sidebar: var(--sc-surface-2);
+  --sidebar-foreground: var(--sc-text);
+  --sidebar-primary: var(--sc-accent);
+  --sidebar-primary-foreground: var(--sc-accent-ink);
+  --sidebar-accent: var(--sc-hover);
+  --sidebar-accent-foreground: var(--sc-text);
+  --sidebar-border: var(--sc-border);
+  --sidebar-ring: var(--sc-accent);
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-accent-2: var(--sc-accent-2);
+  --color-accent-ink: var(--sc-accent-ink);
+  --color-bg: var(--sc-bg);
+  --color-surface: var(--sc-surface);
+  --color-surface-2: var(--sc-surface-2);
+  --color-surface-3: var(--sc-surface-3);
+  --color-hover: var(--sc-hover);
+  --color-hover-2: var(--sc-hover-2);
+  --color-line: var(--sc-border);
+}
+
+::selection {
+  background: var(--sc-accent);
+  color: var(--sc-accent-ink);
+}
+
+@layer base {
+  * {
+    @apply border-neutral-800;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Tailwind v4 leaves buttons on the default cursor. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
+
+@media (pointer: coarse) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
+  textarea,
+  select {
+    font-size: max(16px, 1em);
+  }
+}
+
+/* Soft accent glow behind hero and CTA. */
+.sc-glow {
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--sc-accent) 22%, transparent), transparent);
+}
+

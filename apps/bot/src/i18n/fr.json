@@ -1,0 +1,294 @@
+{
+  "commands": {
+    "ping": {
+      "description": "Vérifie que le bot répond"
+    },
+    "feed": {
+      "description": "Envoie les annonces Scouting dans un salon",
+      "add": {
+        "description": "Envoie les nouvelles annonces dans un salon, puis choisis leurs filtres",
+        "channel": "Salon qui reçoit les annonces",
+        "language": "Langue des messages (langue du serveur par défaut)"
+      },
+      "remove": "Arrête l'envoi des annonces dans un salon",
+      "pause": "Met en pause l'envoi des annonces dans un salon",
+      "resume": "Reprend l'envoi des annonces dans un salon",
+      "list": "Liste les salons qui reçoivent les annonces",
+      "channel": "Salon qui reçoit les annonces"
+    },
+    "moderation": {
+      "description": "Configure le salon de modération Scouting",
+      "setup": {
+        "description": "Choisit le salon de modération et le rôle autorisé à modérer",
+        "channel": "Salon qui reçoit toutes les annonces et les signalements",
+        "role": "Rôle autorisé à utiliser les boutons de modération",
+        "language": "Langue des messages (langue du serveur par défaut)"
+      },
+      "remove": "Retire le salon de modération"
+    }
+  },
+  "ping": {
+    "reply": "Pong ! Le bot est en ligne."
+  },
+  "languages": {
+    "en": "Anglais",
+    "fr": "Français",
+    "es": "Espagnol"
+  },
+  "errors": {
+    "generic": "Une erreur est survenue, réessaie dans un instant.",
+    "unknownInteraction": "Cette action n'est plus disponible.",
+    "guildOnly": "Cette commande ne fonctionne que sur un serveur.",
+    "manageGuild": "Il faut la permission Gérer le serveur pour utiliser cette commande.",
+    "administrator": "Il faut la permission Administrateur pour utiliser cette commande.",
+    "channelRequired": "Choisis un salon textuel ou d'annonces.",
+    "channelUnreachable": "Je ne peux pas écrire dans {channel}. Vérifie que je vois ce salon et que je peux y envoyer des messages."
+  },
+  "feed": {
+    "added": "{channel} recevra désormais les nouvelles annonces Scouting.",
+    "updated": "Les réglages de {channel} sont mis à jour.",
+    "ignored": "Paramètres du lien ignorés : {params}",
+    "removed": "{channel} ne recevra plus les annonces Scouting.",
+    "paused": "Les annonces sont en pause dans {channel}. Utilise /feed resume ou le bouton Reprendre pour relancer.",
+    "resumed": "Les annonces sont de nouveau envoyées dans {channel}.",
+    "welcome": {
+      "title": "Annonces Scouting",
+      "text": "Les nouvelles annonces qui correspondent à ces filtres arriveront dans ce salon.",
+      "button": "Voir ces annonces",
+      "edit": "Modifier les filtres",
+      "pause": "Mettre en pause",
+      "resume": "Reprendre",
+      "pausedState": "⏸️ En pause, aucune annonce n'est envoyée ici avant la reprise."
+    },
+    "list": {
+      "title": "Salons qui reçoivent les annonces Scouting",
+      "empty": "Aucun salon ne reçoit encore les annonces Scouting. Utilise /feed add pour en configurer un.",
+      "paused": "en pause",
+      "invalidFilters": "Filtres plus valides, configure à nouveau le salon avec /feed add."
+    },
+    "errors": {
+      "invalidUrl": "Ce lien n'est pas une URL valide.",
+      "wrongSite": "Ce lien doit venir de {site}.",
+      "notPostsPage": "Ce lien doit pointer vers une page d'annonces, par exemple {example}",
+      "invalidFilters": "Les filtres de ce lien ne sont pas valides. Règle les à nouveau sur le site et copie le nouveau lien.",
+      "moderationChannel": "{channel} est le salon de modération, choisis en un autre.",
+      "limit": "Ce serveur a déjà {max} salons qui reçoivent les annonces. Retires en un avec /feed remove d'abord.",
+      "notFound": "{channel} ne reçoit pas les annonces Scouting.",
+      "invalidValue": "{field} : une valeur choisie n'est pas disponible, choisis la à nouveau.",
+      "agentsMax": "Choisis {max} agents au maximum, tu en as choisi {count}.",
+      "rankOrder": "Le rank minimum doit être inférieur ou égal au rank maximum.",
+      "invalidDraft": "Ces filtres ne sont pas valides, vérifie les et réessaie.",
+      "expired": "Ce réglage n'est plus valide, relance /feed add."
+    },
+    "setup": {
+      "title": "Filtres de {channel}",
+      "text": "Choisis les annonces que reçoit {channel}, de l'une de ces deux façons.",
+      "site": {
+        "title": "Option 1, depuis le site",
+        "steps": "1. Ouvre la page des annonces avec le bouton ci dessous et règle tes filtres.\n2. Copie l'adresse de la page depuis la barre d'adresse de ton navigateur.\n3. Clique sur **{button}** et colle la.",
+        "open": "Ouvrir la page des annonces",
+        "paste": "Coller le lien"
+      },
+      "manual": {
+        "title": "Option 2, ici sur Discord",
+        "text": "Choisis les filtres groupe par groupe, puis enregistre. Les disponibilités se règlent uniquement sur le site, celles déjà réglées sont conservées.",
+        "button": "Régler les filtres ici"
+      }
+    },
+    "link": {
+      "title": "Coller le lien",
+      "label": "Lien de la page des annonces",
+      "hint": "Adresse copiée depuis ton navigateur sur {site}, avec tes filtres."
+    },
+    "editor": {
+      "hint": "Ouvre un groupe pour modifier ses filtres. Rien n'est appliqué avant l'enregistrement.",
+      "save": "Enregistrer",
+      "clear": "Tout effacer",
+      "back": "Retour",
+      "groups": {
+        "posts": "Annonces",
+        "profile": "Profil",
+        "terms": "Conditions et rythme",
+        "level": "Rank et expérience",
+        "agents": "Agents"
+      },
+      "placeholder": "Peu importe",
+      "languagesMore": "Autres langues",
+      "rankMin": "Rank minimum",
+      "rankMax": "Rank maximum",
+      "levels": "Niveaux d'expérience",
+      "minMonths": "Expérience minimum",
+      "minMonthsHint": "À l'un des niveaux choisis, ou à n'importe quel niveau si aucun n'est choisi.",
+      "agentsHint": "Les annonces doivent jouer chaque agent choisi, {max} au maximum au total.",
+      "classes": {
+        "duelist": "Duellistes",
+        "initiator": "Initiateurs",
+        "controller": "Contrôleurs",
+        "sentinel": "Sentinelles"
+      }
+    }
+  },
+  "filters": {
+    "none": "Toutes les annonces",
+    "types": "Types",
+    "regions": "Régions",
+    "languages": "Langues",
+    "spots": "Place",
+    "roles": "Rôles",
+    "igl": "Shotcall",
+    "staffRoles": "Staff",
+    "compensation": "Rémunération",
+    "lan": "LAN",
+    "rank": "Rank",
+    "agents": "Agents",
+    "experience": "Expérience",
+    "anyLevel": "Tous niveaux",
+    "experienceValue": "{levels}, {duration} minimum",
+    "minHours": "Rythme",
+    "minHoursValue": "{hours} h par semaine minimum",
+    "minDays": "Jours actifs",
+    "minDaysValue_one": "{count} jour par semaine minimum",
+    "minDaysValue_other": "{count} jours par semaine minimum",
+    "availability": "Disponibilités",
+    "availabilityValue": "Horaires définis ({timezone})",
+    "ages": "Âge"
+  },
+  "post": {
+    "view": "Voir l'annonce",
+    "tracker": "Tracker.gg",
+    "roles": "Rôles",
+    "staffRoles": "Staff",
+    "rank": "Rank",
+    "rankWanted": "Rank recherché",
+    "peak": "peak {rank}",
+    "rankRange": "{min} à {max}",
+    "agents": "Agents",
+    "tierlist": "Tierlist d'agents de {name}",
+    "compensation": "Rémunération",
+    "lan": "LAN",
+    "experience": "Expérience",
+    "languages": "Langues",
+    "rhythm": "Rythme",
+    "rhythmValue": "{hours} h par semaine sur {days} jours",
+    "published": "publiée {date}",
+    "renewed": "renouvelée {date}",
+    "ageGroup": "Âge",
+    "minorsAccepted": "Mineur·es",
+    "agent": "Contact via"
+  },
+  "duration": {
+    "months_one": "{count} mois",
+    "months_other": "{count} mois",
+    "years_one": "{count} an",
+    "years_other": "{count} ans"
+  },
+  "moderation": {
+    "setupDone": "{channel} est maintenant le salon de modération. Les membres avec {role} peuvent utiliser ses boutons.",
+    "removed": "Le salon de modération est retiré. Les annonces et signalements n'y sont plus envoyés.",
+    "welcome": {
+      "title": "Modération Scouting",
+      "text": "Chaque annonce publiée ou renouvelée et chaque signalement arrivent ici. Les membres avec {role} peuvent retirer, restaurer et tweeter les annonces."
+    },
+    "errors": {
+      "wrongGuild": "Le salon de modération ne peut être configuré que sur le serveur Osthelia.",
+      "notConfigured": "Aucun salon de modération n'est configuré.",
+      "roleRequired": "Choisis le rôle autorisé à modérer.",
+      "everyone": "Choisis un rôle dédié, pas @everyone.",
+      "feedChannel": "{channel} reçoit déjà les annonces. Retire le avec /feed remove d'abord."
+    }
+  },
+  "mod": {
+    "author": "Auteur·ice",
+    "tweet": "Tweet",
+    "tweetedBy": "Tweetée par {user}",
+    "tweetedOn": "Tweetée {date}",
+    "tweetTooLong": "⚠️ {length}/{max} caractères, trop long pour Twitter. Raccourcis le avant de poster.",
+    "status": {
+      "label": "Statut",
+      "active": "En ligne",
+      "closed": "Clôturée par l'auteur·ice",
+      "expired": "Expirée",
+      "deleted": "Supprimée par l'auteur·ice",
+      "removed": "Retirée par {user}",
+      "removedReason": "Retirée par {user} : {reason}"
+    },
+    "buttons": {
+      "remove": "Retirer",
+      "restore": "Restaurer",
+      "openKasm": "Ouvrir KASM",
+      "markTweeted": "Marquer comme tweetée",
+      "tweeted": "Tweetée",
+      "markRetweeted": "Marquer comme retweetée",
+      "retweeted": "Retweetée"
+    },
+    "modal": {
+      "title": "Retirer l'annonce",
+      "reason": "Raison",
+      "reasonHint": "Gardée dans l'historique de modération, entre {min} et {max} caractères."
+    },
+    "errors": {
+      "notModerationChannel": "Ces boutons ne fonctionnent que dans le salon de modération.",
+      "forbidden": "Il faut le rôle {role} pour modérer les annonces.",
+      "notFound": "Cette annonce n'existe plus.",
+      "notActive": "Cette annonce n'est plus en ligne.",
+      "notRemoved": "Seule une annonce retirée par la modération peut être restaurée.",
+      "activeExists": "L'auteur·ice a publié une autre annonce de ce type depuis, celle ci ne peut pas être restaurée.",
+      "alreadyTweeted": "Cette annonce est déjà marquée comme tweetée.",
+      "reasonLength": "La raison doit faire entre {min} et {max} caractères.",
+      "invalidCharacters": "Retire les caractères de contrôle ou invisibles de la raison.",
+      "awaitingAuthor": "L'auteur·ice n'a pas encore donné le lien de son tweet."
+    },
+    "viewTweet": "voir le tweet",
+    "retweetedBy": "Retweetée par {user}",
+    "retweetedOn": "Retweetée {date}",
+    "authorTweeted": "Publiée par l'auteur·ice ({link}), à retweeter",
+    "awaitingAuthor": "L'auteur·ice publie le tweet, son lien n'est pas encore donné"
+  },
+  "report": {
+    "title": "Signalement #{id}",
+    "post": "Annonce",
+    "reason": "Motif",
+    "reporter": "Signalé par",
+    "dismissed": "Le signalement est classé.",
+    "status": {
+      "open": "À traiter",
+      "handled": "Traité par {user}",
+      "dismissed": "Classé par {user}"
+    },
+    "reasons": {
+      "spam": "Spam",
+      "fake": "Fausse annonce",
+      "inappropriate": "Contenu inapproprié",
+      "harassment": "Harcèlement",
+      "other": "Autre"
+    },
+    "buttons": {
+      "remove": "Retirer l'annonce",
+      "dismiss": "Classer"
+    },
+    "errors": {
+      "notFound": "Ce signalement n'existe plus.",
+      "alreadyHandled": "Ce signalement est déjà traité."
+    }
+  },
+  "tweet": {
+    "peak": "Peak {rank}",
+    "sub": "Remplaçant·e",
+    "rankRange": "{min} à {max}",
+    "rankFrom": "{rank} et plus",
+    "rankUpTo": "Jusqu'à {rank}",
+    "lookingFor": "Recherche {wanted}",
+    "players_one": "{count} joueur·se",
+    "players_other": "{count} joueur·ses",
+    "subs_one": "{count} remplaçant·e",
+    "subs_other": "{count} remplaçant·es",
+    "rhythm_one": "{hours} h/semaine sur {count} jour",
+    "rhythm_other": "{hours} h/semaine sur {count} jours",
+    "contact": "Pour contacter et avoir plus d'informations ->",
+    "contactShort": "Plus d'infos ->",
+    "years_one": "{count} an",
+    "years_other": "{count} ans",
+    "months_one": "{count} mois",
+    "months_other": "{count} mois"
+  }
+}

@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "面向无畏契约 Game Changers 赛场的 LFT、LFP、LFS 和 LFO 招募帖，并与 GC Stats 关联。"
+  },
+  "nav": {
+    "home": "首页",
+    "posts": "帖子",
+    "newPost": "创建帖子",
+    "login": "使用 GC Stats 登录",
+    "loginShort": "登录",
+    "menu": "菜单",
+    "language": "语言"
+  },
+  "home": {
+    "hero": {
+      "title": "找到你的队伍。<accent>补全你的阵容。</accent>",
+      "subtitle": "无畏契约 Game Changers 赛场的 LFT、LFP、LFS 和 LFO 帖子汇聚一处。按角色、段位、语言或特工筛选，并用你的 GC Stats 档案在两分钟内发布。",
+      "ctaBrowse": "浏览帖子",
+      "ctaPost": "创建帖子",
+      "demo": {
+        "lfp": "西班牙阵容，正在 OQ Playoffs 比赛，寻找一名能指挥的控场位，以及一名闪光先锋作为替补。训练时间为周一至周四晚上 8 点到 11 点。",
+        "lfs": "我们的队伍正在为下一个赛段寻找一名教练和一名分析师。有薪职位，每周 3 个晚上，包含录像复盘。"
+      }
+    },
+    "types": {
+      "heading": "满足每种需求的帖子类型",
+      "sub": "你在寻找，或者有人在寻找你。每个帖子都有类型，你只会看到与你相关的内容。",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "正在寻找队伍的选手。"
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "正在招募一名或多名选手的队伍。"
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "正在寻找教练、分析师或经理的队伍。"
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "正在寻找俱乐部的阵容。"
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "可加入队伍的教练或分析师。"
+      }
+    },
+    "how": {
+      "heading": "使用方式",
+      "step1": {
+        "title": "使用 GC Stats 登录",
+        "body": "如果你的 GC Stats 档案已关联，你的赛事历史会自动添加。如果没有，几次点击就能找到它。"
+      },
+      "step2": {
+        "title": "创建你的帖子",
+        "body": "角色、段位、语言、地区、经验，以及你的特工梯队表。一切都是结构化的，无需撰写。"
+      },
+      "step3": {
+        "title": "全方位曝光",
+        "body": "你的帖子会在网站上线，推送到已订阅的 Discord 服务器，并分享到 Twitter。"
+      },
+      "freshTitle": "始终保持新鲜",
+      "freshBody": "帖子 10 天后过期。我们会在第 7 天提醒你，一键即可续期。"
+    },
+    "tierlist": {
+      "heading": "你的特工梯队表，一目了然",
+      "body": "不再有“我什么都会玩一点”。每位选手把自己的特工分为五个等级，队伍可以直接按特工筛选。",
+      "filterHint": "筛选示例：“会玩 Viper”表示 Viper 位于前两个等级。"
+    },
+    "verified": {
+      "heading": "与 GC Stats 关联的档案",
+      "body": "把你的帖子关联到你的 GC Stats 档案（它会追踪 Game Changers 赛事），你的履历就会显示出来：参加的赛事、队伍、成绩。在我们的工作人员批准关联之前，帖子会注明这一点。",
+      "verified": "已验证档案",
+      "verifiedHint": "关联已批准，显示 GC Stats 历史。",
+      "pending": "未验证",
+      "pendingHint": "关联请求正在等待工作人员批准。",
+      "none": "没有 GC Stats 档案",
+      "noneHint": "尚无赛事，帖子照常显示。"
+    },
+    "discord": {
+      "eyebrow": "Discord 机器人",
+      "heading": "帖子直接送达你的服务器",
+      "body": "把机器人添加到你的 Discord 服务器，并选择你想接收的内容。每条符合你条件的新帖子都会自动发送，附带梯队表和帖子链接。",
+      "cta": "添加机器人",
+      "steps": {
+        "add": {
+          "title": "添加机器人",
+          "body": "一键邀请它加入你的服务器，它只需要在你选择的频道里发言。"
+        },
+        "channel": {
+          "title": "选择一个或多个频道",
+          "body": "一个频道用于欧洲 LFT，另一个用于职员：每个频道都有各自的设置。"
+        },
+        "filters": {
+          "title": "选择你要接收的内容",
+          "body": "帖子类型、地区、角色、段位、语言、特工、经验、可用时间。与网站上的筛选条件相同。"
+        },
+        "receive": {
+          "title": "实时接收帖子",
+          "body": "新帖子和续期的帖子在上线后立即发送，不会重复。"
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "#{channel} 的设置：",
+        "filterType": "LFT",
+        "filterRole": "控场",
+        "filterRank": "超凡及以上",
+        "app": "APP",
+        "time": "今天 21:04",
+        "published": "2 小时前发布",
+        "rank": "段位",
+        "peak": "最高 {rank}",
+        "roles": "角色",
+        "agents": "特工",
+        "experience": "经验",
+        "languages": "语言",
+        "rhythm": "节奏",
+        "rhythmValue": "每周 {hours} 小时，共 {days} 天",
+        "tierlistAlt": "{name} 的特工梯队表"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "在 Twitter 上关注我们",
+      "body": "帖子会连同梯队表图片一起发布在我们的账号上，触达整个赛场。",
+      "cta": "关注我们"
+    },
+    "cta": {
+      "title": "准备好开始物色了吗？",
+      "body": "筛选条件保存在你的浏览器中，浏览无需账号。",
+      "button": "浏览帖子"
+    }
+  },
+  "post": {
+    "verified": "已验证",
+    "pending": "未验证",
+    "igl": "IGL",
+    "tournaments": "{count, plural, other {# 场赛事}}",
+    "lookingFor": "寻找",
+    "anyRole": "任意角色",
+    "view": "查看帖子",
+    "confident": "擅长"
+  },
+  "duration": {
+    "months": "{count, plural, other {# 个月}}",
+    "years": "{count, plural, other {# 年}}"
+  },
+  "compensation": {
+    "paid": "有薪",
+    "free": "无薪"
+  },
+  "lan": {
+    "lan": "可参加线下赛",
+    "online": "仅限线上"
+  },
+  "preferences": {
+    "title": "偏好设置",
+    "theme": "主题",
+    "themes": {
+      "system": "自动",
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "timezone": "时区",
+    "timezoneAuto": "自动（{timezone}）",
+    "timezoneHint": "用于显示可用时间和按时段搜索。",
+    "search": "搜索",
+    "noOption": "无匹配项"
+  },
+  "roles": {
+    "duelist": "决斗",
+    "initiator_reveal": "先锋（侦查）",
+    "initiator_flash": "先锋（闪光）",
+    "controller": "控场",
+    "sentinel": "哨卫",
+    "flex": "万能位"
+  },
+  "agentClasses": {
+    "duelist": "决斗",
+    "initiator": "先锋",
+    "controller": "控场",
+    "sentinel": "哨卫"
+  },
+  "tiers": {
+    "confident": "擅长",
+    "improve": "需要提升",
+    "canLearn": "可以学习"
+  },
+  "footer": {
+    "tagline": "GC Stats 生态系统中的无畏契约选手招募平台。",
+    "product": "产品",
+    "postTypes": "帖子类型",
+    "resources": "资源",
+    "legal": "法律声明",
+    "privacy": "隐私",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "由 <link>Osthelia</link> 制作，这是一个致力于道德、包容和公平电竞的非营利组织。"
+  },
+  "levels": {
+    "cash_cup": "公开资格赛",
+    "playoffs": "OQ Playoffs",
+    "main_event": "主赛事"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "副 IGL"
+  },
+  "rosterSpots": {
+    "player": "选手",
+    "sub": "替补"
+  },
+  "staffRoles": {
+    "coach": "教练",
+    "assistant_coach": "助理教练",
+    "performance_coach": "表现教练",
+    "mental_coach": "心理教练",
+    "analyst": "分析师",
+    "manager": "经理"
+  },
+  "regions": {
+    "eu": "欧洲",
+    "na": "北美",
+    "latam": "拉丁美洲",
+    "br": "巴西",
+    "apac": "亚太",
+    "kr": "韩国",
+    "jp": "日本",
+    "oce": "大洋洲",
+    "mena": "中东和北非",
+    "cn": "中国"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {没有帖子} other {# 个帖子}}",
+    "sortLabel": "排序",
+    "sort": {
+      "recent": "最新",
+      "rank": "段位最高",
+      "experience": "经验最多",
+      "availability": "时间最充裕"
+    },
+    "filters": "筛选",
+    "reset": "重置",
+    "resetAll": "重置筛选",
+    "apply": "显示结果",
+    "any": "任意",
+    "selected": "已选 {count} 项",
+    "search": "搜索",
+    "noOption": "无匹配项",
+    "removeFilter": "移除筛选",
+    "group": {
+      "region": "地区",
+      "language": "语言",
+      "spot": "想要的位置",
+      "spotWanted": "提供的位置",
+      "role": "角色",
+      "staffRole": "职员角色",
+      "compensation": "待遇",
+      "lan": "线下赛",
+      "rank": "段位",
+      "experience": "经验",
+      "agents": "会玩",
+      "rhythm": "节奏",
+      "availability": "可用时间",
+      "age": "年龄"
+    },
+    "rankFrom": "从",
+    "rankTo": "到",
+    "minDuration": "{duration} 或以上",
+    "experienceHint": "在所选阶段之一或任意阶段的参赛时长。",
+    "minHours": "{count, plural, =0 {任意} other {每周 # 小时或以上}}",
+    "minDays": "{count, plural, =0 {任意} other {每周 # 天或以上}}",
+    "rhythmHours": "小时",
+    "rhythmDays": "天数",
+    "rhythmHint": "每周为队伍投入的时间和天数。",
+    "agentsHint": "梯队表前两个等级中的特工。",
+    "agentsMax": "最多 5 名特工",
+    "slot": {
+      "days": "天数",
+      "from": "从",
+      "to": "到",
+      "everyDay": "每天",
+      "mode": "搜索模式",
+      "simple": "简单",
+      "advanced": "逐日",
+      "notSearched": "不搜索",
+      "hint": "你的游戏时间。只要帖子与之有半小时重叠就会匹配。",
+      "hintAdvanced": "选择日期并为每一天设置时间。只要帖子与之有半小时重叠就会匹配。",
+      "hintTimezone": "时间为 {timezone}。只要帖子与之有半小时重叠就会匹配。"
+    },
+    "empty": "没有符合这些筛选条件的帖子。",
+    "emptyHint": "试试移除某个筛选条件，或稍后再来：每天都有新帖子。",
+    "loading": "正在加载帖子",
+    "close": "关闭"
+  },
+  "postPage": {
+    "back": "所有 {code} 帖子",
+    "expired": "此帖子已过期",
+    "expiredHint": "它不再显示在列表中。作者可以随时续期。",
+    "closed": "此帖子已关闭",
+    "closedHint": "作者已不再寻找。",
+    "published": "发布于 {date}",
+    "renewed": "续期于 {date}",
+    "expires": "过期于 {date}",
+    "about": "简介",
+    "tierlist": "特工梯队表",
+    "availability": "可用时间",
+    "profile": "档案",
+    "similar": "相似帖子",
+    "seeAll": "查看全部",
+    "region": "地区",
+    "country": "国家",
+    "languages": "语言",
+    "roles": "角色",
+    "rosterSpot": "想要的位置",
+    "rosterSpotWanted": "提供的位置",
+    "playersWanted": "{count, plural, other {# 名选手}}",
+    "subsWanted": "{count, plural, other {# 名替补}}",
+    "lookingFor": "寻找",
+    "staffRoles": "职员角色",
+    "igl": "指挥",
+    "rank": "段位",
+    "peak": "最高 {rank}",
+    "rankWanted": "期望段位",
+    "tracker": "Tracker.gg",
+    "compensation": "待遇",
+    "lan": "线下赛",
+    "experience": "经验",
+    "experienceWanted": "期望经验",
+    "noExperience": "尚无赛事",
+    "rhythm": "节奏",
+    "rhythmValue": "每周 {hours, number} 小时，{days, plural, other {# 天}}",
+    "contact": "联系方式",
+    "copyDiscord": "复制 Discord 用户名",
+    "copyDiscordId": "复制 Discord ID",
+    "discordProfile": "Discord",
+    "discordServer": "加入服务器",
+    "copied": "已复制",
+    "share": "复制链接",
+    "linkCopied": "链接已复制",
+    "twitter": "X 主页",
+    "email": "发送邮件",
+    "bestResult": "最佳成绩",
+    "viewProfile": "在 GC Stats 上查看",
+    "pendingNote": "此 GC Stats 档案的关联正在等待工作人员批准。",
+    "noProfile": "此帖子未关联 GC Stats 档案。",
+    "yourTime": "你的时间",
+    "authorTime": "作者的时间",
+    "timezoneNote": "时间为 {timezone}",
+    "noAvailability": "未提供可用时间。",
+    "loading": "正在加载帖子",
+    "gcsHistory": "GC Stats 历史",
+    "latestTeams": "最近的队伍",
+    "latestTournaments": "最近的赛事",
+    "present": "至今",
+    "unknownDate": "?",
+    "noTournaments": "GC Stats 上没有赛事。",
+    "wins": "{n}胜",
+    "losses": "{n}负",
+    "recordTitle": "{wins, plural, other {# 胜}}，{losses, plural, other {# 负}}",
+    "place": "第 {n} 名",
+    "top": "前 {n}",
+    "viewTeamProfile": "GC Stats 上的队伍",
+    "teamRoles": {
+      "player": "选手",
+      "player-igl": "选手，IGL",
+      "sub": "替补",
+      "coach": "教练",
+      "assistant coach": "助理教练",
+      "performance coach": "表现教练",
+      "analyst": "分析师",
+      "manager": "经理"
+    },
+    "syncedAt": "更新于 {date}",
+    "gcsPending": {
+      "loading": "正在获取 GC Stats 历史…",
+      "timeout": "GC Stats 历史暂时不可用，请几分钟后再来。"
+    },
+    "gcsRefresh": {
+      "label": "刷新",
+      "pending": "正在刷新…",
+      "done": "已刷新",
+      "errors": {
+        "invalid": "无效的帖子。",
+        "auth": "登录后才能刷新历史。",
+        "notFound": "此帖子已不存在。",
+        "forbidden": "只有帖子的作者可以刷新它。",
+        "cooldown": "{minutes, plural, other {请在 # 分钟后重试。}}",
+        "noProfile": "此帖子未关联 GC Stats 档案或队伍。",
+        "notConfigured": "尚未配置 GC Stats 连接。",
+        "failed": "GC Stats 没有响应，请稍后再试。"
+      }
+    },
+    "agentContact": "通过经纪人联系",
+    "staffEdit": "编辑（审核）",
+    "ageGroup": "年龄",
+    "minorsAccepted": "未成年人"
+  },
+  "errors": {
+    "notFound": {
+      "title": "页面未找到",
+      "body": "此页面不存在，或者帖子已被删除。",
+      "back": "浏览帖子"
+    },
+    "serverError": {
+      "title": "出了点问题",
+      "body": "此页面无法加载。请稍后再试。",
+      "retry": "重试",
+      "back": "浏览帖子"
+    }
+  },
+  "auth": {
+    "account": "我的账号",
+    "logout": "退出登录",
+    "profile": {
+      "verified": "已验证的 GC Stats 档案",
+      "pending": "GC Stats 档案等待验证",
+      "none": "未关联 GC Stats 档案"
+    },
+    "error": {
+      "title": "登录失败",
+      "retry": "重试",
+      "home": "返回首页",
+      "reasons": {
+        "denied": "你在 GC Stats 上拒绝了访问。发帖需要使用 GC Stats 登录。",
+        "state": "此次登录尝试已过期，或在另一个标签页中发起。请重新开始。",
+        "exchange": "GC Stats 无法确认你的登录。请稍后再试。",
+        "provider": "GC Stats 在登录过程中返回了错误。请稍后再试。",
+        "config": "本站尚未配置使用 GC Stats 登录。"
+      }
+    },
+    "settings": "账号设置",
+    "gcsAccount": "我的 GC Stats 账号",
+    "actAs": "当前档案",
+    "yourself": "{name}（你）",
+    "switchFailed": "此档案已不可用，请刷新页面。",
+    "actingAs": "你正在以 {name} 的身份操作。",
+    "backToSelf": "返回你的档案",
+    "myPosts": "我的帖子",
+    "messages": "消息",
+    "admin": "管理"
+  },
+  "newPost": {
+    "title": "新帖子",
+    "intro": {
+      "lft": "向队伍展示你是谁：角色、段位、特工，以及你的可用时间。",
+      "lfp": "描述你的队伍正在寻找的选手，以及你们的训练时间。",
+      "lfs": "描述你的队伍正在寻找的职员（教练、分析师、经理）。",
+      "lfo": "向正在寻找队伍的俱乐部介绍你的阵容。",
+      "lfst": "向队伍展示你作为教练、分析师或经理能带来什么。"
+    },
+    "login": {
+      "title": "登录后发帖",
+      "text": "帖子与 GC Stats 账号绑定，这样队伍和选手就知道在和谁交流。如果你的档案已关联，会显示你的赛事历史。",
+      "cta": "使用 GC Stats 登录"
+    },
+    "activeExists": {
+      "title": "你已经有一个正在进行的 {code} 帖子",
+      "text": "同一时间只能有一个在线。请先关闭它，或等它过期后再发布新帖子。"
+    },
+    "viewExisting": "查看我的帖子",
+    "sections": {
+      "identity": "身份",
+      "identityHint": "你在帖子上的显示方式。",
+      "identityTeamHint": "你的队伍在帖子上的显示方式。",
+      "profile": {
+        "lft": "你的档案",
+        "lfp": "想要的选手",
+        "lfs": "想要的职员",
+        "lfo": "你的阵容",
+        "lfst": "你的档案"
+      },
+      "tierList": "特工梯队表",
+      "tierListHint": "展示你会玩的特工，从你精通的到你可以学习的。前两行会被“会玩”筛选使用。",
+      "availability": "可用时间",
+      "availabilityHint": "你每周的常规时段，按你的时区。访客看到的会转换为他们自己的时间。",
+      "availabilityTeamHint": "你们的训练时段，按你的时区。访客看到的会转换为他们自己的时间。",
+      "rhythm": "节奏",
+      "rhythmHint": "在你的可用时间内，你每周最多能为队伍投入的时间。",
+      "rhythmTeamHint": "在训练时段内，你的队伍每周要求的时间。",
+      "about": "介绍与联系方式",
+      "aboutHint": "几句话让你脱颖而出，以及如何联系你。",
+      "reminders": "过期提醒",
+      "remindersHint": "帖子在线 10 天。7 天后我们会给你发送提醒，附带一键续期的链接。",
+      "remindersDelegatedHint": "帖子在线 10 天。提醒会发送给档案所有者，通过其账号的渠道。",
+      "tweet": "在 X 上发布",
+      "tweetHint": "每个帖子都会分享到 GC Scouting 的 X 账号。你也可以自己发布，我们会转推。",
+      "moderation": "编辑原因",
+      "moderationHint": "会发送给帖子作者，并保存在审核日志中。"
+    },
+    "fields": {
+      "displayName": "昵称",
+      "teamName": "队伍名称",
+      "region": "地区",
+      "country": "国家",
+      "noCountry": "未指定",
+      "languages": "使用的语言",
+      "languagesMax": "最多 {max} 种语言",
+      "choose": "选择",
+      "rosterSpot": "想要的位置",
+      "rosterSpotWanted": "提供的位置",
+      "rosterSpotHint": "默认为选手。选择替补可申请替补位置。",
+      "playersWanted": "需要的选手",
+      "subsWanted": "需要的替补",
+      "wantedHint": "你的阵容在寻找多少名首发和替补。",
+      "playersCount": "{count, plural, =0 {没有选手} other {# 名选手}}",
+      "subsCount": "{count, plural, =0 {没有替补} other {# 名替补}}",
+      "roles": "角色",
+      "rolesWanted": "需要的角色",
+      "flexHint": "万能位在搜索中匹配所有角色。",
+      "igl": "指挥",
+      "iglWanted": "需要指挥",
+      "staffRoles": "职位",
+      "staffRolesWanted": "需要的职位",
+      "rankCurrent": "当前段位",
+      "rankPeak": "最高段位",
+      "rankMin": "最低段位",
+      "rankMax": "最高段位上限",
+      "rankRangeHint": "你正在寻找的选手的段位范围。",
+      "compensation": "期望待遇",
+      "compensationHint": "如果你在寻找有薪合同，选有薪；如果志愿项目对你可行，选无薪。",
+      "compensationOffered": "提供的待遇",
+      "compensationOfferedHint": "如果该位置带有薪水或补贴，选有薪，否则选无薪。",
+      "lan": "线下赛事",
+      "lanHint": "你是否可以出行参加线下赛事。",
+      "lanTeamHint": "队伍是否计划出行参加线下赛事。",
+      "experience": "赛事经验",
+      "experienceHint": "你在每个阶段打了多久。没打过的阶段请保持为无。",
+      "experienceWanted": "期望经验",
+      "experienceWantedHint": "每个阶段的最短参赛时长，无所谓时请保持为无。",
+      "notPlayed": "无",
+      "notSpecified": "未指定",
+      "rhythmHours": "每周小时数",
+      "rhythmDays": "每周天数",
+      "hoursPerWeek": "{count} 小时",
+      "daysPerWeek": "{count, plural, other {# 天}}",
+      "rhythmMax": "你的可用时间共 {hours} 小时，分布在 {days, plural, other {# 天}}，节奏不能超过这个范围。",
+      "rhythmNoAvailability": "请先添加你的可用时间，节奏不能超过它。",
+      "timezone": "时区",
+      "description": "介绍",
+      "descriptionPlaceholder": {
+        "player": "你的目标、你的风格、你在队伍中寻找什么…",
+        "team": "你们的项目、你们的目标、你们对选手的期望…"
+      },
+      "contact": "联系方式（至少一项）",
+      "discord": "Discord ID",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "使用我已关联的账号",
+      "discordInvite": "Discord 服务器邀请",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "账号名",
+      "email": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "contactHint": "会公开显示在帖子上。",
+      "notifyEmail": "通过邮件",
+      "notifyDiscord": "通过 Discord 私信",
+      "noEmail": "你的 GC Stats 账号没有已验证的邮箱",
+      "discordLinked": "已在 GC Stats 上关联 Discord 账号",
+      "noDiscord": "未在 GC Stats 上关联 Discord 账号",
+      "noReminderWarning": "没有提醒的话，你的帖子会在 10 天后无通知地过期。",
+      "iglHint": "如果两种角色你都能担任，请都选上。",
+      "iglWantedHint": "如果任一种对你都可以，请都选上。",
+      "gcsTeam": "GC Stats 上的队伍页面",
+      "gcsTeamPlaceholder": "https://gc-stats.app/en/team/...",
+      "gcsTeamHint": "如果你的队伍已经参加过 Game Changers 赛事，请粘贴其 GC Stats 页面的链接。你的 GC Stats 档案必须已关联，并且在其当前阵容中。",
+      "agent": "通过经纪人联系",
+      "agentHint": "下面的联系方式会联系到你的经纪人。",
+      "agentName": "经纪人姓名",
+      "agentAgency": "经纪公司",
+      "agentAgencyPlaceholder": "留空则为独立经纪人",
+      "contactAgent": "经纪人联系方式（至少一项）",
+      "contactAgentHint": "会公开显示在帖子上，并附带经纪人的姓名。",
+      "chatEnabled": "允许私信",
+      "chatEnabledHint": "已登录的访客可以在 GC Scouting 上通过帖子给你写信。",
+      "contactChatHint": "开启私信后，这些联系方式为选填。",
+      "tweetBySite": "由 GC Scouting 发布",
+      "tweetBySiteHint": "我们会在我们的 X 账号上发布，如果你提供了 @ 账号也会带上。",
+      "tweetByAuthor": "我自己发布",
+      "tweetByAuthorHint": "发布后，我们会给你准备好的推文。把它的链接发给我们，我们会转推。",
+      "tweetByLocked": "此帖子已发布到 X，这个选择无法再更改。",
+      "moderationReason": "原因",
+      "moderationReasonPlaceholder": "例如：已删除无效的 Discord 链接，已缩短离题的介绍",
+      "ageGroup": "年龄",
+      "ageGroupHint": "会显示在帖子上。再次点击可不显示。",
+      "tracker": "Tracker.gg 档案",
+      "trackerHint": "粘贴你的 tracker.gg 无畏契约档案链接，无需账号。",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "未成年人",
+      "minorsAcceptedHint": "未成年选手可以筛选出接受他们的帖子。"
+    },
+    "errors": {
+      "required": "此字段为必填项。",
+      "invalid": "无效的值。",
+      "tooLong": "最多 {max} 个字符。",
+      "tooMany": "最多 {max} 项。",
+      "peakBelowCurrent": "最高段位不能低于当前段位。",
+      "rangeOrder": "最高段位上限必须大于或等于最低段位。",
+      "wantedEmpty": "请至少寻找一名选手或一名替补。",
+      "tierEmpty": "请至少为一名特工分级。",
+      "slotInvalid": "其中一个时段无效。",
+      "slotOverlap": "同一天的两个时段重叠。",
+      "rhythmAboveAvailability": "高于你的可用时间（最多 {max}）。",
+      "contactRequired": "请至少提供一种联系你的方式。",
+      "discordInvalid": "无效的 Discord ID（17 到 20 位数字）。这里不能使用你的用户名，请参阅下方如何查找你的 ID。",
+      "discordInviteInvalid": "无效的邀请链接（discord.gg/code 或 discord.com/invite/code）。",
+      "twitterInvalid": "无效的账号名（最多 15 个字符：字母、数字、下划线）。",
+      "emailInvalid": "无效的邮箱地址。",
+      "notifyUnavailable": "你的账号不支持此渠道。",
+      "gcsTeamInvalid": "无效的链接，请粘贴 GC Stats 队伍页面的地址。",
+      "gcsTeamNoProfile": "请先关联你的 GC Stats 档案（页面顶部）：只有队伍成员才能添加其页面。",
+      "gcsTeamNotMember": "你的 GC Stats 档案不在此队伍的当前阵容中。",
+      "gcsTeamCheckFailed": "GC Stats 无法检查该队伍，请稍后再试。",
+      "trackerInvalid": "不是 tracker.gg 无畏契约档案链接。",
+      "reasonLength": "原因必须在 {min} 到 {max} 个字符之间。",
+      "invalidCharacters": "请删除控制字符或不可见字符。"
+    },
+    "formErrors": {
+      "auth": "你的会话已过期。请重新登录后再发布。",
+      "activeExists": "你已经有一个正在进行的 {code} 帖子。",
+      "expiredExists": "你之前的 {code} 帖子已过期。请刷新页面来替换它。",
+      "limitReached": "你已经有 {max} 个在线的 {code} 帖子。请关闭其中一个再发布新的。",
+      "server": "帖子无法发布。请稍后再试。",
+      "notFound": "此帖子已不存在，或不属于你。",
+      "notEditable": "此帖子无法再编辑。",
+      "sanctioned": "你的 GC Stats 账号受到处罚（禁言、封停或封禁）：你暂时无法发布或编辑帖子。",
+      "rateLimited": "你发布或编辑得太频繁了。请稍等片刻再试。",
+      "sanctionedUntil": "你的 GC Stats 账号受到处罚（禁言、封停或封禁），直到 {date}：在此之前你无法发布或编辑帖子。"
+    },
+    "errorCount": "{count, plural, other {# 个字段需要修正}}",
+    "replacesExpired": "你已过期的 {code} 帖子将被关闭。",
+    "publish": "发布",
+    "publishing": "正在发布...",
+    "tierList": {
+      "hint": "把你玩的特工拖到各行中，或者先点击一名特工再点击一行。被放在一旁的特工不会显示。",
+      "pickedHint": "现在点击该特工要放入的行。",
+      "progress": "{count, plural, =0 {尚未为特工分级} other {已为 # 名特工分级}}",
+      "reset": "重置",
+      "poolEmpty": "所有特工都已分级。",
+      "guide": "了解我们的梯队表",
+      "guideTooltip": "为什么是这三个等级，以及如何填写。在新标签页中打开。"
+    },
+    "availability": {
+      "hint": "点击或拖动选择小时即可添加，再次操作即可移除。要打到午夜之后？请在第二天的开头继续。",
+      "copyAll": "复制到每一天",
+      "clearDay": "清除这一天",
+      "clearAll": "全部清除",
+      "summary": "每周 {hours} 小时，{days, plural, other {# 天}}"
+    },
+    "typeTabs": "帖子类型",
+    "save": "保存",
+    "saving": "正在保存...",
+    "cancel": "取消",
+    "delegatedNoProfile": "{name} 没有关联 GC Stats 档案。只有 {name} 本人可以在自己的账号中关联。",
+    "editTitle": "编辑帖子",
+    "editIntro": "更改会立即上线。过期日期保持不变。",
+    "backToPost": "返回帖子",
+    "closedTitle": "此帖子已关闭",
+    "closedText": "已关闭的帖子无法再编辑。如果你重新开始寻找，请创建一个新帖子。",
+    "loading": "正在加载表单",
+    "moderationTitle": "审核编辑",
+    "moderationText": "你正在编辑 {name} 的帖子。他们会收到一封邮件和一条 Discord 消息，其中包含你给出的原因。",
+    "discordHelp": {
+      "toggle": "如何找到我的 Discord ID？",
+      "step1": "在 Discord 中，打开用户设置，进入高级，并开启开发者模式。",
+      "step2": "右键点击你的头像或名称（手机上长按）。",
+      "step3": "点击复制用户 ID，然后粘贴到这里。",
+      "menuProfile": "个人资料",
+      "menuMention": "提及",
+      "menuCopyId": "复制用户 ID"
+    }
+  },
+  "playerLink": {
+    "question": "你的账号没有关联 GC Stats 档案。你是否已经参加过 Game Changers 赛事？",
+    "questionTeam": "你的账号没有关联 GC Stats 档案。要添加你队伍的 GC Stats 页面，请先关联你的档案。你是否已经参加过 Game Changers 赛事？",
+    "declined": "没问题，你的帖子将不带赛事历史发布。",
+    "declinedTeam": "没问题，你的帖子将不带队伍的 GC Stats 页面发布。",
+    "yes": "是的，查找我的档案",
+    "no": "还没有",
+    "title": "查找你的 GC Stats 档案",
+    "intro": "搜索你的名字，或通过你参加过的赛事查找。GC Stats 工作人员随后会批准关联。",
+    "cancel": "关闭",
+    "modeLabel": "搜索方式",
+    "mode": {
+      "name": "按名字",
+      "tournament": "按赛事"
+    },
+    "namePlaceholder": "你的赛场名称",
+    "tournamentPlaceholder": "赛事名称",
+    "teamPlaceholder": "筛选队伍或选手",
+    "minChars": "至少 {min} 个字符。",
+    "players": "{count, plural, =0 {没有选手} other {# 名选手}}",
+    "pickPlayer": "请在阵容中选择你的名字。",
+    "empty": "没有结果。",
+    "emptyTeams": "未找到此赛事的队伍。",
+    "emptyRoster": "此队伍没有登记选手。",
+    "loading": "正在加载",
+    "back": "返回搜索",
+    "viewOnGcs": "在 GC Stats 上查看",
+    "claimed": "已关联到某个账号",
+    "confirmText": "请确认这是你的档案。请求会发送给 GC Stats 工作人员，在批准之前，你的帖子会被标记为“未验证”。",
+    "send": "发送请求",
+    "sending": "正在发送...",
+    "relogin": "重新登录",
+    "done": {
+      "pending": "请求已发送。你的档案会显示在你的帖子上，在工作人员批准之前标记为“未验证”。",
+      "approved": "此档案已关联到你的 GC Stats 账号，现已验证。"
+    },
+    "lookupErrors": {
+      "auth": "你的会话已过期，请重新登录。",
+      "invalid": "无效的搜索。",
+      "notConfigured": "本站尚未配置 GC Stats 搜索。",
+      "notFound": "此赛事在 GC Stats 上已不存在。",
+      "failed": "GC Stats 没有响应，请稍后再试。"
+    },
+    "errors": {
+      "auth": "你的会话已过期，请重新登录。",
+      "invalid": "无效的档案。",
+      "linkExists": "你的账号已有关联或待处理的档案。请刷新页面。",
+      "reauth": "需要更新你的 GC Stats 登录才能发送请求。",
+      "notFound": "此档案在 GC Stats 上已不存在。",
+      "taken": "此档案已关联到另一个 GC Stats 账号。如果它是你的，请联系 GC Stats 工作人员。",
+      "requestPending": "你的 GC Stats 账号已有一个待处理的关联请求。",
+      "rateLimited": "请求过多，请一分钟后再试。",
+      "failed": "请求无法发送，请稍后再试。",
+      "delegated": "只有档案所有者可以关联 GC Stats 档案。"
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "你的 {code} 帖子即将过期",
+      "title": "你的 {code} 帖子“{name}”将在 {left, plural, other {# 天}}后过期",
+      "body": "它将在 {date} 从列表和 Discord 频道中移除。",
+      "renewHint": "还在寻找吗？再续期 {days} 天，它会回到列表顶部。",
+      "deleteHint": "已经找到所需了吗？请删除它，这样别人就不会再联系你。",
+      "renew": "续期",
+      "delete": "删除",
+      "view": "查看帖子",
+      "footer": "你收到此提醒，是因为你在 GC Scouting 发帖时开启了它。这些链接无需登录即可使用 14 天，请勿分享。"
+    },
+    "manage": {
+      "metaTitle": "管理我的帖子",
+      "renew": {
+        "title": "为你的帖子续期",
+        "text": "{expired, select, true {它已过期。} other {它即将过期。}}它将再次在线 10 天，并回到列表顶部。",
+        "confirm": "续期",
+        "pending": "正在续期...",
+        "done": "帖子已续期至 {date}"
+      },
+      "delete": {
+        "title": "删除你的帖子",
+        "text": "它将从网站和 Discord 频道中移除，其链接也将失效。此操作无法撤销。",
+        "confirm": "删除",
+        "pending": "正在删除...",
+        "done": "帖子已删除"
+      },
+      "view": "查看帖子",
+      "newPost": "创建帖子",
+      "home": "返回首页",
+      "errorTitle": "链接不可用",
+      "errors": {
+        "invalid": "此链接无效。请检查是否完整复制。",
+        "used": "此链接已被使用。每条提醒只能使用一次。",
+        "expired": "此链接已过期。请登录并打开你的帖子来续期。",
+        "unavailable": "此帖子已被关闭或删除。",
+        "limitReached": "你已达到此类型允许的在线帖子上限。请关闭其中一个再为这个续期。",
+        "server": "操作无法完成。请稍后再试。"
+      }
+    },
+    "renew": {
+      "title": "你的帖子将于 {date} 过期",
+      "expiredTitle": "你的帖子已过期",
+      "hint": "再续期 {days} 天，它会回到列表顶部。",
+      "label": "续期",
+      "pending": "正在续期...",
+      "done": "已续期",
+      "errors": {
+        "invalid": "无效的帖子。",
+        "auth": "你的会话已过期。请重新登录后续期。",
+        "notFound": "此帖子已不再有效。",
+        "tooEarly": "续期在过期前 3 天开放。",
+        "limitReached": "你已达到此类型允许的在线帖子上限。请关闭其中一个再为这个续期。",
+        "server": "续期失败。请稍后再试。"
+      }
+    },
+    "noReminder": {
+      "title": "未开启过期提醒",
+      "text": "你的帖子将在 {days} 天后无通知地过期。请在帖子表单中开启邮件或 Discord 提醒。"
+    }
+  },
+  "account": {
+    "title": "账号设置",
+    "loading": "正在加载你的账号",
+    "intro": "管理谁可以以你的名义发帖，以及你在 GC Scouting 上的数据。你的 GC Stats 账号在 GC Stats 上管理。",
+    "gcsAccount": "我的 GC Stats 账号",
+    "since": "自 {date}",
+    "confirm": "确认",
+    "cancel": "取消",
+    "login": {
+      "title": "登录以管理你的账号",
+      "text": "你的 GC Scouting 账号由你的 GC Stats 账号创建。",
+      "cta": "使用 GC Stats 登录"
+    },
+    "delegates": {
+      "title": "对你档案的访问权限",
+      "hint": "你信任的人（经纪人、经理、职员）可以以你的名义发布和管理帖子。最多 {max} 人，你可以随时移除访问权限。",
+      "empty": "没有人可以访问你的档案。",
+      "remove": "移除",
+      "pendingInvite": "邀请链接等待中，有效期至 {date}",
+      "revokeInvite": "取消",
+      "inviteReady": "邀请链接已创建",
+      "inviteHint": "把它发给对方，对方在登录状态下打开即可。它只能使用一次，有效期 {days} 天。",
+      "copy": "复制",
+      "copied": "已复制",
+      "create": "创建邀请链接"
+    },
+    "managed": {
+      "title": "你管理的档案",
+      "hint": "从右上角的菜单中选择当前档案，即可以其名义发帖。",
+      "empty": "还没有人授权你访问他们的档案。",
+      "active": "当前档案",
+      "use": "使用此档案",
+      "leave": "退出"
+    },
+    "errors": {
+      "auth": "你的会话已过期，请重新登录。",
+      "invalid": "无效的请求。",
+      "notFound": "此访问权限已不存在，请刷新页面。",
+      "server": "操作失败，请稍后再试。",
+      "full": "你的档案已有 {max} 人拥有访问权限。",
+      "tooManyInvites": "等待中的邀请链接过多，请先取消一个。"
+    },
+    "data": {
+      "title": "你的数据",
+      "hint": "以 JSON 文件下载 GC Scouting 保存的关于你账号的所有内容（档案、帖子、访问权限）。",
+      "export": "下载我的数据",
+      "exporting": "正在准备...",
+      "exportFailed": "导出失败，请稍后再试。"
+    },
+    "delete": {
+      "title": "删除我的账号",
+      "hint": "你的 GC Scouting 账号、你的帖子以及对你档案的访问权限将被永久删除。你的 GC Stats 账号不受影响。",
+      "confirmLabel": "输入 {name} 以确认",
+      "submit": "删除我的账号",
+      "pending": "正在删除...",
+      "errors": {
+        "auth": "你的会话已过期，请重新登录。",
+        "confirmation": "用户名不匹配。",
+        "server": "删除失败，请稍后再试。"
+      }
+    },
+    "chatNotifications": {
+      "title": "消息通知",
+      "text": "收到消息时，每个会话只提醒一次，在你打开之前不会再提醒。消息本身绝不会被复制到提醒中。",
+      "email": "通过邮件",
+      "discord": "通过 Discord 私信",
+      "noEmail": "你的 GC Stats 账号没有已验证的邮箱",
+      "discordLinked": "已关联到 GC Stats 的 Discord 账号",
+      "noDiscord": "未关联到 GC Stats 的 Discord 账号",
+      "save": "保存",
+      "saved": "偏好已保存。",
+      "errors": {
+        "auth": "你的会话已过期。请重新登录。",
+        "invalid": "无效的偏好设置。",
+        "noEmail": "请在 GC Stats 上添加并验证邮箱以开启邮件提醒。",
+        "noDiscord": "请在 GC Stats 上关联 Discord 账号以开启 Discord 提醒。",
+        "server": "保存失败。请稍后再试。"
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "档案邀请",
+    "title": "{name} 邀请你管理其档案",
+    "text": "你将可以以 {name} 的名义发布和管理帖子。你可以随时在账号设置中退出。",
+    "loginText": "请使用你的 GC Stats 账号登录以接受邀请。",
+    "loginCta": "使用 GC Stats 登录",
+    "accept": "接受",
+    "accepting": "正在接受...",
+    "done": "你现在管理 {name} 的档案，它是你的当前档案。",
+    "newPost": "创建帖子",
+    "settings": "账号设置",
+    "home": "返回首页",
+    "errorTitle": "邀请不可用",
+    "errors": {
+      "invalid": "此链接无效。请检查是否完整复制。",
+      "used": "此邀请已被使用。请索取新的链接。",
+      "expired": "此邀请已过期。请索取新的链接。",
+      "self": "这是你自己的邀请链接，请把它发给将管理你档案的人。",
+      "already": "你已经在管理此档案。",
+      "full": "此档案拥有访问权限的人数已达上限。",
+      "auth": "你的会话已过期，请重新登录。",
+      "server": "无法接受邀请，请稍后再试。"
+    }
+  },
+  "postAuthor": {
+    "edit": "编辑",
+    "close": "关闭",
+    "closeConfirm": "关闭帖子",
+    "cancel": "取消",
+    "errors": {
+      "invalid": "无效的帖子。",
+      "auth": "你的会话已过期。请重新登录。",
+      "notFound": "此帖子已不再有效。",
+      "server": "帖子无法关闭。请稍后再试。"
+    }
+  },
+  "myPosts": {
+    "title": "我的帖子",
+    "intro": "你的帖子会在线 {days} 天。请在过期前续期，或在找到所需后关闭它们。",
+    "new": "创建帖子",
+    "loading": "正在加载你的帖子",
+    "published": "发布于 {date}",
+    "expires": "过期于 {date}",
+    "expired": "已于 {date} 过期",
+    "groups": {
+      "active": "在线",
+      "expired": "已过期",
+      "closed": "已关闭"
+    },
+    "empty": {
+      "title": "还没有帖子",
+      "text": "你的帖子会显示在这里，并提供编辑、续期或关闭所需的操作。"
+    },
+    "login": {
+      "title": "登录以查看你的帖子",
+      "text": "你的帖子与你的 GC Stats 账号关联。",
+      "cta": "使用 GC Stats 登录"
+    }
+  },
+  "report": {
+    "button": "举报",
+    "title": "举报此帖子",
+    "close": "关闭",
+    "cancel": "取消",
+    "submit": "发送举报",
+    "sending": "正在发送…",
+    "loginHint": "登录后才能举报帖子。这有助于我们防止滥用。",
+    "login": "使用 GC Stats 登录",
+    "reason": "原因",
+    "message": "详情",
+    "messageHint": "哪里有问题，任何能帮助审核员快速判断的信息。",
+    "sent": "举报已发送",
+    "sentHint": "谢谢，审核团队会查看此帖子。",
+    "reasons": {
+      "spam": {
+        "label": "垃圾信息或广告",
+        "hint": "重复帖子、广告、无关内容"
+      },
+      "fake": {
+        "label": "虚假帖子",
+        "hint": "冒充他人、编造信息"
+      },
+      "inappropriate": {
+        "label": "不当内容",
+        "hint": "冒犯性语言、NSFW 内容"
+      },
+      "harassment": {
+        "label": "骚扰",
+        "hint": "针对或侮辱某人"
+      },
+      "other": {
+        "label": "其他",
+        "hint": "请在详情中说明问题"
+      }
+    },
+    "errors": {
+      "reasonRequired": "请选择一个原因。",
+      "message": {
+        "required": "选择“其他”原因时，请说明问题。",
+        "tooShort": "至少 {min} 个字符，或者留空。",
+        "tooLong": "最多 {max} 个字符。",
+        "invalidCharacters": "请删除控制字符或不可见字符。"
+      },
+      "form": {
+        "invalid": "无效的帖子。",
+        "auth": "你的会话已过期。请重新登录。",
+        "notFound": "此帖子已不存在。",
+        "ownPost": "你不能举报自己的帖子。",
+        "already": "你已经举报过此帖子，审核员正在处理。",
+        "rateLimited": "一小时内举报过多。请稍后再试。",
+        "server": "举报无法发送。请稍后再试。"
+      },
+      "messageForm": {
+        "invalid": "无效的消息。",
+        "auth": "你的会话已过期。请重新登录。",
+        "notFound": "此消息已不可用。",
+        "ownMessage": "你不能举报自己的消息。",
+        "already": "你已经举报过此消息，审核员正在处理。",
+        "rateLimited": "一小时内举报过多。请稍后再试。",
+        "server": "举报无法发送。请稍后再试。"
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "待发布的推文",
+    "title": "待发布的推文",
+    "subtitle": "尚未发布到 X 的在线帖子，最早的在前。在 X 上打开推文，发布，然后标记为已发布。",
+    "count": "{count, plural, other {还剩 # 条推文}}",
+    "empty": "没有需要发推的内容了。",
+    "unavailable": "无法加载推文，Discord 机器人无法访问。请稍后刷新页面。",
+    "forbidden": "访问被拒绝：此页面只能通过 Cloudflare Access 打开。",
+    "published": "发布于 {date}",
+    "viewPost": "查看帖子",
+    "length": "{length}/{max} 个字符",
+    "tooLong": "对 X 来说太长了，请在发布前缩短。",
+    "open": "在 X 上打开",
+    "opened": "已在 X 上打开",
+    "markPublished": "标记为已发布",
+    "marking": "正在保存...",
+    "done": "已发布",
+    "errors": {
+      "unauthorized": "你的 Cloudflare Access 会话已过期，请刷新页面。",
+      "forbidden": "此请求不是来自推文页面，请刷新后重试。",
+      "invalid": "此帖子 ID 无效。",
+      "notFound": "此帖子已不存在。",
+      "alreadyTweeted": "此帖子已被标记为已发布。",
+      "unavailable": "Discord 机器人无法访问，请稍后再试。",
+      "network": "请求失败，请检查你的网络连接后重试。",
+      "awaitingAuthor": "作者尚未提供其推文的链接。"
+    },
+    "toTweet": "待发推",
+    "toRetweet": "待转推",
+    "toRetweetHint": "作者在自己账号上分享的帖子。",
+    "countRetweets": "{count, plural, other {还剩 # 条转推}}",
+    "sectionDone": "这里都完成了。",
+    "authorTweeted": "作者已在自己的账号上发布，待转推。",
+    "viewTweet": "查看推文",
+    "openRetweet": "在 X 上转推",
+    "markRetweeted": "标记为已转推",
+    "retweetDone": "已转推"
+  },
+  "legalNotice": {
+    "title": "法律声明",
+    "updated": "最后更新：{date}",
+    "editor": {
+      "title": "发布者",
+      "identity": "身份",
+      "status": "性质",
+      "statusValue": "法国非营利协会（loi 1901）",
+      "email": "邮箱",
+      "director": "出版负责人",
+      "ecosystem": "GC Scouting 属于 GC Stats 生态系统，由同一个协会发布。登录和赛事历史依赖 GC Stats。"
+    },
+    "hosting": {
+      "title": "托管与服务提供商",
+      "site": "网站、Discord 机器人和分享图片",
+      "database": "数据库",
+      "email": "邮件发送",
+      "emailValue": "Resend，仅用于你开启的过期提醒",
+      "discord": "Discord 消息",
+      "discordValue": "Discord Inc.，通过我们的机器人（帖子频道、审核和提醒私信）"
+    },
+    "property": {
+      "title": "知识产权",
+      "site": "网站的结构、设计及其原创文本归 Osthelia 所有。",
+      "posts": "帖子的内容（介绍、梯队表、可用时间）仍归其作者所有，作者允许我们在帖子在线期间将其显示在网站上，并分享到 Discord 和 X。",
+      "thirdParty": "<b>第三方内容：</b>队伍、赛事、特工和段位的名称、标志及视觉素材归其各自所有者所有，仅供参考展示。GC Scouting 未获得 Riot Games 的认可，也不代表 Riot Games 或任何正式参与制作或管理 Riot Games 产品的人员的观点或意见。Riot Games 及所有相关产品是 Riot Games, Inc. 的商标或注册商标。",
+      "takedown": "你对某些内容拥有权利并希望将其删除？请写信到<mail>这个地址</mail>，或使用每个帖子上都有的<b>举报</b>按钮。"
+    },
+    "rules": {
+      "title": "发帖规则",
+      "intro": "发布帖子即表示你同意：",
+      "truthful": "提供关于你的档案、段位和经验的准确信息",
+      "respect": "不发布仇恨、歧视、骚扰或违法内容",
+      "contact": "只列出属于你的联系方式，或经你的经纪人允许显示的联系方式",
+      "ads": "不将帖子用于广告、赌博或任何与招募无关的用途",
+      "moderation": "我们的团队可能会在不另行通知的情况下删除违反这些规则的帖子。帖子按原样提供：Osthelia 不会核查每一条信息，也不参与选手与队伍之间的交流。"
+    },
+    "privacy": {
+      "title": "个人数据",
+      "text": "你的数据如何处理，详见我们的<policy>隐私政策</policy>。根据 GDPR，你享有访问、更正和删除的权利，可以写信到 <mail>{email}</mail> 行使这些权利。"
+    },
+    "credits": {
+      "title": "致谢",
+      "gcs": "赛事历史、队伍和已验证档案：<link>GC Stats</link>。",
+      "valorantApi": "特工和段位图标：<link>valorant-api.com</link>。",
+      "riot": "VALORANT 是 Riot Games, Inc. 的商标。"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "updated": "最后更新：{date}",
+    "intro": "GC Scouting 只收集发布帖子、让你与队伍交流以及在帖子过期时提醒你所必需的信息。以下是我们保存的内容、原因，以及如何删除。",
+    "login": {
+      "title": "使用 GC Stats 登录",
+      "text": "你使用 GC Stats 账号登录：我们从不会看到你的密码。每次登录时，经你同意，GC Stats 会向我们发送：",
+      "identity": "<b>身份：</b>你的 GC Stats 标识符、用户名和头像。",
+      "email": "<b>邮箱：</b>你已验证的地址，仅在你开启过期提醒时用于发送提醒。",
+      "discord": "<b>Discord：</b>你已关联的 Discord 账号的标识符，用于私信提醒，以及在你举报帖子时识别你的身份。",
+      "player": "<b>选手档案：</b>与你的账号关联的 GC Stats 档案，用于显示已验证徽章和你的赛事历史。",
+      "tokens": "GC Stats 访问令牌在我们的数据库中经过加密，仅用于代表你向 GC Stats 执行操作（例如档案关联请求）。删除账号时它们会被撤销。",
+      "created": "<b>账号年龄：</b>你的 GC Stats 账号的创建日期，用于在其前 7 天内于消息中显示“新账号”徽章。",
+      "sanctions": "<b>处罚：</b>你当前有效的 GC Stats 处罚（禁言、封停、封禁）及其结束日期，在每条消息或帖子发送前检查，以便在处罚期间阻止发送。有效的警告会在消息中显示“已警告”徽章。"
+    },
+    "public": {
+      "title": "哪些内容是公开的",
+      "text": "帖子对所有人可见，无需登录：用户名、帖子类型、地区、国家、语言、段位、角色、梯队表、经验、可用时间和介绍。",
+      "contact": "<b>联系方式：</b>你添加到帖子中的 Discord、X 账号或邮箱会公开显示，方便队伍联系你。请只添加你愿意公开的内容。",
+      "gcs": "如果你的档案已关联，显示的历史（队伍、赛事、成绩）来自 GC Stats 的公开数据。"
+    },
+    "relay": {
+      "title": "在 Discord 和 X 上分享",
+      "text": "有效的帖子会自动发送到设置了我们机器人的 Discord 频道，并可以连同分享图片发布到我们的 X 账号。当帖子被关闭、删除或移除，或者你删除账号时，我们的机器人也会删除其在这些频道中的消息。已过期的帖子会保留在那里，直到上述情况发生。已经分享到 X 的帖子会保持在线，其他人制作的副本也是如此。"
+    },
+    "private": {
+      "title": "技术数据",
+      "sessions": "<b>会话：</b>你的会话令牌的指纹（绝不是令牌本身）、所用的浏览器（用户代理）以及创建和过期日期，方便你查看并保护你的会话。",
+      "country": "<b>国家：</b>由 Cloudflare 提供的你的连接所在国家，仅用于在筛选中预选你的地区。它不会被存储。",
+      "logs": "<b>日志：</b>我们的主机会保留短期的技术日志（错误、请求），用于故障排查。",
+      "noTracking": "没有受众统计，没有广告，没有第三方追踪器，也不转售数据。"
+    },
+    "notifications": {
+      "title": "过期提醒",
+      "text": "邮件和 Discord 私信提醒默认关闭，仅在你开启后才会发送。它们包含无需登录即可续期或删除帖子的链接，有效期 14 天。你可以随时关闭。"
+    },
+    "delegation": {
+      "title": "委托访问",
+      "text": "如果你让其他人访问你的档案（经纪人、经理），我们会保存这一关联，以便他们以你的名义发布和管理帖子。你可以随时在你的账号中撤销此访问权限。在消息功能中，他们以自己的名字发言，旁边会显示他们所管理的档案。"
+    },
+    "messages": {
+      "title": "消息",
+      "text": "当你通过帖子给某位成员写信时，我们会保存该会话：双方的档案、发起会话的帖子、每条带日期的消息，以及（如果你管理他人的档案）实际写消息的账号。我们还会保存你最后一次阅读的时间（用于未读消息），以及你屏蔽的成员列表。",
+      "staff": "会话没有端到端加密：我们的审核团队可以阅读它们，以处理举报、审查被扣留的消息或调查滥用。他们可以隐藏消息。请不要在其中分享任何敏感信息。",
+      "automod": "<b>自动审核：</b>每条消息在送达前都会发送到 OpenAI 审核 API（美国），不带你的用户名或标识符。OpenAI 不会用它来训练模型，且最多保留 30 天。被标记为有害的消息会被扣留，直到团队做出决定。",
+      "links": "<b>链接：</b>只有 Discord、X、GC Stats、VLR 和 Liquipedia 的链接可以点击。其他链接会隐藏在警告之后，除消息本身外不会检查或存储任何内容。",
+      "alerts": "<b>提醒：</b>邮件或 Discord 私信会通知你有新消息，每段未读期间只发一次，不复制其内容。它们默认开启，可以在<account>我的账号</account>页面中关闭。如果你管理他人的档案，你也会收到其会话的提醒，使用你自己的设置。"
+    },
+    "moderation": {
+      "title": "举报与审核",
+      "text": "当你举报帖子或消息时，我们会保存原因、你的留言和你的账号。审核在一个私有的 Discord 频道和网站的管理区域中进行：每个操作（删除、恢复、隐藏消息、在 X 上分享）都会记录执行该操作的团队成员的账号。",
+      "reporter": "你的身份绝不会向被举报帖子或消息的作者显示。只有我们的审核团队可以看到。"
+    },
+    "retention": {
+      "title": "保留期限",
+      "posts": "帖子在发布或最后一次续期 10 天后过期。之后它会从列表和 Discord 频道中消失，但其链接仍然可用并带有横幅提示，直到你删除它。",
+      "sessions": "会话持续 30 天，或直到你退出登录。",
+      "account": "你的账号及其所有关联内容（帖子、已发送的消息、屏蔽、会话、委托访问、档案关联）会一直保留，直到你在<account>我的账号</account>页面中删除它。你提交的举报和你帖子的 Discord 消息随后也会被删除。",
+      "messages": "只要会话存在，消息就会被保留。当你删除账号时，你发送的消息会被删除。对方成员的消息会保留在其列表中。"
+    },
+    "rights": {
+      "title": "你的权利（GDPR）",
+      "text": "你对你的数据享有访问、更正、反对和删除的权利。在<account>我的账号</account>页面中，你可以将所有数据导出为 JSON，或一键删除你的账号。你的 GC Stats 账号不会受到影响。",
+      "contact": "如有其他请求：<mail>{email}</mail>。如果你认为你的权利未得到尊重，也可以向 CNIL（法国数据保护机构）投诉。"
+    },
+    "cookies": {
+      "title": "Cookie 和本地存储",
+      "text": "我们只使用网站运行所需的技术性 Cookie，因此无需同意横幅。",
+      "session": "<b>__Host-sc_session：</b>你的登录会话（30 天）。",
+      "profile": "<b>sc_profile：</b>你管理他人档案时的当前档案。",
+      "oauth": "<b>sc_oauth：</b>保护使用 GC Stats 的登录，用完即删。",
+      "theme": "<b>sc_theme：</b>你的浅色或深色主题。",
+      "storage": "<b>本地存储：</b>你的帖子筛选条件和时区，保留在你的浏览器中。"
+    }
+  },
+  "chat": {
+    "title": "消息",
+    "unreadLabel": "消息，{count} 条未读",
+    "seeAll": "查看所有消息",
+    "writtenBy": "<strong>{name}</strong>，{profile} 的经理",
+    "managerName": "{name}（{profile} 的经理）",
+    "delegateNotice": "你正在为 {profile} 发言：你的消息会显示你自己的名字（{name}），并说明你管理此档案。",
+    "you": "你：",
+    "hiddenMessage": "消息已被审核员删除",
+    "held": "等待审核",
+    "back": "返回会话列表",
+    "fromPost": "来自 {name} 的 {code} 帖子",
+    "block": "屏蔽",
+    "blockConfirm": "确认屏蔽",
+    "unblock": "取消屏蔽",
+    "unblockConfirm": "确认",
+    "cancel": "取消",
+    "loadOlder": "加载更早的消息",
+    "loadMoreConversations": "显示更多会话",
+    "loading": "正在加载会话",
+    "emptyConversation": "还没有消息。",
+    "blockedByMe": "你已屏蔽 {name}。取消屏蔽后才能再次写信。",
+    "blockedByPeer": "你不能再给此人写信。",
+    "reportTitle": "举报来自 {name} 的消息",
+    "staffNotice": "GC Scouting 审核团队可以阅读会话，仅用于审核目的。",
+    "placeholder": "写下你的消息",
+    "send": "发送",
+    "errors": {
+      "body": {
+        "required": "请先写下消息再发送。",
+        "tooLong": "最多 {max} 个字符。",
+        "invalidCharacters": "请删除控制字符或不可见字符。"
+      },
+      "auth": "你的会话已过期。请重新登录。",
+      "notFound": "此会话或帖子已不可用。",
+      "ownPost": "你不能给自己写信。",
+      "chatDisabled": "此帖子的作者不接受私信。",
+      "blockedByMe": "你已屏蔽此人。",
+      "blockedByPeer": "你不能再给此人写信。",
+      "sanctioned": "你的 GC Stats 账号受到处罚（禁言、封停或封禁）：你暂时无法发送消息。",
+      "sanctionedUntil": "你的 GC Stats 账号受到处罚（禁言、封停或封禁），直到 {date}：在此之前你无法发送消息。",
+      "rateLimited": "你发送的消息过多。请等待一分钟。",
+      "tooManyConversations": "你今天发起的会话过多。请明天再试。",
+      "server": "消息无法发送。请稍后再试。"
+    },
+    "empty": {
+      "title": "没有会话",
+      "text": "在帖子页面给其作者写信即可开始会话。"
+    },
+    "pick": {
+      "title": "选择一个会话",
+      "text": "你与选手、队伍和职员的交流会显示在左侧。"
+    },
+    "login": {
+      "title": "登录以查看你的消息",
+      "text": "消息功能使用你的 GC Stats 账号。",
+      "cta": "使用 GC Stats 登录"
+    },
+    "link": {
+      "hidden": "已隐藏的链接",
+      "hiddenHint": "此链接不是来自受信任的网站，默认已隐藏。",
+      "warning": "此链接不会指向受信任的网站（Discord、X、GC Stats、VLR、Liquipedia）。它可能被用来窃取你的账号或数据。只有在你认识此人时才打开它。",
+      "show": "显示链接",
+      "cancel": "保持隐藏"
+    },
+    "peer": {
+      "recent": "新账号",
+      "recentHint": "GC Stats 账号创建不足 {days} 天",
+      "warned": "已警告",
+      "warnedHint": "此人收到过 GC Stats 审核员的警告",
+      "warnedNotice": "{name} 收到过 GC Stats 审核员的警告。请保持谨慎，并举报任何不当消息。",
+      "recentNotice": "{name} 的 GC Stats 账号创建不足 {days} 天。请警惕不寻常的请求（链接、付款、凭据）。"
+    },
+    "posts": {
+      "title": "{name} 的公开帖子",
+      "toggle": "{count, plural, =0 {没有公开帖子} other {# 个公开帖子}}",
+      "none": "没有公开帖子。",
+      "published": "更新于 {date}"
+    },
+    "start": {
+      "button": "发送消息",
+      "open": "查看会话",
+      "title": "给 {name} 写信",
+      "close": "关闭",
+      "loginHint": "使用 GC Stats 登录后才能给此帖子的作者写信。",
+      "login": "登录"
+    },
+    "alert": {
+      "subject": "来自 {name} 的 GC Scouting 新消息",
+      "title": "{name} 给你发了一条消息",
+      "body": "你在 GC Scouting 上收到了来自 {name} 的消息。请在网站上回复，会话只在你们两人和审核员之间保持私密。",
+      "managedSubject": "{profile} 在 GC Scouting 上有新消息",
+      "managedTitle": "{name} 给 {profile} 发了一条消息",
+      "managedBody": "你管理的档案 {profile} 在 GC Scouting 上收到了来自 {name} 的消息。请在网站上回复：你的回复会显示你自己的名字。",
+      "open": "查看会话",
+      "footer": "你收到此提醒，是因为你的 GC Scouting 设置中开启了消息通知。"
+    },
+    "switch": {
+      "title": "此会话属于 {name}",
+      "managedText": "你管理此档案。请切换到它以阅读会话并回复，你的消息会显示你自己的名字。",
+      "selfText": "你正在以另一个档案操作。请切换回你自己的档案以阅读会话并回复。",
+      "button": "切换到 {name}",
+      "error": "无法切换档案。请稍后再试。"
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "管理",
+      "dashboard": "仪表盘",
+      "groupChat": "消息",
+      "conversations": "会话",
+      "automod": "自动审核",
+      "messageReports": "被举报的消息",
+      "groupPosts": "帖子",
+      "posts": "帖子",
+      "postReports": "被举报的帖子",
+      "groupAdmin": "管理事务",
+      "users": "用户",
+      "access": "权限",
+      "backToSite": "返回网站",
+      "toggle": "显示或隐藏菜单",
+      "menuTitle": "菜单",
+      "menuDescription": "管理导航。"
+    },
+    "roles": {
+      "user": "成员",
+      "staff": "职员",
+      "admin": "管理员"
+    },
+    "common": {
+      "cancel": "取消",
+      "total": "{count, plural, =0 {没有结果} other {# 条结果}}",
+      "previous": "上一页",
+      "next": "下一页",
+      "gcsAdmin": "在 GC Stats 管理后台中打开",
+      "search": "搜索",
+      "close": "关闭"
+    },
+    "sanctions": {
+      "note": "备注",
+      "warning": "警告",
+      "mute": "禁言",
+      "suspension": "封停",
+      "ban": "封禁"
+    },
+    "errors": {
+      "auth": "你的会话已过期，或你不再拥有管理权限。",
+      "invalid": "无效的请求。",
+      "notFound": "未找到。",
+      "conflict": "已被其他人处理。页面已重新加载。",
+      "reasonLength": "原因必须在 {min} 到 {max} 个字符之间。",
+      "reasonInvalidCharacters": "请删除原因中的控制字符或不可见字符。",
+      "activeExists": "该作者已经有另一个此类型的帖子在线。",
+      "selfDemote": "你不能移除自己的管理员角色。",
+      "bootstrap": "此账号通过网站配置成为管理员，其角色无法在此更改。",
+      "server": "操作失败。请稍后再试。"
+    },
+    "dashboard": {
+      "title": "仪表盘",
+      "subtitle": "审核员待处理的事项，以及最近 7 天的活动。",
+      "todo": "待处理",
+      "held": "被自动审核扣留的消息",
+      "messageReports": "被举报的消息",
+      "postReports": "被举报的帖子",
+      "activity": "活动",
+      "activePosts": "在线帖子",
+      "newPosts": "已发布的帖子（7 天）",
+      "activeConversations": "活跃会话（7 天）",
+      "messagesWeek": "已发送的消息（7 天）",
+      "users": "账号",
+      "staff": "职员和管理员"
+    },
+    "conversations": {
+      "title": "会话",
+      "subtitle": "所有私人会话，最新的在前。",
+      "search": "成员的用户名",
+      "empty": "没有会话。",
+      "members": "成员",
+      "messages": "消息",
+      "flags": "待检查",
+      "lastMessage": "最后一条消息",
+      "held": "{count} 条被扣留",
+      "reports": "{count, plural, other {# 条举报}}",
+      "open": "打开",
+      "back": "返回会话列表",
+      "detailTitle": "会话 #{id}",
+      "older": "更早的消息",
+      "latest": "最新的消息",
+      "fromPost": "由 {name} 的 {code} 帖子发起",
+      "noMessages": "没有消息。"
+    },
+    "messages": {
+      "status": {
+        "visible": "可见",
+        "blocked": "被自动审核扣留",
+        "hidden": "已隐藏"
+      },
+      "unchecked": "未经自动审核检查",
+      "writtenBy": "由 {name} 撰写（档案的经理）",
+      "reported": "{count, plural, other {# 条举报}}",
+      "reviewedBy": "{date} 由 {name} 处理",
+      "approve": "放行",
+      "reject": "保持拦截",
+      "hide": "隐藏",
+      "hideConfirm": "确认",
+      "show": "设为可见"
+    },
+    "automod": {
+      "title": "自动审核",
+      "subtitle": "被 OpenAI 自动审核扣留的消息。放行会送达消息（并提醒收件人），保持拦截则永久删除它。",
+      "empty": "没有等待处理的消息。",
+      "context": "查看会话"
+    },
+    "messageReports": {
+      "title": "被举报的消息",
+      "subtitle": "从消息功能发送的举报。要封禁某人，请通过其在 GC Stats 管理后台中的档案操作。",
+      "empty": "没有举报。",
+      "by": "举报人",
+      "hide": "隐藏消息",
+      "dismiss": "驳回"
+    },
+    "reportStatus": {
+      "label": "状态",
+      "open": "未处理",
+      "handled": "已处理",
+      "dismissed": "已驳回",
+      "handledBy": "由 {name} 处理",
+      "dismissedBy": "由 {name} 驳回"
+    },
+    "postReports": {
+      "title": "被举报的帖子",
+      "subtitle": "与 Discord 审核频道中相同的举报，可在这里或那里处理。",
+      "empty": "没有举报。",
+      "by": "举报人：{name}",
+      "dismiss": "驳回",
+      "postState": {
+        "active": "已过期",
+        "closed": "已关闭",
+        "removed": "已删除"
+      }
+    },
+    "posts": {
+      "title": "帖子",
+      "subtitle": "所有帖子。在这里删除帖子也会将其从 Discord 频道中删除。",
+      "search": "帖子名称或用户名",
+      "stateLabel": "状态",
+      "anyState": "所有状态",
+      "typeLabel": "类型",
+      "anyType": "所有类型",
+      "state": {
+        "visible": "在线",
+        "expired": "已过期",
+        "closed": "已关闭",
+        "removed": "已被审核员删除",
+        "deleted": "已被作者删除"
+      },
+      "post": "帖子",
+      "author": "作者",
+      "bumped": "更新时间",
+      "actions": "操作",
+      "reports": "{count, plural, other {# 条举报}}",
+      "remove": "删除",
+      "restore": "恢复",
+      "restoreConfirm": "确认恢复",
+      "removeTitle": "删除帖子 {name}",
+      "removeHint": "帖子将从网站和 Discord 频道中消失，其未处理的举报将被处理。原因对审核员可见。",
+      "reason": "原因",
+      "edit": "编辑"
+    },
+    "users": {
+      "title": "用户",
+      "subtitle": "至少登录过一次的账号。处罚在 GC Stats 上管理。",
+      "search": "用户名",
+      "anyRole": "所有角色",
+      "empty": "没有账号。",
+      "user": "账号",
+      "posts": "帖子",
+      "gcsAccount": "GC Stats 账号创建于",
+      "lastLogin": "最后登录",
+      "back": "返回用户列表",
+      "joined": "加入 GC Scouting",
+      "email": "邮箱",
+      "discord": "Discord",
+      "sanctions": "GC Stats 上当前有效的处罚",
+      "noSanction": "没有有效的处罚。",
+      "sanctionUntil": "直到 {date}",
+      "sanctionPermanent": "永久",
+      "sanctionsChecked": "于 {date} 从 GC Stats 读取。",
+      "sanctionsNever": "从未从 GC Stats 读取。",
+      "sanctionsHint": "禁言、封停或封禁会阻止发送消息和发帖。",
+      "conversations": "会话",
+      "noConversation": "没有会话。",
+      "seePosts": "查看其帖子"
+    },
+    "access": {
+      "title": "权限",
+      "subtitle": "职员可以使用除此页面外的整个管理后台。管理员还可以授予和移除角色。",
+      "current": "职员和管理员",
+      "grant": "授予角色",
+      "search": "账号的用户名",
+      "noResult": "没有匹配的账号。",
+      "hint": "该账号必须至少登录过一次 GC Scouting。",
+      "role": "角色",
+      "save": "保存",
+      "locked": "你自己的角色以及由配置设定的管理员无法在此更改。"
+    },
+    "error": {
+      "title": "此页面无法加载",
+      "body": "发生了服务器错误。请重试，或返回仪表盘。",
+      "retry": "重试"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting 将在 X 上分享你的帖子",
+    "siteText": "它会发布在我们的账号上，如果你提供了 @ 账号也会带上。",
+    "switchToAuthor": "我更想自己发布",
+    "switchToSite": "让 GC Scouting 来发布",
+    "switching": "正在保存...",
+    "tweeted": "你的帖子已发布在 GC Scouting 的 X 账号上。",
+    "retweeted": "GC Scouting 已转推你的帖子。",
+    "authorTitle": "在 X 上分享你的帖子",
+    "authorText": "请从你的账号发布这条推文，然后把它的链接粘贴到这里：GC Scouting 会转推它。",
+    "authorSavedTitle": "已收到链接，我们会转推你的帖子",
+    "authorSavedText": "在转推完成之前，你仍可以替换链接。",
+    "language": "推文语言",
+    "draftUnavailable": "无法准备推文文本。请稍后刷新页面。",
+    "length": "{length}/{max} 个字符",
+    "tooLong": "对 X 来说太长了，请在发布前缩短。",
+    "open": "在 X 上发布",
+    "opened": "已在 X 上打开",
+    "linkLabel": "你的推文链接",
+    "linkPlaceholder": "https://x.com/username/status/...",
+    "save": "发送链接",
+    "saving": "正在发送...",
+    "saved": "链接已发送",
+    "viewTweet": "查看推文",
+    "errors": {
+      "invalid": "此帖子无效。",
+      "required": "请粘贴你的推文链接。",
+      "tweetUrlInvalid": "这不是推文链接。它应该类似 https://x.com/username/status/123。",
+      "auth": "你的会话已过期，请重新登录。",
+      "notFound": "此帖子已不再在线。",
+      "alreadyTweeted": "此帖子已在 X 上，这个选择无法再更改。",
+      "notAuthorTweet": "此帖子由 GC Scouting 发布，请先选择自己发布。",
+      "server": "出了点问题，请稍后再试。"
+    }
+  },
+  "tweetImage": {
+    "share": "连同图片分享",
+    "copy": "复制图片",
+    "preparing": "正在准备...",
+    "shared": "已分享",
+    "copied": "图片已复制",
+    "pasteHint": "X 打开后，把图片粘贴到推文中（Ctrl+V 或 ⌘V）。",
+    "failed": "无法准备图片。",
+    "download": "下载"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "你的 {code} 帖子被审核员编辑了",
+      "title": "你的 {code} 帖子“{name}”已被编辑",
+      "body": "GC Scouting 审核团队的一名成员编辑了你的帖子。它仍保持在线，过期日期不变。",
+      "reason": "原因：{reason}",
+      "open": "查看帖子",
+      "footer": "你收到此消息，是因为你在 GC Scouting 上的帖子被审核员编辑了。"
+    }
+  },
+  "ageGroups": {
+    "minor": "未成年",
+    "adult": "成年"
+  },
+  "minorsPolicy": {
+    "accepted": "接受未成年人",
+    "adultsOnly": "仅限成年人"
+  },
+  "tierListGuide": {
+    "title": "了解我们的梯队表",
+    "intro": "每个选手帖子都附带一份特工梯队表。这里说明它为什么是这个样子，以及如何填写才能真正帮到队伍。",
+    "scene": {
+      "title": "与赛场共同打造",
+      "text": "这个格式不是随意选的：它是与 <b>Game Changers 赛场上经验丰富的选手、教练和经理</b>共同设计的，他们每个赛段都在物色和招募人才。",
+      "why": "他们的反馈很明确：一长串特工列表对队伍没有任何帮助。他们需要知道的是，你明天的比赛能打哪些特工，哪些还需要练习，哪些你愿意为队伍去学。",
+      "credit": "这份分级表主要与 ZennIT Orange GC 的 IGL <b>LittleBigSpy</b> 等人共同打磨，他们在赛场上的经验帮助确定了特工的分级方式。"
+    },
+    "tiers": {
+      "title": "三个等级",
+      "confident": "你现在就能在正式比赛中使用的特工，包括与之配套的站位、技能和习惯。",
+      "improve": "你已经会玩，但在比赛中用得顺手之前还需要练习的特工。",
+      "canLearn": "你还不会玩，但如果队伍需要，愿意去学的特工。",
+      "aside": "被放在一旁的特工不会显示在你的帖子上。没有“差”的一行：空着比乱猜更能说明问题。"
+    },
+    "highlight": {
+      "title": "突出你会玩的特工",
+      "text": "梯队表是用来<b>突出你会玩的特工</b>，而不是给游戏里的每个特工排名，也不是发表你对版本强势的看法。",
+      "honest": "请诚实填写：队伍会在试训时核实，一份简短而准确的梯队表比一份完整的更有价值。",
+      "notMeta": "请按你自己在每个特工上的水平分级，而不是按该特工在当前版本中的强度。",
+      "filter": "你的前两行会被“会玩”筛选使用，无论是在网站上还是在 Discord 上：它们决定你的帖子会出现在哪些搜索中。",
+      "example": "示例：一名控场和哨卫选手，对其主力特工池很有把握，另有几名先锋有待打磨。"
+    }
+  }
+}

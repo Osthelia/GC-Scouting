@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "Valorant Game Changers sahnesi için GC Stats ile bağlantılı LFT, LFP, LFS ve LFO ilanları."
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "posts": "İlanlar",
+    "newPost": "İlan oluştur",
+    "login": "GC Stats ile giriş yap",
+    "loginShort": "Giriş yap",
+    "menu": "Menü",
+    "language": "Dil"
+  },
+  "home": {
+    "hero": {
+      "title": "Takımını bul. <accent>Kadronu tamamla.</accent>",
+      "subtitle": "Valorant Game Changers sahnesinin LFT, LFP, LFS ve LFO ilanları tek bir yerde. Role, rank'e, dile veya ajana göre filtrele ve GC Stats profilinle iki dakikada ilan ver.",
+      "ctaBrowse": "İlanlara göz at",
+      "ctaPost": "İlan oluştur",
+      "demo": {
+        "lfp": "OQ Playoffs'ta İspanyol kadro, shotcall yapabilen bir controller ve yedek olarak flash initiator arıyor. Pazartesiden Perşembeye, 20:00 ile 23:00 arası antrenman.",
+        "lfs": "Takımımız bir sonraki split için bir koç ve bir analist arıyor. Ücretli pozisyon, haftada 3 akşam, VOD incelemeleri dahil."
+      }
+    },
+    "types": {
+      "heading": "Her ihtiyaç için bir ilan türü",
+      "sub": "Ya sen arıyorsun ya da biri seni arıyor. Her ilanın bir türü var ve yalnızca seni ilgilendirenleri görürsün.",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "Takım arayan bir oyuncu."
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "Bir veya daha fazla oyuncu alan bir takım."
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "Koç, analist veya menajer arayan bir takım."
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "Organizasyon arayan bir kadro."
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "Bir takım için uygun olan bir koç veya analist."
+      }
+    },
+    "how": {
+      "heading": "Nasıl çalışır",
+      "step1": {
+        "title": "GC Stats ile giriş yap",
+        "body": "GC Stats profilin bağlıysa turnuva geçmişin otomatik olarak eklenir. Değilse birkaç tıkla bul."
+      },
+      "step2": {
+        "title": "İlanını oluştur",
+        "body": "Rol, rank, diller, bölge, deneyim ve ajan tierlist'in. Her şey yapılandırılmış, yazılacak bir şey yok."
+      },
+      "step3": {
+        "title": "Her yerde görün",
+        "body": "İlanın sitede yayınlanır, abone olan Discord sunucularına gönderilir ve Twitter'da paylaşılır."
+      },
+      "freshTitle": "Her zaman güncel",
+      "freshBody": "İlanlar 10 gün sonra sona erer. 7. günde hatırlatırız, tek tıkla yenile."
+    },
+    "tierlist": {
+      "heading": "Ajan tierlist'in, tek bakışta okunur",
+      "body": "Artık \"Her şeyden biraz oynarım\" yok. Her oyuncu ajanlarını beş seviyede sıralar ve takımlar doğrudan ajana göre filtreler.",
+      "filterHint": "Filtre örneği: \"Viper oynayabilir\", Viper'ın ilk iki seviyede olması demektir."
+    },
+    "verified": {
+      "heading": "GC Stats'a bağlı profiller",
+      "body": "İlanını Game Changers turnuvalarını takip eden GC Stats profiline bağla, geçmişin görünsün: oynanan turnuvalar, takımlar, sonuçlar. Ekibimiz bağlantıyı onaylayana kadar ilanda bu belirtilir.",
+      "verified": "Doğrulanmış profil",
+      "verifiedHint": "Bağlantı onaylandı, GC Stats geçmişi gösteriliyor.",
+      "pending": "Doğrulanmamış",
+      "pendingHint": "Bağlantı isteği ekip onayını bekliyor.",
+      "none": "GC Stats profili yok",
+      "noneHint": "Henüz turnuva yok, ilan her zamanki gibi gösterilir."
+    },
+    "discord": {
+      "eyebrow": "Discord botu",
+      "heading": "İlanlar doğrudan sunucuna gelsin",
+      "body": "Botu Discord sunucuna ekle ve neleri alacağını seç. Kriterlerine uyan her yeni ilan, tierlist'i ve ilana giden bir bağlantıyla otomatik olarak gönderilir.",
+      "cta": "Botu ekle",
+      "steps": {
+        "add": {
+          "title": "Botu ekle",
+          "body": "Tek tıkla sunucuna davet et, yalnızca seçtiğin kanallara yazabilmesi yeterli."
+        },
+        "channel": {
+          "title": "Bir veya daha fazla kanal seç",
+          "body": "EU LFT için bir kanal, staff için başka bir kanal: her kanalın kendi ayarı var."
+        },
+        "filters": {
+          "title": "Neleri alacağını seç",
+          "body": "İlan türleri, bölgeler, roller, rank, diller, ajanlar, deneyim, uygunluk. Sitedekiyle aynı filtreler."
+        },
+        "receive": {
+          "title": "İlanları anında al",
+          "body": "Yeni ve yenilenen ilanlar yayına girer girmez, tekrar olmadan gönderilir."
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "#{channel} ayarı:",
+        "filterType": "LFT",
+        "filterRole": "Controller",
+        "filterRank": "Ascendant ve üstü",
+        "app": "UYGULAMA",
+        "time": "Bugün 21:04",
+        "published": "2 saat önce yayınlandı",
+        "rank": "Rank",
+        "peak": "en yüksek {rank}",
+        "roles": "Roller",
+        "agents": "Ajanlar",
+        "experience": "Deneyim",
+        "languages": "Diller",
+        "rhythm": "Tempo",
+        "rhythmValue": "{days} günde haftada {hours} saat",
+        "tierlistAlt": "{name} adlı oyuncunun ajan tierlist'i"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "Bizi Twitter'da takip et",
+      "body": "İlanlar, tüm sahneye ulaşmak için tierlist görseliyle birlikte hesabımızda paylaşılır.",
+      "cta": "Bizi takip et"
+    },
+    "cta": {
+      "title": "Scout yapmaya hazır mısın?",
+      "body": "Filtreler tarayıcında kayıtlı, göz atmak için hesap gerekmez.",
+      "button": "İlanlara göz at"
+    }
+  },
+  "post": {
+    "verified": "Doğrulanmış",
+    "pending": "Doğrulanmamış",
+    "igl": "IGL",
+    "tournaments": "{count, plural, one {# turnuva} other {# turnuva}}",
+    "lookingFor": "Aranan",
+    "anyRole": "Herhangi bir rol",
+    "view": "İlanı gör",
+    "confident": "Güvendiği"
+  },
+  "duration": {
+    "months": "{count, plural, one {# ay} other {# ay}}",
+    "years": "{count, plural, one {# yıl} other {# yıl}}"
+  },
+  "compensation": {
+    "paid": "Ücretli",
+    "free": "Ücretsiz"
+  },
+  "lan": {
+    "lan": "LAN'a hazır",
+    "online": "Yalnızca online"
+  },
+  "preferences": {
+    "title": "Tercihler",
+    "theme": "Tema",
+    "themes": {
+      "system": "Otomatik",
+      "light": "Açık",
+      "dark": "Koyu"
+    },
+    "timezone": "Saat dilimi",
+    "timezoneAuto": "Otomatik ({timezone})",
+    "timezoneHint": "Uygunluğu göstermek ve saate göre aramak için kullanılır.",
+    "search": "Ara",
+    "noOption": "Eşleşme yok"
+  },
+  "roles": {
+    "duelist": "Duelist",
+    "initiator_reveal": "Ini Reveal",
+    "initiator_flash": "Ini Flash",
+    "controller": "Controller",
+    "sentinel": "Sentinel",
+    "flex": "Flex"
+  },
+  "agentClasses": {
+    "duelist": "Duelist",
+    "initiator": "Initiator",
+    "controller": "Controller",
+    "sentinel": "Sentinel"
+  },
+  "tiers": {
+    "confident": "Güvendiği",
+    "improve": "Gelişmesi gereken",
+    "canLearn": "Öğrenebilir"
+  },
+  "footer": {
+    "tagline": "GC Stats ekosisteminin Valorant scouting platformu.",
+    "product": "Ürün",
+    "postTypes": "İlan türleri",
+    "resources": "Kaynaklar",
+    "legal": "Yasal bildirim",
+    "privacy": "Gizlilik",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "<link>Osthelia</link> tarafından yapıldı, etik, kapsayıcı ve adil espora adanmış kâr amacı gütmeyen bir kuruluş."
+  },
+  "levels": {
+    "cash_cup": "Open Qualifiers",
+    "playoffs": "OQ Playoffs",
+    "main_event": "Main event"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "Co-IGL"
+  },
+  "rosterSpots": {
+    "player": "Oyuncu",
+    "sub": "Yedek"
+  },
+  "staffRoles": {
+    "coach": "Koç",
+    "assistant_coach": "Yardımcı koç",
+    "performance_coach": "Performans koçu",
+    "mental_coach": "Mental koç",
+    "analyst": "Analist",
+    "manager": "Menajer"
+  },
+  "regions": {
+    "eu": "Avrupa",
+    "na": "Kuzey Amerika",
+    "latam": "Latin Amerika",
+    "br": "Brezilya",
+    "apac": "Asya Pasifik",
+    "kr": "Kore",
+    "jp": "Japonya",
+    "oce": "Okyanusya",
+    "mena": "Orta Doğu ve Kuzey Afrika",
+    "cn": "Çin"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {İlan yok} one {# ilan} other {# ilan}}",
+    "sortLabel": "Sırala",
+    "sort": {
+      "recent": "En yeni",
+      "rank": "En yüksek rank",
+      "experience": "En çok deneyim",
+      "availability": "En uygun"
+    },
+    "filters": "Filtreler",
+    "reset": "Sıfırla",
+    "resetAll": "Filtreleri sıfırla",
+    "apply": "Sonuçları göster",
+    "any": "Hepsi",
+    "selected": "{count} seçili",
+    "search": "Ara",
+    "noOption": "Eşleşme yok",
+    "removeFilter": "Filtreyi kaldır",
+    "group": {
+      "region": "Bölge",
+      "language": "Dil",
+      "spot": "Aranan pozisyon",
+      "spotWanted": "Sunulan pozisyon",
+      "role": "Rol",
+      "staffRole": "Staff rolü",
+      "compensation": "Anlaşma",
+      "lan": "LAN",
+      "rank": "Rank",
+      "experience": "Deneyim",
+      "agents": "Oynayabilir",
+      "rhythm": "Tempo",
+      "availability": "Uygunluk",
+      "age": "Yaş"
+    },
+    "rankFrom": "Başlangıç",
+    "rankTo": "Bitiş",
+    "minDuration": "{duration} veya daha fazla",
+    "experienceHint": "Seçilen aşamalardan birinde ya da herhangi bir aşamada oynanan süre.",
+    "minHours": "{count, plural, =0 {Hepsi} other {Haftada # saat veya daha fazla}}",
+    "minDays": "{count, plural, =0 {Hepsi} one {Haftada # gün veya daha fazla} other {Haftada # gün veya daha fazla}}",
+    "rhythmHours": "Saat",
+    "rhythmDays": "Gün",
+    "rhythmHint": "Takıma ayrılan haftalık süre ve gün sayısı.",
+    "agentsHint": "Tierlist'in ilk iki seviyesindeki ajanlar.",
+    "agentsMax": "En fazla 5 ajan",
+    "slot": {
+      "days": "Günler",
+      "from": "Başlangıç",
+      "to": "Bitiş",
+      "everyDay": "Her gün",
+      "mode": "Arama modu",
+      "simple": "Basit",
+      "advanced": "Gün gün",
+      "notSearched": "Aranmıyor",
+      "hint": "Oynama saatlerin. Bir ilan, onlarla yarım saat paylaştığı anda eşleşir.",
+      "hintAdvanced": "Günleri seç ve her biri için saatleri belirle. Bir ilan, onlarla yarım saat paylaştığı anda eşleşir.",
+      "hintTimezone": "Saatler {timezone} diliminde. Bir ilan, onlarla yarım saat paylaştığı anda eşleşir."
+    },
+    "empty": "Bu filtrelere uyan ilan yok.",
+    "emptyHint": "Bir filtreyi kaldırmayı dene ya da daha sonra tekrar gel: her gün yeni ilanlar geliyor.",
+    "loading": "İlanlar yükleniyor",
+    "close": "Kapat"
+  },
+  "postPage": {
+    "back": "Tüm {code} ilanları",
+    "expired": "Bu ilanın süresi doldu",
+    "expiredHint": "Artık listede görünmüyor. Sahibi istediği zaman yenileyebilir.",
+    "closed": "Bu ilan kapatıldı",
+    "closedHint": "Sahibi artık aramıyor.",
+    "published": "{date} tarihinde yayınlandı",
+    "renewed": "{date} tarihinde yenilendi",
+    "expires": "{date} tarihinde sona erer",
+    "about": "Hakkında",
+    "tierlist": "Ajan tierlist'i",
+    "availability": "Uygunluk",
+    "profile": "Profil",
+    "similar": "Benzer ilanlar",
+    "seeAll": "Tümünü gör",
+    "region": "Bölge",
+    "country": "Ülke",
+    "languages": "Diller",
+    "roles": "Roller",
+    "rosterSpot": "Aranan pozisyon",
+    "rosterSpotWanted": "Sunulan pozisyon",
+    "playersWanted": "{count, plural, one {# oyuncu} other {# oyuncu}}",
+    "subsWanted": "{count, plural, one {# yedek} other {# yedek}}",
+    "lookingFor": "Aranan",
+    "staffRoles": "Staff rolleri",
+    "igl": "Shotcalling",
+    "rank": "Rank",
+    "peak": "En yüksek {rank}",
+    "rankWanted": "Aranan rank",
+    "tracker": "Tracker.gg",
+    "compensation": "Anlaşma",
+    "lan": "LAN",
+    "experience": "Deneyim",
+    "experienceWanted": "Aranan deneyim",
+    "noExperience": "Henüz turnuva yok",
+    "rhythm": "Tempo",
+    "rhythmValue": "Haftada {hours, number} saat, {days, plural, one {# gün} other {# gün}}",
+    "contact": "İletişim",
+    "copyDiscord": "Discord kullanıcı adını kopyala",
+    "copyDiscordId": "Discord ID'sini kopyala",
+    "discordProfile": "Discord",
+    "discordServer": "Sunucuya katıl",
+    "copied": "Kopyalandı",
+    "share": "Bağlantıyı kopyala",
+    "linkCopied": "Bağlantı kopyalandı",
+    "twitter": "X profili",
+    "email": "E-posta gönder",
+    "bestResult": "En iyi sonuç",
+    "viewProfile": "GC Stats'ta gör",
+    "pendingNote": "Bu GC Stats profiline bağlantı ekip onayını bekliyor.",
+    "noProfile": "Bu ilana bağlı bir GC Stats profili yok.",
+    "yourTime": "Senin saatin",
+    "authorTime": "İlan sahibinin saati",
+    "timezoneNote": "Saatler {timezone} diliminde",
+    "noAvailability": "Uygunluk belirtilmemiş.",
+    "loading": "İlan yükleniyor",
+    "gcsHistory": "GC Stats geçmişi",
+    "latestTeams": "Son takımlar",
+    "latestTournaments": "Son turnuvalar",
+    "present": "Günümüz",
+    "unknownDate": "?",
+    "noTournaments": "GC Stats'ta turnuva yok.",
+    "wins": "{n}G",
+    "losses": "{n}M",
+    "recordTitle": "{wins, plural, one {# galibiyet} other {# galibiyet}}, {losses, plural, one {# mağlubiyet} other {# mağlubiyet}}",
+    "place": "{n, selectordinal, other {#.}}",
+    "top": "İlk {n}",
+    "viewTeamProfile": "GC Stats'ta takım",
+    "teamRoles": {
+      "player": "Oyuncu",
+      "player-igl": "Oyuncu, IGL",
+      "sub": "Yedek",
+      "coach": "Koç",
+      "assistant coach": "Yardımcı koç",
+      "performance coach": "Performans koçu",
+      "analyst": "Analist",
+      "manager": "Menajer"
+    },
+    "syncedAt": "{date} tarihinde güncellendi",
+    "gcsPending": {
+      "loading": "GC Stats geçmişi getiriliyor…",
+      "timeout": "GC Stats geçmişi henüz mevcut değil, birkaç dakika sonra tekrar gel."
+    },
+    "gcsRefresh": {
+      "label": "Yenile",
+      "pending": "Yenileniyor…",
+      "done": "Yenilendi",
+      "errors": {
+        "invalid": "Geçersiz ilan.",
+        "auth": "Geçmişi yenilemek için giriş yap.",
+        "notFound": "Bu ilan artık mevcut değil.",
+        "forbidden": "Yalnızca ilan sahibi yenileyebilir.",
+        "cooldown": "{minutes, plural, one {# dakika sonra tekrar dene.} other {# dakika sonra tekrar dene.}}",
+        "noProfile": "Bu ilana bağlı bir GC Stats profili veya takımı yok.",
+        "notConfigured": "GC Stats bağlantısı yapılandırılmamış.",
+        "failed": "GC Stats yanıt vermedi, daha sonra tekrar dene."
+      }
+    },
+    "agentContact": "Temsilci üzerinden iletişim",
+    "staffEdit": "Düzenle (moderasyon)",
+    "ageGroup": "Yaş",
+    "minorsAccepted": "Reşit olmayanlar"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Sayfa bulunamadı",
+      "body": "Bu sayfa mevcut değil ya da ilan kaldırılmış.",
+      "back": "İlanlara göz at"
+    },
+    "serverError": {
+      "title": "Bir şeyler ters gitti",
+      "body": "Bu sayfa yüklenemedi. Biraz sonra tekrar dene.",
+      "retry": "Tekrar dene",
+      "back": "İlanlara göz at"
+    }
+  },
+  "auth": {
+    "account": "Hesabım",
+    "logout": "Çıkış yap",
+    "profile": {
+      "verified": "Doğrulanmış GC Stats profili",
+      "pending": "GC Stats profili doğrulama bekliyor",
+      "none": "Bağlı GC Stats profili yok"
+    },
+    "error": {
+      "title": "Giriş başarısız",
+      "retry": "Tekrar dene",
+      "home": "Ana sayfaya dön",
+      "reasons": {
+        "denied": "GC Stats'ta erişimi reddettin. İlan vermek için GC Stats ile giriş yapmak zorunludur.",
+        "state": "Bu giriş denemesinin süresi doldu ya da başka bir sekmede başlatıldı. Lütfen yeniden başla.",
+        "exchange": "GC Stats girişini doğrulayamadı. Biraz sonra tekrar dene.",
+        "provider": "GC Stats giriş sırasında bir hata döndürdü. Biraz sonra tekrar dene.",
+        "config": "GC Stats ile giriş bu sitede henüz yapılandırılmamış."
+      }
+    },
+    "settings": "Hesap ayarları",
+    "gcsAccount": "GC Stats hesabım",
+    "actAs": "Aktif profil",
+    "yourself": "{name} (sen)",
+    "switchFailed": "Bu profil artık mevcut değil, sayfayı yenile.",
+    "actingAs": "{name} adına işlem yapıyorsun.",
+    "backToSelf": "Profiline dön",
+    "myPosts": "İlanlarım",
+    "messages": "Mesajlar",
+    "admin": "Yönetici"
+  },
+  "newPost": {
+    "title": "Yeni ilan",
+    "intro": {
+      "lft": "Takımlara kim olduğunu göster: roller, rank, ajanlar ve ne zaman oynayabileceğin.",
+      "lfp": "Takımının aradığı oyuncuyu ve ne zaman antrenman yaptığınızı anlat.",
+      "lfs": "Takımının aradığı staff'ı anlat (koç, analist, menajer).",
+      "lfo": "Kadronu takım arayan organizasyonlara tanıt.",
+      "lfst": "Takımlara koç, analist veya menajer olarak neler katabileceğini göster."
+    },
+    "login": {
+      "title": "İlan vermek için giriş yap",
+      "text": "İlanlar bir GC Stats hesabına bağlıdır, böylece takımlar ve oyuncular kiminle konuştuklarını bilir. Profilin bağlıysa turnuva geçmişin gösterilir.",
+      "cta": "GC Stats ile giriş yap"
+    },
+    "activeExists": {
+      "title": "Zaten aktif bir {code} ilanın var",
+      "text": "Aynı anda yalnızca biri yayında olabilir. Yeni bir ilan vermeden önce onu kapat ya da süresinin dolmasını bekle."
+    },
+    "viewExisting": "İlanımı gör",
+    "sections": {
+      "identity": "Kimlik",
+      "identityHint": "İlanda nasıl görüneceğin.",
+      "identityTeamHint": "Takımının ilanda nasıl görüneceği.",
+      "profile": {
+        "lft": "Profilin",
+        "lfp": "Aranan oyuncu",
+        "lfs": "Aranan staff",
+        "lfo": "Kadron",
+        "lfst": "Profilin"
+      },
+      "tierList": "Ajan tierlist'i",
+      "tierListHint": "Oynamayı bildiğin ajanları, ustalaştıklarından öğrenebileceklerine kadar öne çıkar. İlk iki satır \"oynayabilir\" filtresinde kullanılır.",
+      "availability": "Uygunluk",
+      "availabilityHint": "Her zamanki haftalık saatlerin, kendi saat diliminde. Ziyaretçiler bunları kendi saatlerine çevrilmiş olarak görür.",
+      "availabilityTeamHint": "Antrenman saatleriniz, kendi saat diliminizde. Ziyaretçiler bunları kendi saatlerine çevrilmiş olarak görür.",
+      "rhythm": "Tempo",
+      "rhythmHint": "Uygunluğun içinde, her hafta bir takıma ayırabileceğin en fazla süre.",
+      "rhythmTeamHint": "Antrenman saatlerinizin içinde, takımının her hafta istediği süre.",
+      "about": "Tanıtım ve iletişim",
+      "aboutHint": "Öne çıkmak için birkaç kelime ve sana nasıl ulaşılacağı.",
+      "reminders": "Süre sonu hatırlatmaları",
+      "remindersHint": "Bir ilan 10 gün yayında kalır. 7 gün sonra sana, tek tıkla yenilemen için bir bağlantı içeren bir hatırlatma göndeririz.",
+      "remindersDelegatedHint": "Bir ilan 10 gün yayında kalır. Hatırlatmalar, profil sahibinin hesabındaki kanallara gider.",
+      "tweet": "X'te paylaşım",
+      "tweetHint": "Her ilan GC Scouting X hesabında paylaşılır. İstersen kendin de paylaşabilirsin, biz de retweet'leriz.",
+      "moderation": "Düzenleme nedeni",
+      "moderationHint": "İlan sahibine gönderilir ve moderasyon kaydında saklanır."
+    },
+    "fields": {
+      "displayName": "Takma ad",
+      "teamName": "Takım adı",
+      "region": "Bölge",
+      "country": "Ülke",
+      "noCountry": "Belirtilmemiş",
+      "languages": "Konuşulan diller",
+      "languagesMax": "En fazla {max} dil",
+      "choose": "Seç",
+      "rosterSpot": "Aranan pozisyon",
+      "rosterSpotWanted": "Sunulan pozisyon",
+      "rosterSpotHint": "Varsayılan olarak oyuncu. Yedek rolü için yedek seç.",
+      "playersWanted": "Aranan oyuncular",
+      "subsWanted": "Aranan yedekler",
+      "wantedHint": "Kadronun kaç asil oyuncu ve kaç yedek aradığı.",
+      "playersCount": "{count, plural, =0 {Oyuncu yok} one {# oyuncu} other {# oyuncu}}",
+      "subsCount": "{count, plural, =0 {Yedek yok} one {# yedek} other {# yedek}}",
+      "roles": "Roller",
+      "rolesWanted": "Aranan roller",
+      "flexHint": "Flex, aramalarda her rolle eşleşir.",
+      "igl": "Shotcalling",
+      "iglWanted": "Aranan shotcaller",
+      "staffRoles": "Pozisyonlar",
+      "staffRolesWanted": "Aranan pozisyonlar",
+      "rankCurrent": "Güncel rank",
+      "rankPeak": "En yüksek rank",
+      "rankMin": "Minimum rank",
+      "rankMax": "Maksimum rank",
+      "rankRangeHint": "Aradığın oyuncunun rank aralığı.",
+      "compensation": "Aranan anlaşma",
+      "compensationHint": "Ücretli bir sözleşme arıyorsan ücretli, gönüllü bir proje sana uyuyorsa ücretsiz seç.",
+      "compensationOffered": "Sunulan anlaşma",
+      "compensationOfferedHint": "Pozisyon maaş veya bir ödemeyle geliyorsa ücretli, aksi halde ücretsiz seç.",
+      "lan": "LAN etkinlikleri",
+      "lanHint": "LAN etkinliklerinde oynamak için seyahat edip edemeyeceğin.",
+      "lanTeamHint": "Takımın LAN etkinliklerine seyahat etmeyi planlayıp planlamadığı.",
+      "experience": "Turnuva deneyimi",
+      "experienceHint": "Her aşamada ne kadar süre oynadığın. Oynamadığın aşamaları \"Yok\" olarak bırak.",
+      "experienceWanted": "Aranan deneyim",
+      "experienceWantedHint": "Her aşamada oynanması gereken minimum süre, fark etmiyorsa \"Yok\" olarak bırak.",
+      "notPlayed": "Yok",
+      "notSpecified": "Belirtilmemiş",
+      "rhythmHours": "Haftalık saat",
+      "rhythmDays": "Haftalık gün",
+      "hoursPerWeek": "{count} saat",
+      "daysPerWeek": "{count, plural, one {# gün} other {# gün}}",
+      "rhythmMax": "Uygunluğun {days, plural, one {# günde} other {# günde}} {hours} saati kapsıyor, tempo bunu aşamaz.",
+      "rhythmNoAvailability": "Önce uygunluğunu ekle, tempo onu aşamaz.",
+      "timezone": "Saat dilimi",
+      "description": "Tanıtım",
+      "descriptionPlaceholder": {
+        "player": "Hedeflerin, oyun tarzın, bir takımda aradığın şeyler...",
+        "team": "Projeniz, hedefleriniz, oyuncudan beklentileriniz..."
+      },
+      "contact": "İletişim (en az bir)",
+      "discord": "Discord ID",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "Bağlı hesabımı kullan",
+      "discordInvite": "Discord sunucu daveti",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "kullanıcı adı",
+      "email": "E-posta",
+      "emailPlaceholder": "sen@example.com",
+      "contactHint": "İlanda herkese açık gösterilir.",
+      "notifyEmail": "E-posta ile",
+      "notifyDiscord": "Discord özel mesajı ile",
+      "noEmail": "GC Stats hesabında doğrulanmış e-posta yok",
+      "discordLinked": "GC Stats'ta bağlı Discord hesabı",
+      "noDiscord": "GC Stats'ta bağlı Discord hesabı yok",
+      "noReminderWarning": "Hatırlatma olmadan ilanın 10 gün sonra haber verilmeden sona erer.",
+      "iglHint": "İki rolü de üstlenebiliyorsan ikisini de seç.",
+      "iglWantedHint": "İkisi de sana uyuyorsa ikisini de seç.",
+      "gcsTeam": "GC Stats'taki takım sayfası",
+      "gcsTeamPlaceholder": "https://gc-stats.app/en/team/...",
+      "gcsTeamHint": "Takımın daha önce bir Game Changers turnuvasında oynadıysa GC Stats sayfasının bağlantısını yapıştır. GC Stats profilin bağlı olmalı ve güncel kadroda yer almalı.",
+      "agent": "Temsilci üzerinden iletişim",
+      "agentHint": "Aşağıdaki iletişim bilgileri temsilcine ulaşır.",
+      "agentName": "Temsilci adı",
+      "agentAgency": "Ajans",
+      "agentAgencyPlaceholder": "Boşsa bağımsız",
+      "contactAgent": "Temsilci iletişimi (en az bir)",
+      "contactAgentHint": "İlanda temsilcinin adıyla birlikte herkese açık gösterilir.",
+      "chatEnabled": "Özel mesajlara izin ver",
+      "chatEnabledHint": "Giriş yapmış ziyaretçiler ilandan, GC Scouting üzerinden sana yazabilir.",
+      "contactChatHint": "Özel mesajlar açıkken bu iletişim bilgileri isteğe bağlıdır.",
+      "tweetBySite": "GC Scouting paylaşır",
+      "tweetBySiteHint": "X hesabımızda paylaşırız, verirsen senin @ kullanıcı adınla birlikte.",
+      "tweetByAuthor": "Kendim paylaşırım",
+      "tweetByAuthorHint": "Yayınlandıktan sonra sana paylaşmaya hazır tweet'i veririz. Bağlantısını bize gönder, biz de retweet'leriz.",
+      "tweetByLocked": "Bu ilan zaten X'te, bu seçim artık değişemez.",
+      "moderationReason": "Neden",
+      "moderationReasonPlaceholder": "Örn. geçersiz Discord bağlantısı kaldırıldı, konu dışı açıklama kısaltıldı",
+      "ageGroup": "Yaş",
+      "ageGroupHint": "İlanda gösterilir. Dışarıda bırakmak için tekrar tıkla.",
+      "tracker": "Tracker.gg profili",
+      "trackerHint": "tracker.gg Valorant profilinin bağlantısını yapıştır, hesap gerekmez.",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "Reşit olmayanlar",
+      "minorsAcceptedHint": "Reşit olmayan oyuncular, onları kabul eden ilanları filtreleyebilir."
+    },
+    "errors": {
+      "required": "Bu alan zorunludur.",
+      "invalid": "Geçersiz değer.",
+      "tooLong": "En fazla {max} karakter.",
+      "tooMany": "En fazla {max}.",
+      "peakBelowCurrent": "En yüksek rank, güncel rank'ten düşük olamaz.",
+      "rangeOrder": "Maksimum rank, minimum rank'e eşit veya ondan yüksek olmalıdır.",
+      "wantedEmpty": "En az bir oyuncu veya bir yedek ara.",
+      "tierEmpty": "En az bir ajanı sırala.",
+      "slotInvalid": "Saat aralıklarından biri geçersiz.",
+      "slotOverlap": "Aynı günün iki saat aralığı çakışıyor.",
+      "rhythmAboveAvailability": "Uygunluğundan yüksek (en fazla {max}).",
+      "contactRequired": "Sana ulaşmanın en az bir yolunu ver.",
+      "discordInvalid": "Geçersiz Discord ID (17 ile 20 hane). Kullanıcı adın burada çalışmaz, ID'ni nasıl bulacağını aşağıda gör.",
+      "discordInviteInvalid": "Geçersiz davet bağlantısı (discord.gg/kod veya discord.com/invite/kod).",
+      "twitterInvalid": "Geçersiz kullanıcı adı (en fazla 15 karakter: harf, rakam, alt çizgi).",
+      "emailInvalid": "Geçersiz e-posta adresi.",
+      "notifyUnavailable": "Bu kanal hesabında mevcut değil.",
+      "gcsTeamInvalid": "Geçersiz bağlantı, bir GC Stats takım sayfasının adresini yapıştır.",
+      "gcsTeamNoProfile": "Önce GC Stats profilini bağla (sayfanın üstünde): yalnızca bir takım üyesi sayfasını ekleyebilir.",
+      "gcsTeamNotMember": "GC Stats profilin bu takımın güncel kadrosunda yok.",
+      "gcsTeamCheckFailed": "GC Stats takımı kontrol edemedi, biraz sonra tekrar dene.",
+      "trackerInvalid": "Bir tracker.gg Valorant profil bağlantısı değil.",
+      "reasonLength": "Neden {min} ile {max} karakter arasında olmalıdır.",
+      "invalidCharacters": "Kontrol veya görünmez karakterleri kaldır."
+    },
+    "formErrors": {
+      "auth": "Oturumunun süresi doldu. Yayınlamak için tekrar giriş yap.",
+      "activeExists": "Zaten aktif bir {code} ilanın var.",
+      "expiredExists": "Önceki {code} ilanının süresi doldu. Değiştirmek için sayfayı yenile.",
+      "limitReached": "Zaten yayında {max} adet {code} ilanın var. Yenisini yayınlamak için birini kapat.",
+      "server": "İlan yayınlanamadı. Birkaç dakika sonra tekrar dene.",
+      "notFound": "Bu ilan artık mevcut değil ya da sana ait değil.",
+      "notEditable": "Bu ilan artık düzenlenemez.",
+      "sanctioned": "GC Stats hesabın yaptırıma tabi (susturma, askıya alma veya yasak): şimdilik ilan yayınlayamaz veya düzenleyemezsin.",
+      "rateLimited": "Çok sık yayınlıyor veya düzenliyorsun. Tekrar denemeden önce biraz bekle.",
+      "sanctionedUntil": "GC Stats hesabın {date} tarihine kadar yaptırıma tabi (susturma, askıya alma veya yasak): o zamana kadar ilan yayınlayamaz veya düzenleyemezsin."
+    },
+    "errorCount": "{count, plural, one {# alan düzeltilmeli} other {# alan düzeltilmeli}}",
+    "replacesExpired": "Süresi dolan {code} ilanın kapatılacak.",
+    "publish": "Yayınla",
+    "publishing": "Yayınlanıyor...",
+    "tierList": {
+      "hint": "Oynadığın ajanları satırlara sürükle ya da önce bir ajana, sonra bir satıra tıkla. Kenarda bırakılan ajanlar gösterilmez.",
+      "pickedHint": "Şimdi ajanın gideceği satıra tıkla.",
+      "progress": "{count, plural, =0 {Sıralanmış ajan yok} one {# ajan sıralandı} other {# ajan sıralandı}}",
+      "reset": "Sıfırla",
+      "poolEmpty": "Tüm ajanlar sıralandı.",
+      "guide": "Tierlist'imizi anla",
+      "guideTooltip": "Neden bu üç seviye var ve nasıl doldurulur. Yeni sekmede açılır."
+    },
+    "availability": {
+      "hint": "Saatleri eklemek için üzerlerine tıkla veya sürükle, kaldırmak için tekrar yap. Gece yarısını geçerek mi oynuyorsun? Bir sonraki günün başından devam et.",
+      "copyAll": "Her güne kopyala",
+      "clearDay": "Bu günü temizle",
+      "clearAll": "Hepsini temizle",
+      "summary": "Haftada {hours} saat, {days, plural, one {# gün} other {# gün}}"
+    },
+    "typeTabs": "İlan türü",
+    "save": "Kaydet",
+    "saving": "Kaydediliyor...",
+    "cancel": "İptal",
+    "delegatedNoProfile": "{name} adına bağlı bir GC Stats profili yok. Yalnızca {name}, kendi hesabından bir profil bağlayabilir.",
+    "editTitle": "İlanı düzenle",
+    "editIntro": "Değişiklikler hemen yayına girer. Bitiş tarihi aynı kalır.",
+    "backToPost": "İlana dön",
+    "closedTitle": "Bu ilan kapatıldı",
+    "closedText": "Kapatılan bir ilan artık düzenlenemez. Tekrar arıyorsan yeni bir ilan oluştur.",
+    "loading": "Form yükleniyor",
+    "moderationTitle": "Moderasyon düzenlemesi",
+    "moderationText": "{name} adlı kullanıcının ilanını düzenliyorsun. Verdiğin nedeni içeren bir e-posta ve bir Discord mesajı alır.",
+    "discordHelp": {
+      "toggle": "Discord ID'mi nasıl bulurum?",
+      "step1": "Discord'da Kullanıcı Ayarları, Gelişmiş bölümünü aç ve Geliştirici Modu'nu etkinleştir.",
+      "step2": "Avatarına veya adına sağ tıkla (mobilde uzun bas).",
+      "step3": "Kullanıcı ID'sini Kopyala'ya tıkla, sonra buraya yapıştır.",
+      "menuProfile": "Profil",
+      "menuMention": "Bahset",
+      "menuCopyId": "Kullanıcı ID'sini Kopyala"
+    }
+  },
+  "playerLink": {
+    "question": "Hesabına bağlı bir GC Stats profili yok. Daha önce bir Game Changers turnuvasında oynadın mı?",
+    "questionTeam": "Hesabına bağlı bir GC Stats profili yok. Takımının GC Stats sayfasını eklemek için önce profilini bağla. Daha önce bir Game Changers turnuvasında oynadın mı?",
+    "declined": "Sorun değil, ilanın turnuva geçmişi olmadan yayınlanacak.",
+    "declinedTeam": "Sorun değil, ilanın takımın GC Stats sayfası olmadan yayınlanacak.",
+    "yes": "Evet, profilimi bul",
+    "no": "Henüz değil",
+    "title": "GC Stats profilini bul",
+    "intro": "Adını ara ya da oynadığın bir turnuvadan git. Ardından GC Stats ekibi bağlantıyı onaylar.",
+    "cancel": "Kapat",
+    "modeLabel": "Arama yöntemi",
+    "mode": {
+      "name": "Ada göre",
+      "tournament": "Turnuvaya göre"
+    },
+    "namePlaceholder": "Turnuvadaki adın",
+    "tournamentPlaceholder": "Turnuva adı",
+    "teamPlaceholder": "Takımları veya oyuncuları filtrele",
+    "minChars": "En az {min} karakter.",
+    "players": "{count, plural, =0 {Oyuncu yok} one {# oyuncu} other {# oyuncu}}",
+    "pickPlayer": "Kadrodan adını seç.",
+    "empty": "Sonuç yok.",
+    "emptyTeams": "Bu turnuva için takım bulunamadı.",
+    "emptyRoster": "Bu takım için kayıtlı oyuncu yok.",
+    "loading": "Yükleniyor",
+    "back": "Aramaya dön",
+    "viewOnGcs": "GC Stats'ta gör",
+    "claimed": "Zaten bir hesaba bağlı",
+    "confirmText": "Bunun senin profilin olduğundan emin ol. İstek GC Stats ekibine gider ve onaylanana kadar ilanların \"Doğrulanmamış\" olarak işaretlenir.",
+    "send": "İsteği gönder",
+    "sending": "Gönderiliyor...",
+    "relogin": "Tekrar giriş yap",
+    "done": {
+      "pending": "İstek gönderildi. Profilin ilanlarında görünür, ekip onaylayana kadar \"Doğrulanmamış\" olarak işaretlenir.",
+      "approved": "Bu profil zaten GC Stats hesabına bağlı, artık doğrulanmış durumda."
+    },
+    "lookupErrors": {
+      "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+      "invalid": "Geçersiz arama.",
+      "notConfigured": "GC Stats araması bu sitede yapılandırılmamış.",
+      "notFound": "Bu turnuva artık GC Stats'ta mevcut değil.",
+      "failed": "GC Stats yanıt vermedi, biraz sonra tekrar dene."
+    },
+    "errors": {
+      "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+      "invalid": "Geçersiz profil.",
+      "linkExists": "Hesabında zaten bağlı veya bekleyen bir profil var. Sayfayı yenile.",
+      "reauth": "İsteği göndermek için GC Stats girişinin yenilenmesi gerekiyor.",
+      "notFound": "Bu profil artık GC Stats'ta mevcut değil.",
+      "taken": "Bu profil zaten başka bir GC Stats hesabına bağlı. Senin profilinse GC Stats ekibiyle iletişime geç.",
+      "requestPending": "GC Stats hesabında zaten bekleyen bir bağlantı isteği var.",
+      "rateLimited": "Çok fazla istek, bir dakika sonra tekrar dene.",
+      "failed": "İstek gönderilemedi, biraz sonra tekrar dene.",
+      "delegated": "Yalnızca profil sahibi bir GC Stats profili bağlayabilir."
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "{code} ilanının süresi yakında doluyor",
+      "title": "\"{name}\" adlı {code} ilanının süresi {left, plural, one {# gün} other {# gün}} içinde doluyor",
+      "body": "İlan, {date} tarihinde listeden ve Discord kanallarından kalkacak.",
+      "renewHint": "Hâlâ arıyor musun? {days} gün daha yenile, listenin en üstüne geri dönsün.",
+      "deleteHint": "Aradığını buldun mu? İnsanlar sana ulaşmayı bıraksın diye sil.",
+      "renew": "Yenile",
+      "delete": "Sil",
+      "view": "İlanı gör",
+      "footer": "Bu hatırlatmayı, GC Scouting'de ilan verirken açtığın için alıyorsun. Bağlantılar giriş yapmadan 14 gün çalışır, paylaşma."
+    },
+    "manage": {
+      "metaTitle": "İlanımı yönet",
+      "renew": {
+        "title": "İlanını yenile",
+        "text": "{expired, select, true {Süresi doldu.} other {Yakında sona erecek.}} Tekrar 10 gün yayında olacak ve listenin en üstüne çıkacak.",
+        "confirm": "Yenile",
+        "pending": "Yenileniyor...",
+        "done": "İlan {date} tarihine kadar yenilendi"
+      },
+      "delete": {
+        "title": "İlanını sil",
+        "text": "Siteden ve Discord kanallarından kaldırılacak ve bağlantısı çalışmayacak. Bu işlem geri alınamaz.",
+        "confirm": "Sil",
+        "pending": "Siliniyor...",
+        "done": "İlan silindi"
+      },
+      "view": "İlanı gör",
+      "newPost": "İlan oluştur",
+      "home": "Ana sayfaya dön",
+      "errorTitle": "Bağlantı kullanılamıyor",
+      "errors": {
+        "invalid": "Bu bağlantı geçerli değil. Tamamen kopyalandığından emin ol.",
+        "used": "Bu bağlantı zaten kullanıldı. Her hatırlatma bir kez çalışır.",
+        "expired": "Bu bağlantının süresi doldu. Giriş yap ve yenilemek için ilanını aç.",
+        "unavailable": "Bu ilan kapatıldı veya silindi.",
+        "limitReached": "Bu tür için izin verilen en fazla sayıda yayında ilanın var. Bunu yenilemek için birini kapat.",
+        "server": "İşlem tamamlanamadı. Biraz sonra tekrar dene."
+      }
+    },
+    "renew": {
+      "title": "İlanının süresi {date} tarihinde doluyor",
+      "expiredTitle": "İlanının süresi doldu",
+      "hint": "{days} gün daha yenile, listenin en üstüne geri dönsün.",
+      "label": "Yenile",
+      "pending": "Yenileniyor...",
+      "done": "Yenilendi",
+      "errors": {
+        "invalid": "Geçersiz ilan.",
+        "auth": "Oturumunun süresi doldu. Yenilemek için tekrar giriş yap.",
+        "notFound": "Bu ilan artık aktif değil.",
+        "tooEarly": "Yenileme, süre sonundan 3 gün önce açılır.",
+        "limitReached": "Bu tür için izin verilen en fazla sayıda yayında ilanın var. Bunu yenilemek için birini kapat.",
+        "server": "Yenileme başarısız oldu. Biraz sonra tekrar dene."
+      }
+    },
+    "noReminder": {
+      "title": "Süre sonu hatırlatması açık değil",
+      "text": "İlanının süresi {days} gün sonra haber verilmeden dolacak. İlan formunda e-posta veya Discord hatırlatmasını aç."
+    }
+  },
+  "account": {
+    "title": "Hesap ayarları",
+    "loading": "Hesabın yükleniyor",
+    "intro": "Senin adına kimlerin ilan verebileceğini ve GC Scouting'deki verilerini yönet. GC Stats hesabın GC Stats'ta yönetilir.",
+    "gcsAccount": "GC Stats hesabım",
+    "since": "{date} tarihinden beri",
+    "confirm": "Onayla",
+    "cancel": "İptal",
+    "login": {
+      "title": "Hesabını yönetmek için giriş yap",
+      "text": "GC Scouting hesabın, GC Stats hesabınla oluşturulur.",
+      "cta": "GC Stats ile giriş yap"
+    },
+    "delegates": {
+      "title": "Profiline erişim",
+      "hint": "Güvendiğin kişiler (temsilci, menajer, staff) senin adına ilan yayınlayıp yönetebilir. En fazla {max} kişi, bir erişimi istediğin zaman kaldırabilirsin.",
+      "empty": "Profiline kimsenin erişimi yok.",
+      "remove": "Kaldır",
+      "pendingInvite": "Davet bağlantısı bekliyor, {date} tarihine kadar geçerli",
+      "revokeInvite": "İptal",
+      "inviteReady": "Davet bağlantısı oluşturuldu",
+      "inviteHint": "Kişiye gönder, giriş yapmışken açsın. Bir kez ve {days} gün boyunca çalışır.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "create": "Davet bağlantısı oluştur"
+    },
+    "managed": {
+      "title": "Yönettiğin profiller",
+      "hint": "Bir profil adına ilan vermek için sağ üstteki menüden aktif profili seç.",
+      "empty": "Henüz kimse sana profiline erişim vermedi.",
+      "active": "Aktif profil",
+      "use": "Bu profili kullan",
+      "leave": "Ayrıl"
+    },
+    "errors": {
+      "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+      "invalid": "Geçersiz istek.",
+      "notFound": "Bu erişim artık mevcut değil, sayfayı yenile.",
+      "server": "İşlem başarısız oldu, biraz sonra tekrar dene.",
+      "full": "Profilinde zaten erişimi olan {max} kişi var.",
+      "tooManyInvites": "Bekleyen çok fazla davet bağlantısı var, önce birini iptal et."
+    },
+    "data": {
+      "title": "Verilerin",
+      "hint": "GC Scouting'in hesabın hakkında sakladığı her şeyi (profil, ilanlar, erişimler) JSON dosyası olarak indir.",
+      "export": "Verilerimi indir",
+      "exporting": "Hazırlanıyor...",
+      "exportFailed": "Dışa aktarma başarısız oldu, biraz sonra tekrar dene."
+    },
+    "delete": {
+      "title": "Hesabımı sil",
+      "hint": "GC Scouting hesabın, ilanların ve profiline verilen erişimler kalıcı olarak silinir. GC Stats hesabın etkilenmez.",
+      "confirmLabel": "Onaylamak için {name} yaz",
+      "submit": "Hesabımı sil",
+      "pending": "Siliniyor...",
+      "errors": {
+        "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+        "confirmation": "Kullanıcı adı eşleşmiyor.",
+        "server": "Silme başarısız oldu, biraz sonra tekrar dene."
+      }
+    },
+    "chatNotifications": {
+      "title": "Mesaj bildirimleri",
+      "text": "Mesaj aldığında konuşma başına tek bir uyarı gelir, sen açana kadar başka bir şey gelmez. Mesajın kendisi uyarıya asla kopyalanmaz.",
+      "email": "E-posta ile",
+      "discord": "Discord doğrudan mesajı ile",
+      "noEmail": "GC Stats hesabında doğrulanmış e-posta yok",
+      "discordLinked": "GC Stats'a bağlı Discord hesabı",
+      "noDiscord": "GC Stats'a bağlı Discord hesabı yok",
+      "save": "Kaydet",
+      "saved": "Tercihler kaydedildi.",
+      "errors": {
+        "auth": "Oturumunun süresi doldu. Tekrar giriş yap.",
+        "invalid": "Geçersiz tercihler.",
+        "noEmail": "E-posta uyarılarını açmak için GC Stats'ta bir e-posta ekle ve doğrula.",
+        "noDiscord": "Discord uyarılarını açmak için GC Stats'ta bir Discord hesabı bağla.",
+        "server": "Kaydetme başarısız oldu. Biraz sonra tekrar dene."
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "Profil daveti",
+    "title": "{name} seni profilini yönetmeye davet ediyor",
+    "text": "{name} adına ilan yayınlayıp yönetebileceksin. Hesap ayarlarından istediğin zaman ayrılabilirsin.",
+    "loginText": "Daveti kabul etmek için GC Stats hesabınla giriş yap.",
+    "loginCta": "GC Stats ile giriş yap",
+    "accept": "Kabul et",
+    "accepting": "Kabul ediliyor...",
+    "done": "Artık {name} adlı kullanıcının profilini yönetiyorsun, bu senin aktif profilin.",
+    "newPost": "İlan oluştur",
+    "settings": "Hesap ayarları",
+    "home": "Ana sayfaya dön",
+    "errorTitle": "Davet kullanılamıyor",
+    "errors": {
+      "invalid": "Bu bağlantı geçerli değil. Tamamen kopyalandığından emin ol.",
+      "used": "Bu davet zaten kullanıldı. Yeni bir bağlantı iste.",
+      "expired": "Bu davetin süresi doldu. Yeni bir bağlantı iste.",
+      "self": "Bu senin kendi davet bağlantın, profilini yönetecek kişiye gönder.",
+      "already": "Bu profili zaten yönetiyorsun.",
+      "full": "Bu profil, erişimi olan kişi sınırına ulaştı.",
+      "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+      "server": "Davet kabul edilemedi, biraz sonra tekrar dene."
+    }
+  },
+  "postAuthor": {
+    "edit": "Düzenle",
+    "close": "Kapat",
+    "closeConfirm": "İlanı kapat",
+    "cancel": "İptal",
+    "errors": {
+      "invalid": "Geçersiz ilan.",
+      "auth": "Oturumunun süresi doldu. Tekrar giriş yap.",
+      "notFound": "Bu ilan artık aktif değil.",
+      "server": "İlan kapatılamadı. Biraz sonra tekrar dene."
+    }
+  },
+  "myPosts": {
+    "title": "İlanlarım",
+    "intro": "İlanların {days} gün yayında kalır. Süresi dolmadan yenile ya da aradığını bulduğunda kapat.",
+    "new": "İlan oluştur",
+    "loading": "İlanların yükleniyor",
+    "published": "{date} tarihinde yayınlandı",
+    "expires": "{date} tarihinde sona erer",
+    "expired": "{date} tarihinde sona erdi",
+    "groups": {
+      "active": "Yayında",
+      "expired": "Süresi dolmuş",
+      "closed": "Kapatılmış"
+    },
+    "empty": {
+      "title": "Henüz ilan yok",
+      "text": "İlanların burada, düzenlemek, yenilemek veya kapatmak için gereken araçlarla birlikte görünecek."
+    },
+    "login": {
+      "title": "İlanlarını görmek için giriş yap",
+      "text": "İlanların GC Stats hesabına bağlıdır.",
+      "cta": "GC Stats ile giriş yap"
+    }
+  },
+  "report": {
+    "button": "Bildir",
+    "title": "Bu ilanı bildir",
+    "close": "Kapat",
+    "cancel": "İptal",
+    "submit": "Bildirimi gönder",
+    "sending": "Gönderiliyor…",
+    "loginHint": "Bir ilanı bildirmek için giriş yap. Kötüye kullanımı önlememize yardımcı olur.",
+    "login": "GC Stats ile giriş yap",
+    "reason": "Neden",
+    "message": "Ayrıntılar",
+    "messageHint": "Sorunun ne olduğu, moderatörlerin hızlı karar vermesine yardımcı olacak her şey.",
+    "sent": "Bildirim gönderildi",
+    "sentHint": "Teşekkürler, moderasyon ekibi bu ilana bakacak.",
+    "reasons": {
+      "spam": {
+        "label": "Spam veya reklam",
+        "hint": "Yinelenen ilan, reklamlar, alakasız içerik"
+      },
+      "fake": {
+        "label": "Sahte ilan",
+        "hint": "Kimliğe bürünme, uydurma bilgiler"
+      },
+      "inappropriate": {
+        "label": "Uygunsuz içerik",
+        "hint": "Saldırgan dil, NSFW içerik"
+      },
+      "harassment": {
+        "label": "Taciz",
+        "hint": "Birini hedef alıyor veya hakaret ediyor"
+      },
+      "other": {
+        "label": "Diğer",
+        "hint": "Sorunu ayrıntılarda açıkla"
+      }
+    },
+    "errors": {
+      "reasonRequired": "Bir neden seç.",
+      "message": {
+        "required": "\"Diğer\" nedeni için sorunu açıkla.",
+        "tooShort": "En az {min} karakter ya da boş bırak.",
+        "tooLong": "En fazla {max} karakter.",
+        "invalidCharacters": "Kontrol veya görünmez karakterleri kaldır."
+      },
+      "form": {
+        "invalid": "Geçersiz ilan.",
+        "auth": "Oturumunun süresi doldu. Tekrar giriş yap.",
+        "notFound": "Bu ilan artık mevcut değil.",
+        "ownPost": "Kendi ilanını bildiremezsin.",
+        "already": "Bu ilanı zaten bildirdin, moderatörler ilgileniyor.",
+        "rateLimited": "Bir saatte çok fazla bildirim. Daha sonra tekrar dene.",
+        "server": "Bildirim gönderilemedi. Biraz sonra tekrar dene."
+      },
+      "messageForm": {
+        "invalid": "Geçersiz mesaj.",
+        "auth": "Oturumunun süresi doldu. Tekrar giriş yap.",
+        "notFound": "Bu mesaj artık mevcut değil.",
+        "ownMessage": "Kendi mesajını bildiremezsin.",
+        "already": "Bu mesajı zaten bildirdin, moderatörler ilgileniyor.",
+        "rateLimited": "Bir saatte çok fazla bildirim. Daha sonra tekrar dene.",
+        "server": "Bildirim gönderilemedi. Biraz sonra tekrar dene."
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "Paylaşılacak tweet'ler",
+    "title": "Paylaşılacak tweet'ler",
+    "subtitle": "Henüz X'te olmayan yayındaki ilanlar, en eskiden başlayarak. Tweet'i X'te aç, paylaş, sonra paylaşıldı olarak işaretle.",
+    "count": "{count, plural, one {# tweet kaldı} other {# tweet kaldı}}",
+    "empty": "Paylaşılacak tweet kalmadı.",
+    "unavailable": "Tweet'ler yüklenemedi, Discord botuna ulaşılamıyor. Birkaç dakika sonra sayfayı yenile.",
+    "forbidden": "Erişim reddedildi: bu sayfa yalnızca Cloudflare Access üzerinden açılır.",
+    "published": "{date} tarihinde yayınlandı",
+    "viewPost": "İlanı gör",
+    "length": "{length}/{max} karakter",
+    "tooLong": "X için çok uzun, paylaşmadan önce kısalt.",
+    "open": "X'te aç",
+    "opened": "X'te açıldı",
+    "markPublished": "Paylaşıldı olarak işaretle",
+    "marking": "Kaydediliyor...",
+    "done": "Paylaşıldı",
+    "errors": {
+      "unauthorized": "Cloudflare Access oturumunun süresi doldu, sayfayı yenile.",
+      "forbidden": "Bu istek tweet sayfasından gelmedi, sayfayı yenile ve tekrar dene.",
+      "invalid": "Bu ilan ID'si geçerli değil.",
+      "notFound": "Bu ilan artık mevcut değil.",
+      "alreadyTweeted": "Bu ilan zaten paylaşıldı olarak işaretlendi.",
+      "unavailable": "Discord botuna ulaşılamıyor, birkaç dakika sonra tekrar dene.",
+      "network": "İstek başarısız oldu, bağlantını kontrol et ve tekrar dene.",
+      "awaitingAuthor": "İlan sahibi henüz tweet'inin bağlantısını vermedi."
+    },
+    "toTweet": "Paylaşılacak",
+    "toRetweet": "Retweet'lenecek",
+    "toRetweetHint": "Sahiplerinin kendi hesaplarında paylaştığı ilanlar.",
+    "countRetweets": "{count, plural, one {# retweet kaldı} other {# retweet kaldı}}",
+    "sectionDone": "Burada her şey tamam.",
+    "authorTweeted": "Sahibi kendi hesabında paylaştı, retweet'lenecek.",
+    "viewTweet": "Tweet'i gör",
+    "openRetweet": "X'te retweet'le",
+    "markRetweeted": "Retweet'lendi olarak işaretle",
+    "retweetDone": "Retweet'lendi"
+  },
+  "legalNotice": {
+    "title": "Yasal bildirim",
+    "updated": "Son güncelleme: {date}",
+    "editor": {
+      "title": "Yayıncı",
+      "identity": "Kimlik",
+      "status": "Statü",
+      "statusValue": "Fransız kâr amacı gütmeyen dernek (loi 1901)",
+      "email": "E-posta",
+      "director": "Yayın sorumlusu",
+      "ecosystem": "GC Scouting, aynı dernek tarafından yayınlanan GC Stats ekosisteminin bir parçasıdır. Giriş ve turnuva geçmişleri GC Stats'a dayanır."
+    },
+    "hosting": {
+      "title": "Barındırma ve sağlayıcılar",
+      "site": "Web sitesi, Discord botu ve paylaşım görselleri",
+      "database": "Veritabanı",
+      "email": "E-posta gönderimi",
+      "emailValue": "Resend, yalnızca açtığın süre sonu hatırlatmaları için",
+      "discord": "Discord mesajları",
+      "discordValue": "Discord Inc., botumuz aracılığıyla (ilan kanalları, moderasyon ve hatırlatma doğrudan mesajları)"
+    },
+    "property": {
+      "title": "Fikri mülkiyet",
+      "site": "Web sitesinin yapısı, tasarımı ve özgün metinleri Osthelia'ya aittir.",
+      "posts": "Bir ilanın içeriği (tanıtım, tier list, uygunluk) sahibine aittir, ilan yayındayken web sitesinde göstermemize ve Discord ile X'te paylaşmamıza izin verir.",
+      "thirdParty": "<b>Üçüncü taraf içerikler:</b> takımların, turnuvaların, ajanların ve rank'lerin adları, logoları ve görselleri ilgili sahiplerine aittir ve yalnızca bilgi amacıyla gösterilir. GC Scouting, Riot Games tarafından onaylanmamıştır ve Riot Games'in veya Riot Games varlıklarının üretiminde ya da yönetiminde resmen yer alan herhangi birinin görüş ve fikirlerini yansıtmaz. Riot Games ve ilgili tüm varlıklar, Riot Games, Inc.'in ticari markaları veya tescilli ticari markalarıdır.",
+      "takedown": "Bazı içeriklerde hakkın var ve kaldırılmasını mı istiyorsun? <mail>bu adrese</mail> yaz ya da her ilanda bulunan <b>Bildir</b> düğmesini kullan."
+    },
+    "rules": {
+      "title": "İlan verme kuralları",
+      "intro": "Bir ilan yayınlayarak şunları kabul edersin:",
+      "truthful": "profilin, rank'in ve deneyimin hakkında doğru bilgi vermek",
+      "respect": "nefret içeren, ayrımcı, taciz edici veya yasa dışı içerik yayınlamamak",
+      "contact": "yalnızca sana ait olan ya da temsilcinin göstermene izin verdiği iletişim bilgilerini yazmak",
+      "ads": "ilanları reklam, kumar veya işe alımla ilgisi olmayan hiçbir şey için kullanmamak",
+      "moderation": "Ekibimiz bu kuralları ihlal eden bir ilanı haber vermeden kaldırabilir. İlanlar olduğu gibi sunulur: Osthelia her bilgiyi kontrol etmez ve oyuncular ile takımlar arasındaki görüşmelere katılmaz."
+    },
+    "privacy": {
+      "title": "Kişisel veriler",
+      "text": "Verilerinin nasıl işlendiği <policy>gizlilik politikamızda</policy> ayrıntılı olarak anlatılmıştır. GDPR kapsamında erişim, düzeltme ve silme hakkın vardır, bunları <mail>{email}</mail> adresine yazarak kullanabilirsin."
+    },
+    "credits": {
+      "title": "Katkılar",
+      "gcs": "Turnuva geçmişleri, takımlar ve doğrulanmış profiller: <link>GC Stats</link>.",
+      "valorantApi": "Ajan ve rank ikonları: <link>valorant-api.com</link>.",
+      "riot": "VALORANT, Riot Games, Inc.'in ticari markasıdır."
+    }
+  },
+  "privacy": {
+    "title": "Gizlilik politikası",
+    "updated": "Son güncelleme: {date}",
+    "intro": "GC Scouting yalnızca ilan yayınlamak, takımlarla konuşmana izin vermek ve ilanlarının süresi dolarken seni uyarmak için gereken verileri toplar. İşte neleri sakladığımız, neden sakladığımız ve nasıl sileceğin.",
+    "login": {
+      "title": "GC Stats ile giriş",
+      "text": "GC Stats hesabınla giriş yaparsın: şifreni asla görmeyiz. Her girişte, onayınla, GC Stats bize şunları gönderir:",
+      "identity": "<b>Kimlik:</b> GC Stats tanımlayıcın, kullanıcı adın ve avatarın.",
+      "email": "<b>E-posta:</b> doğrulanmış adresin, yalnızca açarsan süre sonu hatırlatmaları için kullanılır.",
+      "discord": "<b>Discord:</b> bağlı Discord hesabının tanımlayıcısı, doğrudan mesaj hatırlatmaları için ve bir ilanı bildirdiğinde seni tanımlamak için.",
+      "player": "<b>Oyuncu profili:</b> hesabına bağlı GC Stats profili, doğrulanmış rozeti ve turnuva geçmişini göstermek için.",
+      "tokens": "GC Stats erişim jetonları veritabanımızda şifrelenir ve yalnızca senin adına GC Stats nezdinde işlem yapmak için kullanılır (örneğin bir profil bağlantı isteği). Hesabını sildiğinde iptal edilirler.",
+      "created": "<b>Hesap yaşı:</b> GC Stats hesabının oluşturulma tarihi, ilk 7 gününde mesajlarda \"Yeni hesap\" rozetini göstermek için.",
+      "sanctions": "<b>Yaptırımlar:</b> aktif GC Stats yaptırımların (susturma, askıya alma, yasak) ve bitiş tarihleri, yaptırım sürdüğü sürece gönderimi engellemek için her mesaj veya ilandan önce kontrol edilir. Aktif bir uyarı, mesajlarda \"Uyarıldı\" rozetini gösterir."
+    },
+    "public": {
+      "title": "Neler herkese açık",
+      "text": "Bir ilan, giriş yapmadan herkes tarafından görülebilir: kullanıcı adı, ilan türü, bölge, ülke, diller, rank, roller, tier list, deneyim, uygunluk ve tanıtım.",
+      "contact": "<b>İletişim bilgileri:</b> bir ilana eklediğin Discord, X hesabı veya e-posta, takımlar sana ulaşabilsin diye herkese açık gösterilir. Yalnızca herkese açık olmasında sakınca görmediklerini ekle.",
+      "gcs": "Profilin bağlıysa gösterilen geçmiş (takımlar, turnuvalar, sonuçlar) GC Stats'ın herkese açık verilerinden gelir."
+    },
+    "relay": {
+      "title": "Discord ve X'te paylaşım",
+      "text": "Aktif ilanlar botumuzu kuran Discord kanallarına otomatik olarak gönderilir ve paylaşım görseliyle X hesabımızda paylaşılabilir. Bir ilan kapatıldığında, silindiğinde veya kaldırıldığında ya da hesabını sildiğinde, botumuz mesajlarını bu kanallardan da siler. Süresi dolan bir ilan o zamana kadar orada kalır. X'te zaten paylaşılan ilanlar, başkalarının aldığı kopyalar gibi, yayında kalır."
+    },
+    "private": {
+      "title": "Teknik veriler",
+      "sessions": "<b>Oturumlar:</b> oturum jetonunun bir parmak izi (jetonun kendisi asla), kullanılan tarayıcı (user agent) ve oluşturulma ile bitiş tarihleri, böylece oturumlarını inceleyip güvene alabilirsin.",
+      "country": "<b>Ülke:</b> Cloudflare tarafından sağlanan bağlantı ülken, yalnızca filtrelerde bölgeni önceden seçmek için kullanılır. Asla saklanmaz.",
+      "logs": "<b>Günlükler:</b> barındırma sağlayıcımız, sorun gidermek için kısa ömürlü teknik günlükler (hatalar, istekler) tutar.",
+      "noTracking": "Kitle ölçümü yok, reklam yok, üçüncü taraf izleyici yok ve veri satışı yok."
+    },
+    "notifications": {
+      "title": "Süre sonu hatırlatmaları",
+      "text": "E-posta ve Discord doğrudan mesaj hatırlatmaları varsayılan olarak kapalıdır ve yalnızca açarsan gönderilir. İlanını giriş yapmadan yenilemek veya silmek için 14 gün geçerli bağlantılar içerirler. İstediğin zaman kapatabilirsin."
+    },
+    "delegation": {
+      "title": "Devredilen erişim",
+      "text": "Profiline başka birine erişim verirsen (temsilci, menajer), senin adına ilan yayınlayıp yönetebilmesi için bu bağlantıyı saklarız. Bu erişimi hesabından istediğin zaman iptal edebilirsin. Mesajlaşmada kendi adıyla yazar ve yönettiği profil yanında gösterilir."
+    },
+    "messages": {
+      "title": "Mesajlar",
+      "text": "Bir ilandan bir üyeye yazdığında konuşmayı saklarız: iki profil, konuşmanın başladığı ilan, tarihleriyle her mesaj ve başkasının profilini yönetiyorsan mesajı gerçekten yazan hesap. Ayrıca okunmamış mesajlar için son okuma zamanını ve engellediğin üyelerin listesini de saklarız.",
+      "staff": "Konuşmalar uçtan uca şifreli değildir: moderasyon ekibimiz bir bildirimi işlemek, bekletilen bir mesajı incelemek veya kötüye kullanımı araştırmak için onları okuyabilir. Bir mesajı gizleyebilirler. Orada hassas hiçbir şey paylaşma.",
+      "automod": "<b>Otomatik moderasyon:</b> her mesaj, teslimattan önce kullanıcı adın veya tanımlayıcın olmadan OpenAI moderasyon API'sine (Amerika Birleşik Devletleri) gönderilir. OpenAI bunu modellerini eğitmek için kullanmaz ve en fazla 30 gün saklar. Zararlı olarak işaretlenen bir mesaj, ekip karar verene kadar bekletilir.",
+      "links": "<b>Bağlantılar:</b> yalnızca Discord, X, GC Stats, VLR ve Liquipedia bağlantıları tıklanabilir. Diğer bağlantılar bir uyarının arkasında gizlenir, mesaj dışında hiçbir şey kontrol edilmez veya saklanmaz.",
+      "alerts": "<b>Uyarılar:</b> bir e-posta veya Discord doğrudan mesajı, içeriklerini kopyalamadan, okunmamış her seri için bir kez yeni mesajları bildirir. Varsayılan olarak açıktır ve <account>Hesabım</account> sayfasından kapatılabilir. Başkasının profilini yönetiyorsan, o profilin konuşmalarının uyarılarını da kendi ayarlarınla alırsın."
+    },
+    "moderation": {
+      "title": "Bildirimler ve moderasyon",
+      "text": "Bir ilanı veya mesajı bildirdiğinde nedeni, mesajını ve hesabını saklarız. Moderasyon özel bir Discord kanalında ve web sitesinin yönetici alanında yapılır: her işlem (kaldırma, geri yükleme, gizlenen mesaj, X'te paylaşım) onu yapan ekip üyesinin hesabıyla kaydedilir.",
+      "reporter": "Kimliğin, bildirilen ilanın veya mesajın sahibine asla gösterilmez. Yalnızca moderasyon ekibimiz görebilir."
+    },
+    "retention": {
+      "title": "Saklama",
+      "posts": "Bir ilanın süresi, yayınlandıktan veya son yenilendikten 10 gün sonra dolar. Sonra listeden ve Discord kanallarından kalkar, ancak sen silene kadar bağlantısı bir bannerla erişilebilir kalır.",
+      "sessions": "Bir oturum 30 gün sürer ya da sen çıkış yapana kadar.",
+      "account": "Hesabın ve ona bağlı her şey (ilanlar, gönderilen mesajlar, engeller, oturumlar, devredilen erişim, profil bağlantısı) <account>Hesabım</account> sayfasından silene kadar saklanır. Bu durumda gönderdiğin bildirimler ve ilanlarının Discord mesajları da silinir.",
+      "messages": "Mesajlar konuşma var olduğu sürece saklanır. Hesabını sildiğinde gönderdiğin mesajlar silinir. Diğer üyenin mesajları listesinde kalır."
+    },
+    "rights": {
+      "title": "Haklarını (GDPR)",
+      "text": "Verilerine erişim, düzeltme, itiraz ve silme hakkın var. <account>Hesabım</account> sayfasından tüm verilerini JSON olarak dışa aktarabilir veya hesabını tek tıkla silebilirsin. GC Stats hesabına asla dokunulmaz.",
+      "contact": "Diğer tüm talepler için: <mail>{email}</mail>. Haklarının ihlal edildiğini düşünüyorsan CNIL'e (Fransız veri koruma otoritesi) şikâyette de bulunabilirsin."
+    },
+    "cookies": {
+      "title": "Çerezler ve yerel depolama",
+      "text": "Yalnızca web sitesinin çalışması için gerekli teknik çerezleri kullanırız, bu yüzden onay bannerına gerek yoktur.",
+      "session": "<b>__Host-sc_session:</b> giriş oturumun (30 gün).",
+      "profile": "<b>sc_profile:</b> başkasının profilini yönettiğinde aktif profil.",
+      "oauth": "<b>sc_oauth:</b> GC Stats ile girişi güvenceye alır, hemen sonra silinir.",
+      "theme": "<b>sc_theme:</b> açık veya koyu temanın.",
+      "storage": "<b>Yerel depolama:</b> tarayıcında kalan ilan filtrelerin ve saat dilimin."
+    }
+  },
+  "chat": {
+    "title": "Mesajlar",
+    "unreadLabel": "Mesajlar, {count} okunmamış",
+    "seeAll": "Tüm mesajları gör",
+    "writtenBy": "<strong>{name}</strong>, {profile} yöneticisi",
+    "managerName": "{name} ({profile} yöneticisi)",
+    "delegateNotice": "{profile} adına yazıyorsun: mesajların kendi adını ({name}) gösterir ve bu profili yönettiğini belirtir.",
+    "you": "Sen:",
+    "hiddenMessage": "Mesaj moderatörler tarafından kaldırıldı",
+    "held": "İnceleme bekliyor",
+    "back": "Konuşmalara dön",
+    "fromPost": "{name} adlı kullanıcının {code} ilanından",
+    "block": "Engelle",
+    "blockConfirm": "Engellemeyi onayla",
+    "unblock": "Engeli kaldır",
+    "unblockConfirm": "Onayla",
+    "cancel": "İptal",
+    "loadOlder": "Eski mesajları yükle",
+    "loadMoreConversations": "Daha fazla konuşma göster",
+    "loading": "Konuşmalar yükleniyor",
+    "emptyConversation": "Henüz mesaj yok.",
+    "blockedByMe": "{name} adlı kullanıcıyı engelledin. Tekrar yazmak için engeli kaldır.",
+    "blockedByPeer": "Artık bu kişiye yazamazsın.",
+    "reportTitle": "{name} adlı kullanıcının bir mesajını bildir",
+    "staffNotice": "GC Scouting moderasyon ekibi konuşmaları yalnızca moderasyon amacıyla okuyabilir.",
+    "placeholder": "Mesajını yaz",
+    "send": "Gönder",
+    "errors": {
+      "body": {
+        "required": "Göndermeden önce bir mesaj yaz.",
+        "tooLong": "En fazla {max} karakter.",
+        "invalidCharacters": "Kontrol veya görünmez karakterleri kaldır."
+      },
+      "auth": "Oturumunun süresi doldu. Tekrar giriş yap.",
+      "notFound": "Bu konuşma veya ilan artık mevcut değil.",
+      "ownPost": "Kendine yazamazsın.",
+      "chatDisabled": "Bu ilanın sahibi özel mesaj kabul etmiyor.",
+      "blockedByMe": "Bu kişiyi engelledin.",
+      "blockedByPeer": "Artık bu kişiye yazamazsın.",
+      "sanctioned": "GC Stats hesabın yaptırıma tabi (susturma, askıya alma veya yasak): şimdilik mesaj gönderemezsin.",
+      "sanctionedUntil": "GC Stats hesabın {date} tarihine kadar yaptırıma tabi (susturma, askıya alma veya yasak): o zamana kadar mesaj gönderemezsin.",
+      "rateLimited": "Çok fazla mesaj gönderiyorsun. Bir dakika bekle.",
+      "tooManyConversations": "Bugün çok fazla konuşma başlattın. Yarın tekrar dene.",
+      "server": "Mesaj gönderilemedi. Biraz sonra tekrar dene."
+    },
+    "empty": {
+      "title": "Konuşma yok",
+      "text": "Bir konuşma başlatmak için bir ilanın sayfasından sahibine yaz."
+    },
+    "pick": {
+      "title": "Bir konuşma seç",
+      "text": "Oyuncular, takımlar ve staff ile görüşmelerin solda görünür."
+    },
+    "login": {
+      "title": "Mesajlarını görmek için giriş yap",
+      "text": "Mesajlaşma GC Stats hesabını kullanır.",
+      "cta": "GC Stats ile giriş yap"
+    },
+    "link": {
+      "hidden": "Gizli bağlantı",
+      "hiddenHint": "Bu bağlantı güvenilir bir siteden değil, varsayılan olarak gizlidir.",
+      "warning": "Bu bağlantı güvenilir bir siteye (Discord, X, GC Stats, VLR, Liquipedia) çıkmıyor. Hesabını veya verilerini çalmak için kullanılıyor olabilir. Yalnızca bu kişiyi tanıyorsan aç.",
+      "show": "Bağlantıyı göster",
+      "cancel": "Gizli tut"
+    },
+    "peer": {
+      "recent": "Yeni hesap",
+      "recentHint": "{days} günden kısa süre önce oluşturulan GC Stats hesabı",
+      "warned": "Uyarıldı",
+      "warnedHint": "Bu kişi GC Stats moderatörlerinden bir uyarı aldı",
+      "warnedNotice": "{name}, GC Stats moderatörlerinden bir uyarı aldı. Dikkatli ol ve uygunsuz her mesajı bildir.",
+      "recentNotice": "{name} adlı kullanıcının GC Stats hesabı {days} günden yeni. Olağan dışı isteklere (bağlantılar, ödemeler, kimlik bilgileri) karşı temkinli ol."
+    },
+    "posts": {
+      "title": "{name} adlı kullanıcının açık ilanları",
+      "toggle": "{count, plural, =0 {Açık ilan yok} one {# açık ilan} other {# açık ilan}}",
+      "none": "Açık ilan yok.",
+      "published": "{date} tarihinde güncellendi"
+    },
+    "start": {
+      "button": "Mesaj gönder",
+      "open": "Konuşmayı gör",
+      "title": "{name} adlı kullanıcıya yaz",
+      "close": "Kapat",
+      "loginHint": "Bu ilanın sahibine yazmak için GC Stats ile giriş yap.",
+      "login": "Giriş yap"
+    },
+    "alert": {
+      "subject": "GC Scouting'de {name} adlı kullanıcıdan yeni mesaj",
+      "title": "{name} sana bir mesaj gönderdi",
+      "body": "GC Scouting'de {name} adlı kullanıcıdan bir mesaj aldın. Siteden yanıtla, konuşma sizinle ve moderatörler arasında gizli kalır.",
+      "managedSubject": "GC Scouting'de {profile} için yeni mesaj",
+      "managedTitle": "{name}, {profile} adlı profile bir mesaj gönderdi",
+      "managedBody": "Yönettiğin bir profil olan {profile}, GC Scouting'de {name} adlı kullanıcıdan bir mesaj aldı. Siteden yanıtla: yanıtın kendi adını gösterir.",
+      "open": "Konuşmayı gör",
+      "footer": "Bu uyarıyı, GC Scouting ayarlarında mesaj bildirimleri açık olduğu için alıyorsun."
+    },
+    "switch": {
+      "title": "Bu konuşma {name} adlı profile ait",
+      "managedText": "Bu profili yönetiyorsun. Konuşmayı okumak ve yanıtlamak için ona geç, mesajların kendi adını gösterir.",
+      "selfText": "Başka bir profil adına işlem yapıyorsun. Konuşmayı okumak ve yanıtlamak için kendi profiline geri dön.",
+      "button": "{name} profiline geç",
+      "error": "Profil değiştirilemedi. Biraz sonra tekrar dene."
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "Yönetici",
+      "dashboard": "Panel",
+      "groupChat": "Mesajlaşma",
+      "conversations": "Konuşmalar",
+      "automod": "Automod",
+      "messageReports": "Bildirilen mesajlar",
+      "groupPosts": "İlanlar",
+      "posts": "İlanlar",
+      "postReports": "Bildirilen ilanlar",
+      "groupAdmin": "Yönetim",
+      "users": "Kullanıcılar",
+      "access": "Erişim",
+      "backToSite": "Siteye dön",
+      "toggle": "Menüyü göster veya gizle",
+      "menuTitle": "Menü",
+      "menuDescription": "Yönetici gezinmesi."
+    },
+    "roles": {
+      "user": "Üye",
+      "staff": "Staff",
+      "admin": "Yönetici"
+    },
+    "common": {
+      "cancel": "İptal",
+      "total": "{count, plural, =0 {Sonuç yok} one {# sonuç} other {# sonuç}}",
+      "previous": "Önceki sayfa",
+      "next": "Sonraki sayfa",
+      "gcsAdmin": "GC Stats yöneticisinde aç",
+      "search": "Ara",
+      "close": "Kapat"
+    },
+    "sanctions": {
+      "note": "Not",
+      "warning": "Uyarı",
+      "mute": "Susturma",
+      "suspension": "Askıya alma",
+      "ban": "Yasak"
+    },
+    "errors": {
+      "auth": "Oturumunun süresi doldu ya da artık yönetici erişimin yok.",
+      "invalid": "Geçersiz istek.",
+      "notFound": "Bulunamadı.",
+      "conflict": "Zaten başkası tarafından işlendi. Sayfa yeniden yüklendi.",
+      "reasonLength": "Neden {min} ile {max} karakter arasında olmalıdır.",
+      "reasonInvalidCharacters": "Nedenden kontrol veya görünmez karakterleri kaldır.",
+      "activeExists": "Sahibinin bu türde yayında başka bir ilanı zaten var.",
+      "selfDemote": "Kendi yönetici rolünü kaldıramazsın.",
+      "bootstrap": "Bu hesap site yapılandırması aracılığıyla yönetici, rolü burada değiştirilemez.",
+      "server": "İşlem başarısız oldu. Biraz sonra tekrar dene."
+    },
+    "dashboard": {
+      "title": "Panel",
+      "subtitle": "Moderatörleri bekleyenler ve son 7 günün etkinliği.",
+      "todo": "İşlenecekler",
+      "held": "Automod tarafından bekletilen mesajlar",
+      "messageReports": "Bildirilen mesajlar",
+      "postReports": "Bildirilen ilanlar",
+      "activity": "Etkinlik",
+      "activePosts": "Yayındaki ilanlar",
+      "newPosts": "Yayınlanan ilanlar (7 gün)",
+      "activeConversations": "Aktif konuşmalar (7 gün)",
+      "messagesWeek": "Gönderilen mesajlar (7 gün)",
+      "users": "Hesaplar",
+      "staff": "Staff ve yöneticiler"
+    },
+    "conversations": {
+      "title": "Konuşmalar",
+      "subtitle": "Tüm özel konuşmalar, en yeniden başlayarak.",
+      "search": "Bir üyenin kullanıcı adı",
+      "empty": "Konuşma yok.",
+      "members": "Üyeler",
+      "messages": "Mesajlar",
+      "flags": "Kontrol edilecek",
+      "lastMessage": "Son mesaj",
+      "held": "{count} bekletilen",
+      "reports": "{count, plural, one {# bildirim} other {# bildirim}}",
+      "open": "Aç",
+      "back": "Konuşmalara dön",
+      "detailTitle": "Konuşma #{id}",
+      "older": "Eski mesajlar",
+      "latest": "Son mesajlar",
+      "fromPost": "{name} adlı kullanıcının {code} ilanından başladı",
+      "noMessages": "Mesaj yok."
+    },
+    "messages": {
+      "status": {
+        "visible": "Görünür",
+        "blocked": "Automod tarafından bekletiliyor",
+        "hidden": "Gizli"
+      },
+      "unchecked": "Automod tarafından kontrol edilmedi",
+      "writtenBy": "{name} tarafından yazıldı (profil yöneticisi)",
+      "reported": "{count, plural, one {# bildirim} other {# bildirim}}",
+      "reviewedBy": "{name} tarafından işlendi, {date}",
+      "approve": "Geçir",
+      "reject": "Engelli tut",
+      "hide": "Gizle",
+      "hideConfirm": "Onayla",
+      "show": "Görünür yap"
+    },
+    "automod": {
+      "title": "Automod",
+      "subtitle": "OpenAI automod tarafından bekletilen mesajlar. Birini geçirmek onu teslim eder (ve alıcıyı uyarır), engelli tutmak onu kalıcı olarak kaldırır.",
+      "empty": "Bekleyen mesaj yok.",
+      "context": "Konuşmayı gör"
+    },
+    "messageReports": {
+      "title": "Bildirilen mesajlar",
+      "subtitle": "Mesajlaşmadan gönderilen bildirimler. Birini yasaklamak için GC Stats yöneticisindeki profilinden git.",
+      "empty": "Bildirim yok.",
+      "by": "bildiren",
+      "hide": "Mesajı gizle",
+      "dismiss": "Reddet"
+    },
+    "reportStatus": {
+      "label": "Durum",
+      "open": "Açık",
+      "handled": "İşlendi",
+      "dismissed": "Reddedildi",
+      "handledBy": "{name} tarafından işlendi",
+      "dismissedBy": "{name} tarafından reddedildi"
+    },
+    "postReports": {
+      "title": "Bildirilen ilanlar",
+      "subtitle": "Discord moderasyon kanalındakiyle aynı bildirimler, burada ya da orada işlenir.",
+      "empty": "Bildirim yok.",
+      "by": "{name} tarafından bildirildi",
+      "dismiss": "Reddet",
+      "postState": {
+        "active": "Süresi dolmuş",
+        "closed": "Kapatılmış",
+        "removed": "Kaldırılmış"
+      }
+    },
+    "posts": {
+      "title": "İlanlar",
+      "subtitle": "Tüm ilanlar. Burada bir ilanı kaldırmak onu Discord kanallarından da kaldırır.",
+      "search": "İlan adı veya kullanıcı adı",
+      "stateLabel": "Durum",
+      "anyState": "Tüm durumlar",
+      "typeLabel": "Tür",
+      "anyType": "Tüm türler",
+      "state": {
+        "visible": "Yayında",
+        "expired": "Süresi dolmuş",
+        "closed": "Kapatılmış",
+        "removed": "Moderatörler tarafından kaldırılmış",
+        "deleted": "Sahibi tarafından silinmiş"
+      },
+      "post": "İlan",
+      "author": "Sahibi",
+      "bumped": "Güncellendi",
+      "actions": "İşlemler",
+      "reports": "{count, plural, one {# bildirim} other {# bildirim}}",
+      "remove": "Kaldır",
+      "restore": "Geri yükle",
+      "restoreConfirm": "Geri yüklemeyi onayla",
+      "removeTitle": "{name} ilanını kaldır",
+      "removeHint": "İlan siteden ve Discord kanallarından kalkar, açık bildirimleri işlenir. Neden moderatörler tarafından görülebilir.",
+      "reason": "Neden",
+      "edit": "Düzenle"
+    },
+    "users": {
+      "title": "Kullanıcılar",
+      "subtitle": "En az bir kez giriş yapmış hesaplar. Yaptırımlar GC Stats'ta yönetilir.",
+      "search": "Kullanıcı adı",
+      "anyRole": "Tüm roller",
+      "empty": "Hesap yok.",
+      "user": "Hesap",
+      "posts": "İlanlar",
+      "gcsAccount": "GC Stats hesabının oluşturulma tarihi",
+      "lastLogin": "Son giriş",
+      "back": "Kullanıcılara dön",
+      "joined": "GC Scouting'e katılım",
+      "email": "E-posta",
+      "discord": "Discord",
+      "sanctions": "Aktif GC Stats yaptırımları",
+      "noSanction": "Aktif yaptırım yok.",
+      "sanctionUntil": "{date} tarihine kadar",
+      "sanctionPermanent": "kalıcı",
+      "sanctionsChecked": "GC Stats'tan {date} tarihinde okundu.",
+      "sanctionsNever": "GC Stats'tan hiç okunmadı.",
+      "sanctionsHint": "Bir susturma, askıya alma veya yasak mesajları ve ilanları engeller.",
+      "conversations": "Konuşmalar",
+      "noConversation": "Konuşma yok.",
+      "seePosts": "İlanlarını gör"
+    },
+    "access": {
+      "title": "Erişim",
+      "subtitle": "Staff, bu sayfa dışında tüm yöneticiyi kullanabilir. Yöneticiler ayrıca rol verip kaldırabilir.",
+      "current": "Staff ve yöneticiler",
+      "grant": "Rol ver",
+      "search": "Hesabın kullanıcı adı",
+      "noResult": "Eşleşen hesap yok.",
+      "hint": "Hesabın GC Scouting'e en az bir kez giriş yapmış olması gerekir.",
+      "role": "Rol",
+      "save": "Kaydet",
+      "locked": "Kendi rolün ve yapılandırmayla belirlenen yöneticiler burada değiştirilemez."
+    },
+    "error": {
+      "title": "Bu sayfa yüklenemedi",
+      "body": "Bir sunucu hatası oluştu. Tekrar dene ya da panele dön.",
+      "retry": "Tekrar dene"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting ilanını X'te paylaşacak",
+    "siteText": "Hesabımızdan, verdiysen senin @ kullanıcı adınla birlikte yayınlanır.",
+    "switchToAuthor": "Kendim paylaşmayı tercih ederim",
+    "switchToSite": "GC Scouting paylaşsın",
+    "switching": "Kaydediliyor...",
+    "tweeted": "İlanın GC Scouting X hesabında.",
+    "retweeted": "GC Scouting ilanını retweet'ledi.",
+    "authorTitle": "İlanını X'te paylaş",
+    "authorText": "Bu tweet'i kendi hesabından paylaş, sonra bağlantısını buraya yapıştır: GC Scouting retweet'leyecek.",
+    "authorSavedTitle": "Bağlantı alındı, ilanını retweet'leyeceğiz",
+    "authorSavedText": "Retweet yapılana kadar bağlantıyı yine de değiştirebilirsin.",
+    "language": "Tweet dili",
+    "draftUnavailable": "Tweet metni hazırlanamadı. Birkaç dakika sonra sayfayı yenile.",
+    "length": "{length}/{max} karakter",
+    "tooLong": "X için çok uzun, paylaşmadan önce kısalt.",
+    "open": "X'te paylaş",
+    "opened": "X'te açıldı",
+    "linkLabel": "Tweet'inin bağlantısı",
+    "linkPlaceholder": "https://x.com/kullanici/status/...",
+    "save": "Bağlantıyı gönder",
+    "saving": "Gönderiliyor...",
+    "saved": "Bağlantı gönderildi",
+    "viewTweet": "Tweet'i gör",
+    "errors": {
+      "invalid": "Bu ilan geçerli değil.",
+      "required": "Tweet'inin bağlantısını yapıştır.",
+      "tweetUrlInvalid": "Bu bir tweet bağlantısı değil. https://x.com/kullanici/status/123 gibi görünmeli.",
+      "auth": "Oturumunun süresi doldu, tekrar giriş yap.",
+      "notFound": "Bu ilan artık yayında değil.",
+      "alreadyTweeted": "Bu ilan zaten X'te, bu seçim artık değişemez.",
+      "notAuthorTweet": "Bunu GC Scouting paylaşıyor, önce kendin paylaşmayı seç.",
+      "server": "Bir şeyler ters gitti, birkaç dakika sonra tekrar dene."
+    }
+  },
+  "tweetImage": {
+    "share": "Görselle paylaş",
+    "copy": "Görseli kopyala",
+    "preparing": "Hazırlanıyor...",
+    "shared": "Paylaşıldı",
+    "copied": "Görsel kopyalandı",
+    "pasteHint": "X açılınca görseli tweet'e yapıştır (Ctrl+V veya ⌘V).",
+    "failed": "Görsel hazırlanamadı.",
+    "download": "İndir"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "{code} ilanın moderasyon tarafından düzenlendi",
+      "title": "\"{name}\" adlı {code} ilanın düzenlendi",
+      "body": "GC Scouting moderasyon ekibinin bir üyesi ilanını düzenledi. İlan aynı bitiş tarihiyle yayında kalır.",
+      "reason": "Neden: {reason}",
+      "open": "İlanı gör",
+      "footer": "Bu mesajı, GC Scouting'deki ilanın moderasyon tarafından düzenlendiği için alıyorsun."
+    }
+  },
+  "ageGroups": {
+    "minor": "Reşit değil",
+    "adult": "Yetişkin"
+  },
+  "minorsPolicy": {
+    "accepted": "Reşit olmayanlar kabul edilir",
+    "adultsOnly": "Yalnızca yetişkinler"
+  },
+  "tierListGuide": {
+    "title": "Tierlist'imizi anlamak",
+    "intro": "Her oyuncu ilanı bir ajan tierlist'iyle gelir. İşte neden böyle göründüğü ve takımlara gerçekten yardımcı olması için seninkini nasıl dolduracağın.",
+    "scene": {
+      "title": "Sahneyle birlikte oluşturuldu",
+      "text": "Format rastgele seçilmedi: her split'te scout yapan ve oyuncu alan <b>Game Changers sahnesinin deneyimli oyuncuları, koçları ve menajerleriyle</b> birlikte tasarlandı.",
+      "why": "Geri bildirimleri netti: uzun bir ajan listesi bir takıma hiçbir şey söylemez. Bilmek istedikleri, yarın bir maçta hangi ajanları oynayabileceğin, hangilerinin biraz çalışma gerektirdiği ve takım için hangilerini öğrenmeye hazır olduğun.",
+      "credit": "Tier list, özellikle ZennIT Orange GC IGL'si <b>LittleBigSpy</b> ile birlikte geliştirildi; sahne deneyimi ajanların nasıl sıralanacağını belirlemeye yardımcı oldu."
+    },
+    "tiers": {
+      "title": "Üç seviye",
+      "confident": "Şu anda resmi bir maçta oynayabildiğin, beraberindeki lineup'lar, utility ve alışkanlıklarla birlikte ajanlar.",
+      "improve": "Zaten oynamayı bildiğin, ancak bir maçta rahat hissetmeden önce pratik gerektiren ajanlar.",
+      "canLearn": "Henüz oynamadığın ama takımın ihtiyacı olursa öğrenmeye istekli olduğun ajanlar.",
+      "aside": "Kenarda bırakılan ajanlar ilanında hiç gösterilmez. \"Kötü\" bir satır yok: boş bir yuva, bir tahminden daha çok şey söyler."
+    },
+    "highlight": {
+      "title": "Oynamayı bildiğin ajanları öne çıkar",
+      "text": "Tierlist, oyunun her ajanını sıralamak ya da meta hakkındaki fikrini vermek için değil, <b>oynamayı bildiğin ajanları öne çıkarmak</b> için vardır.",
+      "honest": "Dürüst ol: takımlar deneme maçlarında kontrol edecek ve kısa ama doğru bir tierlist, eksiksiz olandan daha değerlidir.",
+      "notMeta": "Her ajandaki kendi seviyeni sırala, ajanın mevcut yamada ne kadar güçlü olduğunu değil.",
+      "filter": "İlk iki satırın sitede ve Discord'da \"oynayabilir\" filtresi tarafından kullanılır: ilanının hangi aramalarda çıkacağını bunlar belirler.",
+      "example": "Örnek: ana havuzunda kendinden emin, parlatılacak birkaç initiator'ı olan bir controller ve sentinel oyuncusu."
+    }
+  }
+}

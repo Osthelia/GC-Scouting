@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "LFT, LFP, LFS and LFO posts for the Valorant Game Changers scene, linked to GC Stats."
+  },
+  "nav": {
+    "home": "Home",
+    "posts": "Posts",
+    "newPost": "Create a post",
+    "login": "Sign in with GC Stats",
+    "loginShort": "Sign in",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "Find your team. <accent>Complete your roster.</accent>",
+      "subtitle": "LFT, LFP, LFS and LFO posts from the Valorant Game Changers scene in one place. Filter by role, rank, language or agent, and post in two minutes with your GC Stats profile.",
+      "ctaBrowse": "Browse posts",
+      "ctaPost": "Create a post",
+      "demo": {
+        "lfp": "Spanish roster in OQ Playoffs, looking for a controller who can shotcall and a flash initiator as a sub. Practice from Monday to Thursday, 8 to 11 pm.",
+        "lfs": "Our team is looking for a coach and an analyst for the next split. Paid position, 3 evenings per week, VOD reviews included."
+      }
+    },
+    "types": {
+      "heading": "A post type for every need",
+      "sub": "You're looking, or someone is looking for you. Every post has a type, and you only see what matters to you.",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "A player looking for a team."
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "A team recruiting one or more players."
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "A team looking for a coach, an analyst or a manager."
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "A roster looking for an organization."
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "A coach or analyst available for a team."
+      }
+    },
+    "how": {
+      "heading": "How it works",
+      "step1": {
+        "title": "Sign in with GC Stats",
+        "body": "If your GC Stats profile is linked, your tournament history is added automatically. If not, find it in a few clicks."
+      },
+      "step2": {
+        "title": "Create your post",
+        "body": "Role, rank, languages, region, experience, and your agent tierlist. Everything is structured, nothing to write."
+      },
+      "step3": {
+        "title": "Get seen everywhere",
+        "body": "Your post goes live on the site, is sent to subscribed Discord servers and shared on Twitter."
+      },
+      "freshTitle": "Always fresh",
+      "freshBody": "Posts expire after 10 days. We remind you on day 7, one click to renew."
+    },
+    "tierlist": {
+      "heading": "Your agent tierlist, readable at a glance",
+      "body": "No more \"I play a bit of everything\". Every player ranks their agents on five levels, and teams filter by agent directly.",
+      "filterHint": "Filter example: \"can play Viper\" means Viper in the top two levels."
+    },
+    "verified": {
+      "heading": "Profiles linked to GC Stats",
+      "body": "Link your post to your GC Stats profile, which tracks Game Changers tournaments, and your background shows up: tournaments played, teams, results. Until our staff approves the link, the post mentions it.",
+      "verified": "Verified profile",
+      "verifiedHint": "Link approved, GC Stats history shown.",
+      "pending": "Unverified",
+      "pendingHint": "Link request waiting for staff approval.",
+      "none": "No GC Stats profile",
+      "noneHint": "No tournament yet, the post is shown as usual."
+    },
+    "discord": {
+      "eyebrow": "Discord bot",
+      "heading": "Posts delivered straight to your server",
+      "body": "Add the bot to your Discord server and choose what you receive. Every new post matching your criteria is sent automatically, with its tierlist and a link to the post.",
+      "cta": "Add the bot",
+      "steps": {
+        "add": {
+          "title": "Add the bot",
+          "body": "Invite it to your server in one click, it only needs to write in the channels you pick."
+        },
+        "channel": {
+          "title": "Pick one or more channels",
+          "body": "One channel for EU LFT, another for staff: each channel has its own setup."
+        },
+        "filters": {
+          "title": "Choose what you receive",
+          "body": "Post types, regions, roles, rank, languages, agents, experience, availability. The same filters as on the site."
+        },
+        "receive": {
+          "title": "Get posts live",
+          "body": "New and renewed posts are sent as soon as they go live, with no duplicates."
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "#{channel} setup:",
+        "filterType": "LFT",
+        "filterRole": "Controller",
+        "filterRank": "Ascendant and above",
+        "app": "APP",
+        "time": "Today at 9:04 PM",
+        "published": "published 2 hours ago",
+        "rank": "Rank",
+        "peak": "peak {rank}",
+        "roles": "Roles",
+        "agents": "Agents",
+        "experience": "Experience",
+        "languages": "Languages",
+        "rhythm": "Rhythm",
+        "rhythmValue": "{hours} h per week over {days} days",
+        "tierlistAlt": "Agent tierlist of {name}"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "Follow us on Twitter",
+      "body": "Posts are shared on our account with the tierlist as an image, to reach the whole scene.",
+      "cta": "Follow us"
+    },
+    "cta": {
+      "title": "Ready to scout?",
+      "body": "Filters saved in your browser, no account needed to browse.",
+      "button": "Browse posts"
+    }
+  },
+  "post": {
+    "verified": "Verified",
+    "pending": "Unverified",
+    "igl": "IGL",
+    "tournaments": "{count, plural, one {# tournament} other {# tournaments}}",
+    "lookingFor": "Looking for",
+    "anyRole": "Any role",
+    "view": "View post",
+    "confident": "Confident with"
+  },
+  "duration": {
+    "months": "{count, plural, one {# month} other {# months}}",
+    "years": "{count, plural, one {# year} other {# years}}"
+  },
+  "compensation": {
+    "paid": "Paid",
+    "free": "Unpaid"
+  },
+  "lan": {
+    "lan": "LAN ready",
+    "online": "Online only"
+  },
+  "preferences": {
+    "title": "Preferences",
+    "theme": "Theme",
+    "themes": {
+      "system": "Auto",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "timezone": "Timezone",
+    "timezoneAuto": "Automatic ({timezone})",
+    "timezoneHint": "Used to show availability and to search by hours.",
+    "search": "Search",
+    "noOption": "No match"
+  },
+  "roles": {
+    "duelist": "Duelist",
+    "initiator_reveal": "Ini Reveal",
+    "initiator_flash": "Ini Flash",
+    "controller": "Controller",
+    "sentinel": "Sentinel",
+    "flex": "Flex"
+  },
+  "agentClasses": {
+    "duelist": "Duelist",
+    "initiator": "Initiator",
+    "controller": "Controller",
+    "sentinel": "Sentinel"
+  },
+  "tiers": {
+    "confident": "Confident with",
+    "improve": "Need improvements",
+    "canLearn": "Can learn"
+  },
+  "footer": {
+    "tagline": "The Valorant scouting platform of the GC Stats ecosystem.",
+    "product": "Product",
+    "postTypes": "Post types",
+    "resources": "Resources",
+    "legal": "Legal notice",
+    "privacy": "Privacy",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "Made by <link>Osthelia</link>, a non-profit dedicated to ethical, inclusive and equitable esports."
+  },
+  "levels": {
+    "cash_cup": "Open Qualifiers",
+    "playoffs": "OQ Playoffs",
+    "main_event": "Main event"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "Co-IGL"
+  },
+  "rosterSpots": {
+    "player": "Player",
+    "sub": "Sub"
+  },
+  "staffRoles": {
+    "coach": "Coach",
+    "assistant_coach": "Assistant coach",
+    "performance_coach": "Performance coach",
+    "mental_coach": "Mental coach",
+    "analyst": "Analyst",
+    "manager": "Manager"
+  },
+  "regions": {
+    "eu": "Europe",
+    "na": "North America",
+    "latam": "Latin America",
+    "br": "Brazil",
+    "apac": "Asia Pacific",
+    "kr": "Korea",
+    "jp": "Japan",
+    "oce": "Oceania",
+    "mena": "Middle East & North Africa",
+    "cn": "China"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {No posts} one {# post} other {# posts}}",
+    "sortLabel": "Sort",
+    "sort": {
+      "recent": "Most recent",
+      "rank": "Highest rank",
+      "experience": "Most experience",
+      "availability": "Most available"
+    },
+    "filters": "Filters",
+    "reset": "Reset",
+    "resetAll": "Reset filters",
+    "apply": "Show results",
+    "any": "Any",
+    "selected": "{count} selected",
+    "search": "Search",
+    "noOption": "No match",
+    "removeFilter": "Remove filter",
+    "group": {
+      "region": "Region",
+      "language": "Language",
+      "spot": "Spot wanted",
+      "spotWanted": "Spot offered",
+      "role": "Role",
+      "staffRole": "Staff role",
+      "compensation": "Deal",
+      "lan": "LAN",
+      "rank": "Rank",
+      "experience": "Experience",
+      "agents": "Can play",
+      "rhythm": "Rhythm",
+      "availability": "Availability",
+      "age": "Age"
+    },
+    "rankFrom": "From",
+    "rankTo": "To",
+    "minDuration": "{duration} or more",
+    "experienceHint": "Time played at one of the picked stages, or at any stage.",
+    "minHours": "{count, plural, =0 {Any} other {# h/week or more}}",
+    "minDays": "{count, plural, =0 {Any} one {# day/week or more} other {# days/week or more}}",
+    "rhythmHours": "Hours",
+    "rhythmDays": "Days",
+    "rhythmHint": "Time and days per week given to the team.",
+    "agentsHint": "Agents in the top two tiers of the tierlist.",
+    "agentsMax": "5 agents max",
+    "slot": {
+      "days": "Days",
+      "from": "From",
+      "to": "To",
+      "everyDay": "Every day",
+      "mode": "Search mode",
+      "simple": "Simple",
+      "advanced": "Day by day",
+      "notSearched": "Not searched",
+      "hint": "Your playing hours. A post matches as soon as it shares half an hour with them.",
+      "hintAdvanced": "Pick the days and set hours for each one. A post matches as soon as it shares half an hour with them.",
+      "hintTimezone": "Hours in {timezone}. A post matches as soon as it shares half an hour with them."
+    },
+    "empty": "No post matches these filters.",
+    "emptyHint": "Try removing a filter, or come back later: new posts arrive every day.",
+    "loading": "Loading posts",
+    "close": "Close"
+  },
+  "postPage": {
+    "back": "All {code} posts",
+    "expired": "This post has expired",
+    "expiredHint": "It no longer shows up in the list. Its author can renew it at any time.",
+    "closed": "This post is closed",
+    "closedHint": "Its author is no longer looking.",
+    "published": "Published {date}",
+    "renewed": "Renewed {date}",
+    "expires": "Expires {date}",
+    "about": "About",
+    "tierlist": "Agent tierlist",
+    "availability": "Availability",
+    "profile": "Profile",
+    "similar": "Similar posts",
+    "seeAll": "See all",
+    "region": "Region",
+    "country": "Country",
+    "languages": "Languages",
+    "roles": "Roles",
+    "rosterSpot": "Spot wanted",
+    "rosterSpotWanted": "Spot offered",
+    "playersWanted": "{count, plural, one {# player} other {# players}}",
+    "subsWanted": "{count, plural, one {# sub} other {# subs}}",
+    "lookingFor": "Looking for",
+    "staffRoles": "Staff roles",
+    "igl": "Shotcalling",
+    "rank": "Rank",
+    "peak": "Peak {rank}",
+    "rankWanted": "Rank wanted",
+    "tracker": "Tracker.gg",
+    "compensation": "Deal",
+    "lan": "LAN",
+    "experience": "Experience",
+    "experienceWanted": "Experience wanted",
+    "noExperience": "No tournament yet",
+    "rhythm": "Rhythm",
+    "rhythmValue": "{hours, number} h per week, {days, plural, one {# day} other {# days}}",
+    "contact": "Contact",
+    "copyDiscord": "Copy Discord username",
+    "copyDiscordId": "Copy Discord ID",
+    "discordProfile": "Discord",
+    "discordServer": "Join the server",
+    "copied": "Copied",
+    "share": "Copy link",
+    "linkCopied": "Link copied",
+    "twitter": "X profile",
+    "email": "Send an email",
+    "bestResult": "Best result",
+    "viewProfile": "View on GC Stats",
+    "pendingNote": "The link to this GC Stats profile is waiting for staff approval.",
+    "noProfile": "No GC Stats profile linked to this post.",
+    "yourTime": "Your time",
+    "authorTime": "Author's time",
+    "timezoneNote": "Times in {timezone}",
+    "noAvailability": "No availability given.",
+    "loading": "Loading post",
+    "gcsHistory": "GC Stats history",
+    "latestTeams": "Latest teams",
+    "latestTournaments": "Latest tournaments",
+    "present": "Present",
+    "unknownDate": "?",
+    "noTournaments": "No tournament on GC Stats.",
+    "wins": "{n}W",
+    "losses": "{n}L",
+    "recordTitle": "{wins, plural, one {# win} other {# wins}}, {losses, plural, one {# loss} other {# losses}}",
+    "place": "{n, selectordinal, one {#st} two {#nd} few {#rd} other {#th}}",
+    "top": "Top {n}",
+    "viewTeamProfile": "Team on GC Stats",
+    "teamRoles": {
+      "player": "Player",
+      "player-igl": "Player, IGL",
+      "sub": "Sub",
+      "coach": "Coach",
+      "assistant coach": "Assistant coach",
+      "performance coach": "Performance coach",
+      "analyst": "Analyst",
+      "manager": "Manager"
+    },
+    "syncedAt": "Updated {date}",
+    "gcsPending": {
+      "loading": "Fetching the GC Stats history…",
+      "timeout": "The GC Stats history is not available yet, come back in a few minutes."
+    },
+    "gcsRefresh": {
+      "label": "Refresh",
+      "pending": "Refreshing…",
+      "done": "Refreshed",
+      "errors": {
+        "invalid": "Invalid post.",
+        "auth": "Log in to refresh the history.",
+        "notFound": "This post no longer exists.",
+        "forbidden": "Only the author of the post can refresh it.",
+        "cooldown": "{minutes, plural, one {Try again in # minute.} other {Try again in # minutes.}}",
+        "noProfile": "No GC Stats profile or team is linked to this post.",
+        "notConfigured": "The GC Stats connection is not configured.",
+        "failed": "GC Stats did not respond, try again later."
+      }
+    },
+    "agentContact": "Contact through the agent",
+    "staffEdit": "Edit (moderation)",
+    "ageGroup": "Age",
+    "minorsAccepted": "Minors"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "body": "This page doesn't exist, or the post was removed.",
+      "back": "Browse posts"
+    },
+    "serverError": {
+      "title": "Something went wrong",
+      "body": "This page couldn't load. Try again in a moment.",
+      "retry": "Try again",
+      "back": "Browse posts"
+    }
+  },
+  "auth": {
+    "account": "My account",
+    "logout": "Log out",
+    "profile": {
+      "verified": "Verified GC Stats profile",
+      "pending": "GC Stats profile pending verification",
+      "none": "No GC Stats profile linked"
+    },
+    "error": {
+      "title": "Login failed",
+      "retry": "Try again",
+      "home": "Back to home",
+      "reasons": {
+        "denied": "You denied access on GC Stats. Logging in with GC Stats is required to post.",
+        "state": "This login attempt expired or started in another tab. Please start again.",
+        "exchange": "GC Stats could not confirm your login. Try again in a moment.",
+        "provider": "GC Stats returned an error during login. Try again in a moment.",
+        "config": "Logging in with GC Stats is not configured on this site yet."
+      }
+    },
+    "settings": "Account settings",
+    "gcsAccount": "My GC Stats account",
+    "actAs": "Active profile",
+    "yourself": "{name} (you)",
+    "switchFailed": "This profile is no longer available, reload the page.",
+    "actingAs": "You are acting as {name}.",
+    "backToSelf": "Back to your profile",
+    "myPosts": "My posts",
+    "messages": "Messages",
+    "admin": "Admin"
+  },
+  "newPost": {
+    "title": "New post",
+    "intro": {
+      "lft": "Show teams who you are: roles, rank, agents and when you can play.",
+      "lfp": "Describe the player your team is looking for and when you practice.",
+      "lfs": "Describe the staff your team is looking for (coach, analyst, manager).",
+      "lfo": "Present your roster to organizations looking for a team.",
+      "lfst": "Show teams what you bring as a coach, analyst or manager."
+    },
+    "login": {
+      "title": "Log in to post",
+      "text": "Posts are tied to a GC Stats account, so teams and players know who they talk to. Your tournament history is shown if your profile is linked.",
+      "cta": "Log in with GC Stats"
+    },
+    "activeExists": {
+      "title": "You already have an active {code} post",
+      "text": "Only one can be online at a time. Close it or wait for it to expire before posting a new one."
+    },
+    "viewExisting": "View my post",
+    "sections": {
+      "identity": "Identity",
+      "identityHint": "How you appear on the post.",
+      "identityTeamHint": "How your team appears on the post.",
+      "profile": {
+        "lft": "Your profile",
+        "lfp": "Player wanted",
+        "lfs": "Staff wanted",
+        "lfo": "Your roster",
+        "lfst": "Your profile"
+      },
+      "tierList": "Agent tierlist",
+      "tierListHint": "Highlight the agents you know how to play, from the ones you master to the ones you can learn. The first two rows are used by the \"can play\" filter.",
+      "availability": "Availability",
+      "availabilityHint": "Your usual weekly slots, in your timezone. Visitors see them converted to their own time.",
+      "availabilityTeamHint": "Your practice slots, in your timezone. Visitors see them converted to their own time.",
+      "rhythm": "Rhythm",
+      "rhythmHint": "The most time you can give to a team each week, within your availability.",
+      "rhythmTeamHint": "The time your team asks for each week, within your practice slots.",
+      "about": "Presentation and contact",
+      "aboutHint": "A few words to stand out, and how to reach you.",
+      "reminders": "Expiry reminders",
+      "remindersHint": "A post stays online for 10 days. After 7 days we send you a reminder with a link to renew it in one click.",
+      "remindersDelegatedHint": "A post stays online for 10 days. Reminders go to the profile owner, on the channels of their account.",
+      "tweet": "Posting on X",
+      "tweetHint": "Every post is shared on the GC Scouting X account. You can also post it yourself, we then retweet it.",
+      "moderation": "Reason for the edit",
+      "moderationHint": "Sent to the author of the post and kept in the moderation log."
+    },
+    "fields": {
+      "displayName": "Nickname",
+      "teamName": "Team name",
+      "region": "Region",
+      "country": "Country",
+      "noCountry": "Not specified",
+      "languages": "Spoken languages",
+      "languagesMax": "{max} languages max",
+      "choose": "Choose",
+      "rosterSpot": "Spot wanted",
+      "rosterSpotWanted": "Spot offered",
+      "rosterSpotHint": "Player by default. Pick sub for a substitute role.",
+      "playersWanted": "Players wanted",
+      "subsWanted": "Subs wanted",
+      "wantedHint": "How many starters and subs your roster is looking for.",
+      "playersCount": "{count, plural, =0 {No player} one {# player} other {# players}}",
+      "subsCount": "{count, plural, =0 {No sub} one {# sub} other {# subs}}",
+      "roles": "Roles",
+      "rolesWanted": "Roles wanted",
+      "flexHint": "Flex matches every role in searches.",
+      "igl": "Shotcalling",
+      "iglWanted": "Shotcaller wanted",
+      "staffRoles": "Positions",
+      "staffRolesWanted": "Positions wanted",
+      "rankCurrent": "Current rank",
+      "rankPeak": "Peak rank",
+      "rankMin": "Minimum rank",
+      "rankMax": "Maximum rank",
+      "rankRangeHint": "Rank range of the player you are looking for.",
+      "compensation": "Deal wanted",
+      "compensationHint": "Paid if you are looking for a paid contract, unpaid if a volunteer project works for you.",
+      "compensationOffered": "Deal offered",
+      "compensationOfferedHint": "Paid if the spot comes with a salary or a compensation, unpaid otherwise.",
+      "lan": "LAN events",
+      "lanHint": "Whether you can travel to play LAN events.",
+      "lanTeamHint": "Whether the team plans to travel to LAN events.",
+      "experience": "Tournament experience",
+      "experienceHint": "How long you have played at each stage. Leave the stages you have not played on none.",
+      "experienceWanted": "Experience wanted",
+      "experienceWantedHint": "Minimum time played at each stage, leave on none when it does not matter.",
+      "notPlayed": "None",
+      "notSpecified": "Not specified",
+      "rhythmHours": "Hours per week",
+      "rhythmDays": "Days per week",
+      "hoursPerWeek": "{count} h",
+      "daysPerWeek": "{count, plural, one {# day} other {# days}}",
+      "rhythmMax": "Your availability covers {hours} h over {days, plural, one {# day} other {# days}}, the rhythm cannot go beyond.",
+      "rhythmNoAvailability": "Add your availability first, the rhythm cannot go beyond it.",
+      "timezone": "Timezone",
+      "description": "Presentation",
+      "descriptionPlaceholder": {
+        "player": "Your goals, your playstyle, what you are looking for in a team...",
+        "team": "Your project, your goals, what you expect from the player..."
+      },
+      "contact": "Contact (at least one)",
+      "discord": "Discord ID",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "Use my linked account",
+      "discordInvite": "Discord server invite",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "handle",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "contactHint": "Shown publicly on the post.",
+      "notifyEmail": "By email",
+      "notifyDiscord": "By Discord private message",
+      "noEmail": "No verified email on your GC Stats account",
+      "discordLinked": "Discord account linked on GC Stats",
+      "noDiscord": "No Discord account linked on GC Stats",
+      "noReminderWarning": "Without reminders, your post will expire after 10 days without notice.",
+      "iglHint": "Select both if you can take either role.",
+      "iglWantedHint": "Select both if either one works for you.",
+      "gcsTeam": "Team page on GC Stats",
+      "gcsTeamPlaceholder": "https://gc-stats.app/en/team/...",
+      "gcsTeamHint": "If your team already played a Game Changers tournament, paste the link to its GC Stats page. Your GC Stats profile must be linked and on its current roster.",
+      "agent": "Contact through an agent",
+      "agentHint": "The contact details below reach your agent.",
+      "agentName": "Agent name",
+      "agentAgency": "Agency",
+      "agentAgencyPlaceholder": "Independent if empty",
+      "contactAgent": "Agent contact (at least one)",
+      "contactAgentHint": "Shown publicly on the post, with the agent's name.",
+      "chatEnabled": "Allow private messages",
+      "chatEnabledHint": "Logged in visitors can write to you from the post, on GC Scouting.",
+      "contactChatHint": "With private messages on, these contacts are optional.",
+      "tweetBySite": "GC Scouting posts it",
+      "tweetBySiteHint": "We post it on our X account, with your @ if you give one.",
+      "tweetByAuthor": "I post it myself",
+      "tweetByAuthorHint": "Once published, we give you the tweet ready to post. Send us its link and we retweet it.",
+      "tweetByLocked": "This post is already on X, this choice can no longer change.",
+      "moderationReason": "Reason",
+      "moderationReasonPlaceholder": "E.g. invalid Discord link removed, off topic description shortened",
+      "ageGroup": "Age",
+      "ageGroupHint": "Shown on the post. Click again to leave it out.",
+      "tracker": "Tracker.gg profile",
+      "trackerHint": "Paste the link of your tracker.gg Valorant profile, no account needed.",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "Minors",
+      "minorsAcceptedHint": "Minor players can filter the posts that accept them."
+    },
+    "errors": {
+      "required": "This field is required.",
+      "invalid": "Invalid value.",
+      "tooLong": "{max} characters max.",
+      "tooMany": "{max} max.",
+      "peakBelowCurrent": "The peak rank cannot be lower than the current rank.",
+      "rangeOrder": "The maximum rank must be higher than or equal to the minimum rank.",
+      "wantedEmpty": "Look for at least one player or one sub.",
+      "tierEmpty": "Rank at least one agent.",
+      "slotInvalid": "One of the slots is invalid.",
+      "slotOverlap": "Two slots of the same day overlap.",
+      "rhythmAboveAvailability": "Higher than your availability ({max} max).",
+      "contactRequired": "Give at least one way to contact you.",
+      "discordInvalid": "Invalid Discord ID (17 to 20 digits). Your username does not work here, see how to find your ID below.",
+      "discordInviteInvalid": "Invalid invite link (discord.gg/code or discord.com/invite/code).",
+      "twitterInvalid": "Invalid handle (15 characters max: letters, digits, underscore).",
+      "emailInvalid": "Invalid email address.",
+      "notifyUnavailable": "This channel is not available on your account.",
+      "gcsTeamInvalid": "Invalid link, paste the address of a GC Stats team page.",
+      "gcsTeamNoProfile": "Link your GC Stats profile first (top of the page): only a team member can add its page.",
+      "gcsTeamNotMember": "Your GC Stats profile is not on this team's current roster.",
+      "gcsTeamCheckFailed": "GC Stats could not check the team, try again in a moment.",
+      "trackerInvalid": "Not a tracker.gg Valorant profile link.",
+      "reasonLength": "The reason must be between {min} and {max} characters.",
+      "invalidCharacters": "Remove control or invisible characters."
+    },
+    "formErrors": {
+      "auth": "Your session has expired. Log in again to publish.",
+      "activeExists": "You already have an active {code} post.",
+      "expiredExists": "Your previous {code} post has expired. Reload the page to replace it.",
+      "limitReached": "You already have {max} online {code} posts. Close one of them to publish a new one.",
+      "server": "The post could not be published. Try again in a few moments.",
+      "notFound": "This post no longer exists or is not yours.",
+      "notEditable": "This post can no longer be edited.",
+      "sanctioned": "Your GC Stats account is sanctioned (mute, suspension or ban): you cannot publish or edit posts for now.",
+      "rateLimited": "You are publishing or editing too often. Wait a little before trying again.",
+      "sanctionedUntil": "Your GC Stats account is sanctioned (mute, suspension or ban) until {date}: you cannot publish or edit posts until then."
+    },
+    "errorCount": "{count, plural, one {# field to fix} other {# fields to fix}}",
+    "replacesExpired": "Your expired {code} post will be closed.",
+    "publish": "Publish",
+    "publishing": "Publishing...",
+    "tierList": {
+      "hint": "Drag the agents you play into the rows, or click an agent then a row. Agents left aside are not shown.",
+      "pickedHint": "Now click the row where the agent goes.",
+      "progress": "{count, plural, =0 {No agent ranked} one {# agent ranked} other {# agents ranked}}",
+      "reset": "Reset",
+      "poolEmpty": "Every agent is ranked.",
+      "guide": "Understand our tierlist",
+      "guideTooltip": "Why these three tiers, and how to fill them. Opens in a new tab."
+    },
+    "availability": {
+      "hint": "Click or drag across the hours to add them, do it again to remove them. Playing past midnight? Carry on at the start of the next day.",
+      "copyAll": "Copy to every day",
+      "clearDay": "Clear this day",
+      "clearAll": "Clear all",
+      "summary": "{hours} h per week, {days, plural, one {# day} other {# days}}"
+    },
+    "typeTabs": "Post type",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "delegatedNoProfile": "No GC Stats profile is linked to {name}. Only {name} can link one, from their own account.",
+    "editTitle": "Edit post",
+    "editIntro": "Changes go online right away. The expiry date stays the same.",
+    "backToPost": "Back to the post",
+    "closedTitle": "This post is closed",
+    "closedText": "A closed post can no longer be edited. Create a new one if you are looking again.",
+    "loading": "Loading form",
+    "moderationTitle": "Moderation edit",
+    "moderationText": "You are editing the post of {name}. They get an email and a Discord message with the reason you give.",
+    "discordHelp": {
+      "toggle": "How to find my Discord ID?",
+      "step1": "In Discord, open User Settings, Advanced, and turn on Developer Mode.",
+      "step2": "Right click your avatar or name (long press on mobile).",
+      "step3": "Click Copy User ID, then paste it here.",
+      "menuProfile": "Profile",
+      "menuMention": "Mention",
+      "menuCopyId": "Copy User ID"
+    }
+  },
+  "playerLink": {
+    "question": "No GC Stats profile is linked to your account. Have you already played a Game Changers tournament?",
+    "questionTeam": "No GC Stats profile is linked to your account. To add your team's GC Stats page, link your profile first. Have you already played a Game Changers tournament?",
+    "declined": "No problem, your post will be published without a tournament history.",
+    "declinedTeam": "No problem, your post will be published without the team's GC Stats page.",
+    "yes": "Yes, find my profile",
+    "no": "Not yet",
+    "title": "Find your GC Stats profile",
+    "intro": "Search your name, or go through a tournament you played. GC Stats staff then approves the link.",
+    "cancel": "Close",
+    "modeLabel": "Search method",
+    "mode": {
+      "name": "By name",
+      "tournament": "By tournament"
+    },
+    "namePlaceholder": "Your tournament name",
+    "tournamentPlaceholder": "Tournament name",
+    "teamPlaceholder": "Filter teams or players",
+    "minChars": "At least {min} characters.",
+    "players": "{count, plural, =0 {No players} one {# player} other {# players}}",
+    "pickPlayer": "Pick your name in the roster.",
+    "empty": "No results.",
+    "emptyTeams": "No team found for this tournament.",
+    "emptyRoster": "No player registered for this team.",
+    "loading": "Loading",
+    "back": "Back to search",
+    "viewOnGcs": "View on GC Stats",
+    "claimed": "Already linked to an account",
+    "confirmText": "Make sure this is your profile. The request goes to GC Stats staff, and your posts are marked \"Unverified\" until it is approved.",
+    "send": "Send the request",
+    "sending": "Sending...",
+    "relogin": "Log in again",
+    "done": {
+      "pending": "Request sent. Your profile shows on your posts, marked \"Unverified\" until staff approves it.",
+      "approved": "This profile is already linked to your GC Stats account, it is now verified."
+    },
+    "lookupErrors": {
+      "auth": "Your session expired, log in again.",
+      "invalid": "Invalid search.",
+      "notConfigured": "GC Stats search is not configured on this site.",
+      "notFound": "This tournament no longer exists on GC Stats.",
+      "failed": "GC Stats did not answer, try again in a moment."
+    },
+    "errors": {
+      "auth": "Your session expired, log in again.",
+      "invalid": "Invalid profile.",
+      "linkExists": "A profile is already linked or pending on your account. Reload the page.",
+      "reauth": "Your GC Stats login must be renewed to send the request.",
+      "notFound": "This profile no longer exists on GC Stats.",
+      "taken": "This profile is already linked to another GC Stats account. If it is yours, contact GC Stats staff.",
+      "requestPending": "A link request is already pending on your GC Stats account.",
+      "rateLimited": "Too many requests, try again in a minute.",
+      "failed": "The request could not be sent, try again in a moment.",
+      "delegated": "Only the profile owner can link a GC Stats profile."
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "Your {code} post expires soon",
+      "title": "Your {code} post \"{name}\" expires in {left, plural, one {# day} other {# days}}",
+      "body": "It will leave the list and the Discord channels on {date}.",
+      "renewHint": "Still looking? Renew it for {days} more days and it goes back to the top of the list.",
+      "deleteHint": "Found what you needed? Delete it so people stop reaching out.",
+      "renew": "Renew",
+      "delete": "Delete",
+      "view": "View post",
+      "footer": "You get this reminder because you turned it on when posting on GC Scouting. The links work for 14 days without logging in, don't share them."
+    },
+    "manage": {
+      "metaTitle": "Manage my post",
+      "renew": {
+        "title": "Renew your post",
+        "text": "{expired, select, true {It has expired.} other {It expires soon.}} It will be online again for 10 days and move back to the top of the list.",
+        "confirm": "Renew",
+        "pending": "Renewing...",
+        "done": "Post renewed until {date}"
+      },
+      "delete": {
+        "title": "Delete your post",
+        "text": "It will be removed from the site and the Discord channels, and its link will stop working. This can't be undone.",
+        "confirm": "Delete",
+        "pending": "Deleting...",
+        "done": "Post deleted"
+      },
+      "view": "View post",
+      "newPost": "Create a post",
+      "home": "Back to home",
+      "errorTitle": "Link unavailable",
+      "errors": {
+        "invalid": "This link is not valid. Check that it was copied in full.",
+        "used": "This link was already used. Each reminder works once.",
+        "expired": "This link has expired. Log in and open your post to renew it.",
+        "unavailable": "This post was closed or deleted.",
+        "limitReached": "You already have the most online posts allowed for this type. Close one of them to renew this one.",
+        "server": "The action could not be completed. Try again in a moment."
+      }
+    },
+    "renew": {
+      "title": "Your post expires {date}",
+      "expiredTitle": "Your post has expired",
+      "hint": "Renew it for {days} more days and it goes back to the top of the list.",
+      "label": "Renew",
+      "pending": "Renewing...",
+      "done": "Renewed",
+      "errors": {
+        "invalid": "Invalid post.",
+        "auth": "Your session has expired. Log in again to renew.",
+        "notFound": "This post is no longer active.",
+        "tooEarly": "Renewal opens 3 days before expiry.",
+        "limitReached": "You already have the most online posts allowed for this type. Close one of them to renew this one.",
+        "server": "Renewal failed. Try again in a moment."
+      }
+    },
+    "noReminder": {
+      "title": "No expiry reminder turned on",
+      "text": "Your post will expire after {days} days without notice. Turn on the email or Discord reminder in the post form."
+    }
+  },
+  "account": {
+    "title": "Account settings",
+    "loading": "Loading your account",
+    "intro": "Manage who can post in your name, and your data on GC Scouting. Your GC Stats account is managed on GC Stats.",
+    "gcsAccount": "My GC Stats account",
+    "since": "Since {date}",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "login": {
+      "title": "Sign in to manage your account",
+      "text": "Your GC Scouting account is created with your GC Stats account.",
+      "cta": "Sign in with GC Stats"
+    },
+    "delegates": {
+      "title": "Access to your profile",
+      "hint": "People you trust (agent, manager, staff) can publish and manage posts in your name. Up to {max} people, you can remove an access at any time.",
+      "empty": "Nobody has access to your profile.",
+      "remove": "Remove",
+      "pendingInvite": "Invite link waiting, valid until {date}",
+      "revokeInvite": "Cancel",
+      "inviteReady": "Invite link created",
+      "inviteHint": "Send it to the person, they open it while signed in. It works once and for {days} days.",
+      "copy": "Copy",
+      "copied": "Copied",
+      "create": "Create an invite link"
+    },
+    "managed": {
+      "title": "Profiles you manage",
+      "hint": "Pick the active profile from the menu at the top right to post in its name.",
+      "empty": "Nobody has given you access to their profile yet.",
+      "active": "Active profile",
+      "use": "Use this profile",
+      "leave": "Leave"
+    },
+    "errors": {
+      "auth": "Your session expired, sign in again.",
+      "invalid": "Invalid request.",
+      "notFound": "This access no longer exists, reload the page.",
+      "server": "The action failed, try again in a moment.",
+      "full": "Your profile already has {max} people with access.",
+      "tooManyInvites": "Too many invite links waiting, cancel one first."
+    },
+    "data": {
+      "title": "Your data",
+      "hint": "Download everything GC Scouting stores about your account (profile, posts, accesses), as a JSON file.",
+      "export": "Download my data",
+      "exporting": "Preparing...",
+      "exportFailed": "The export failed, try again in a moment."
+    },
+    "delete": {
+      "title": "Delete my account",
+      "hint": "Your GC Scouting account, your posts and the accesses to your profile are deleted for good. Your GC Stats account is not affected.",
+      "confirmLabel": "Type {name} to confirm",
+      "submit": "Delete my account",
+      "pending": "Deleting...",
+      "errors": {
+        "auth": "Your session expired, sign in again.",
+        "confirmation": "The username does not match.",
+        "server": "The deletion failed, try again in a moment."
+      }
+    },
+    "chatNotifications": {
+      "title": "Message notifications",
+      "text": "One alert per conversation when you get a message, then nothing more until you open it. The message itself is never copied into the alert.",
+      "email": "By email",
+      "discord": "By Discord direct message",
+      "noEmail": "No verified email on your GC Stats account",
+      "discordLinked": "Discord account linked to GC Stats",
+      "noDiscord": "No Discord account linked to GC Stats",
+      "save": "Save",
+      "saved": "Preferences saved.",
+      "errors": {
+        "auth": "Your session expired. Log in again.",
+        "invalid": "Invalid preferences.",
+        "noEmail": "Add and verify an email on GC Stats to turn on email alerts.",
+        "noDiscord": "Link a Discord account on GC Stats to turn on Discord alerts.",
+        "server": "Saving failed. Try again in a moment."
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "Profile invite",
+    "title": "{name} invites you to manage their profile",
+    "text": "You will be able to publish and manage posts in the name of {name}. You can leave at any time from your account settings.",
+    "loginText": "Sign in with your GC Stats account to accept the invite.",
+    "loginCta": "Sign in with GC Stats",
+    "accept": "Accept",
+    "accepting": "Accepting...",
+    "done": "You now manage the profile of {name}, it is your active profile.",
+    "newPost": "Create a post",
+    "settings": "Account settings",
+    "home": "Back to home",
+    "errorTitle": "Invite unavailable",
+    "errors": {
+      "invalid": "This link is not valid. Check that it was copied in full.",
+      "used": "This invite has already been used. Ask for a new link.",
+      "expired": "This invite has expired. Ask for a new link.",
+      "self": "This is your own invite link, send it to the person who will manage your profile.",
+      "already": "You already manage this profile.",
+      "full": "This profile has reached its limit of people with access.",
+      "auth": "Your session expired, sign in again.",
+      "server": "The invite could not be accepted, try again in a moment."
+    }
+  },
+  "postAuthor": {
+    "edit": "Edit",
+    "close": "Close",
+    "closeConfirm": "Close the post",
+    "cancel": "Cancel",
+    "errors": {
+      "invalid": "Invalid post.",
+      "auth": "Your session has expired. Log in again.",
+      "notFound": "This post is no longer active.",
+      "server": "The post could not be closed. Try again in a moment."
+    }
+  },
+  "myPosts": {
+    "title": "My posts",
+    "intro": "Your posts stay online for {days} days. Renew them before they expire, or close them once you found what you needed.",
+    "new": "Create a post",
+    "loading": "Loading your posts",
+    "published": "Published {date}",
+    "expires": "Expires {date}",
+    "expired": "Expired {date}",
+    "groups": {
+      "active": "Online",
+      "expired": "Expired",
+      "closed": "Closed"
+    },
+    "empty": {
+      "title": "No post yet",
+      "text": "Your posts will show up here, with what you need to edit, renew or close them."
+    },
+    "login": {
+      "title": "Sign in to see your posts",
+      "text": "Your posts are linked to your GC Stats account.",
+      "cta": "Sign in with GC Stats"
+    }
+  },
+  "report": {
+    "button": "Report",
+    "title": "Report this post",
+    "close": "Close",
+    "cancel": "Cancel",
+    "submit": "Send report",
+    "sending": "Sending…",
+    "loginHint": "Log in to report a post. It helps us prevent abuse.",
+    "login": "Log in with GC Stats",
+    "reason": "Reason",
+    "message": "Details",
+    "messageHint": "What's wrong, anything that helps moderators decide quickly.",
+    "sent": "Report sent",
+    "sentHint": "Thanks, the moderation team will look at this post.",
+    "reasons": {
+      "spam": {
+        "label": "Spam or advertising",
+        "hint": "Duplicate post, ads, unrelated content"
+      },
+      "fake": {
+        "label": "Fake post",
+        "hint": "Impersonation, made up information"
+      },
+      "inappropriate": {
+        "label": "Inappropriate content",
+        "hint": "Offensive language, NSFW content"
+      },
+      "harassment": {
+        "label": "Harassment",
+        "hint": "Targets or insults someone"
+      },
+      "other": {
+        "label": "Other",
+        "hint": "Explain the issue in the details"
+      }
+    },
+    "errors": {
+      "reasonRequired": "Pick a reason.",
+      "message": {
+        "required": "Explain the issue for the \"Other\" reason.",
+        "tooShort": "At least {min} characters, or leave it empty.",
+        "tooLong": "{max} characters max.",
+        "invalidCharacters": "Remove control or invisible characters."
+      },
+      "form": {
+        "invalid": "Invalid post.",
+        "auth": "Your session expired. Log in again.",
+        "notFound": "This post no longer exists.",
+        "ownPost": "You can't report your own post.",
+        "already": "You already reported this post, moderators are on it.",
+        "rateLimited": "Too many reports in an hour. Try again later.",
+        "server": "The report couldn't be sent. Try again in a moment."
+      },
+      "messageForm": {
+        "invalid": "Invalid message.",
+        "auth": "Your session expired. Log in again.",
+        "notFound": "This message is no longer available.",
+        "ownMessage": "You cannot report your own message.",
+        "already": "You already reported this message, the moderators are on it.",
+        "rateLimited": "Too many reports in an hour. Try again later.",
+        "server": "The report could not be sent. Try again in a moment."
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "Tweets to post",
+    "title": "Tweets to post",
+    "subtitle": "Online posts not on X yet, oldest first. Open the tweet on X, post it, then mark it as posted.",
+    "count": "{count, plural, one {# tweet left} other {# tweets left}}",
+    "empty": "Nothing left to tweet.",
+    "unavailable": "The tweets could not be loaded, the Discord bot is not reachable. Reload the page in a few moments.",
+    "forbidden": "Access denied: this page only opens through Cloudflare Access.",
+    "published": "Published {date}",
+    "viewPost": "View the post",
+    "length": "{length}/{max} characters",
+    "tooLong": "Too long for X, shorten it before posting.",
+    "open": "Open on X",
+    "opened": "Opened on X",
+    "markPublished": "Mark as published",
+    "marking": "Saving...",
+    "done": "Published",
+    "errors": {
+      "unauthorized": "Your Cloudflare Access session has expired, reload the page.",
+      "forbidden": "This request did not come from the tweets page, reload it and try again.",
+      "invalid": "This post id is not valid.",
+      "notFound": "This post does not exist anymore.",
+      "alreadyTweeted": "This post was already marked as published.",
+      "unavailable": "The Discord bot is not reachable, try again in a few moments.",
+      "network": "The request failed, check your connection and try again.",
+      "awaitingAuthor": "The author has not given the link of their tweet yet."
+    },
+    "toTweet": "To tweet",
+    "toRetweet": "To retweet",
+    "toRetweetHint": "Posts their authors shared on their own account.",
+    "countRetweets": "{count, plural, one {# retweet left} other {# retweets left}}",
+    "sectionDone": "All done here.",
+    "authorTweeted": "Posted by its author on their own account, to retweet.",
+    "viewTweet": "View the tweet",
+    "openRetweet": "Retweet on X",
+    "markRetweeted": "Mark as retweeted",
+    "retweetDone": "Retweeted"
+  },
+  "legalNotice": {
+    "title": "Legal notice",
+    "updated": "Last updated: {date}",
+    "editor": {
+      "title": "Publisher",
+      "identity": "Identity",
+      "status": "Status",
+      "statusValue": "French non profit association (loi 1901)",
+      "email": "Email",
+      "director": "Publication director",
+      "ecosystem": "GC Scouting is part of the GC Stats ecosystem, published by the same association. Sign in and tournament histories rely on GC Stats."
+    },
+    "hosting": {
+      "title": "Hosting and providers",
+      "site": "Website, Discord bot and share images",
+      "database": "Database",
+      "email": "Email delivery",
+      "emailValue": "Resend, only for the expiry reminders you turned on",
+      "discord": "Discord messages",
+      "discordValue": "Discord Inc., through our bot (post channels, moderation and reminder direct messages)"
+    },
+    "property": {
+      "title": "Intellectual property",
+      "site": "The structure of the website, its design and its original texts belong to Osthelia.",
+      "posts": "The content of a post (presentation, tier list, availability) remains its author's, who allows us to display it on the website and share it on Discord and X while the post is online.",
+      "thirdParty": "<b>Third party content:</b> names, logos and visuals of teams, tournaments, agents and ranks belong to their respective owners and are shown for information only. GC Scouting isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+      "takedown": "You own rights on some content and want it removed? Write to <mail>this address</mail>, or use the <b>Report</b> button available on every post."
+    },
+    "rules": {
+      "title": "Posting rules",
+      "intro": "By publishing a post, you agree to:",
+      "truthful": "give accurate information about your profile, rank and experience",
+      "respect": "publish no hateful, discriminatory, harassing or illegal content",
+      "contact": "only list contact details that belong to you, or that your agent allowed you to show",
+      "ads": "not use posts for advertising, gambling or anything unrelated to recruitment",
+      "moderation": "Our team may remove a post that breaks these rules without notice. Posts are provided as is: Osthelia does not check every piece of information and does not take part in exchanges between players and teams."
+    },
+    "privacy": {
+      "title": "Personal data",
+      "text": "How your data is handled is detailed in our <policy>privacy policy</policy>. Under the GDPR, you have a right of access, rectification and erasure, which you can exercise by writing to <mail>{email}</mail>."
+    },
+    "credits": {
+      "title": "Credits",
+      "gcs": "Tournament histories, teams and verified profiles: <link>GC Stats</link>.",
+      "valorantApi": "Agent and rank icons: <link>valorant-api.com</link>.",
+      "riot": "VALORANT is a trademark of Riot Games, Inc."
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: {date}",
+    "intro": "GC Scouting collects only what it needs to publish posts, let you talk with teams and warn you when your posts expire. Here is what we store, why, and how to delete it.",
+    "login": {
+      "title": "Sign in with GC Stats",
+      "text": "You sign in with your GC Stats account: we never see your password. At each sign in, with your consent, GC Stats sends us:",
+      "identity": "<b>Identity:</b> your GC Stats identifier, username and avatar.",
+      "email": "<b>Email:</b> your verified address, used only for expiry reminders if you turn them on.",
+      "discord": "<b>Discord:</b> the identifier of your linked Discord account, for direct message reminders and to identify you when you report a post.",
+      "player": "<b>Player profile:</b> the GC Stats profile linked to your account, to show the verified badge and your tournament history.",
+      "tokens": "GC Stats access tokens are encrypted in our database and only used to act on your behalf with GC Stats (for example a profile link request). They are revoked when you delete your account.",
+      "created": "<b>Account age:</b> the creation date of your GC Stats account, to show the \"New account\" badge in messages during its first 7 days.",
+      "sanctions": "<b>Sanctions:</b> your active GC Stats sanctions (mute, suspension, ban) and their end date, checked before each message or post to block sending while the sanction lasts. An active warning shows the \"Warned\" badge in messages."
+    },
+    "public": {
+      "title": "What is public",
+      "text": "A post is visible to everyone, without signing in: username, post type, region, country, languages, rank, roles, tier list, experience, availability and presentation.",
+      "contact": "<b>Contact details:</b> the Discord, X account or email you add to a post are shown publicly so teams can reach you. Only add what you are fine making public.",
+      "gcs": "If your profile is linked, the history shown (teams, tournaments, results) comes from GC Stats public data."
+    },
+    "relay": {
+      "title": "Sharing on Discord and X",
+      "text": "Active posts are sent automatically to the Discord channels that set up our bot, and can be shared on our X account with their share image. When a post is closed, deleted or removed, or when you delete your account, our bot also deletes its messages from these channels. An expired post stays there until then. Posts already shared on X stay online, as do copies made by other people."
+    },
+    "private": {
+      "title": "Technical data",
+      "sessions": "<b>Sessions:</b> a fingerprint of your session token (never the token itself), the browser used (user agent) and the creation and expiry dates, so you can review and secure your sessions.",
+      "country": "<b>Country:</b> the country of your connection, provided by Cloudflare, is only used to preselect your region in the filters. It is never stored.",
+      "logs": "<b>Logs:</b> our host keeps short lived technical logs (errors, requests) for troubleshooting.",
+      "noTracking": "No audience measurement, no ads, no third party trackers and no data resale."
+    },
+    "notifications": {
+      "title": "Expiry reminders",
+      "text": "Email and Discord direct message reminders are off by default and only sent if you turn them on. They contain links to renew or delete your post without signing in, valid for 14 days. You can turn them off at any time."
+    },
+    "delegation": {
+      "title": "Delegated access",
+      "text": "If you give someone else access to your profile (agent, manager), we store that link so they can publish and manage posts in your name. You can revoke this access at any time from your account. In the messaging, they write under their own name and the profile they manage is shown next to it."
+    },
+    "messages": {
+      "title": "Messages",
+      "text": "When you write to a member from a post, we store the conversation: both profiles, the post it started from, every message with its date, and the account that actually wrote it if you manage someone else's profile. We also store when you last read it, for unread messages, and the list of members you block.",
+      "staff": "Conversations are not end to end encrypted: our moderation team can read them to handle a report, review a held message or look into abuse. They can hide a message. Do not share anything sensitive there.",
+      "automod": "<b>Automatic moderation:</b> each message is sent to the OpenAI moderation API (United States) before delivery, without your username or identifier. OpenAI does not use it to train its models and keeps it for 30 days at most. A message flagged as harmful is held until the team decides.",
+      "links": "<b>Links:</b> only Discord, X, GC Stats, VLR and Liquipedia links are clickable. Other links are hidden behind a warning, nothing is checked or stored apart from the message.",
+      "alerts": "<b>Alerts:</b> an email or a Discord direct message tells you about new messages, once per unread streak, without copying their content. They are on by default and can be turned off from the <account>My account</account> page. If you manage someone else's profile, you also get the alerts of its conversations, with your own settings."
+    },
+    "moderation": {
+      "title": "Reports and moderation",
+      "text": "When you report a post or a message, we store the reason, your message and your account. Moderation happens in a private Discord channel and in an admin area of the website: every action (removal, restore, hidden message, sharing on X) is logged with the account of the team member who did it.",
+      "reporter": "Your identity is never shown to the author of the reported post or message. Only our moderation team can see it."
+    },
+    "retention": {
+      "title": "Retention",
+      "posts": "A post expires 10 days after it is published or last renewed. It then leaves the list and the Discord channels, but its link stays available with a banner until you delete it.",
+      "sessions": "A session lasts 30 days, or until you sign out.",
+      "account": "Your account and everything attached to it (posts, sent messages, blocks, sessions, delegated access, profile link) are kept until you delete it from the <account>My account</account> page. Reports you filed and the Discord messages of your posts are then deleted too.",
+      "messages": "Messages are kept as long as the conversation exists. When you delete your account, the messages you sent are deleted. The other member's messages stay in their list."
+    },
+    "rights": {
+      "title": "Your rights (GDPR)",
+      "text": "You have a right of access, rectification, objection and erasure of your data. From the <account>My account</account> page, you can export all your data as JSON or delete your account in one click. Your GC Stats account is never touched.",
+      "contact": "For any other request: <mail>{email}</mail>. You can also file a complaint with the CNIL (French data protection authority) if you believe your rights are not respected."
+    },
+    "cookies": {
+      "title": "Cookies and local storage",
+      "text": "We only use technical cookies required for the website to work, so no consent banner is needed.",
+      "session": "<b>__Host-sc_session:</b> your sign in session (30 days).",
+      "profile": "<b>sc_profile:</b> the active profile when you manage someone else's profile.",
+      "oauth": "<b>sc_oauth:</b> secures the sign in with GC Stats, deleted right after.",
+      "theme": "<b>sc_theme:</b> your light or dark theme.",
+      "storage": "<b>Local storage:</b> your post filters and your timezone, which stay in your browser."
+    }
+  },
+  "chat": {
+    "title": "Messages",
+    "unreadLabel": "Messages, {count} unread",
+    "seeAll": "See all messages",
+    "writtenBy": "<strong>{name}</strong>, manager of {profile}",
+    "managerName": "{name} (manager of {profile})",
+    "delegateNotice": "You write for {profile}: your messages show your own name ({name}) and say that you manage this profile.",
+    "you": "You:",
+    "hiddenMessage": "Message removed by the moderators",
+    "held": "Awaiting review",
+    "back": "Back to conversations",
+    "fromPost": "From the {code} post of {name}",
+    "block": "Block",
+    "blockConfirm": "Confirm block",
+    "unblock": "Unblock",
+    "unblockConfirm": "Confirm",
+    "cancel": "Cancel",
+    "loadOlder": "Load older messages",
+    "loadMoreConversations": "Show more conversations",
+    "loading": "Loading conversations",
+    "emptyConversation": "No messages yet.",
+    "blockedByMe": "You blocked {name}. Unblock them to write again.",
+    "blockedByPeer": "You can no longer write to this person.",
+    "reportTitle": "Report a message from {name}",
+    "staffNotice": "The GC Scouting moderation team can read conversations, for moderation purposes only.",
+    "placeholder": "Write your message",
+    "send": "Send",
+    "errors": {
+      "body": {
+        "required": "Write a message before sending.",
+        "tooLong": "{max} characters at most.",
+        "invalidCharacters": "Remove control or invisible characters."
+      },
+      "auth": "Your session expired. Log in again.",
+      "notFound": "This conversation or post is no longer available.",
+      "ownPost": "You cannot write to yourself.",
+      "chatDisabled": "The author of this post does not accept private messages.",
+      "blockedByMe": "You blocked this person.",
+      "blockedByPeer": "You can no longer write to this person.",
+      "sanctioned": "Your GC Stats account is sanctioned (mute, suspension or ban): you cannot send messages for now.",
+      "sanctionedUntil": "Your GC Stats account is sanctioned (mute, suspension or ban) until {date}: you cannot send messages until then.",
+      "rateLimited": "You are sending too many messages. Wait a minute.",
+      "tooManyConversations": "You started too many conversations today. Try again tomorrow.",
+      "server": "The message could not be sent. Try again in a moment."
+    },
+    "empty": {
+      "title": "No conversations",
+      "text": "Write to the author of a post from its page to start a conversation."
+    },
+    "pick": {
+      "title": "Pick a conversation",
+      "text": "Your talks with players, teams and staff show up on the left."
+    },
+    "login": {
+      "title": "Log in to see your messages",
+      "text": "Messaging uses your GC Stats account.",
+      "cta": "Log in with GC Stats"
+    },
+    "link": {
+      "hidden": "Hidden link",
+      "hiddenHint": "This link is not from a trusted site, it is hidden by default.",
+      "warning": "This link does not lead to a trusted site (Discord, X, GC Stats, VLR, Liquipedia). It may be used to steal your account or your data. Only open it if you know this person.",
+      "show": "Show the link",
+      "cancel": "Keep it hidden"
+    },
+    "peer": {
+      "recent": "New account",
+      "recentHint": "GC Stats account created less than {days} days ago",
+      "warned": "Warned",
+      "warnedHint": "This person received a warning from the GC Stats moderators",
+      "warnedNotice": "{name} received a warning from the GC Stats moderators. Stay careful and report any inappropriate message.",
+      "recentNotice": "The GC Stats account of {name} is less than {days} days old. Be wary of unusual requests (links, payments, credentials)."
+    },
+    "posts": {
+      "title": "Open posts of {name}",
+      "toggle": "{count, plural, =0 {No open post} one {# open post} other {# open posts}}",
+      "none": "No open post.",
+      "published": "Updated {date}"
+    },
+    "start": {
+      "button": "Send a message",
+      "open": "See the conversation",
+      "title": "Write to {name}",
+      "close": "Close",
+      "loginHint": "Log in with GC Stats to write to the author of this post.",
+      "login": "Log in"
+    },
+    "alert": {
+      "subject": "New message from {name} on GC Scouting",
+      "title": "{name} sent you a message",
+      "body": "You received a message from {name} on GC Scouting. Reply from the site, the conversation stays private between the two of you and the moderators.",
+      "managedSubject": "New message for {profile} on GC Scouting",
+      "managedTitle": "{name} sent a message to {profile}",
+      "managedBody": "{profile}, a profile you manage, received a message from {name} on GC Scouting. Reply from the site: your answer shows your own name.",
+      "open": "See the conversation",
+      "footer": "You get this alert because message notifications are on in your GC Scouting settings."
+    },
+    "switch": {
+      "title": "This conversation belongs to {name}",
+      "managedText": "You manage this profile. Switch to it to read the conversation and reply, your messages show your own name.",
+      "selfText": "You are acting as another profile. Switch back to your own to read the conversation and reply.",
+      "button": "Switch to {name}",
+      "error": "The profile could not be switched. Try again in a moment."
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "Admin",
+      "dashboard": "Dashboard",
+      "groupChat": "Messaging",
+      "conversations": "Conversations",
+      "automod": "Automod",
+      "messageReports": "Reported messages",
+      "groupPosts": "Posts",
+      "posts": "Posts",
+      "postReports": "Reported posts",
+      "groupAdmin": "Administration",
+      "users": "Users",
+      "access": "Access",
+      "backToSite": "Back to the site",
+      "toggle": "Show or hide the menu",
+      "menuTitle": "Menu",
+      "menuDescription": "Admin navigation."
+    },
+    "roles": {
+      "user": "Member",
+      "staff": "Staff",
+      "admin": "Admin"
+    },
+    "common": {
+      "cancel": "Cancel",
+      "total": "{count, plural, =0 {No results} one {# result} other {# results}}",
+      "previous": "Previous page",
+      "next": "Next page",
+      "gcsAdmin": "Open in the GC Stats admin",
+      "search": "Search",
+      "close": "Close"
+    },
+    "sanctions": {
+      "note": "Note",
+      "warning": "Warning",
+      "mute": "Mute",
+      "suspension": "Suspension",
+      "ban": "Ban"
+    },
+    "errors": {
+      "auth": "Your session expired or you no longer have access to the admin.",
+      "invalid": "Invalid request.",
+      "notFound": "Not found.",
+      "conflict": "Already handled by someone else. The page was reloaded.",
+      "reasonLength": "The reason must be between {min} and {max} characters.",
+      "reasonInvalidCharacters": "Remove control or invisible characters from the reason.",
+      "activeExists": "The author already has another post of this type online.",
+      "selfDemote": "You cannot remove your own admin role.",
+      "bootstrap": "This account is admin through the site configuration, its role cannot be changed here.",
+      "server": "The action failed. Try again in a moment."
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "What awaits the moderators, and the activity of the last 7 days.",
+      "todo": "To handle",
+      "held": "Messages held by the automod",
+      "messageReports": "Reported messages",
+      "postReports": "Reported posts",
+      "activity": "Activity",
+      "activePosts": "Posts online",
+      "newPosts": "Posts published (7 days)",
+      "activeConversations": "Active conversations (7 days)",
+      "messagesWeek": "Messages sent (7 days)",
+      "users": "Accounts",
+      "staff": "Staff and admins"
+    },
+    "conversations": {
+      "title": "Conversations",
+      "subtitle": "Every private conversation, most recent first.",
+      "search": "Username of a member",
+      "empty": "No conversations.",
+      "members": "Members",
+      "messages": "Messages",
+      "flags": "To check",
+      "lastMessage": "Last message",
+      "held": "{count} held",
+      "reports": "{count, plural, one {# report} other {# reports}}",
+      "open": "Open",
+      "back": "Back to conversations",
+      "detailTitle": "Conversation #{id}",
+      "older": "Older messages",
+      "latest": "Latest messages",
+      "fromPost": "Started from the {code} post of {name}",
+      "noMessages": "No messages."
+    },
+    "messages": {
+      "status": {
+        "visible": "Visible",
+        "blocked": "Held by the automod",
+        "hidden": "Hidden"
+      },
+      "unchecked": "Not checked by the automod",
+      "writtenBy": "written by {name} (manager of the profile)",
+      "reported": "{count, plural, one {# report} other {# reports}}",
+      "reviewedBy": "Handled by {name} {date}",
+      "approve": "Let through",
+      "reject": "Keep blocked",
+      "hide": "Hide",
+      "hideConfirm": "Confirm",
+      "show": "Make visible"
+    },
+    "automod": {
+      "title": "Automod",
+      "subtitle": "Messages held by the OpenAI automod. Letting one through delivers it (and alerts the recipient), keeping it blocked removes it for good.",
+      "empty": "No message waiting.",
+      "context": "See the conversation"
+    },
+    "messageReports": {
+      "title": "Reported messages",
+      "subtitle": "Reports sent from the messaging. To ban someone, go through their profile in the GC Stats admin.",
+      "empty": "No reports.",
+      "by": "by",
+      "hide": "Hide the message",
+      "dismiss": "Dismiss"
+    },
+    "reportStatus": {
+      "label": "Status",
+      "open": "Open",
+      "handled": "Handled",
+      "dismissed": "Dismissed",
+      "handledBy": "Handled by {name}",
+      "dismissedBy": "Dismissed by {name}"
+    },
+    "postReports": {
+      "title": "Reported posts",
+      "subtitle": "The same reports as in the Discord moderation channel, handled here or there.",
+      "empty": "No reports.",
+      "by": "Reported by {name}",
+      "dismiss": "Dismiss",
+      "postState": {
+        "active": "Expired",
+        "closed": "Closed",
+        "removed": "Removed"
+      }
+    },
+    "posts": {
+      "title": "Posts",
+      "subtitle": "Every post. Removing one here also removes it from the Discord channels.",
+      "search": "Post name or username",
+      "stateLabel": "State",
+      "anyState": "All states",
+      "typeLabel": "Type",
+      "anyType": "All types",
+      "state": {
+        "visible": "Online",
+        "expired": "Expired",
+        "closed": "Closed",
+        "removed": "Removed by the moderators",
+        "deleted": "Deleted by the author"
+      },
+      "post": "Post",
+      "author": "Author",
+      "bumped": "Updated",
+      "actions": "Actions",
+      "reports": "{count, plural, one {# report} other {# reports}}",
+      "remove": "Remove",
+      "restore": "Restore",
+      "restoreConfirm": "Confirm restore",
+      "removeTitle": "Remove the post {name}",
+      "removeHint": "The post leaves the site and the Discord channels, its open reports are handled. The reason is visible to the moderators.",
+      "reason": "Reason",
+      "edit": "Edit"
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "Accounts that logged in at least once. Sanctions are managed on GC Stats.",
+      "search": "Username",
+      "anyRole": "All roles",
+      "empty": "No accounts.",
+      "user": "Account",
+      "posts": "Posts",
+      "gcsAccount": "GC Stats account created on",
+      "lastLogin": "Last login",
+      "back": "Back to users",
+      "joined": "Joined GC Scouting",
+      "email": "Email",
+      "discord": "Discord",
+      "sanctions": "Active GC Stats sanctions",
+      "noSanction": "No active sanction.",
+      "sanctionUntil": "until {date}",
+      "sanctionPermanent": "permanent",
+      "sanctionsChecked": "Read from GC Stats {date}.",
+      "sanctionsNever": "Never read from GC Stats.",
+      "sanctionsHint": "A mute, suspension or ban blocks messages and posts.",
+      "conversations": "Conversations",
+      "noConversation": "No conversations.",
+      "seePosts": "See their posts"
+    },
+    "access": {
+      "title": "Access",
+      "subtitle": "Staff can use the whole admin except this page. Admins can also give and remove roles.",
+      "current": "Staff and admins",
+      "grant": "Give a role",
+      "search": "Username of the account",
+      "noResult": "No account matches.",
+      "hint": "The account must have logged in to GC Scouting at least once.",
+      "role": "Role",
+      "save": "Save",
+      "locked": "Your own role and admins set by the configuration cannot be changed here."
+    },
+    "error": {
+      "title": "This page couldn't load",
+      "body": "A server error occurred. Try again, or go back to the dashboard.",
+      "retry": "Try again"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting will share your post on X",
+    "siteText": "It goes out on our account, with your @ if you gave one.",
+    "switchToAuthor": "I'd rather post it myself",
+    "switchToSite": "Let GC Scouting post it",
+    "switching": "Saving...",
+    "tweeted": "Your post is on the GC Scouting X account.",
+    "retweeted": "GC Scouting retweeted your post.",
+    "authorTitle": "Share your post on X",
+    "authorText": "Post this tweet from your account, then paste its link here: GC Scouting will retweet it.",
+    "authorSavedTitle": "Link received, we will retweet your post",
+    "authorSavedText": "You can still replace the link until the retweet is done.",
+    "language": "Tweet language",
+    "draftUnavailable": "The tweet text could not be prepared. Reload the page in a few moments.",
+    "length": "{length}/{max} characters",
+    "tooLong": "Too long for X, shorten it before posting.",
+    "open": "Post on X",
+    "opened": "Opened on X",
+    "linkLabel": "Link of your tweet",
+    "linkPlaceholder": "https://x.com/username/status/...",
+    "save": "Send the link",
+    "saving": "Sending...",
+    "saved": "Link sent",
+    "viewTweet": "View the tweet",
+    "errors": {
+      "invalid": "This post is not valid.",
+      "required": "Paste the link of your tweet.",
+      "tweetUrlInvalid": "This is not a tweet link. It should look like https://x.com/username/status/123.",
+      "auth": "Your session expired, log in again.",
+      "notFound": "This post is no longer online.",
+      "alreadyTweeted": "This post is already on X, this choice can no longer change.",
+      "notAuthorTweet": "GC Scouting posts this one, choose to post it yourself first.",
+      "server": "Something went wrong, try again in a few moments."
+    }
+  },
+  "tweetImage": {
+    "share": "Share with the image",
+    "copy": "Copy the image",
+    "preparing": "Preparing...",
+    "shared": "Shared",
+    "copied": "Image copied",
+    "pasteHint": "Once X is open, paste the image in the tweet (Ctrl+V or ⌘V).",
+    "failed": "The image could not be prepared.",
+    "download": "Download it"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "Your {code} post was edited by the moderation",
+      "title": "Your {code} post \"{name}\" was edited",
+      "body": "A member of the GC Scouting moderation team edited your post. It stays online, with the same expiry date.",
+      "reason": "Reason: {reason}",
+      "open": "View the post",
+      "footer": "You receive this message because your post on GC Scouting was edited by the moderation."
+    }
+  },
+  "ageGroups": {
+    "minor": "Minor",
+    "adult": "Adult"
+  },
+  "minorsPolicy": {
+    "accepted": "Minors accepted",
+    "adultsOnly": "Adults only"
+  },
+  "tierListGuide": {
+    "title": "Understanding our tierlist",
+    "intro": "Every player post comes with an agent tierlist. Here is why it looks the way it does, and how to fill yours so it actually helps teams.",
+    "scene": {
+      "title": "Built with the scene",
+      "text": "The format was not picked at random: it was designed with <b>experienced players, coaches and managers of the Game Changers scene</b>, people who scout and recruit every split.",
+      "why": "Their feedback was clear: a long list of agents tells a team nothing. What they need to know is which agents you can play in a match tomorrow, which ones need some work, and which ones you are ready to learn for the team.",
+      "credit": "The tier list was notably worked on with <b>LittleBigSpy</b>, IGL at ZennIT Orange GC, whose experience of the scene helped define how agents should be ranked."
+    },
+    "tiers": {
+      "title": "The three tiers",
+      "confident": "Agents you can play in an official match right now, with the lineups, utility and habits that go with them.",
+      "improve": "Agents you already know how to play, but that need practice before you are comfortable on them in a match.",
+      "canLearn": "Agents you do not play yet, but are willing to pick up if the team needs it.",
+      "aside": "Agents left aside are simply not shown on your post. There is no \"bad\" row: an empty slot says more than a guess."
+    },
+    "highlight": {
+      "title": "Highlight the agents you know how to play",
+      "text": "The tierlist is there to <b>highlight the agents you know how to play</b>, not to rank every agent of the game or to give your opinion on the meta.",
+      "honest": "Be honest: teams will check it during tryouts, and a short accurate tierlist is worth more than a full one.",
+      "notMeta": "Rank your own level on each agent, not how strong the agent is in the current patch.",
+      "filter": "Your first two rows are used by the \"can play\" filter, on the site and on Discord: they decide which searches your post shows up in.",
+      "example": "Example: a controller and sentinel player, confident on their main pool, with a few initiators to polish."
+    }
+  }
+}

@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "Valorant Game Changersシーンの LFT、LFP、LFS、LFO 投稿を、GC Stats と連携して掲載します。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "posts": "投稿",
+    "newPost": "投稿を作成",
+    "login": "GC Stats でログイン",
+    "loginShort": "ログイン",
+    "menu": "メニュー",
+    "language": "言語"
+  },
+  "home": {
+    "hero": {
+      "title": "チームを見つけよう。<accent>ロースターを完成させよう。</accent>",
+      "subtitle": "Valorant Game Changersシーンの LFT、LFP、LFS、LFO 投稿を一か所に。ロール、ランク、言語、エージェントで絞り込み、GC Stats のプロフィールを使って2分で投稿できます。",
+      "ctaBrowse": "投稿を見る",
+      "ctaPost": "投稿を作成",
+      "demo": {
+        "lfp": "OQ Playoffs に出場中のスペイン語ロースターが、シーンコールできるコントローラーと、サブのフラッシュイニシエーターを募集しています。練習は月曜から木曜の20時から23時。",
+        "lfs": "次のスプリットに向けて、コーチとアナリストを募集しています。有償ポジションで、週3回の夜間活動、VOD レビュー込みです。"
+      }
+    },
+    "types": {
+      "heading": "あらゆるニーズに合った投稿タイプ",
+      "sub": "あなたが探している、または誰かがあなたを探している。すべての投稿にはタイプがあり、あなたに関係するものだけが表示されます。",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "チームを探しているプレイヤー。"
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "1人以上のプレイヤーを募集しているチーム。"
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "コーチ、アナリスト、マネージャーを探しているチーム。"
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "組織を探しているロースター。"
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "チームに参加可能なコーチまたはアナリスト。"
+      }
+    },
+    "how": {
+      "heading": "使い方",
+      "step1": {
+        "title": "GC Stats でログイン",
+        "body": "GC Stats のプロフィールが連携済みなら、大会履歴が自動的に追加されます。未連携でも数クリックで見つかります。"
+      },
+      "step2": {
+        "title": "投稿を作成",
+        "body": "ロール、ランク、言語、地域、経験、そしてエージェントのティアリスト。すべて構造化されているので、文章を書く必要はありません。"
+      },
+      "step3": {
+        "title": "あらゆる場所で見てもらう",
+        "body": "投稿はサイトに公開され、購読中の Discord サーバーに送信され、Twitter でも共有されます。"
+      },
+      "freshTitle": "常に新鮮",
+      "freshBody": "投稿は10日後に期限切れになります。7日目にお知らせし、1クリックで更新できます。"
+    },
+    "tierlist": {
+      "heading": "一目でわかるエージェントのティアリスト",
+      "body": "「何でも少しずつ使えます」はもう不要です。各プレイヤーはエージェントを5段階で評価し、チームはエージェントで直接絞り込めます。",
+      "filterHint": "絞り込みの例：「Viper が使える」は、Viper が上位2段階に入っていることを意味します。"
+    },
+    "verified": {
+      "heading": "GC Stats と連携したプロフィール",
+      "body": "投稿を、Game Changers の大会を記録する GC Stats のプロフィールにリンクすると、出場大会、チーム、成績といった経歴が表示されます。スタッフがリンクを承認するまでは、投稿にその旨が表示されます。",
+      "verified": "認証済みプロフィール",
+      "verifiedHint": "リンクが承認され、GC Stats の履歴が表示されています。",
+      "pending": "未認証",
+      "pendingHint": "リンクのリクエストがスタッフの承認待ちです。",
+      "none": "GC Stats のプロフィールなし",
+      "noneHint": "大会の実績はまだなく、投稿は通常どおり表示されます。"
+    },
+    "discord": {
+      "eyebrow": "Discord ボット",
+      "heading": "投稿をあなたのサーバーへ直接お届け",
+      "body": "ボットを Discord サーバーに追加して、受け取る内容を選びましょう。条件に合う新しい投稿が、ティアリストと投稿へのリンク付きで自動的に送信されます。",
+      "cta": "ボットを追加",
+      "steps": {
+        "add": {
+          "title": "ボットを追加",
+          "body": "1クリックでサーバーに招待できます。選んだチャンネルへの書き込み権限だけが必要です。"
+        },
+        "channel": {
+          "title": "1つ以上のチャンネルを選択",
+          "body": "EU の LFT 用に1つ、スタッフ用に別の1つなど、チャンネルごとに個別の設定ができます。"
+        },
+        "filters": {
+          "title": "受け取る内容を選択",
+          "body": "投稿タイプ、地域、ロール、ランク、言語、エージェント、経験、稼働時間。サイトと同じフィルターが使えます。"
+        },
+        "receive": {
+          "title": "投稿をリアルタイムで受信",
+          "body": "新規投稿と更新された投稿は、公開されると同時に、重複なしで送信されます。"
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "#{channel} の設定：",
+        "filterType": "LFT",
+        "filterRole": "コントローラー",
+        "filterRank": "Ascendant 以上",
+        "app": "APP",
+        "time": "今日 21:04",
+        "published": "2時間前に公開",
+        "rank": "ランク",
+        "peak": "最高 {rank}",
+        "roles": "ロール",
+        "agents": "エージェント",
+        "experience": "経験",
+        "languages": "言語",
+        "rhythm": "活動ペース",
+        "rhythmValue": "週{days}日、{hours}時間",
+        "tierlistAlt": "{name} のエージェントティアリスト"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "Twitter をフォロー",
+      "body": "投稿は、シーン全体に届くよう、ティアリストを画像にして私たちのアカウントで共有されます。",
+      "cta": "フォローする"
+    },
+    "cta": {
+      "title": "スカウトを始めませんか？",
+      "body": "フィルターはブラウザに保存されます。閲覧にアカウントは不要です。",
+      "button": "投稿を見る"
+    }
+  },
+  "post": {
+    "verified": "認証済み",
+    "pending": "未認証",
+    "igl": "IGL",
+    "tournaments": "{count, plural, other {# 大会}}",
+    "lookingFor": "募集中",
+    "anyRole": "全ロール",
+    "view": "投稿を見る",
+    "confident": "得意"
+  },
+  "duration": {
+    "months": "{count, plural, other {# か月}}",
+    "years": "{count, plural, other {# 年}}"
+  },
+  "compensation": {
+    "paid": "有償",
+    "free": "無償"
+  },
+  "lan": {
+    "lan": "LAN 対応可",
+    "online": "オンラインのみ"
+  },
+  "preferences": {
+    "title": "設定",
+    "theme": "テーマ",
+    "themes": {
+      "system": "自動",
+      "light": "ライト",
+      "dark": "ダーク"
+    },
+    "timezone": "タイムゾーン",
+    "timezoneAuto": "自動 ({timezone})",
+    "timezoneHint": "稼働時間の表示と、時間帯での検索に使用されます。",
+    "search": "検索",
+    "noOption": "一致なし"
+  },
+  "roles": {
+    "duelist": "デュエリスト",
+    "initiator_reveal": "イニ（索敵）",
+    "initiator_flash": "イニ（フラッシュ）",
+    "controller": "コントローラー",
+    "sentinel": "センチネル",
+    "flex": "フレックス"
+  },
+  "agentClasses": {
+    "duelist": "デュエリスト",
+    "initiator": "イニシエーター",
+    "controller": "コントローラー",
+    "sentinel": "センチネル"
+  },
+  "tiers": {
+    "confident": "得意",
+    "improve": "改善が必要",
+    "canLearn": "習得可能"
+  },
+  "footer": {
+    "tagline": "GC Stats エコシステムの Valorant スカウティングプラットフォーム。",
+    "product": "プロダクト",
+    "postTypes": "投稿タイプ",
+    "resources": "リソース",
+    "legal": "法的表記",
+    "privacy": "プライバシー",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "運営：<link>Osthelia</link>、倫理的で包括的、公平なeスポーツのために活動する非営利団体。"
+  },
+  "levels": {
+    "cash_cup": "Open Qualifiers",
+    "playoffs": "OQ Playoffs",
+    "main_event": "メインイベント"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "Co-IGL"
+  },
+  "rosterSpots": {
+    "player": "プレイヤー",
+    "sub": "サブ"
+  },
+  "staffRoles": {
+    "coach": "コーチ",
+    "assistant_coach": "アシスタントコーチ",
+    "performance_coach": "パフォーマンスコーチ",
+    "mental_coach": "メンタルコーチ",
+    "analyst": "アナリスト",
+    "manager": "マネージャー"
+  },
+  "regions": {
+    "eu": "ヨーロッパ",
+    "na": "北米",
+    "latam": "中南米",
+    "br": "ブラジル",
+    "apac": "アジア太平洋",
+    "kr": "韓国",
+    "jp": "日本",
+    "oce": "オセアニア",
+    "mena": "中東・北アフリカ",
+    "cn": "中国"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {投稿なし} other {# 件の投稿}}",
+    "sortLabel": "並び替え",
+    "sort": {
+      "recent": "新しい順",
+      "rank": "ランクが高い順",
+      "experience": "経験が多い順",
+      "availability": "稼働時間が多い順"
+    },
+    "filters": "フィルター",
+    "reset": "リセット",
+    "resetAll": "フィルターをリセット",
+    "apply": "結果を表示",
+    "any": "指定なし",
+    "selected": "{count} 件選択中",
+    "search": "検索",
+    "noOption": "一致なし",
+    "removeFilter": "フィルターを削除",
+    "group": {
+      "region": "地域",
+      "language": "言語",
+      "spot": "希望ポジション",
+      "spotWanted": "募集ポジション",
+      "role": "ロール",
+      "staffRole": "スタッフロール",
+      "compensation": "条件",
+      "lan": "LAN",
+      "rank": "ランク",
+      "experience": "経験",
+      "agents": "使用可能",
+      "rhythm": "活動ペース",
+      "availability": "稼働時間",
+      "age": "年齢"
+    },
+    "rankFrom": "下限",
+    "rankTo": "上限",
+    "minDuration": "{duration} 以上",
+    "experienceHint": "選択したステージのいずれか、または任意のステージでのプレイ期間。",
+    "minHours": "{count, plural, =0 {指定なし} other {週 # 時間以上}}",
+    "minDays": "{count, plural, =0 {指定なし} other {週 # 日以上}}",
+    "rhythmHours": "時間",
+    "rhythmDays": "日数",
+    "rhythmHint": "チームに充てる週あたりの時間と日数。",
+    "agentsHint": "ティアリストの上位2段階にいるエージェント。",
+    "agentsMax": "最大5エージェント",
+    "slot": {
+      "days": "曜日",
+      "from": "開始",
+      "to": "終了",
+      "everyDay": "毎日",
+      "mode": "検索モード",
+      "simple": "シンプル",
+      "advanced": "曜日ごと",
+      "notSearched": "検索しない",
+      "hint": "あなたのプレイ時間。30分以上重なる投稿が一致します。",
+      "hintAdvanced": "曜日を選び、それぞれに時間を設定してください。30分以上重なる投稿が一致します。",
+      "hintTimezone": "時間は {timezone} 基準です。30分以上重なる投稿が一致します。"
+    },
+    "empty": "これらの条件に一致する投稿はありません。",
+    "emptyHint": "フィルターを外すか、後でもう一度確認してください。新しい投稿は毎日届きます。",
+    "loading": "投稿を読み込み中",
+    "close": "閉じる"
+  },
+  "postPage": {
+    "back": "{code} の投稿一覧",
+    "expired": "この投稿は期限切れです",
+    "expiredHint": "一覧には表示されなくなりました。投稿者はいつでも更新できます。",
+    "closed": "この投稿は終了しました",
+    "closedHint": "投稿者はもう募集していません。",
+    "published": "{date} に公開",
+    "renewed": "{date} に更新",
+    "expires": "{date} に期限切れ",
+    "about": "概要",
+    "tierlist": "エージェントティアリスト",
+    "availability": "稼働時間",
+    "profile": "プロフィール",
+    "similar": "類似の投稿",
+    "seeAll": "すべて見る",
+    "region": "地域",
+    "country": "国",
+    "languages": "言語",
+    "roles": "ロール",
+    "rosterSpot": "希望ポジション",
+    "rosterSpotWanted": "募集ポジション",
+    "playersWanted": "{count, plural, other {# 人のプレイヤー}}",
+    "subsWanted": "{count, plural, other {# 人のサブ}}",
+    "lookingFor": "募集中",
+    "staffRoles": "スタッフロール",
+    "igl": "シーンコール",
+    "rank": "ランク",
+    "peak": "最高 {rank}",
+    "rankWanted": "希望ランク",
+    "tracker": "Tracker.gg",
+    "compensation": "条件",
+    "lan": "LAN",
+    "experience": "経験",
+    "experienceWanted": "希望する経験",
+    "noExperience": "大会の実績なし",
+    "rhythm": "活動ペース",
+    "rhythmValue": "週 {hours, number} 時間、{days, plural, other {# 日}}",
+    "contact": "連絡先",
+    "copyDiscord": "Discord ユーザー名をコピー",
+    "copyDiscordId": "Discord ID をコピー",
+    "discordProfile": "Discord",
+    "discordServer": "サーバーに参加",
+    "copied": "コピーしました",
+    "share": "リンクをコピー",
+    "linkCopied": "リンクをコピーしました",
+    "twitter": "X プロフィール",
+    "email": "メールを送る",
+    "bestResult": "最高成績",
+    "viewProfile": "GC Stats で見る",
+    "pendingNote": "この GC Stats プロフィールへのリンクは、スタッフの承認待ちです。",
+    "noProfile": "この投稿にリンクされた GC Stats プロフィールはありません。",
+    "yourTime": "あなたの時間",
+    "authorTime": "投稿者の時間",
+    "timezoneNote": "時間は {timezone} 基準",
+    "noAvailability": "稼働時間は未入力です。",
+    "loading": "投稿を読み込み中",
+    "gcsHistory": "GC Stats の履歴",
+    "latestTeams": "最近のチーム",
+    "latestTournaments": "最近の大会",
+    "present": "現在",
+    "unknownDate": "?",
+    "noTournaments": "GC Stats に大会の記録はありません。",
+    "wins": "{n}勝",
+    "losses": "{n}敗",
+    "recordTitle": "{wins, plural, other {# 勝}}、{losses, plural, other {# 敗}}",
+    "place": "{n, selectordinal, other {#位}}",
+    "top": "トップ {n}",
+    "viewTeamProfile": "GC Stats のチーム",
+    "teamRoles": {
+      "player": "プレイヤー",
+      "player-igl": "プレイヤー、IGL",
+      "sub": "サブ",
+      "coach": "コーチ",
+      "assistant coach": "アシスタントコーチ",
+      "performance coach": "パフォーマンスコーチ",
+      "analyst": "アナリスト",
+      "manager": "マネージャー"
+    },
+    "syncedAt": "{date} に更新",
+    "gcsPending": {
+      "loading": "GC Stats の履歴を取得中…",
+      "timeout": "GC Stats の履歴はまだ利用できません。数分後にもう一度お試しください。"
+    },
+    "gcsRefresh": {
+      "label": "更新",
+      "pending": "更新中…",
+      "done": "更新しました",
+      "errors": {
+        "invalid": "無効な投稿です。",
+        "auth": "履歴を更新するにはログインしてください。",
+        "notFound": "この投稿はもう存在しません。",
+        "forbidden": "投稿者のみが更新できます。",
+        "cooldown": "{minutes, plural, other {# 分後にもう一度お試しください。}}",
+        "noProfile": "この投稿には GC Stats のプロフィールもチームもリンクされていません。",
+        "notConfigured": "GC Stats との接続が設定されていません。",
+        "failed": "GC Stats から応答がありません。後でもう一度お試しください。"
+      }
+    },
+    "agentContact": "エージェント経由で連絡",
+    "staffEdit": "編集 (モデレーション)",
+    "ageGroup": "年齢",
+    "minorsAccepted": "未成年"
+  },
+  "errors": {
+    "notFound": {
+      "title": "ページが見つかりません",
+      "body": "このページは存在しないか、投稿が削除されました。",
+      "back": "投稿を見る"
+    },
+    "serverError": {
+      "title": "問題が発生しました",
+      "body": "このページを読み込めませんでした。しばらくしてからもう一度お試しください。",
+      "retry": "もう一度試す",
+      "back": "投稿を見る"
+    }
+  },
+  "auth": {
+    "account": "マイアカウント",
+    "logout": "ログアウト",
+    "profile": {
+      "verified": "認証済みの GC Stats プロフィール",
+      "pending": "認証待ちの GC Stats プロフィール",
+      "none": "GC Stats プロフィールは未連携"
+    },
+    "error": {
+      "title": "ログインに失敗しました",
+      "retry": "もう一度試す",
+      "home": "ホームに戻る",
+      "reasons": {
+        "denied": "GC Stats でアクセスを拒否しました。投稿するには GC Stats でのログインが必要です。",
+        "state": "このログイン試行は期限切れか、別のタブで開始されました。最初からやり直してください。",
+        "exchange": "GC Stats がログインを確認できませんでした。しばらくしてからもう一度お試しください。",
+        "provider": "ログイン中に GC Stats からエラーが返されました。しばらくしてからもう一度お試しください。",
+        "config": "このサイトでは、GC Stats でのログインがまだ設定されていません。"
+      }
+    },
+    "settings": "アカウント設定",
+    "gcsAccount": "マイ GC Stats アカウント",
+    "actAs": "アクティブなプロフィール",
+    "yourself": "{name} (あなた)",
+    "switchFailed": "このプロフィールはもう利用できません。ページを再読み込みしてください。",
+    "actingAs": "{name} として操作しています。",
+    "backToSelf": "自分のプロフィールに戻る",
+    "myPosts": "マイ投稿",
+    "messages": "メッセージ",
+    "admin": "管理"
+  },
+  "newPost": {
+    "title": "新規投稿",
+    "intro": {
+      "lft": "ロール、ランク、エージェント、プレイできる時間をチームに伝えましょう。",
+      "lfp": "チームが探しているプレイヤーと、練習時間を説明してください。",
+      "lfs": "チームが探しているスタッフ (コーチ、アナリスト、マネージャー) を説明してください。",
+      "lfo": "チームを探している組織に、あなたのロースターを紹介しましょう。",
+      "lfst": "コーチ、アナリスト、マネージャーとして提供できることをチームに伝えましょう。"
+    },
+    "login": {
+      "title": "投稿するにはログイン",
+      "text": "投稿は GC Stats アカウントに紐づくので、チームやプレイヤーは相手が誰かを知ることができます。プロフィールが連携されていれば、大会履歴も表示されます。",
+      "cta": "GC Stats でログイン"
+    },
+    "activeExists": {
+      "title": "有効な {code} 投稿がすでにあります",
+      "text": "同時に公開できるのは1件のみです。新しく投稿するには、現在の投稿を終了するか、期限切れを待ってください。"
+    },
+    "viewExisting": "自分の投稿を見る",
+    "sections": {
+      "identity": "基本情報",
+      "identityHint": "投稿での表示のされ方です。",
+      "identityTeamHint": "投稿でのチームの表示のされ方です。",
+      "profile": {
+        "lft": "あなたのプロフィール",
+        "lfp": "募集するプレイヤー",
+        "lfs": "募集するスタッフ",
+        "lfo": "あなたのロースター",
+        "lfst": "あなたのプロフィール"
+      },
+      "tierList": "エージェントティアリスト",
+      "tierListHint": "得意なものから習得できるものまで、使えるエージェントを示しましょう。上の2段が「使える」フィルターに使われます。",
+      "availability": "稼働時間",
+      "availabilityHint": "あなたのタイムゾーンでの、いつもの週間スロットです。閲覧者には、その人の時間に変換されて表示されます。",
+      "availabilityTeamHint": "あなたのタイムゾーンでの、練習スロットです。閲覧者には、その人の時間に変換されて表示されます。",
+      "rhythm": "活動ペース",
+      "rhythmHint": "稼働時間の範囲内で、毎週チームに充てられる最大の時間です。",
+      "rhythmTeamHint": "練習スロットの範囲内で、チームが毎週求める時間です。",
+      "about": "自己紹介と連絡先",
+      "aboutHint": "目を引くひとことと、連絡方法を入力してください。",
+      "reminders": "期限切れのリマインダー",
+      "remindersHint": "投稿は10日間公開されます。7日目に、1クリックで更新できるリンク付きのリマインダーを送ります。",
+      "remindersDelegatedHint": "投稿は10日間公開されます。リマインダーはプロフィールの所有者に、そのアカウントのチャンネルで送られます。",
+      "tweet": "X への投稿",
+      "tweetHint": "すべての投稿は GC Scouting の X アカウントで共有されます。自分で投稿することもでき、その場合はこちらでリツイートします。",
+      "moderation": "編集の理由",
+      "moderationHint": "投稿者に送信され、モデレーションログに保存されます。"
+    },
+    "fields": {
+      "displayName": "ニックネーム",
+      "teamName": "チーム名",
+      "region": "地域",
+      "country": "国",
+      "noCountry": "未指定",
+      "languages": "話せる言語",
+      "languagesMax": "最大 {max} 言語",
+      "choose": "選択",
+      "rosterSpot": "希望ポジション",
+      "rosterSpotWanted": "募集ポジション",
+      "rosterSpotHint": "デフォルトはプレイヤーです。控えのポジションならサブを選んでください。",
+      "playersWanted": "募集プレイヤー数",
+      "subsWanted": "募集サブ数",
+      "wantedHint": "ロースターが探しているスターターとサブの人数です。",
+      "playersCount": "{count, plural, =0 {プレイヤーなし} other {# 人のプレイヤー}}",
+      "subsCount": "{count, plural, =0 {サブなし} other {# 人のサブ}}",
+      "roles": "ロール",
+      "rolesWanted": "募集ロール",
+      "flexHint": "フレックスは、検索時にすべてのロールに一致します。",
+      "igl": "シーンコール",
+      "iglWanted": "募集するシーンコーラー",
+      "staffRoles": "ポジション",
+      "staffRolesWanted": "募集ポジション",
+      "rankCurrent": "現在のランク",
+      "rankPeak": "最高ランク",
+      "rankMin": "最低ランク",
+      "rankMax": "最高ランク上限",
+      "rankRangeHint": "探しているプレイヤーのランク範囲です。",
+      "compensation": "希望する条件",
+      "compensationHint": "有償契約を探しているなら有償、ボランティアのプロジェクトでも構わないなら無償を選んでください。",
+      "compensationOffered": "提示する条件",
+      "compensationOfferedHint": "給与や報酬が付くポジションなら有償、そうでなければ無償を選んでください。",
+      "lan": "LAN イベント",
+      "lanHint": "LAN イベントに遠征して参加できるかどうかです。",
+      "lanTeamHint": "チームが LAN イベントへの遠征を予定しているかどうかです。",
+      "experience": "大会経験",
+      "experienceHint": "各ステージでのプレイ期間です。プレイしていないステージは「なし」のままにしてください。",
+      "experienceWanted": "希望する経験",
+      "experienceWantedHint": "各ステージでの最低プレイ期間です。問わない場合は「なし」のままにしてください。",
+      "notPlayed": "なし",
+      "notSpecified": "未指定",
+      "rhythmHours": "週あたりの時間",
+      "rhythmDays": "週あたりの日数",
+      "hoursPerWeek": "{count} 時間",
+      "daysPerWeek": "{count, plural, other {# 日}}",
+      "rhythmMax": "稼働時間は {days, plural, other {# 日}}で {hours} 時間です。これを超える活動ペースは設定できません。",
+      "rhythmNoAvailability": "先に稼働時間を追加してください。活動ペースはそれを超えられません。",
+      "timezone": "タイムゾーン",
+      "description": "自己紹介",
+      "descriptionPlaceholder": {
+        "player": "目標、プレイスタイル、チームに求めること…",
+        "team": "プロジェクト、目標、プレイヤーに期待すること…"
+      },
+      "contact": "連絡先 (1つ以上)",
+      "discord": "Discord ID",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "連携済みのアカウントを使う",
+      "discordInvite": "Discord サーバーの招待",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "ハンドル",
+      "email": "メール",
+      "emailPlaceholder": "you@example.com",
+      "contactHint": "投稿に公開表示されます。",
+      "notifyEmail": "メールで",
+      "notifyDiscord": "Discord のダイレクトメッセージで",
+      "noEmail": "GC Stats アカウントに確認済みのメールがありません",
+      "discordLinked": "GC Stats に Discord アカウントが連携済みです",
+      "noDiscord": "GC Stats に Discord アカウントが連携されていません",
+      "noReminderWarning": "リマインダーがないと、投稿は通知なしに10日後に期限切れになります。",
+      "iglHint": "どちらの役割もできる場合は、両方を選択してください。",
+      "iglWantedHint": "どちらでも構わない場合は、両方を選択してください。",
+      "gcsTeam": "GC Stats のチームページ",
+      "gcsTeamPlaceholder": "https://gc-stats.app/en/team/...",
+      "gcsTeamHint": "チームがすでに Game Changers の大会に出場している場合は、その GC Stats ページのリンクを貼り付けてください。GC Stats プロフィールが連携済みで、現在のロースターに含まれている必要があります。",
+      "agent": "エージェント経由で連絡",
+      "agentHint": "以下の連絡先は、あなたのエージェントに届きます。",
+      "agentName": "エージェント名",
+      "agentAgency": "所属事務所",
+      "agentAgencyPlaceholder": "空欄の場合は個人",
+      "contactAgent": "エージェントの連絡先 (1つ以上)",
+      "contactAgentHint": "エージェントの名前とともに、投稿に公開表示されます。",
+      "chatEnabled": "ダイレクトメッセージを許可",
+      "chatEnabledHint": "ログイン中の閲覧者が、投稿から GC Scouting 上であなたにメッセージを送れます。",
+      "contactChatHint": "ダイレクトメッセージをオンにすると、これらの連絡先は任意になります。",
+      "tweetBySite": "GC Scouting が投稿",
+      "tweetBySiteHint": "私たちの X アカウントで投稿します。@ を入力いただければ併記します。",
+      "tweetByAuthor": "自分で投稿",
+      "tweetByAuthorHint": "公開後、投稿用のツイートをお渡しします。そのリンクを送っていただければ、リツイートします。",
+      "tweetByLocked": "この投稿はすでに X に投稿されているため、この選択は変更できません。",
+      "moderationReason": "理由",
+      "moderationReasonPlaceholder": "例：無効な Discord リンクを削除、テーマ外の説明を短縮",
+      "ageGroup": "年齢",
+      "ageGroupHint": "投稿に表示されます。もう一度クリックすると非表示にできます。",
+      "tracker": "Tracker.gg プロフィール",
+      "trackerHint": "tracker.gg の Valorant プロフィールのリンクを貼り付けてください。アカウントは不要です。",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "未成年",
+      "minorsAcceptedHint": "未成年のプレイヤーは、未成年を受け入れる投稿で絞り込めます。"
+    },
+    "errors": {
+      "required": "この項目は必須です。",
+      "invalid": "無効な値です。",
+      "tooLong": "最大 {max} 文字です。",
+      "tooMany": "最大 {max} までです。",
+      "peakBelowCurrent": "最高ランクは現在のランクより低くできません。",
+      "rangeOrder": "最高ランク上限は、最低ランク以上にしてください。",
+      "wantedEmpty": "プレイヤーまたはサブを1人以上募集してください。",
+      "tierEmpty": "エージェントを1つ以上ランク付けしてください。",
+      "slotInvalid": "スロットの1つが無効です。",
+      "slotOverlap": "同じ日の2つのスロットが重なっています。",
+      "rhythmAboveAvailability": "稼働時間を超えています (最大 {max})。",
+      "contactRequired": "連絡方法を1つ以上入力してください。",
+      "discordInvalid": "無効な Discord ID です (17 から 20 桁)。ユーザー名は使えません。ID の調べ方は下をご覧ください。",
+      "discordInviteInvalid": "無効な招待リンクです (discord.gg/コード または discord.com/invite/コード)。",
+      "twitterInvalid": "無効なハンドルです (最大15文字、英字、数字、アンダースコア)。",
+      "emailInvalid": "無効なメールアドレスです。",
+      "notifyUnavailable": "このチャンネルは、あなたのアカウントでは利用できません。",
+      "gcsTeamInvalid": "無効なリンクです。GC Stats のチームページのアドレスを貼り付けてください。",
+      "gcsTeamNoProfile": "先に GC Stats プロフィールを連携してください (ページ上部)。チームメンバーのみがそのページを追加できます。",
+      "gcsTeamNotMember": "あなたの GC Stats プロフィールは、このチームの現在のロースターに含まれていません。",
+      "gcsTeamCheckFailed": "GC Stats がチームを確認できませんでした。しばらくしてからもう一度お試しください。",
+      "trackerInvalid": "tracker.gg の Valorant プロフィールのリンクではありません。",
+      "reasonLength": "理由は {min} 文字以上 {max} 文字以下で入力してください。",
+      "invalidCharacters": "制御文字や不可視文字を削除してください。"
+    },
+    "formErrors": {
+      "auth": "セッションの有効期限が切れました。公開するには、もう一度ログインしてください。",
+      "activeExists": "有効な {code} 投稿がすでにあります。",
+      "expiredExists": "以前の {code} 投稿は期限切れです。ページを再読み込みして置き換えてください。",
+      "limitReached": "公開中の {code} 投稿がすでに {max} 件あります。新しく公開するには、そのうち1件を終了してください。",
+      "server": "投稿を公開できませんでした。しばらくしてからもう一度お試しください。",
+      "notFound": "この投稿はもう存在しないか、あなたのものではありません。",
+      "notEditable": "この投稿はもう編集できません。",
+      "sanctioned": "あなたの GC Stats アカウントは制裁を受けています (ミュート、停止、または BAN)。現在、投稿の公開や編集はできません。",
+      "rateLimited": "公開または編集の頻度が高すぎます。少し待ってからもう一度お試しください。",
+      "sanctionedUntil": "あなたの GC Stats アカウントは {date} まで制裁を受けています (ミュート、停止、または BAN)。それまで投稿の公開や編集はできません。"
+    },
+    "errorCount": "{count, plural, other {修正が必要な項目が # 件あります}}",
+    "replacesExpired": "期限切れの {code} 投稿は終了されます。",
+    "publish": "公開",
+    "publishing": "公開中...",
+    "tierList": {
+      "hint": "プレイするエージェントを段にドラッグするか、エージェントをクリックしてから段をクリックしてください。外に残したエージェントは表示されません。",
+      "pickedHint": "次に、エージェントを入れる段をクリックしてください。",
+      "progress": "{count, plural, =0 {ランク付けしたエージェントなし} other {# 体のエージェントをランク付け済み}}",
+      "reset": "リセット",
+      "poolEmpty": "すべてのエージェントがランク付けされています。",
+      "guide": "ティアリストについて",
+      "guideTooltip": "この3段階の理由と、記入のしかたです。新しいタブで開きます。"
+    },
+    "availability": {
+      "hint": "時間帯をクリックまたはドラッグして追加し、もう一度操作すると削除できます。深夜をまたいでプレイする場合は、翌日の先頭に続けて入力してください。",
+      "copyAll": "すべての曜日にコピー",
+      "clearDay": "この曜日をクリア",
+      "clearAll": "すべてクリア",
+      "summary": "週 {hours} 時間、{days, plural, other {# 日}}"
+    },
+    "typeTabs": "投稿タイプ",
+    "save": "保存",
+    "saving": "保存中...",
+    "cancel": "キャンセル",
+    "delegatedNoProfile": "{name} には GC Stats プロフィールが連携されていません。連携できるのは {name} 本人だけで、本人のアカウントから行う必要があります。",
+    "editTitle": "投稿を編集",
+    "editIntro": "変更はすぐに公開されます。期限日は変わりません。",
+    "backToPost": "投稿に戻る",
+    "closedTitle": "この投稿は終了しました",
+    "closedText": "終了した投稿は編集できません。再び募集する場合は、新しく作成してください。",
+    "loading": "フォームを読み込み中",
+    "moderationTitle": "モデレーション編集",
+    "moderationText": "{name} の投稿を編集しています。入力した理由が、メールと Discord メッセージで本人に届きます。",
+    "discordHelp": {
+      "toggle": "Discord ID の調べ方",
+      "step1": "Discord で「ユーザー設定」、「詳細設定」の順に開き、開発者モードをオンにします。",
+      "step2": "自分のアバターまたは名前を右クリックします (モバイルでは長押し)。",
+      "step3": "「ユーザー ID をコピー」をクリックし、ここに貼り付けます。",
+      "menuProfile": "プロフィール",
+      "menuMention": "メンション",
+      "menuCopyId": "ユーザー ID をコピー"
+    }
+  },
+  "playerLink": {
+    "question": "あなたのアカウントには GC Stats プロフィールが連携されていません。Game Changers の大会に出場したことはありますか？",
+    "questionTeam": "あなたのアカウントには GC Stats プロフィールが連携されていません。チームの GC Stats ページを追加するには、先にプロフィールを連携してください。Game Changers の大会に出場したことはありますか？",
+    "declined": "問題ありません。大会履歴なしで投稿が公開されます。",
+    "declinedTeam": "問題ありません。チームの GC Stats ページなしで投稿が公開されます。",
+    "yes": "はい、プロフィールを探す",
+    "no": "まだありません",
+    "title": "GC Stats プロフィールを探す",
+    "intro": "名前で検索するか、出場した大会から探してください。そのあと GC Stats のスタッフがリンクを承認します。",
+    "cancel": "閉じる",
+    "modeLabel": "検索方法",
+    "mode": {
+      "name": "名前から",
+      "tournament": "大会から"
+    },
+    "namePlaceholder": "大会でのあなたの名前",
+    "tournamentPlaceholder": "大会名",
+    "teamPlaceholder": "チームまたはプレイヤーで絞り込み",
+    "minChars": "{min} 文字以上入力してください。",
+    "players": "{count, plural, =0 {プレイヤーなし} other {# 人のプレイヤー}}",
+    "pickPlayer": "ロースターからあなたの名前を選んでください。",
+    "empty": "結果がありません。",
+    "emptyTeams": "この大会のチームが見つかりません。",
+    "emptyRoster": "このチームに登録されたプレイヤーはいません。",
+    "loading": "読み込み中",
+    "back": "検索に戻る",
+    "viewOnGcs": "GC Stats で見る",
+    "claimed": "すでにアカウントに連携されています",
+    "confirmText": "これがあなたのプロフィールであることを確認してください。リクエストは GC Stats のスタッフに送られ、承認されるまで、投稿には「未認証」と表示されます。",
+    "send": "リクエストを送信",
+    "sending": "送信中...",
+    "relogin": "もう一度ログイン",
+    "done": {
+      "pending": "リクエストを送信しました。プロフィールは投稿に表示され、スタッフが承認するまで「未認証」と表示されます。",
+      "approved": "このプロフィールはすでにあなたの GC Stats アカウントに連携されており、認証済みになりました。"
+    },
+    "lookupErrors": {
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "invalid": "無効な検索です。",
+      "notConfigured": "このサイトでは、GC Stats の検索が設定されていません。",
+      "notFound": "この大会は GC Stats にもう存在しません。",
+      "failed": "GC Stats から応答がありません。しばらくしてからもう一度お試しください。"
+    },
+    "errors": {
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "invalid": "無効なプロフィールです。",
+      "linkExists": "あなたのアカウントには、すでにプロフィールが連携済みか承認待ちです。ページを再読み込みしてください。",
+      "reauth": "リクエストを送信するには、GC Stats のログインを更新する必要があります。",
+      "notFound": "このプロフィールは GC Stats にもう存在しません。",
+      "taken": "このプロフィールは、すでに別の GC Stats アカウントに連携されています。あなたのものである場合は、GC Stats のスタッフに連絡してください。",
+      "requestPending": "あなたの GC Stats アカウントには、すでにリンクのリクエストが承認待ちです。",
+      "rateLimited": "リクエストが多すぎます。1分後にもう一度お試しください。",
+      "failed": "リクエストを送信できませんでした。しばらくしてからもう一度お試しください。",
+      "delegated": "GC Stats プロフィールを連携できるのは、プロフィールの所有者だけです。"
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "あなたの {code} 投稿がまもなく期限切れになります",
+      "title": "あなたの {code} 投稿「{name}」は {left, plural, other {# 日}}後に期限切れになります",
+      "body": "{date} に、一覧と Discord チャンネルから消えます。",
+      "renewHint": "まだ募集中ですか？ あと {days} 日更新すると、一覧の先頭に戻ります。",
+      "deleteHint": "見つかりましたか？ 連絡が来ないように、削除してください。",
+      "renew": "更新",
+      "delete": "削除",
+      "view": "投稿を見る",
+      "footer": "このリマインダーは、GC Scouting への投稿時にオンにしたため届いています。リンクはログインなしで14日間使えます。共有しないでください。"
+    },
+    "manage": {
+      "metaTitle": "自分の投稿を管理",
+      "renew": {
+        "title": "投稿を更新",
+        "text": "{expired, select, true {期限切れです。} other {まもなく期限切れになります。}}10日間再び公開され、一覧の先頭に戻ります。",
+        "confirm": "更新",
+        "pending": "更新中...",
+        "done": "投稿を {date} まで更新しました"
+      },
+      "delete": {
+        "title": "投稿を削除",
+        "text": "サイトと Discord チャンネルから削除され、そのリンクは使えなくなります。この操作は元に戻せません。",
+        "confirm": "削除",
+        "pending": "削除中...",
+        "done": "投稿を削除しました"
+      },
+      "view": "投稿を見る",
+      "newPost": "投稿を作成",
+      "home": "ホームに戻る",
+      "errorTitle": "リンクは利用できません",
+      "errors": {
+        "invalid": "このリンクは無効です。全体がコピーされているか確認してください。",
+        "used": "このリンクはすでに使用されています。リマインダーは1回のみ有効です。",
+        "expired": "このリンクは期限切れです。ログインして投稿を開き、更新してください。",
+        "unavailable": "この投稿は終了または削除されました。",
+        "limitReached": "このタイプで公開できる投稿数の上限に達しています。この投稿を更新するには、そのうち1件を終了してください。",
+        "server": "操作を完了できませんでした。しばらくしてからもう一度お試しください。"
+      }
+    },
+    "renew": {
+      "title": "投稿は {date} に期限切れになります",
+      "expiredTitle": "投稿は期限切れです",
+      "hint": "あと {days} 日更新すると、一覧の先頭に戻ります。",
+      "label": "更新",
+      "pending": "更新中...",
+      "done": "更新しました",
+      "errors": {
+        "invalid": "無効な投稿です。",
+        "auth": "セッションの有効期限が切れました。更新するには、もう一度ログインしてください。",
+        "notFound": "この投稿はもう有効ではありません。",
+        "tooEarly": "更新は、期限切れの3日前から可能です。",
+        "limitReached": "このタイプで公開できる投稿数の上限に達しています。この投稿を更新するには、そのうち1件を終了してください。",
+        "server": "更新に失敗しました。しばらくしてからもう一度お試しください。"
+      }
+    },
+    "noReminder": {
+      "title": "期限切れのリマインダーがオンになっていません",
+      "text": "投稿は、通知なしに {days} 日後に期限切れになります。投稿フォームで、メールまたは Discord のリマインダーをオンにしてください。"
+    }
+  },
+  "account": {
+    "title": "アカウント設定",
+    "loading": "アカウントを読み込み中",
+    "intro": "あなたの名義で投稿できる人と、GC Scouting 上のデータを管理します。GC Stats アカウントは GC Stats で管理されます。",
+    "gcsAccount": "マイ GC Stats アカウント",
+    "since": "{date} から",
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "login": {
+      "title": "ログインしてアカウントを管理",
+      "text": "GC Scouting のアカウントは、GC Stats アカウントで作成されます。",
+      "cta": "GC Stats でログイン"
+    },
+    "delegates": {
+      "title": "プロフィールへのアクセス",
+      "hint": "信頼できる人 (エージェント、マネージャー、スタッフ) が、あなたの名義で投稿の公開と管理をできます。最大 {max} 人まで、アクセスはいつでも削除できます。",
+      "empty": "プロフィールにアクセスできる人はいません。",
+      "remove": "削除",
+      "pendingInvite": "招待リンクは待機中です ({date} まで有効)",
+      "revokeInvite": "取り消す",
+      "inviteReady": "招待リンクを作成しました",
+      "inviteHint": "相手に送ってください。ログインした状態で開いてもらいます。1回のみ、{days} 日間有効です。",
+      "copy": "コピー",
+      "copied": "コピーしました",
+      "create": "招待リンクを作成"
+    },
+    "managed": {
+      "title": "管理しているプロフィール",
+      "hint": "右上のメニューからアクティブなプロフィールを選ぶと、その名義で投稿できます。",
+      "empty": "まだ誰からもプロフィールへのアクセスを付与されていません。",
+      "active": "アクティブなプロフィール",
+      "use": "このプロフィールを使う",
+      "leave": "退出"
+    },
+    "errors": {
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "invalid": "無効なリクエストです。",
+      "notFound": "このアクセスはもう存在しません。ページを再読み込みしてください。",
+      "server": "操作に失敗しました。しばらくしてからもう一度お試しください。",
+      "full": "あなたのプロフィールには、すでに {max} 人がアクセスしています。",
+      "tooManyInvites": "待機中の招待リンクが多すぎます。先に1つ取り消してください。"
+    },
+    "data": {
+      "title": "あなたのデータ",
+      "hint": "GC Scouting があなたのアカウントについて保存しているすべて (プロフィール、投稿、アクセス) を、JSON ファイルとしてダウンロードできます。",
+      "export": "データをダウンロード",
+      "exporting": "準備中...",
+      "exportFailed": "エクスポートに失敗しました。しばらくしてからもう一度お試しください。"
+    },
+    "delete": {
+      "title": "アカウントを削除",
+      "hint": "GC Scouting のアカウント、投稿、プロフィールへのアクセスが完全に削除されます。GC Stats アカウントには影響しません。",
+      "confirmLabel": "確認のため {name} と入力してください",
+      "submit": "アカウントを削除",
+      "pending": "削除中...",
+      "errors": {
+        "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+        "confirmation": "ユーザー名が一致しません。",
+        "server": "削除に失敗しました。しばらくしてからもう一度お試しください。"
+      }
+    },
+    "chatNotifications": {
+      "title": "メッセージ通知",
+      "text": "メッセージを受け取ると、会話ごとに1回通知し、その会話を開くまで再通知はしません。メッセージ本文が通知にコピーされることはありません。",
+      "email": "メールで",
+      "discord": "Discord のダイレクトメッセージで",
+      "noEmail": "GC Stats アカウントに確認済みのメールがありません",
+      "discordLinked": "GC Stats に Discord アカウントが連携済みです",
+      "noDiscord": "GC Stats に Discord アカウントが連携されていません",
+      "save": "保存",
+      "saved": "設定を保存しました。",
+      "errors": {
+        "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+        "invalid": "無効な設定です。",
+        "noEmail": "メール通知をオンにするには、GC Stats でメールを追加して確認してください。",
+        "noDiscord": "Discord 通知をオンにするには、GC Stats で Discord アカウントを連携してください。",
+        "server": "保存に失敗しました。しばらくしてからもう一度お試しください。"
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "プロフィールへの招待",
+    "title": "{name} があなたをプロフィールの管理者に招待しています",
+    "text": "{name} の名義で、投稿の公開と管理ができるようになります。アカウント設定からいつでも退出できます。",
+    "loginText": "招待を承諾するには、GC Stats アカウントでログインしてください。",
+    "loginCta": "GC Stats でログイン",
+    "accept": "承諾",
+    "accepting": "承諾中...",
+    "done": "{name} のプロフィールを管理できるようになりました。アクティブなプロフィールになっています。",
+    "newPost": "投稿を作成",
+    "settings": "アカウント設定",
+    "home": "ホームに戻る",
+    "errorTitle": "招待は利用できません",
+    "errors": {
+      "invalid": "このリンクは無効です。全体がコピーされているか確認してください。",
+      "used": "この招待はすでに使用されています。新しいリンクを依頼してください。",
+      "expired": "この招待は期限切れです。新しいリンクを依頼してください。",
+      "self": "これはあなた自身の招待リンクです。プロフィールを管理する人に送ってください。",
+      "already": "このプロフィールはすでに管理しています。",
+      "full": "このプロフィールは、アクセスできる人数の上限に達しています。",
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "server": "招待を承諾できませんでした。しばらくしてからもう一度お試しください。"
+    }
+  },
+  "postAuthor": {
+    "edit": "編集",
+    "close": "終了",
+    "closeConfirm": "投稿を終了する",
+    "cancel": "キャンセル",
+    "errors": {
+      "invalid": "無効な投稿です。",
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "notFound": "この投稿はもう有効ではありません。",
+      "server": "投稿を終了できませんでした。しばらくしてからもう一度お試しください。"
+    }
+  },
+  "myPosts": {
+    "title": "マイ投稿",
+    "intro": "投稿は {days} 日間公開されます。期限が切れる前に更新するか、見つかったら終了してください。",
+    "new": "投稿を作成",
+    "loading": "投稿を読み込み中",
+    "published": "{date} に公開",
+    "expires": "{date} に期限切れ",
+    "expired": "{date} に期限切れ",
+    "groups": {
+      "active": "公開中",
+      "expired": "期限切れ",
+      "closed": "終了"
+    },
+    "empty": {
+      "title": "まだ投稿がありません",
+      "text": "投稿はここに表示され、編集、更新、終了ができます。"
+    },
+    "login": {
+      "title": "ログインして投稿を見る",
+      "text": "投稿は GC Stats アカウントに紐づいています。",
+      "cta": "GC Stats でログイン"
+    }
+  },
+  "report": {
+    "button": "報告",
+    "title": "この投稿を報告",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "submit": "報告を送信",
+    "sending": "送信中…",
+    "loginHint": "投稿を報告するにはログインしてください。不正行為の防止に役立ちます。",
+    "login": "GC Stats でログイン",
+    "reason": "理由",
+    "message": "詳細",
+    "messageHint": "問題点など、モデレーターがすばやく判断できる情報をお書きください。",
+    "sent": "報告を送信しました",
+    "sentHint": "ありがとうございます。モデレーションチームがこの投稿を確認します。",
+    "reasons": {
+      "spam": {
+        "label": "スパムまたは広告",
+        "hint": "重複投稿、広告、無関係な内容"
+      },
+      "fake": {
+        "label": "偽の投稿",
+        "hint": "なりすまし、でっち上げの情報"
+      },
+      "inappropriate": {
+        "label": "不適切な内容",
+        "hint": "攻撃的な表現、NSFW コンテンツ"
+      },
+      "harassment": {
+        "label": "嫌がらせ",
+        "hint": "特定の人を標的にする、または侮辱する"
+      },
+      "other": {
+        "label": "その他",
+        "hint": "詳細欄で問題を説明してください"
+      }
+    },
+    "errors": {
+      "reasonRequired": "理由を選択してください。",
+      "message": {
+        "required": "理由が「その他」の場合は、問題を説明してください。",
+        "tooShort": "{min} 文字以上、または空欄にしてください。",
+        "tooLong": "最大 {max} 文字です。",
+        "invalidCharacters": "制御文字や不可視文字を削除してください。"
+      },
+      "form": {
+        "invalid": "無効な投稿です。",
+        "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+        "notFound": "この投稿はもう存在しません。",
+        "ownPost": "自分の投稿は報告できません。",
+        "already": "この投稿はすでに報告済みです。モデレーターが対応しています。",
+        "rateLimited": "1時間あたりの報告が多すぎます。後でもう一度お試しください。",
+        "server": "報告を送信できませんでした。しばらくしてからもう一度お試しください。"
+      },
+      "messageForm": {
+        "invalid": "無効なメッセージです。",
+        "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+        "notFound": "このメッセージはもう利用できません。",
+        "ownMessage": "自分のメッセージは報告できません。",
+        "already": "このメッセージはすでに報告済みです。モデレーターが対応しています。",
+        "rateLimited": "1時間あたりの報告が多すぎます。後でもう一度お試しください。",
+        "server": "報告を送信できませんでした。しばらくしてからもう一度お試しください。"
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "投稿するツイート",
+    "title": "投稿するツイート",
+    "subtitle": "まだ X に投稿されていない公開中の投稿を、古い順に表示します。X でツイートを開いて投稿し、投稿済みにしてください。",
+    "count": "{count, plural, other {残り # 件のツイート}}",
+    "empty": "ツイートするものはもうありません。",
+    "unavailable": "ツイートを読み込めませんでした。Discord ボットに接続できません。しばらくしてからページを再読み込みしてください。",
+    "forbidden": "アクセスが拒否されました。このページは Cloudflare Access 経由でのみ開けます。",
+    "published": "{date} に公開",
+    "viewPost": "投稿を見る",
+    "length": "{length}/{max} 文字",
+    "tooLong": "X には長すぎます。投稿前に短くしてください。",
+    "open": "X で開く",
+    "opened": "X で開きました",
+    "markPublished": "投稿済みにする",
+    "marking": "保存中...",
+    "done": "投稿済み",
+    "errors": {
+      "unauthorized": "Cloudflare Access のセッションが期限切れです。ページを再読み込みしてください。",
+      "forbidden": "このリクエストはツイートのページから送られていません。再読み込みしてもう一度お試しください。",
+      "invalid": "この投稿 ID は無効です。",
+      "notFound": "この投稿はもう存在しません。",
+      "alreadyTweeted": "この投稿はすでに投稿済みになっています。",
+      "unavailable": "Discord ボットに接続できません。しばらくしてからもう一度お試しください。",
+      "network": "リクエストに失敗しました。接続を確認して、もう一度お試しください。",
+      "awaitingAuthor": "投稿者がまだツイートのリンクを提供していません。"
+    },
+    "toTweet": "ツイートする",
+    "toRetweet": "リツイートする",
+    "toRetweetHint": "投稿者が自分のアカウントで共有した投稿です。",
+    "countRetweets": "{count, plural, other {残り # 件のリツイート}}",
+    "sectionDone": "ここはすべて完了です。",
+    "authorTweeted": "投稿者が自分のアカウントで投稿済みです。リツイートしてください。",
+    "viewTweet": "ツイートを見る",
+    "openRetweet": "X でリツイート",
+    "markRetweeted": "リツイート済みにする",
+    "retweetDone": "リツイート済み"
+  },
+  "legalNotice": {
+    "title": "法的表記",
+    "updated": "最終更新：{date}",
+    "editor": {
+      "title": "発行者",
+      "identity": "名称",
+      "status": "法的形態",
+      "statusValue": "フランスの非営利団体 (loi 1901)",
+      "email": "メール",
+      "director": "発行責任者",
+      "ecosystem": "GC Scouting は GC Stats エコシステムの一部であり、同じ団体が運営しています。ログインと大会履歴は GC Stats に依存しています。"
+    },
+    "hosting": {
+      "title": "ホスティングとプロバイダー",
+      "site": "ウェブサイト、Discord ボット、共有画像",
+      "database": "データベース",
+      "email": "メール配信",
+      "emailValue": "Resend (オンにした期限切れリマインダーのみ)",
+      "discord": "Discord メッセージ",
+      "discordValue": "Discord Inc.、当ボット経由 (投稿チャンネル、モデレーション、リマインダーのダイレクトメッセージ)"
+    },
+    "property": {
+      "title": "知的財産",
+      "site": "ウェブサイトの構造、デザイン、オリジナルの文章は Osthelia に帰属します。",
+      "posts": "投稿の内容 (自己紹介、ティアリスト、稼働時間) は投稿者に帰属し、投稿者は、投稿が公開されている間、ウェブサイトでの表示と Discord、X での共有を許可します。",
+      "thirdParty": "<b>第三者のコンテンツ：</b>チーム、大会、エージェント、ランクの名称、ロゴ、ビジュアルはそれぞれの所有者に帰属し、情報提供のみを目的として表示しています。GC Scouting は Riot Games の承認を受けておらず、Riot Games、または Riot Games の資産の制作や管理に公式に関わる人物の見解や意見を反映するものではありません。Riot Games および関連するすべての資産は、Riot Games, Inc. の商標または登録商標です。",
+      "takedown": "コンテンツの権利をお持ちで、削除を希望されますか？ <mail>こちらのアドレス</mail>までご連絡いただくか、各投稿にある<b>報告</b>ボタンをご利用ください。"
+    },
+    "rules": {
+      "title": "投稿のルール",
+      "intro": "投稿を公開することで、以下に同意したものとみなされます。",
+      "truthful": "プロフィール、ランク、経験について正確な情報を提供すること",
+      "respect": "憎悪的、差別的、嫌がらせ、または違法なコンテンツを投稿しないこと",
+      "contact": "自分のもの、またはエージェントから表示を許可された連絡先のみを記載すること",
+      "ads": "広告、ギャンブル、募集に無関係なことに投稿を使用しないこと",
+      "moderation": "当チームは、これらのルールに違反する投稿を予告なく削除することがあります。投稿は現状のまま提供され、Osthelia はすべての情報を確認せず、プレイヤーとチームのやり取りには関与しません。"
+    },
+    "privacy": {
+      "title": "個人データ",
+      "text": "データの取り扱いについては、<policy>プライバシーポリシー</policy>に詳しく記載しています。GDPR に基づき、アクセス、訂正、削除の権利があり、<mail>{email}</mail> に連絡することで行使できます。"
+    },
+    "credits": {
+      "title": "クレジット",
+      "gcs": "大会履歴、チーム、認証済みプロフィール：<link>GC Stats</link>。",
+      "valorantApi": "エージェントとランクのアイコン：<link>valorant-api.com</link>。",
+      "riot": "VALORANT は Riot Games, Inc. の商標です。"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "updated": "最終更新：{date}",
+    "intro": "GC Scouting は、投稿の公開、チームとのやり取り、投稿の期限切れのお知らせに必要な情報のみを収集します。ここでは、何を、なぜ保存するのか、そしてどう削除するのかを説明します。",
+    "login": {
+      "title": "GC Stats でログイン",
+      "text": "GC Stats アカウントでログインします。パスワードが私たちに見えることはありません。ログインのたびに、同意のうえで、GC Stats から以下が送られます。",
+      "identity": "<b>ID 情報：</b>GC Stats の識別子、ユーザー名、アバター。",
+      "email": "<b>メール：</b>確認済みのアドレス。オンにした場合の期限切れリマインダーにのみ使用します。",
+      "discord": "<b>Discord：</b>連携済みの Discord アカウントの識別子。ダイレクトメッセージのリマインダーと、投稿を報告したときの本人確認に使用します。",
+      "player": "<b>プレイヤープロフィール：</b>あなたのアカウントに連携された GC Stats プロフィール。認証バッジと大会履歴の表示に使用します。",
+      "tokens": "GC Stats のアクセストークンはデータベース内で暗号化され、GC Stats であなたに代わって操作する場合 (例：プロフィールのリンク申請) にのみ使用されます。アカウントを削除すると失効します。",
+      "created": "<b>アカウントの作成時期：</b>GC Stats アカウントの作成日。作成から最初の7日間、メッセージに「新規アカウント」バッジを表示するために使用します。",
+      "sanctions": "<b>制裁：</b>有効な GC Stats の制裁 (ミュート、停止、BAN) とその終了日。メッセージや投稿の送信前に確認し、制裁中は送信をブロックします。有効な警告がある場合は、メッセージに「警告あり」バッジが表示されます。"
+    },
+    "public": {
+      "title": "公開される情報",
+      "text": "投稿は、ログインなしで誰でも閲覧できます。公開されるのは、ユーザー名、投稿タイプ、地域、国、言語、ランク、ロール、ティアリスト、経験、稼働時間、自己紹介です。",
+      "contact": "<b>連絡先：</b>投稿に追加した Discord、X アカウント、メールは、チームが連絡できるよう公開表示されます。公開しても問題ない情報のみを追加してください。",
+      "gcs": "プロフィールが連携されている場合、表示される履歴 (チーム、大会、成績) は GC Stats の公開データに基づいています。"
+    },
+    "relay": {
+      "title": "Discord と X での共有",
+      "text": "有効な投稿は、当ボットを設定した Discord チャンネルに自動で送信され、共有画像とともに私たちの X アカウントで共有されることがあります。投稿が終了、削除、または撤去された場合や、アカウントを削除した場合は、当ボットがこれらのチャンネルからメッセージも削除します。期限切れの投稿は、それまで残ります。すでに X で共有された投稿や、他の人が作成したコピーは残ります。"
+    },
+    "private": {
+      "title": "技術データ",
+      "sessions": "<b>セッション：</b>セッショントークンのフィンガープリント (トークン自体は保存しません)、使用したブラウザ (ユーザーエージェント)、作成日と有効期限。セッションの確認と保護のために使います。",
+      "country": "<b>国：</b>Cloudflare が提供する接続元の国は、フィルターで地域を事前選択するためにのみ使用され、保存されません。",
+      "logs": "<b>ログ：</b>ホスティング事業者が、トラブルシューティングのために短期間の技術ログ (エラー、リクエスト) を保持します。",
+      "noTracking": "アクセス解析、広告、第三者のトラッカー、データの販売は一切ありません。"
+    },
+    "notifications": {
+      "title": "期限切れのリマインダー",
+      "text": "メールと Discord のダイレクトメッセージによるリマインダーは、デフォルトでオフで、オンにした場合のみ送信されます。ログインなしで投稿を更新または削除できるリンクが含まれ、14日間有効です。いつでもオフにできます。"
+    },
+    "delegation": {
+      "title": "委任されたアクセス",
+      "text": "他の人 (エージェント、マネージャー) にプロフィールへのアクセスを付与した場合、その人があなたの名義で投稿を公開、管理できるよう、その紐づけを保存します。このアクセスは、アカウントからいつでも取り消せます。メッセージ機能では、その人は自分の名前で書き込み、管理しているプロフィールが横に表示されます。"
+    },
+    "messages": {
+      "title": "メッセージ",
+      "text": "投稿からメンバーにメッセージを送ると、その会話を保存します。保存するのは、双方のプロフィール、開始元の投稿、日時付きの各メッセージ、他人のプロフィールを管理している場合は実際に書き込んだアカウントです。また、未読メッセージのために最後に読んだ日時と、ブロックしたメンバーの一覧も保存します。",
+      "staff": "会話はエンドツーエンドで暗号化されていません。当モデレーションチームは、報告の対応、保留中のメッセージの確認、不正行為の調査のために会話を閲覧できます。メッセージを非表示にすることもできます。機密性の高い内容は共有しないでください。",
+      "automod": "<b>自動モデレーション：</b>各メッセージは、配信前に OpenAI のモデレーション API (米国) に、ユーザー名や識別子なしで送信されます。OpenAI はこれをモデルの学習に使用せず、最長30日間保持します。有害と判定されたメッセージは、チームが判断するまで保留されます。",
+      "links": "<b>リンク：</b>クリックできるのは、Discord、X、GC Stats、VLR、Liquipedia のリンクのみです。その他のリンクは警告の裏に隠され、メッセージ以外は確認も保存もされません。",
+      "alerts": "<b>通知：</b>新しいメッセージは、未読の連続ごとに1回、内容をコピーせずに、メールまたは Discord のダイレクトメッセージでお知らせします。デフォルトでオンで、<account>マイアカウント</account>ページからオフにできます。他人のプロフィールを管理している場合は、その会話の通知も、あなた自身の設定で受け取ります。"
+    },
+    "moderation": {
+      "title": "報告とモデレーション",
+      "text": "投稿やメッセージを報告すると、理由、あなたのメッセージ、あなたのアカウントを保存します。モデレーションは、非公開の Discord チャンネルとウェブサイトの管理エリアで行われ、すべての操作 (削除、復元、メッセージの非表示、X での共有) は、実行したチームメンバーのアカウントとともに記録されます。",
+      "reporter": "あなたの身元が、報告された投稿やメッセージの投稿者に示されることはありません。確認できるのは当モデレーションチームだけです。"
+    },
+    "retention": {
+      "title": "保存期間",
+      "posts": "投稿は、公開または最後の更新から10日後に期限切れになります。その後、一覧と Discord チャンネルから消えますが、リンクは、あなたが削除するまでバナー付きで利用できます。",
+      "sessions": "セッションは30日間、またはログアウトするまで続きます。",
+      "account": "アカウントとそれに紐づくすべて (投稿、送信したメッセージ、ブロック、セッション、委任されたアクセス、プロフィールのリンク) は、<account>マイアカウント</account>ページから削除するまで保持されます。そのとき、あなたが行った報告と、投稿の Discord メッセージも削除されます。",
+      "messages": "メッセージは、会話が存在する限り保持されます。アカウントを削除すると、あなたが送信したメッセージは削除されます。相手のメッセージは、相手の一覧に残ります。"
+    },
+    "rights": {
+      "title": "あなたの権利 (GDPR)",
+      "text": "データへのアクセス、訂正、異議申立て、削除の権利があります。<account>マイアカウント</account>ページから、すべてのデータを JSON でエクスポートするか、1クリックでアカウントを削除できます。GC Stats アカウントには一切影響しません。",
+      "contact": "その他のご要望：<mail>{email}</mail>。権利が尊重されていないと思われる場合は、CNIL (フランスのデータ保護当局) に苦情を申し立てることもできます。"
+    },
+    "cookies": {
+      "title": "Cookie とローカルストレージ",
+      "text": "ウェブサイトの動作に必要な技術的な Cookie のみを使用しているため、同意バナーは不要です。",
+      "session": "<b>__Host-sc_session：</b>ログインセッション (30日間)。",
+      "profile": "<b>sc_profile：</b>他人のプロフィールを管理している場合の、アクティブなプロフィール。",
+      "oauth": "<b>sc_oauth：</b>GC Stats でのログインを保護するもので、直後に削除されます。",
+      "theme": "<b>sc_theme：</b>ライトまたはダークのテーマ。",
+      "storage": "<b>ローカルストレージ：</b>投稿のフィルターとタイムゾーン。ブラウザ内にのみ保存されます。"
+    }
+  },
+  "chat": {
+    "title": "メッセージ",
+    "unreadLabel": "メッセージ、未読 {count} 件",
+    "seeAll": "すべてのメッセージを見る",
+    "writtenBy": "<strong>{name}</strong>、{profile} のマネージャー",
+    "managerName": "{name} ({profile} のマネージャー)",
+    "delegateNotice": "{profile} として書き込んでいます。メッセージにはあなた自身の名前 ({name}) が表示され、このプロフィールを管理していることも示されます。",
+    "you": "あなた：",
+    "hiddenMessage": "モデレーターによって削除されたメッセージ",
+    "held": "確認待ち",
+    "back": "会話一覧に戻る",
+    "fromPost": "{name} の {code} 投稿から",
+    "block": "ブロック",
+    "blockConfirm": "ブロックを確定",
+    "unblock": "ブロック解除",
+    "unblockConfirm": "確認",
+    "cancel": "キャンセル",
+    "loadOlder": "古いメッセージを読み込む",
+    "loadMoreConversations": "会話をさらに表示",
+    "loading": "会話を読み込み中",
+    "emptyConversation": "まだメッセージはありません。",
+    "blockedByMe": "{name} をブロックしました。再び書き込むには、ブロックを解除してください。",
+    "blockedByPeer": "この相手にはもうメッセージを送れません。",
+    "reportTitle": "{name} のメッセージを報告",
+    "staffNotice": "GC Scouting のモデレーションチームは、モデレーション目的に限り、会話を閲覧できます。",
+    "placeholder": "メッセージを入力",
+    "send": "送信",
+    "errors": {
+      "body": {
+        "required": "送信する前にメッセージを入力してください。",
+        "tooLong": "最大 {max} 文字です。",
+        "invalidCharacters": "制御文字や不可視文字を削除してください。"
+      },
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "notFound": "この会話または投稿はもう利用できません。",
+      "ownPost": "自分自身にはメッセージを送れません。",
+      "chatDisabled": "この投稿の投稿者は、ダイレクトメッセージを受け付けていません。",
+      "blockedByMe": "この相手をブロックしています。",
+      "blockedByPeer": "この相手にはもうメッセージを送れません。",
+      "sanctioned": "あなたの GC Stats アカウントは制裁を受けています (ミュート、停止、または BAN)。現在、メッセージを送信できません。",
+      "sanctionedUntil": "あなたの GC Stats アカウントは {date} まで制裁を受けています (ミュート、停止、または BAN)。それまでメッセージを送信できません。",
+      "rateLimited": "メッセージの送信が多すぎます。1分待ってください。",
+      "tooManyConversations": "本日開始した会話が多すぎます。明日もう一度お試しください。",
+      "server": "メッセージを送信できませんでした。しばらくしてからもう一度お試しください。"
+    },
+    "empty": {
+      "title": "会話がありません",
+      "text": "投稿のページから投稿者にメッセージを送ると、会話が始まります。"
+    },
+    "pick": {
+      "title": "会話を選択",
+      "text": "プレイヤー、チーム、スタッフとのやり取りが左に表示されます。"
+    },
+    "login": {
+      "title": "ログインしてメッセージを見る",
+      "text": "メッセージ機能は GC Stats アカウントを使用します。",
+      "cta": "GC Stats でログイン"
+    },
+    "link": {
+      "hidden": "非表示のリンク",
+      "hiddenHint": "このリンクは信頼できるサイトのものではないため、デフォルトで非表示です。",
+      "warning": "このリンクは信頼できるサイト (Discord、X、GC Stats、VLR、Liquipedia) に繋がっていません。アカウントやデータを盗むために使われる可能性があります。相手を知っている場合のみ開いてください。",
+      "show": "リンクを表示",
+      "cancel": "非表示のままにする"
+    },
+    "peer": {
+      "recent": "新規アカウント",
+      "recentHint": "GC Stats アカウントの作成から {days} 日未満",
+      "warned": "警告あり",
+      "warnedHint": "この人は GC Stats のモデレーターから警告を受けています",
+      "warnedNotice": "{name} は GC Stats のモデレーターから警告を受けています。注意して、不適切なメッセージは報告してください。",
+      "recentNotice": "{name} の GC Stats アカウントは作成から {days} 日未満です。普段と違う依頼 (リンク、支払い、認証情報) には注意してください。"
+    },
+    "posts": {
+      "title": "{name} の公開中の投稿",
+      "toggle": "{count, plural, =0 {公開中の投稿なし} other {公開中の投稿 # 件}}",
+      "none": "公開中の投稿はありません。",
+      "published": "{date} に更新"
+    },
+    "start": {
+      "button": "メッセージを送る",
+      "open": "会話を見る",
+      "title": "{name} にメッセージを送る",
+      "close": "閉じる",
+      "loginHint": "この投稿の投稿者にメッセージを送るには、GC Stats でログインしてください。",
+      "login": "ログイン"
+    },
+    "alert": {
+      "subject": "GC Scouting で {name} から新しいメッセージが届きました",
+      "title": "{name} からメッセージが届きました",
+      "body": "GC Scouting で {name} からメッセージを受け取りました。サイトから返信してください。会話は、あなたたち2人とモデレーターだけに非公開です。",
+      "managedSubject": "GC Scouting で {profile} 宛の新しいメッセージが届きました",
+      "managedTitle": "{name} が {profile} にメッセージを送りました",
+      "managedBody": "あなたが管理するプロフィール {profile} が、GC Scouting で {name} からメッセージを受け取りました。サイトから返信してください。返信にはあなた自身の名前が表示されます。",
+      "open": "会話を見る",
+      "footer": "GC Scouting の設定でメッセージ通知がオンになっているため、この通知が届いています。"
+    },
+    "switch": {
+      "title": "この会話は {name} のものです",
+      "managedText": "あなたはこのプロフィールを管理しています。会話を読んで返信するには、切り替えてください。メッセージにはあなた自身の名前が表示されます。",
+      "selfText": "別のプロフィールとして操作しています。会話を読んで返信するには、自分のプロフィールに戻してください。",
+      "button": "{name} に切り替える",
+      "error": "プロフィールを切り替えられませんでした。しばらくしてからもう一度お試しください。"
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "管理",
+      "dashboard": "ダッシュボード",
+      "groupChat": "メッセージ",
+      "conversations": "会話",
+      "automod": "自動モデレーション",
+      "messageReports": "報告されたメッセージ",
+      "groupPosts": "投稿",
+      "posts": "投稿",
+      "postReports": "報告された投稿",
+      "groupAdmin": "管理",
+      "users": "ユーザー",
+      "access": "アクセス権",
+      "backToSite": "サイトに戻る",
+      "toggle": "メニューの表示と非表示",
+      "menuTitle": "メニュー",
+      "menuDescription": "管理画面のナビゲーション。"
+    },
+    "roles": {
+      "user": "メンバー",
+      "staff": "スタッフ",
+      "admin": "管理者"
+    },
+    "common": {
+      "cancel": "キャンセル",
+      "total": "{count, plural, =0 {結果なし} other {# 件の結果}}",
+      "previous": "前のページ",
+      "next": "次のページ",
+      "gcsAdmin": "GC Stats の管理画面で開く",
+      "search": "検索",
+      "close": "閉じる"
+    },
+    "sanctions": {
+      "note": "メモ",
+      "warning": "警告",
+      "mute": "ミュート",
+      "suspension": "停止",
+      "ban": "BAN"
+    },
+    "errors": {
+      "auth": "セッションの有効期限が切れたか、管理画面へのアクセス権がなくなりました。",
+      "invalid": "無効なリクエストです。",
+      "notFound": "見つかりません。",
+      "conflict": "すでに他の人が対応済みです。ページを再読み込みしました。",
+      "reasonLength": "理由は {min} 文字以上 {max} 文字以下で入力してください。",
+      "reasonInvalidCharacters": "理由から制御文字や不可視文字を削除してください。",
+      "activeExists": "投稿者は、このタイプの別の投稿をすでに公開しています。",
+      "selfDemote": "自分自身の管理者ロールは削除できません。",
+      "bootstrap": "このアカウントはサイトの設定により管理者です。ここではロールを変更できません。",
+      "server": "操作に失敗しました。しばらくしてからもう一度お試しください。"
+    },
+    "dashboard": {
+      "title": "ダッシュボード",
+      "subtitle": "モデレーターの対応待ちと、過去7日間のアクティビティです。",
+      "todo": "対応が必要",
+      "held": "自動モデレーションで保留中のメッセージ",
+      "messageReports": "報告されたメッセージ",
+      "postReports": "報告された投稿",
+      "activity": "アクティビティ",
+      "activePosts": "公開中の投稿",
+      "newPosts": "公開された投稿 (7日間)",
+      "activeConversations": "アクティブな会話 (7日間)",
+      "messagesWeek": "送信されたメッセージ (7日間)",
+      "users": "アカウント",
+      "staff": "スタッフと管理者"
+    },
+    "conversations": {
+      "title": "会話",
+      "subtitle": "すべての非公開の会話を、新しい順に表示します。",
+      "search": "メンバーのユーザー名",
+      "empty": "会話がありません。",
+      "members": "メンバー",
+      "messages": "メッセージ",
+      "flags": "要確認",
+      "lastMessage": "最後のメッセージ",
+      "held": "{count} 件保留中",
+      "reports": "{count, plural, other {# 件の報告}}",
+      "open": "開く",
+      "back": "会話一覧に戻る",
+      "detailTitle": "会話 #{id}",
+      "older": "古いメッセージ",
+      "latest": "最新のメッセージ",
+      "fromPost": "{name} の {code} 投稿から開始",
+      "noMessages": "メッセージがありません。"
+    },
+    "messages": {
+      "status": {
+        "visible": "表示中",
+        "blocked": "自動モデレーションで保留中",
+        "hidden": "非表示"
+      },
+      "unchecked": "自動モデレーションで未確認",
+      "writtenBy": "{name} が作成 (プロフィールのマネージャー)",
+      "reported": "{count, plural, other {# 件の報告}}",
+      "reviewedBy": "{name} が {date} に対応",
+      "approve": "通す",
+      "reject": "ブロックを維持",
+      "hide": "非表示にする",
+      "hideConfirm": "確認",
+      "show": "表示にする"
+    },
+    "automod": {
+      "title": "自動モデレーション",
+      "subtitle": "OpenAI の自動モデレーションで保留されたメッセージです。通すと配信され (受信者に通知されます)、ブロックを維持すると完全に削除されます。",
+      "empty": "待機中のメッセージはありません。",
+      "context": "会話を見る"
+    },
+    "messageReports": {
+      "title": "報告されたメッセージ",
+      "subtitle": "メッセージ機能から送られた報告です。BAN するには、GC Stats の管理画面でその人のプロフィールを開いてください。",
+      "empty": "報告はありません。",
+      "by": "報告者：",
+      "hide": "メッセージを非表示にする",
+      "dismiss": "却下"
+    },
+    "reportStatus": {
+      "label": "ステータス",
+      "open": "未対応",
+      "handled": "対応済み",
+      "dismissed": "却下",
+      "handledBy": "{name} が対応",
+      "dismissedBy": "{name} が却下"
+    },
+    "postReports": {
+      "title": "報告された投稿",
+      "subtitle": "Discord のモデレーションチャンネルと同じ報告です。どちらでも対応できます。",
+      "empty": "報告はありません。",
+      "by": "報告者：{name}",
+      "dismiss": "却下",
+      "postState": {
+        "active": "期限切れ",
+        "closed": "終了",
+        "removed": "削除済み"
+      }
+    },
+    "posts": {
+      "title": "投稿",
+      "subtitle": "すべての投稿です。ここで削除すると、Discord チャンネルからも削除されます。",
+      "search": "投稿名またはユーザー名",
+      "stateLabel": "状態",
+      "anyState": "すべての状態",
+      "typeLabel": "タイプ",
+      "anyType": "すべてのタイプ",
+      "state": {
+        "visible": "公開中",
+        "expired": "期限切れ",
+        "closed": "終了",
+        "removed": "モデレーターが削除",
+        "deleted": "投稿者が削除"
+      },
+      "post": "投稿",
+      "author": "投稿者",
+      "bumped": "更新日",
+      "actions": "操作",
+      "reports": "{count, plural, other {# 件の報告}}",
+      "remove": "削除",
+      "restore": "復元",
+      "restoreConfirm": "復元を確定",
+      "removeTitle": "投稿 {name} を削除",
+      "removeHint": "投稿はサイトと Discord チャンネルから消え、未対応の報告は対応済みになります。理由はモデレーターに表示されます。",
+      "reason": "理由",
+      "edit": "編集"
+    },
+    "users": {
+      "title": "ユーザー",
+      "subtitle": "一度でもログインしたアカウントです。制裁は GC Stats で管理されます。",
+      "search": "ユーザー名",
+      "anyRole": "すべてのロール",
+      "empty": "アカウントがありません。",
+      "user": "アカウント",
+      "posts": "投稿",
+      "gcsAccount": "GC Stats アカウントの作成日",
+      "lastLogin": "最終ログイン",
+      "back": "ユーザー一覧に戻る",
+      "joined": "GC Scouting への参加日",
+      "email": "メール",
+      "discord": "Discord",
+      "sanctions": "有効な GC Stats の制裁",
+      "noSanction": "有効な制裁はありません。",
+      "sanctionUntil": "{date} まで",
+      "sanctionPermanent": "無期限",
+      "sanctionsChecked": "{date} に GC Stats から取得。",
+      "sanctionsNever": "GC Stats から未取得。",
+      "sanctionsHint": "ミュート、停止、BAN はメッセージと投稿をブロックします。",
+      "conversations": "会話",
+      "noConversation": "会話がありません。",
+      "seePosts": "投稿を見る"
+    },
+    "access": {
+      "title": "アクセス権",
+      "subtitle": "スタッフは、このページ以外の管理画面をすべて使えます。管理者はロールの付与と削除もできます。",
+      "current": "スタッフと管理者",
+      "grant": "ロールを付与",
+      "search": "アカウントのユーザー名",
+      "noResult": "一致するアカウントがありません。",
+      "hint": "アカウントは、GC Scouting に一度でもログインしている必要があります。",
+      "role": "ロール",
+      "save": "保存",
+      "locked": "自分自身のロールと、設定で指定された管理者は、ここでは変更できません。"
+    },
+    "error": {
+      "title": "このページを読み込めませんでした",
+      "body": "サーバーエラーが発生しました。もう一度試すか、ダッシュボードに戻ってください。",
+      "retry": "もう一度試す"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting があなたの投稿を X で共有します",
+    "siteText": "私たちのアカウントから、@ を入力いただいた場合はそれを併記して投稿されます。",
+    "switchToAuthor": "自分で投稿したい",
+    "switchToSite": "GC Scouting に投稿してもらう",
+    "switching": "保存中...",
+    "tweeted": "あなたの投稿は GC Scouting の X アカウントに投稿されました。",
+    "retweeted": "GC Scouting があなたの投稿をリツイートしました。",
+    "authorTitle": "投稿を X で共有",
+    "authorText": "このツイートをあなたのアカウントから投稿し、そのリンクをここに貼り付けてください。GC Scouting がリツイートします。",
+    "authorSavedTitle": "リンクを受け取りました。投稿をリツイートします",
+    "authorSavedText": "リツイートが完了するまでは、リンクを置き換えられます。",
+    "language": "ツイートの言語",
+    "draftUnavailable": "ツイートの文章を準備できませんでした。しばらくしてからページを再読み込みしてください。",
+    "length": "{length}/{max} 文字",
+    "tooLong": "X には長すぎます。投稿前に短くしてください。",
+    "open": "X で投稿",
+    "opened": "X で開きました",
+    "linkLabel": "ツイートのリンク",
+    "linkPlaceholder": "https://x.com/username/status/...",
+    "save": "リンクを送信",
+    "saving": "送信中...",
+    "saved": "リンクを送信しました",
+    "viewTweet": "ツイートを見る",
+    "errors": {
+      "invalid": "この投稿は無効です。",
+      "required": "ツイートのリンクを貼り付けてください。",
+      "tweetUrlInvalid": "ツイートのリンクではありません。https://x.com/username/status/123 のような形式になります。",
+      "auth": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "notFound": "この投稿はもう公開されていません。",
+      "alreadyTweeted": "この投稿はすでに X に投稿されているため、この選択は変更できません。",
+      "notAuthorTweet": "この投稿は GC Scouting が投稿します。先に、自分で投稿する設定を選んでください。",
+      "server": "問題が発生しました。しばらくしてからもう一度お試しください。"
+    }
+  },
+  "tweetImage": {
+    "share": "画像付きで共有",
+    "copy": "画像をコピー",
+    "preparing": "準備中...",
+    "shared": "共有しました",
+    "copied": "画像をコピーしました",
+    "pasteHint": "X が開いたら、ツイートに画像を貼り付けてください (Ctrl+V または ⌘V)。",
+    "failed": "画像を準備できませんでした。",
+    "download": "ダウンロード"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "あなたの {code} 投稿がモデレーションにより編集されました",
+      "title": "あなたの {code} 投稿「{name}」が編集されました",
+      "body": "GC Scouting のモデレーションチームのメンバーが、あなたの投稿を編集しました。投稿は公開されたままで、期限日も変わりません。",
+      "reason": "理由：{reason}",
+      "open": "投稿を見る",
+      "footer": "GC Scouting のあなたの投稿がモデレーションにより編集されたため、このメッセージが届いています。"
+    }
+  },
+  "ageGroups": {
+    "minor": "未成年",
+    "adult": "成人"
+  },
+  "minorsPolicy": {
+    "accepted": "未成年可",
+    "adultsOnly": "成人のみ"
+  },
+  "tierListGuide": {
+    "title": "ティアリストについて",
+    "intro": "プレイヤーの投稿にはすべて、エージェントのティアリストが付きます。ここでは、なぜこの形式なのか、そしてチームの役に立つように記入するにはどうすればよいかを説明します。",
+    "scene": {
+      "title": "シーンと一緒に作りました",
+      "text": "この形式は無作為に選んだものではありません。毎スプリット、スカウトと募集を行っている、<b>Game Changers シーンの経験豊富なプレイヤー、コーチ、マネージャー</b>と一緒に設計しました。",
+      "why": "彼らの意見は明確でした。長いエージェントの一覧では、チームには何も伝わりません。知りたいのは、明日の試合で使えるエージェント、少し練習が必要なエージェント、そしてチームのために習得する用意があるエージェントです。",
+      "credit": "このティアリストは、ZennIT Orange GCのIGLである<b>LittleBigSpy</b>さんをはじめとする方々と作り上げました。シーンでの経験が、エージェントの分類方法を決める助けになりました。"
+    },
+    "tiers": {
+      "title": "3つの段階",
+      "confident": "今すぐ公式戦で使えるエージェントです。それに付随するラインナップ、ユーティリティ、習慣も身についています。",
+      "improve": "すでに使い方は知っているものの、試合で安心して使えるようになるには練習が必要なエージェントです。",
+      "canLearn": "まだ使っていないものの、チームが必要とするなら習得する意思があるエージェントです。",
+      "aside": "外に残したエージェントは、投稿に表示されません。「苦手」の段はありません。推測よりも、空欄のほうが多くを語ります。"
+    },
+    "highlight": {
+      "title": "使えるエージェントを際立たせましょう",
+      "text": "ティアリストは、<b>使い方を知っているエージェントを際立たせる</b>ためのものです。ゲームのすべてのエージェントを順位付けしたり、メタについての意見を述べたりするものではありません。",
+      "honest": "正直に記入してください。チームはトライアウトで確認します。網羅的なものより、短くて正確なティアリストのほうが価値があります。",
+      "notMeta": "現在のパッチでのエージェントの強さではなく、各エージェントでのあなた自身のレベルを記入してください。",
+      "filter": "上の2段は、サイトと Discord の「使える」フィルターに使われ、あなたの投稿がどの検索に表示されるかを決めます。",
+      "example": "例：コントローラーとセンチネルのプレイヤーで、メインのプールは得意、いくつかのイニシエーターは磨いている段階。"
+    }
+  }
+}

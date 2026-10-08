@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "GC Scouting",
+    "description": "GC Stats와 연동된 Valorant Game Changers 씬의 LFT, LFP, LFS, LFO 게시글."
+  },
+  "nav": {
+    "home": "홈",
+    "posts": "게시글",
+    "newPost": "게시글 작성",
+    "login": "GC Stats로 로그인",
+    "loginShort": "로그인",
+    "menu": "메뉴",
+    "language": "언어"
+  },
+  "home": {
+    "hero": {
+      "title": "팀을 찾으세요. <accent>로스터를 완성하세요.</accent>",
+      "subtitle": "Valorant Game Changers 씬의 LFT, LFP, LFS, LFO 게시글을 한곳에서 확인하세요. 역할, 랭크, 언어, 요원으로 필터링하고, GC Stats 프로필로 2분 만에 게시글을 올릴 수 있습니다.",
+      "ctaBrowse": "게시글 둘러보기",
+      "ctaPost": "게시글 작성",
+      "demo": {
+        "lfp": "OQ Playoffs에 참가 중인 스페인 로스터가 샷콜이 가능한 컨트롤러와 서브로 활동할 플래시 이니시에이터를 찾고 있습니다. 연습은 월요일부터 목요일까지, 오후 8시부터 11시까지입니다.",
+        "lfs": "저희 팀은 다음 스플릿을 위한 코치와 애널리스트를 찾고 있습니다. 유급 포지션이며, 주 3회 저녁 활동, VOD 리뷰 포함입니다."
+      }
+    },
+    "types": {
+      "heading": "필요에 맞는 게시글 유형",
+      "sub": "당신이 찾고 있거나, 누군가가 당신을 찾고 있습니다. 모든 게시글에는 유형이 있어, 필요한 것만 볼 수 있습니다.",
+      "lft": {
+        "label": "Looking For Team",
+        "desc": "팀을 찾는 플레이어."
+      },
+      "lfp": {
+        "label": "Looking For Player",
+        "desc": "플레이어를 모집하는 팀."
+      },
+      "lfs": {
+        "label": "Looking For Staff",
+        "desc": "코치, 애널리스트 또는 매니저를 찾는 팀."
+      },
+      "lfo": {
+        "label": "Looking For Organization",
+        "desc": "조직을 찾는 로스터."
+      },
+      "lfst": {
+        "label": "Staff For Team",
+        "desc": "팀에 합류할 수 있는 코치 또는 애널리스트."
+      }
+    },
+    "how": {
+      "heading": "이용 방법",
+      "step1": {
+        "title": "GC Stats로 로그인",
+        "body": "GC Stats 프로필이 연동되어 있으면 대회 기록이 자동으로 추가됩니다. 연동되어 있지 않다면 몇 번의 클릭으로 찾을 수 있습니다."
+      },
+      "step2": {
+        "title": "게시글 작성",
+        "body": "역할, 랭크, 언어, 지역, 경력, 그리고 요원 티어리스트. 모든 항목이 구조화되어 있어 따로 글을 쓸 필요가 없습니다."
+      },
+      "step3": {
+        "title": "어디서든 노출",
+        "body": "게시글은 사이트에 공개되고, 구독 중인 Discord 서버로 전송되며, Twitter에도 공유됩니다."
+      },
+      "freshTitle": "항상 최신 상태",
+      "freshBody": "게시글은 10일 후 만료됩니다. 7일째에 알려드리며, 클릭 한 번으로 갱신할 수 있습니다."
+    },
+    "tierlist": {
+      "heading": "한눈에 읽히는 요원 티어리스트",
+      "body": "더 이상 \"다 조금씩 합니다\"는 필요 없습니다. 모든 플레이어가 요원을 5단계로 분류하고, 팀은 요원으로 바로 필터링합니다.",
+      "filterHint": "필터 예시: \"Viper 가능\"은 Viper가 상위 두 단계에 있다는 뜻입니다."
+    },
+    "verified": {
+      "heading": "GC Stats와 연동된 프로필",
+      "body": "게시글을 Game Changers 대회를 추적하는 GC Stats 프로필과 연결하면 참가한 대회, 팀, 성적 같은 이력이 표시됩니다. 운영진이 연동을 승인하기 전까지는 게시글에 그 사실이 표시됩니다.",
+      "verified": "인증된 프로필",
+      "verifiedHint": "연동 승인 완료, GC Stats 기록이 표시됩니다.",
+      "pending": "미인증",
+      "pendingHint": "운영진의 승인을 기다리는 연동 요청입니다.",
+      "none": "GC Stats 프로필 없음",
+      "noneHint": "아직 대회 기록이 없으며, 게시글은 평소처럼 표시됩니다."
+    },
+    "discord": {
+      "eyebrow": "Discord 봇",
+      "heading": "게시글을 서버로 바로 전달",
+      "body": "Discord 서버에 봇을 추가하고 받을 내용을 선택하세요. 조건에 맞는 새 게시글이 티어리스트와 게시글 링크와 함께 자동으로 전송됩니다.",
+      "cta": "봇 추가",
+      "steps": {
+        "add": {
+          "title": "봇 추가",
+          "body": "클릭 한 번으로 서버에 초대하세요. 선택한 채널에 글을 쓰는 권한만 필요합니다."
+        },
+        "channel": {
+          "title": "채널 하나 이상 선택",
+          "body": "EU LFT용 채널, 스태프용 채널처럼 채널마다 따로 설정할 수 있습니다."
+        },
+        "filters": {
+          "title": "받을 내용 선택",
+          "body": "게시글 유형, 지역, 역할, 랭크, 언어, 요원, 경력, 가능 시간. 사이트와 동일한 필터입니다."
+        },
+        "receive": {
+          "title": "게시글 실시간 수신",
+          "body": "새 게시글과 갱신된 게시글이 공개되는 즉시 중복 없이 전송됩니다."
+        }
+      },
+      "preview": {
+        "channel": "lft-eu",
+        "filtersLabel": "#{channel} 설정:",
+        "filterType": "LFT",
+        "filterRole": "Controller",
+        "filterRank": "Ascendant 이상",
+        "app": "APP",
+        "time": "오늘 오후 9:04",
+        "published": "2시간 전 게시됨",
+        "rank": "랭크",
+        "peak": "최고 {rank}",
+        "roles": "역할",
+        "agents": "요원",
+        "experience": "경력",
+        "languages": "언어",
+        "rhythm": "활동량",
+        "rhythmValue": "{days}일간 주 {hours}시간",
+        "tierlistAlt": "{name}의 요원 티어리스트"
+      }
+    },
+    "twitter": {
+      "name": "Twitter",
+      "title": "Twitter에서 팔로우하세요",
+      "body": "게시글은 티어리스트 이미지와 함께 저희 계정에 공유되어 씬 전체에 닿습니다.",
+      "cta": "팔로우"
+    },
+    "cta": {
+      "title": "스카우팅을 시작할 준비가 되셨나요?",
+      "body": "필터는 브라우저에 저장되며, 둘러보는 데 계정이 필요하지 않습니다.",
+      "button": "게시글 둘러보기"
+    }
+  },
+  "post": {
+    "verified": "인증됨",
+    "pending": "미인증",
+    "igl": "IGL",
+    "tournaments": "{count, plural, one {대회 #회} other {대회 #회}}",
+    "lookingFor": "구인",
+    "anyRole": "모든 역할",
+    "view": "게시글 보기",
+    "confident": "자신 있는 요원"
+  },
+  "duration": {
+    "months": "{count, plural, one {#개월} other {#개월}}",
+    "years": "{count, plural, one {#년} other {#년}}"
+  },
+  "compensation": {
+    "paid": "유급",
+    "free": "무급"
+  },
+  "lan": {
+    "lan": "LAN 가능",
+    "online": "온라인만 가능"
+  },
+  "preferences": {
+    "title": "환경설정",
+    "theme": "테마",
+    "themes": {
+      "system": "자동",
+      "light": "라이트",
+      "dark": "다크"
+    },
+    "timezone": "시간대",
+    "timezoneAuto": "자동 ({timezone})",
+    "timezoneHint": "가능 시간을 표시하고 시간대별로 검색하는 데 사용됩니다.",
+    "search": "검색",
+    "noOption": "일치하는 항목 없음"
+  },
+  "roles": {
+    "duelist": "Duelist",
+    "initiator_reveal": "Ini Reveal",
+    "initiator_flash": "Ini Flash",
+    "controller": "Controller",
+    "sentinel": "Sentinel",
+    "flex": "Flex"
+  },
+  "agentClasses": {
+    "duelist": "Duelist",
+    "initiator": "Initiator",
+    "controller": "Controller",
+    "sentinel": "Sentinel"
+  },
+  "tiers": {
+    "confident": "자신 있는 요원",
+    "improve": "개선 필요",
+    "canLearn": "배울 수 있음"
+  },
+  "footer": {
+    "tagline": "GC Stats 생태계의 Valorant 스카우팅 플랫폼.",
+    "product": "서비스",
+    "postTypes": "게시글 유형",
+    "resources": "자료",
+    "legal": "법적 고지",
+    "privacy": "개인정보 처리방침",
+    "copyright": "© {year} GC Scouting - v{version}",
+    "madeBy": "윤리적이고 포용적이며 공정한 e스포츠를 위한 비영리 단체 <link>Osthelia</link>가 만들었습니다."
+  },
+  "levels": {
+    "cash_cup": "Open Qualifiers",
+    "playoffs": "OQ Playoffs",
+    "main_event": "메인 이벤트"
+  },
+  "igl": {
+    "igl": "IGL",
+    "co_igl": "Co-IGL"
+  },
+  "rosterSpots": {
+    "player": "플레이어",
+    "sub": "서브"
+  },
+  "staffRoles": {
+    "coach": "코치",
+    "assistant_coach": "어시스턴트 코치",
+    "performance_coach": "퍼포먼스 코치",
+    "mental_coach": "멘탈 코치",
+    "analyst": "애널리스트",
+    "manager": "매니저"
+  },
+  "regions": {
+    "eu": "유럽",
+    "na": "북미",
+    "latam": "라틴 아메리카",
+    "br": "브라질",
+    "apac": "아시아 태평양",
+    "kr": "한국",
+    "jp": "일본",
+    "oce": "오세아니아",
+    "mena": "중동 및 북아프리카",
+    "cn": "중국"
+  },
+  "posts": {
+    "count": "{count, plural, =0 {게시글 없음} one {게시글 #개} other {게시글 #개}}",
+    "sortLabel": "정렬",
+    "sort": {
+      "recent": "최신순",
+      "rank": "랭크 높은 순",
+      "experience": "경력 많은 순",
+      "availability": "가능 시간 많은 순"
+    },
+    "filters": "필터",
+    "reset": "초기화",
+    "resetAll": "필터 초기화",
+    "apply": "결과 보기",
+    "any": "전체",
+    "selected": "{count}개 선택됨",
+    "search": "검색",
+    "noOption": "일치하는 항목 없음",
+    "removeFilter": "필터 제거",
+    "group": {
+      "region": "지역",
+      "language": "언어",
+      "spot": "희망 포지션",
+      "spotWanted": "모집 포지션",
+      "role": "역할",
+      "staffRole": "스태프 역할",
+      "compensation": "계약 조건",
+      "lan": "LAN",
+      "rank": "랭크",
+      "experience": "경력",
+      "agents": "가능 요원",
+      "rhythm": "활동량",
+      "availability": "가능 시간",
+      "age": "연령"
+    },
+    "rankFrom": "최소",
+    "rankTo": "최대",
+    "minDuration": "{duration} 이상",
+    "experienceHint": "선택한 단계 중 하나, 또는 아무 단계에서 활동한 기간입니다.",
+    "minHours": "{count, plural, =0 {전체} other {주 #시간 이상}}",
+    "minDays": "{count, plural, =0 {전체} one {주 #일 이상} other {주 #일 이상}}",
+    "rhythmHours": "시간",
+    "rhythmDays": "요일",
+    "rhythmHint": "팀에 할애하는 주당 시간과 일수입니다.",
+    "agentsHint": "티어리스트 상위 두 단계에 있는 요원입니다.",
+    "agentsMax": "최대 요원 5명",
+    "slot": {
+      "days": "요일",
+      "from": "시작",
+      "to": "종료",
+      "everyDay": "매일",
+      "mode": "검색 방식",
+      "simple": "간단",
+      "advanced": "요일별",
+      "notSearched": "검색 안 함",
+      "hint": "플레이 가능한 시간입니다. 30분 이상 겹치는 게시글이 일치합니다.",
+      "hintAdvanced": "요일을 고르고 각 요일의 시간을 설정하세요. 30분 이상 겹치는 게시글이 일치합니다.",
+      "hintTimezone": "{timezone} 기준 시간입니다. 30분 이상 겹치는 게시글이 일치합니다."
+    },
+    "empty": "이 필터와 일치하는 게시글이 없습니다.",
+    "emptyHint": "필터를 하나 제거해 보거나 나중에 다시 확인하세요. 새 게시글이 매일 올라옵니다.",
+    "loading": "게시글 불러오는 중",
+    "close": "닫기"
+  },
+  "postPage": {
+    "back": "{code} 게시글 전체",
+    "expired": "이 게시글은 만료되었습니다",
+    "expiredHint": "더 이상 목록에 표시되지 않습니다. 작성자는 언제든지 갱신할 수 있습니다.",
+    "closed": "이 게시글은 마감되었습니다",
+    "closedHint": "작성자가 더 이상 찾고 있지 않습니다.",
+    "published": "{date} 게시",
+    "renewed": "{date} 갱신",
+    "expires": "{date} 만료",
+    "about": "소개",
+    "tierlist": "요원 티어리스트",
+    "availability": "가능 시간",
+    "profile": "프로필",
+    "similar": "비슷한 게시글",
+    "seeAll": "전체 보기",
+    "region": "지역",
+    "country": "국가",
+    "languages": "언어",
+    "roles": "역할",
+    "rosterSpot": "희망 포지션",
+    "rosterSpotWanted": "모집 포지션",
+    "playersWanted": "{count, plural, one {플레이어 #명} other {플레이어 #명}}",
+    "subsWanted": "{count, plural, one {서브 #명} other {서브 #명}}",
+    "lookingFor": "구인",
+    "staffRoles": "스태프 역할",
+    "igl": "샷콜",
+    "rank": "랭크",
+    "peak": "최고 {rank}",
+    "rankWanted": "희망 랭크",
+    "tracker": "Tracker.gg",
+    "compensation": "계약 조건",
+    "lan": "LAN",
+    "experience": "경력",
+    "experienceWanted": "희망 경력",
+    "noExperience": "아직 대회 기록 없음",
+    "rhythm": "활동량",
+    "rhythmValue": "주 {hours, number}시간, {days, plural, one {#일} other {#일}}",
+    "contact": "연락처",
+    "copyDiscord": "Discord 사용자 이름 복사",
+    "copyDiscordId": "Discord ID 복사",
+    "discordProfile": "Discord",
+    "discordServer": "서버 참가",
+    "copied": "복사됨",
+    "share": "링크 복사",
+    "linkCopied": "링크가 복사되었습니다",
+    "twitter": "X 프로필",
+    "email": "이메일 보내기",
+    "bestResult": "최고 성적",
+    "viewProfile": "GC Stats에서 보기",
+    "pendingNote": "이 GC Stats 프로필 연동은 운영진의 승인을 기다리고 있습니다.",
+    "noProfile": "이 게시글에 연동된 GC Stats 프로필이 없습니다.",
+    "yourTime": "내 시간",
+    "authorTime": "작성자 시간",
+    "timezoneNote": "{timezone} 기준 시간",
+    "noAvailability": "등록된 가능 시간이 없습니다.",
+    "loading": "게시글 불러오는 중",
+    "gcsHistory": "GC Stats 기록",
+    "latestTeams": "최근 팀",
+    "latestTournaments": "최근 대회",
+    "present": "현재",
+    "unknownDate": "?",
+    "noTournaments": "GC Stats에 등록된 대회가 없습니다.",
+    "wins": "{n}승",
+    "losses": "{n}패",
+    "recordTitle": "{wins, plural, one {#승} other {#승}}, {losses, plural, one {#패} other {#패}}",
+    "place": "{n, selectordinal, other {#위}}",
+    "top": "상위 {n}",
+    "viewTeamProfile": "GC Stats의 팀",
+    "teamRoles": {
+      "player": "플레이어",
+      "player-igl": "플레이어, IGL",
+      "sub": "서브",
+      "coach": "코치",
+      "assistant coach": "어시스턴트 코치",
+      "performance coach": "퍼포먼스 코치",
+      "analyst": "애널리스트",
+      "manager": "매니저"
+    },
+    "syncedAt": "{date} 업데이트",
+    "gcsPending": {
+      "loading": "GC Stats 기록을 가져오는 중…",
+      "timeout": "GC Stats 기록을 아직 사용할 수 없습니다. 몇 분 후에 다시 확인해 주세요."
+    },
+    "gcsRefresh": {
+      "label": "새로고침",
+      "pending": "새로고침 중…",
+      "done": "새로고침됨",
+      "errors": {
+        "invalid": "잘못된 게시글입니다.",
+        "auth": "기록을 새로고침하려면 로그인하세요.",
+        "notFound": "이 게시글은 더 이상 존재하지 않습니다.",
+        "forbidden": "게시글 작성자만 새로고침할 수 있습니다.",
+        "cooldown": "{minutes, plural, one {#분 후에 다시 시도하세요.} other {#분 후에 다시 시도하세요.}}",
+        "noProfile": "이 게시글에 연동된 GC Stats 프로필이나 팀이 없습니다.",
+        "notConfigured": "GC Stats 연결이 설정되지 않았습니다.",
+        "failed": "GC Stats가 응답하지 않습니다. 나중에 다시 시도하세요."
+      }
+    },
+    "agentContact": "에이전트를 통해 연락",
+    "staffEdit": "수정 (운영)",
+    "ageGroup": "연령",
+    "minorsAccepted": "미성년자"
+  },
+  "errors": {
+    "notFound": {
+      "title": "페이지를 찾을 수 없습니다",
+      "body": "이 페이지가 존재하지 않거나 게시글이 삭제되었습니다.",
+      "back": "게시글 둘러보기"
+    },
+    "serverError": {
+      "title": "문제가 발생했습니다",
+      "body": "이 페이지를 불러오지 못했습니다. 잠시 후 다시 시도하세요.",
+      "retry": "다시 시도",
+      "back": "게시글 둘러보기"
+    }
+  },
+  "auth": {
+    "account": "내 계정",
+    "logout": "로그아웃",
+    "profile": {
+      "verified": "인증된 GC Stats 프로필",
+      "pending": "인증 대기 중인 GC Stats 프로필",
+      "none": "연동된 GC Stats 프로필 없음"
+    },
+    "error": {
+      "title": "로그인 실패",
+      "retry": "다시 시도",
+      "home": "홈으로 돌아가기",
+      "reasons": {
+        "denied": "GC Stats에서 접근을 거부했습니다. 게시글을 작성하려면 GC Stats로 로그인해야 합니다.",
+        "state": "이 로그인 시도가 만료되었거나 다른 탭에서 시작되었습니다. 처음부터 다시 시작해 주세요.",
+        "exchange": "GC Stats에서 로그인을 확인하지 못했습니다. 잠시 후 다시 시도하세요.",
+        "provider": "로그인 중 GC Stats에서 오류가 발생했습니다. 잠시 후 다시 시도하세요.",
+        "config": "이 사이트에는 GC Stats 로그인이 아직 설정되지 않았습니다."
+      }
+    },
+    "settings": "계정 설정",
+    "gcsAccount": "내 GC Stats 계정",
+    "actAs": "활성 프로필",
+    "yourself": "{name} (본인)",
+    "switchFailed": "이 프로필은 더 이상 사용할 수 없습니다. 페이지를 새로고침하세요.",
+    "actingAs": "{name}(으)로 활동 중입니다.",
+    "backToSelf": "내 프로필로 돌아가기",
+    "myPosts": "내 게시글",
+    "messages": "메시지",
+    "admin": "관리자"
+  },
+  "newPost": {
+    "title": "새 게시글",
+    "intro": {
+      "lft": "팀에게 당신을 소개하세요: 역할, 랭크, 요원, 플레이 가능 시간.",
+      "lfp": "팀이 찾는 플레이어와 연습 시간을 설명하세요.",
+      "lfs": "팀이 찾는 스태프(코치, 애널리스트, 매니저)를 설명하세요.",
+      "lfo": "팀을 찾는 조직에 로스터를 소개하세요.",
+      "lfst": "코치, 애널리스트 또는 매니저로서 팀에 무엇을 제공할 수 있는지 보여주세요."
+    },
+    "login": {
+      "title": "게시글을 작성하려면 로그인하세요",
+      "text": "게시글은 GC Stats 계정에 연결되어, 팀과 플레이어가 누구와 이야기하는지 알 수 있습니다. 프로필이 연동되어 있으면 대회 기록이 표시됩니다.",
+      "cta": "GC Stats로 로그인"
+    },
+    "activeExists": {
+      "title": "이미 진행 중인 {code} 게시글이 있습니다",
+      "text": "한 번에 하나만 게시할 수 있습니다. 새 게시글을 작성하려면 기존 게시글을 마감하거나 만료될 때까지 기다리세요."
+    },
+    "viewExisting": "내 게시글 보기",
+    "sections": {
+      "identity": "정보",
+      "identityHint": "게시글에 표시되는 방식입니다.",
+      "identityTeamHint": "게시글에 팀이 표시되는 방식입니다.",
+      "profile": {
+        "lft": "내 프로필",
+        "lfp": "모집 플레이어",
+        "lfs": "모집 스태프",
+        "lfo": "내 로스터",
+        "lfst": "내 프로필"
+      },
+      "tierList": "요원 티어리스트",
+      "tierListHint": "마스터한 요원부터 배울 수 있는 요원까지, 플레이할 줄 아는 요원을 강조하세요. 처음 두 행은 \"가능 요원\" 필터에 사용됩니다.",
+      "availability": "가능 시간",
+      "availabilityHint": "평소의 주간 시간대이며, 내 시간대 기준입니다. 방문자에게는 각자의 시간으로 변환되어 표시됩니다.",
+      "availabilityTeamHint": "연습 시간대이며, 내 시간대 기준입니다. 방문자에게는 각자의 시간으로 변환되어 표시됩니다.",
+      "rhythm": "활동량",
+      "rhythmHint": "가능 시간 안에서 매주 팀에 할애할 수 있는 최대 시간입니다.",
+      "rhythmTeamHint": "연습 시간대 안에서 팀이 매주 요구하는 시간입니다.",
+      "about": "소개 및 연락처",
+      "aboutHint": "눈에 띄는 몇 마디와 연락 방법입니다.",
+      "reminders": "만료 알림",
+      "remindersHint": "게시글은 10일 동안 게시됩니다. 7일 후에 클릭 한 번으로 갱신할 수 있는 링크가 담긴 알림을 보내드립니다.",
+      "remindersDelegatedHint": "게시글은 10일 동안 게시됩니다. 알림은 프로필 소유자의 계정 채널로 전송됩니다.",
+      "tweet": "X에 게시",
+      "tweetHint": "모든 게시글은 GC Scouting X 계정에 공유됩니다. 직접 게시할 수도 있으며, 그 경우 저희가 리트윗합니다.",
+      "moderation": "수정 사유",
+      "moderationHint": "게시글 작성자에게 전달되며 운영 기록에 보관됩니다."
+    },
+    "fields": {
+      "displayName": "닉네임",
+      "teamName": "팀 이름",
+      "region": "지역",
+      "country": "국가",
+      "noCountry": "지정 안 함",
+      "languages": "사용 언어",
+      "languagesMax": "최대 {max}개 언어",
+      "choose": "선택",
+      "rosterSpot": "희망 포지션",
+      "rosterSpotWanted": "모집 포지션",
+      "rosterSpotHint": "기본값은 플레이어입니다. 후보 역할이면 서브를 선택하세요.",
+      "playersWanted": "모집 플레이어",
+      "subsWanted": "모집 서브",
+      "wantedHint": "로스터가 찾는 주전과 서브의 수입니다.",
+      "playersCount": "{count, plural, =0 {플레이어 없음} one {플레이어 #명} other {플레이어 #명}}",
+      "subsCount": "{count, plural, =0 {서브 없음} one {서브 #명} other {서브 #명}}",
+      "roles": "역할",
+      "rolesWanted": "희망 역할",
+      "flexHint": "Flex는 검색에서 모든 역할과 일치합니다.",
+      "igl": "샷콜",
+      "iglWanted": "모집 샷콜러",
+      "staffRoles": "포지션",
+      "staffRolesWanted": "모집 포지션",
+      "rankCurrent": "현재 랭크",
+      "rankPeak": "최고 랭크",
+      "rankMin": "최소 랭크",
+      "rankMax": "최대 랭크",
+      "rankRangeHint": "찾는 플레이어의 랭크 범위입니다.",
+      "compensation": "희망 계약 조건",
+      "compensationHint": "유급 계약을 찾으면 유급, 자원봉사 프로젝트도 괜찮으면 무급을 선택하세요.",
+      "compensationOffered": "제공 계약 조건",
+      "compensationOfferedHint": "해당 포지션에 급여나 보상이 있으면 유급, 없으면 무급을 선택하세요.",
+      "lan": "LAN 이벤트",
+      "lanHint": "LAN 이벤트에 참가하기 위해 이동할 수 있는지 여부입니다.",
+      "lanTeamHint": "팀이 LAN 이벤트에 참가하기 위해 이동할 계획이 있는지 여부입니다.",
+      "experience": "대회 경력",
+      "experienceHint": "각 단계에서 활동한 기간입니다. 참가하지 않은 단계는 없음으로 두세요.",
+      "experienceWanted": "희망 경력",
+      "experienceWantedHint": "각 단계에서 활동한 최소 기간입니다. 상관없으면 없음으로 두세요.",
+      "notPlayed": "없음",
+      "notSpecified": "지정 안 함",
+      "rhythmHours": "주당 시간",
+      "rhythmDays": "주당 일수",
+      "hoursPerWeek": "{count}시간",
+      "daysPerWeek": "{count, plural, one {#일} other {#일}}",
+      "rhythmMax": "가능 시간은 {days, plural, one {#일} other {#일}}에 걸쳐 {hours}시간이며, 활동량이 이를 넘을 수 없습니다.",
+      "rhythmNoAvailability": "먼저 가능 시간을 추가하세요. 활동량은 가능 시간을 넘을 수 없습니다.",
+      "timezone": "시간대",
+      "description": "소개",
+      "descriptionPlaceholder": {
+        "player": "목표, 플레이 스타일, 팀에 바라는 점...",
+        "team": "프로젝트, 목표, 플레이어에게 기대하는 점..."
+      },
+      "contact": "연락처 (하나 이상)",
+      "discord": "Discord ID",
+      "discordPlaceholder": "123456789012345678",
+      "discordUseLinked": "연동된 계정 사용",
+      "discordInvite": "Discord 서버 초대 링크",
+      "discordInvitePlaceholder": "https://discord.gg/...",
+      "twitter": "X (Twitter)",
+      "twitterPlaceholder": "핸들",
+      "email": "이메일",
+      "emailPlaceholder": "you@example.com",
+      "contactHint": "게시글에 공개로 표시됩니다.",
+      "notifyEmail": "이메일로",
+      "notifyDiscord": "Discord 개인 메시지로",
+      "noEmail": "GC Stats 계정에 인증된 이메일이 없습니다",
+      "discordLinked": "GC Stats에 연동된 Discord 계정",
+      "noDiscord": "GC Stats에 연동된 Discord 계정이 없습니다",
+      "noReminderWarning": "알림이 없으면 게시글은 10일 후 알림 없이 만료됩니다.",
+      "iglHint": "두 역할 모두 가능하면 둘 다 선택하세요.",
+      "iglWantedHint": "둘 중 어느 쪽이든 괜찮으면 둘 다 선택하세요.",
+      "gcsTeam": "GC Stats 팀 페이지",
+      "gcsTeamPlaceholder": "https://gc-stats.app/en/team/...",
+      "gcsTeamHint": "팀이 이미 Game Changers 대회에 참가했다면 GC Stats 페이지 링크를 붙여넣으세요. GC Stats 프로필이 연동되어 있고 현재 로스터에 포함되어 있어야 합니다.",
+      "agent": "에이전트를 통해 연락",
+      "agentHint": "아래 연락처는 에이전트에게 연결됩니다.",
+      "agentName": "에이전트 이름",
+      "agentAgency": "에이전시",
+      "agentAgencyPlaceholder": "비어 있으면 독립",
+      "contactAgent": "에이전트 연락처 (하나 이상)",
+      "contactAgentHint": "에이전트 이름과 함께 게시글에 공개로 표시됩니다.",
+      "chatEnabled": "개인 메시지 허용",
+      "chatEnabledHint": "로그인한 방문자가 게시글에서 GC Scouting을 통해 메시지를 보낼 수 있습니다.",
+      "contactChatHint": "개인 메시지를 켜면 이 연락처는 선택 사항입니다.",
+      "tweetBySite": "GC Scouting이 게시",
+      "tweetBySiteHint": "저희 X 계정에 게시하며, @를 입력하면 함께 표시합니다.",
+      "tweetByAuthor": "직접 게시",
+      "tweetByAuthorHint": "게시글이 공개되면 바로 올릴 수 있는 트윗을 드립니다. 트윗 링크를 보내주시면 리트윗합니다.",
+      "tweetByLocked": "이 게시글은 이미 X에 올라가 있어 이 선택을 더 이상 변경할 수 없습니다.",
+      "moderationReason": "사유",
+      "moderationReasonPlaceholder": "예: 잘못된 Discord 링크 삭제, 주제에서 벗어난 소개글 축약",
+      "ageGroup": "연령",
+      "ageGroupHint": "게시글에 표시됩니다. 다시 클릭하면 제외됩니다.",
+      "tracker": "Tracker.gg 프로필",
+      "trackerHint": "tracker.gg Valorant 프로필 링크를 붙여넣으세요. 계정은 필요하지 않습니다.",
+      "trackerPlaceholder": "https://tracker.gg/valorant/profile/riot/...",
+      "minorsAccepted": "미성년자",
+      "minorsAcceptedHint": "미성년자 플레이어는 자신을 받아주는 게시글만 필터링할 수 있습니다."
+    },
+    "errors": {
+      "required": "필수 입력 항목입니다.",
+      "invalid": "잘못된 값입니다.",
+      "tooLong": "최대 {max}자입니다.",
+      "tooMany": "최대 {max}개입니다.",
+      "peakBelowCurrent": "최고 랭크는 현재 랭크보다 낮을 수 없습니다.",
+      "rangeOrder": "최대 랭크는 최소 랭크보다 높거나 같아야 합니다.",
+      "wantedEmpty": "플레이어 또는 서브를 한 명 이상 찾아야 합니다.",
+      "tierEmpty": "요원을 하나 이상 분류하세요.",
+      "slotInvalid": "시간대 중 하나가 잘못되었습니다.",
+      "slotOverlap": "같은 요일의 두 시간대가 겹칩니다.",
+      "rhythmAboveAvailability": "가능 시간보다 큽니다 (최대 {max}).",
+      "contactRequired": "연락 방법을 하나 이상 입력하세요.",
+      "discordInvalid": "잘못된 Discord ID입니다 (17~20자리 숫자). 사용자 이름은 여기서 사용할 수 없습니다. 아래에서 ID를 찾는 방법을 확인하세요.",
+      "discordInviteInvalid": "잘못된 초대 링크입니다 (discord.gg/code 또는 discord.com/invite/code).",
+      "twitterInvalid": "잘못된 핸들입니다 (최대 15자: 영문자, 숫자, 밑줄).",
+      "emailInvalid": "잘못된 이메일 주소입니다.",
+      "notifyUnavailable": "이 채널은 내 계정에서 사용할 수 없습니다.",
+      "gcsTeamInvalid": "잘못된 링크입니다. GC Stats 팀 페이지 주소를 붙여넣으세요.",
+      "gcsTeamNoProfile": "먼저 GC Stats 프로필을 연동하세요 (페이지 상단). 팀 구성원만 팀 페이지를 추가할 수 있습니다.",
+      "gcsTeamNotMember": "내 GC Stats 프로필이 이 팀의 현재 로스터에 없습니다.",
+      "gcsTeamCheckFailed": "GC Stats에서 팀을 확인하지 못했습니다. 잠시 후 다시 시도하세요.",
+      "trackerInvalid": "tracker.gg Valorant 프로필 링크가 아닙니다.",
+      "reasonLength": "사유는 {min}자 이상 {max}자 이하여야 합니다.",
+      "invalidCharacters": "제어 문자 또는 보이지 않는 문자를 제거하세요."
+    },
+    "formErrors": {
+      "auth": "세션이 만료되었습니다. 게시하려면 다시 로그인하세요.",
+      "activeExists": "이미 진행 중인 {code} 게시글이 있습니다.",
+      "expiredExists": "이전 {code} 게시글이 만료되었습니다. 교체하려면 페이지를 새로고침하세요.",
+      "limitReached": "이미 게시 중인 {code} 게시글이 {max}개 있습니다. 새로 게시하려면 그중 하나를 마감하세요.",
+      "server": "게시글을 게시하지 못했습니다. 잠시 후 다시 시도하세요.",
+      "notFound": "이 게시글은 더 이상 존재하지 않거나 내 게시글이 아닙니다.",
+      "notEditable": "이 게시글은 더 이상 수정할 수 없습니다.",
+      "sanctioned": "GC Stats 계정이 제재를 받고 있어(채팅 금지, 정지 또는 영구 차단) 현재 게시글을 작성하거나 수정할 수 없습니다.",
+      "rateLimited": "게시 또는 수정을 너무 자주 하고 있습니다. 잠시 기다린 후 다시 시도하세요.",
+      "sanctionedUntil": "GC Stats 계정이 {date}까지 제재를 받고 있어(채팅 금지, 정지 또는 영구 차단) 그때까지 게시글을 작성하거나 수정할 수 없습니다."
+    },
+    "errorCount": "{count, plural, one {수정할 항목 #개} other {수정할 항목 #개}}",
+    "replacesExpired": "만료된 {code} 게시글은 마감됩니다.",
+    "publish": "게시",
+    "publishing": "게시 중...",
+    "tierList": {
+      "hint": "플레이하는 요원을 행으로 드래그하거나, 요원을 클릭한 뒤 행을 클릭하세요. 제외한 요원은 표시되지 않습니다.",
+      "pickedHint": "이제 요원을 넣을 행을 클릭하세요.",
+      "progress": "{count, plural, =0 {분류된 요원 없음} one {분류된 요원 #명} other {분류된 요원 #명}}",
+      "reset": "초기화",
+      "poolEmpty": "모든 요원이 분류되었습니다.",
+      "guide": "티어리스트 이해하기",
+      "guideTooltip": "왜 이 세 단계인지, 어떻게 채우는지 설명합니다. 새 탭에서 열립니다."
+    },
+    "availability": {
+      "hint": "시간대를 클릭하거나 드래그하여 추가하고, 다시 하면 제거됩니다. 자정을 넘겨 플레이하나요? 다음 날 시작 부분에서 이어서 선택하세요.",
+      "copyAll": "모든 요일에 복사",
+      "clearDay": "이 요일 비우기",
+      "clearAll": "전체 비우기",
+      "summary": "주 {hours}시간, {days, plural, one {#일} other {#일}}"
+    },
+    "typeTabs": "게시글 유형",
+    "save": "저장",
+    "saving": "저장 중...",
+    "cancel": "취소",
+    "delegatedNoProfile": "{name}에게 연동된 GC Stats 프로필이 없습니다. {name}만 본인 계정에서 연동할 수 있습니다.",
+    "editTitle": "게시글 수정",
+    "editIntro": "변경 사항은 즉시 반영됩니다. 만료일은 그대로 유지됩니다.",
+    "backToPost": "게시글로 돌아가기",
+    "closedTitle": "이 게시글은 마감되었습니다",
+    "closedText": "마감된 게시글은 더 이상 수정할 수 없습니다. 다시 찾고 있다면 새로 작성하세요.",
+    "loading": "양식 불러오는 중",
+    "moderationTitle": "운영 수정",
+    "moderationText": "{name}의 게시글을 수정하고 있습니다. 입력한 사유가 이메일과 Discord 메시지로 전달됩니다.",
+    "discordHelp": {
+      "toggle": "내 Discord ID는 어떻게 찾나요?",
+      "step1": "Discord에서 사용자 설정, 고급을 열고 개발자 모드를 켜세요.",
+      "step2": "아바타 또는 이름을 오른쪽 클릭하세요 (모바일에서는 길게 누르기).",
+      "step3": "사용자 ID 복사를 클릭한 뒤 여기에 붙여넣으세요.",
+      "menuProfile": "프로필",
+      "menuMention": "멘션",
+      "menuCopyId": "사용자 ID 복사"
+    }
+  },
+  "playerLink": {
+    "question": "계정에 연동된 GC Stats 프로필이 없습니다. Game Changers 대회에 참가한 적이 있나요?",
+    "questionTeam": "계정에 연동된 GC Stats 프로필이 없습니다. 팀의 GC Stats 페이지를 추가하려면 먼저 프로필을 연동하세요. Game Changers 대회에 참가한 적이 있나요?",
+    "declined": "괜찮습니다. 게시글은 대회 기록 없이 게시됩니다.",
+    "declinedTeam": "괜찮습니다. 게시글은 팀의 GC Stats 페이지 없이 게시됩니다.",
+    "yes": "네, 내 프로필 찾기",
+    "no": "아직 없습니다",
+    "title": "GC Stats 프로필 찾기",
+    "intro": "이름을 검색하거나, 참가한 대회에서 찾아보세요. 이후 GC Stats 운영진이 연동을 승인합니다.",
+    "cancel": "닫기",
+    "modeLabel": "검색 방법",
+    "mode": {
+      "name": "이름으로",
+      "tournament": "대회로"
+    },
+    "namePlaceholder": "대회에서 사용한 이름",
+    "tournamentPlaceholder": "대회 이름",
+    "teamPlaceholder": "팀 또는 플레이어 필터",
+    "minChars": "{min}자 이상 입력하세요.",
+    "players": "{count, plural, =0 {플레이어 없음} one {플레이어 #명} other {플레이어 #명}}",
+    "pickPlayer": "로스터에서 내 이름을 선택하세요.",
+    "empty": "결과가 없습니다.",
+    "emptyTeams": "이 대회에서 팀을 찾을 수 없습니다.",
+    "emptyRoster": "이 팀에 등록된 플레이어가 없습니다.",
+    "loading": "불러오는 중",
+    "back": "검색으로 돌아가기",
+    "viewOnGcs": "GC Stats에서 보기",
+    "claimed": "이미 계정에 연동됨",
+    "confirmText": "내 프로필이 맞는지 확인하세요. 요청은 GC Stats 운영진에게 전달되며, 승인될 때까지 게시글에 \"미인증\"으로 표시됩니다.",
+    "send": "요청 보내기",
+    "sending": "전송 중...",
+    "relogin": "다시 로그인",
+    "done": {
+      "pending": "요청을 보냈습니다. 프로필은 게시글에 표시되며, 운영진이 승인할 때까지 \"미인증\"으로 표시됩니다.",
+      "approved": "이 프로필은 이미 GC Stats 계정에 연동되어 있어 이제 인증되었습니다."
+    },
+    "lookupErrors": {
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "invalid": "잘못된 검색입니다.",
+      "notConfigured": "이 사이트에는 GC Stats 검색이 설정되지 않았습니다.",
+      "notFound": "이 대회는 GC Stats에 더 이상 존재하지 않습니다.",
+      "failed": "GC Stats가 응답하지 않습니다. 잠시 후 다시 시도하세요."
+    },
+    "errors": {
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "invalid": "잘못된 프로필입니다.",
+      "linkExists": "이미 계정에 연동되었거나 승인 대기 중인 프로필이 있습니다. 페이지를 새로고침하세요.",
+      "reauth": "요청을 보내려면 GC Stats 로그인을 갱신해야 합니다.",
+      "notFound": "이 프로필은 GC Stats에 더 이상 존재하지 않습니다.",
+      "taken": "이 프로필은 이미 다른 GC Stats 계정에 연동되어 있습니다. 본인의 프로필이라면 GC Stats 운영진에게 문의하세요.",
+      "requestPending": "GC Stats 계정에 이미 승인 대기 중인 연동 요청이 있습니다.",
+      "rateLimited": "요청이 너무 많습니다. 1분 후에 다시 시도하세요.",
+      "failed": "요청을 보내지 못했습니다. 잠시 후 다시 시도하세요.",
+      "delegated": "프로필 소유자만 GC Stats 프로필을 연동할 수 있습니다."
+    }
+  },
+  "expiry": {
+    "reminder": {
+      "subject": "{code} 게시글이 곧 만료됩니다",
+      "title": "{code} 게시글 \"{name}\"이(가) {left, plural, one {#일} other {#일}} 후에 만료됩니다",
+      "body": "{date}에 목록과 Discord 채널에서 사라집니다.",
+      "renewHint": "아직 찾고 계신가요? {days}일 더 갱신하면 목록 맨 위로 올라갑니다.",
+      "deleteHint": "필요한 것을 찾으셨나요? 더 이상 연락이 오지 않도록 삭제하세요.",
+      "renew": "갱신",
+      "delete": "삭제",
+      "view": "게시글 보기",
+      "footer": "GC Scouting에 게시할 때 알림을 켰기 때문에 이 알림을 받으셨습니다. 링크는 로그인 없이 14일 동안 작동하므로 공유하지 마세요."
+    },
+    "manage": {
+      "metaTitle": "내 게시글 관리",
+      "renew": {
+        "title": "게시글 갱신",
+        "text": "{expired, select, true {만료되었습니다.} other {곧 만료됩니다.}} 10일 동안 다시 게시되며 목록 맨 위로 올라갑니다.",
+        "confirm": "갱신",
+        "pending": "갱신 중...",
+        "done": "{date}까지 게시글이 갱신되었습니다"
+      },
+      "delete": {
+        "title": "게시글 삭제",
+        "text": "사이트와 Discord 채널에서 삭제되며 링크도 더 이상 작동하지 않습니다. 되돌릴 수 없습니다.",
+        "confirm": "삭제",
+        "pending": "삭제 중...",
+        "done": "게시글이 삭제되었습니다"
+      },
+      "view": "게시글 보기",
+      "newPost": "게시글 작성",
+      "home": "홈으로 돌아가기",
+      "errorTitle": "링크를 사용할 수 없습니다",
+      "errors": {
+        "invalid": "이 링크는 유효하지 않습니다. 전체가 복사되었는지 확인하세요.",
+        "used": "이 링크는 이미 사용되었습니다. 각 알림은 한 번만 작동합니다.",
+        "expired": "이 링크가 만료되었습니다. 로그인한 뒤 게시글을 열어 갱신하세요.",
+        "unavailable": "이 게시글은 마감되었거나 삭제되었습니다.",
+        "limitReached": "이 유형에서 허용되는 최대 게시글 수에 도달했습니다. 이 게시글을 갱신하려면 다른 게시글 하나를 마감하세요.",
+        "server": "작업을 완료하지 못했습니다. 잠시 후 다시 시도하세요."
+      }
+    },
+    "renew": {
+      "title": "게시글이 {date}에 만료됩니다",
+      "expiredTitle": "게시글이 만료되었습니다",
+      "hint": "{days}일 더 갱신하면 목록 맨 위로 올라갑니다.",
+      "label": "갱신",
+      "pending": "갱신 중...",
+      "done": "갱신됨",
+      "errors": {
+        "invalid": "잘못된 게시글입니다.",
+        "auth": "세션이 만료되었습니다. 갱신하려면 다시 로그인하세요.",
+        "notFound": "이 게시글은 더 이상 활성 상태가 아닙니다.",
+        "tooEarly": "갱신은 만료 3일 전부터 가능합니다.",
+        "limitReached": "이 유형에서 허용되는 최대 게시글 수에 도달했습니다. 이 게시글을 갱신하려면 다른 게시글 하나를 마감하세요.",
+        "server": "갱신하지 못했습니다. 잠시 후 다시 시도하세요."
+      }
+    },
+    "noReminder": {
+      "title": "만료 알림이 꺼져 있습니다",
+      "text": "게시글은 {days}일 후 알림 없이 만료됩니다. 게시글 양식에서 이메일 또는 Discord 알림을 켜세요."
+    }
+  },
+  "account": {
+    "title": "계정 설정",
+    "loading": "계정 불러오는 중",
+    "intro": "내 이름으로 게시할 수 있는 사람과 GC Scouting의 내 데이터를 관리합니다. GC Stats 계정은 GC Stats에서 관리됩니다.",
+    "gcsAccount": "내 GC Stats 계정",
+    "since": "{date}부터",
+    "confirm": "확인",
+    "cancel": "취소",
+    "login": {
+      "title": "계정을 관리하려면 로그인하세요",
+      "text": "GC Scouting 계정은 GC Stats 계정으로 생성됩니다.",
+      "cta": "GC Stats로 로그인"
+    },
+    "delegates": {
+      "title": "내 프로필 접근 권한",
+      "hint": "신뢰하는 사람(에이전트, 매니저, 스태프)이 내 이름으로 게시글을 작성하고 관리할 수 있습니다. 최대 {max}명까지 가능하며, 언제든지 접근 권한을 삭제할 수 있습니다.",
+      "empty": "내 프로필에 접근할 수 있는 사람이 없습니다.",
+      "remove": "삭제",
+      "pendingInvite": "초대 링크 대기 중, {date}까지 유효",
+      "revokeInvite": "취소",
+      "inviteReady": "초대 링크가 생성되었습니다",
+      "inviteHint": "상대에게 보내세요. 로그인한 상태에서 열어야 합니다. 한 번만 사용할 수 있으며 {days}일 동안 유효합니다.",
+      "copy": "복사",
+      "copied": "복사됨",
+      "create": "초대 링크 만들기"
+    },
+    "managed": {
+      "title": "관리 중인 프로필",
+      "hint": "오른쪽 상단 메뉴에서 활성 프로필을 선택하면 그 이름으로 게시할 수 있습니다.",
+      "empty": "아직 프로필 접근 권한을 준 사람이 없습니다.",
+      "active": "활성 프로필",
+      "use": "이 프로필 사용",
+      "leave": "나가기"
+    },
+    "errors": {
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "invalid": "잘못된 요청입니다.",
+      "notFound": "이 접근 권한은 더 이상 존재하지 않습니다. 페이지를 새로고침하세요.",
+      "server": "작업에 실패했습니다. 잠시 후 다시 시도하세요.",
+      "full": "내 프로필에 이미 접근 권한을 가진 사람이 {max}명 있습니다.",
+      "tooManyInvites": "대기 중인 초대 링크가 너무 많습니다. 먼저 하나를 취소하세요."
+    },
+    "data": {
+      "title": "내 데이터",
+      "hint": "GC Scouting이 내 계정에 대해 저장한 모든 정보(프로필, 게시글, 접근 권한)를 JSON 파일로 다운로드합니다.",
+      "export": "내 데이터 다운로드",
+      "exporting": "준비 중...",
+      "exportFailed": "내보내기에 실패했습니다. 잠시 후 다시 시도하세요."
+    },
+    "delete": {
+      "title": "계정 삭제",
+      "hint": "GC Scouting 계정, 게시글, 프로필 접근 권한이 영구적으로 삭제됩니다. GC Stats 계정에는 영향이 없습니다.",
+      "confirmLabel": "확인하려면 {name}을(를) 입력하세요",
+      "submit": "계정 삭제",
+      "pending": "삭제 중...",
+      "errors": {
+        "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+        "confirmation": "사용자 이름이 일치하지 않습니다.",
+        "server": "삭제에 실패했습니다. 잠시 후 다시 시도하세요."
+      }
+    },
+    "chatNotifications": {
+      "title": "메시지 알림",
+      "text": "메시지를 받으면 대화마다 한 번만 알려드리며, 대화를 열기 전까지는 더 알리지 않습니다. 메시지 내용은 알림에 복사되지 않습니다.",
+      "email": "이메일로",
+      "discord": "Discord 다이렉트 메시지로",
+      "noEmail": "GC Stats 계정에 인증된 이메일이 없습니다",
+      "discordLinked": "GC Stats에 연동된 Discord 계정",
+      "noDiscord": "GC Stats에 연동된 Discord 계정이 없습니다",
+      "save": "저장",
+      "saved": "설정이 저장되었습니다.",
+      "errors": {
+        "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+        "invalid": "잘못된 설정입니다.",
+        "noEmail": "이메일 알림을 켜려면 GC Stats에서 이메일을 추가하고 인증하세요.",
+        "noDiscord": "Discord 알림을 켜려면 GC Stats에서 Discord 계정을 연동하세요.",
+        "server": "저장에 실패했습니다. 잠시 후 다시 시도하세요."
+      }
+    }
+  },
+  "invite": {
+    "metaTitle": "프로필 초대",
+    "title": "{name}님이 프로필 관리를 초대했습니다",
+    "text": "{name}님의 이름으로 게시글을 작성하고 관리할 수 있게 됩니다. 계정 설정에서 언제든지 나갈 수 있습니다.",
+    "loginText": "초대를 수락하려면 GC Stats 계정으로 로그인하세요.",
+    "loginCta": "GC Stats로 로그인",
+    "accept": "수락",
+    "accepting": "수락 중...",
+    "done": "이제 {name}님의 프로필을 관리합니다. 활성 프로필로 설정되었습니다.",
+    "newPost": "게시글 작성",
+    "settings": "계정 설정",
+    "home": "홈으로 돌아가기",
+    "errorTitle": "초대를 사용할 수 없습니다",
+    "errors": {
+      "invalid": "이 링크는 유효하지 않습니다. 전체가 복사되었는지 확인하세요.",
+      "used": "이 초대는 이미 사용되었습니다. 새 링크를 요청하세요.",
+      "expired": "이 초대가 만료되었습니다. 새 링크를 요청하세요.",
+      "self": "내 초대 링크입니다. 프로필을 관리할 사람에게 보내세요.",
+      "already": "이미 이 프로필을 관리하고 있습니다.",
+      "full": "이 프로필은 접근 권한을 가진 인원 한도에 도달했습니다.",
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "server": "초대를 수락하지 못했습니다. 잠시 후 다시 시도하세요."
+    }
+  },
+  "postAuthor": {
+    "edit": "수정",
+    "close": "마감",
+    "closeConfirm": "게시글 마감",
+    "cancel": "취소",
+    "errors": {
+      "invalid": "잘못된 게시글입니다.",
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "notFound": "이 게시글은 더 이상 활성 상태가 아닙니다.",
+      "server": "게시글을 마감하지 못했습니다. 잠시 후 다시 시도하세요."
+    }
+  },
+  "myPosts": {
+    "title": "내 게시글",
+    "intro": "게시글은 {days}일 동안 게시됩니다. 만료되기 전에 갱신하거나, 필요한 것을 찾았다면 마감하세요.",
+    "new": "게시글 작성",
+    "loading": "내 게시글 불러오는 중",
+    "published": "{date} 게시",
+    "expires": "{date} 만료",
+    "expired": "{date} 만료됨",
+    "groups": {
+      "active": "게시 중",
+      "expired": "만료됨",
+      "closed": "마감됨"
+    },
+    "empty": {
+      "title": "아직 게시글이 없습니다",
+      "text": "게시글이 여기에 표시되며, 수정, 갱신, 마감에 필요한 기능도 함께 제공됩니다."
+    },
+    "login": {
+      "title": "내 게시글을 보려면 로그인하세요",
+      "text": "게시글은 GC Stats 계정에 연결되어 있습니다.",
+      "cta": "GC Stats로 로그인"
+    }
+  },
+  "report": {
+    "button": "신고",
+    "title": "이 게시글 신고",
+    "close": "닫기",
+    "cancel": "취소",
+    "submit": "신고 보내기",
+    "sending": "전송 중…",
+    "loginHint": "게시글을 신고하려면 로그인하세요. 악용을 방지하는 데 도움이 됩니다.",
+    "login": "GC Stats로 로그인",
+    "reason": "사유",
+    "message": "상세 내용",
+    "messageHint": "무엇이 문제인지, 운영진이 빠르게 판단하는 데 도움이 되는 내용을 적어주세요.",
+    "sent": "신고가 접수되었습니다",
+    "sentHint": "감사합니다. 운영팀이 이 게시글을 확인하겠습니다.",
+    "reasons": {
+      "spam": {
+        "label": "스팸 또는 광고",
+        "hint": "중복 게시글, 광고, 관련 없는 콘텐츠"
+      },
+      "fake": {
+        "label": "허위 게시글",
+        "hint": "사칭, 지어낸 정보"
+      },
+      "inappropriate": {
+        "label": "부적절한 콘텐츠",
+        "hint": "모욕적인 언어, NSFW 콘텐츠"
+      },
+      "harassment": {
+        "label": "괴롭힘",
+        "hint": "특정인을 겨냥하거나 모욕함"
+      },
+      "other": {
+        "label": "기타",
+        "hint": "상세 내용에 문제를 설명하세요"
+      }
+    },
+    "errors": {
+      "reasonRequired": "사유를 선택하세요.",
+      "message": {
+        "required": "\"기타\" 사유를 선택한 경우 문제를 설명하세요.",
+        "tooShort": "{min}자 이상 입력하거나 비워 두세요.",
+        "tooLong": "최대 {max}자입니다.",
+        "invalidCharacters": "제어 문자 또는 보이지 않는 문자를 제거하세요."
+      },
+      "form": {
+        "invalid": "잘못된 게시글입니다.",
+        "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+        "notFound": "이 게시글은 더 이상 존재하지 않습니다.",
+        "ownPost": "내 게시글은 신고할 수 없습니다.",
+        "already": "이미 이 게시글을 신고했습니다. 운영진이 확인 중입니다.",
+        "rateLimited": "한 시간 동안 신고가 너무 많습니다. 나중에 다시 시도하세요.",
+        "server": "신고를 보내지 못했습니다. 잠시 후 다시 시도하세요."
+      },
+      "messageForm": {
+        "invalid": "잘못된 메시지입니다.",
+        "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+        "notFound": "이 메시지는 더 이상 사용할 수 없습니다.",
+        "ownMessage": "내 메시지는 신고할 수 없습니다.",
+        "already": "이미 이 메시지를 신고했습니다. 운영진이 확인 중입니다.",
+        "rateLimited": "한 시간 동안 신고가 너무 많습니다. 나중에 다시 시도하세요.",
+        "server": "신고를 보내지 못했습니다. 잠시 후 다시 시도하세요."
+      }
+    }
+  },
+  "tweets": {
+    "metaTitle": "게시할 트윗",
+    "title": "게시할 트윗",
+    "subtitle": "아직 X에 올라가지 않은 게시 중인 글이며, 오래된 순입니다. X에서 트윗을 열어 게시한 뒤 게시됨으로 표시하세요.",
+    "count": "{count, plural, one {남은 트윗 #개} other {남은 트윗 #개}}",
+    "empty": "트윗할 글이 남아 있지 않습니다.",
+    "unavailable": "Discord 봇에 연결할 수 없어 트윗을 불러오지 못했습니다. 잠시 후 페이지를 새로고침하세요.",
+    "forbidden": "접근이 거부되었습니다. 이 페이지는 Cloudflare Access를 통해서만 열 수 있습니다.",
+    "published": "{date} 게시",
+    "viewPost": "게시글 보기",
+    "length": "{length}/{max}자",
+    "tooLong": "X에 올리기에는 너무 깁니다. 게시하기 전에 줄이세요.",
+    "open": "X에서 열기",
+    "opened": "X에서 열림",
+    "markPublished": "게시됨으로 표시",
+    "marking": "저장 중...",
+    "done": "게시됨",
+    "errors": {
+      "unauthorized": "Cloudflare Access 세션이 만료되었습니다. 페이지를 새로고침하세요.",
+      "forbidden": "이 요청은 트윗 페이지에서 온 것이 아닙니다. 새로고침 후 다시 시도하세요.",
+      "invalid": "이 게시글 ID는 유효하지 않습니다.",
+      "notFound": "이 게시글은 더 이상 존재하지 않습니다.",
+      "alreadyTweeted": "이 게시글은 이미 게시됨으로 표시되었습니다.",
+      "unavailable": "Discord 봇에 연결할 수 없습니다. 잠시 후 다시 시도하세요.",
+      "network": "요청에 실패했습니다. 연결을 확인하고 다시 시도하세요.",
+      "awaitingAuthor": "작성자가 아직 트윗 링크를 제공하지 않았습니다."
+    },
+    "toTweet": "트윗할 글",
+    "toRetweet": "리트윗할 글",
+    "toRetweetHint": "작성자가 본인 계정에 공유한 게시글입니다.",
+    "countRetweets": "{count, plural, one {남은 리트윗 #개} other {남은 리트윗 #개}}",
+    "sectionDone": "여기는 모두 끝났습니다.",
+    "authorTweeted": "작성자가 본인 계정에 게시했으며, 리트윗 대상입니다.",
+    "viewTweet": "트윗 보기",
+    "openRetweet": "X에서 리트윗",
+    "markRetweeted": "리트윗됨으로 표시",
+    "retweetDone": "리트윗됨"
+  },
+  "legalNotice": {
+    "title": "법적 고지",
+    "updated": "최종 업데이트: {date}",
+    "editor": {
+      "title": "발행인",
+      "identity": "명칭",
+      "status": "형태",
+      "statusValue": "프랑스 비영리 단체 (loi 1901)",
+      "email": "이메일",
+      "director": "발행 책임자",
+      "ecosystem": "GC Scouting은 같은 단체가 발행하는 GC Stats 생태계의 일부입니다. 로그인과 대회 기록은 GC Stats를 기반으로 합니다."
+    },
+    "hosting": {
+      "title": "호스팅 및 서비스 제공자",
+      "site": "웹사이트, Discord 봇, 공유 이미지",
+      "database": "데이터베이스",
+      "email": "이메일 발송",
+      "emailValue": "Resend, 직접 켠 만료 알림에만 사용",
+      "discord": "Discord 메시지",
+      "discordValue": "Discord Inc., 저희 봇을 통해 (게시글 채널, 운영, 알림 다이렉트 메시지)"
+    },
+    "property": {
+      "title": "지식재산권",
+      "site": "웹사이트의 구조, 디자인, 고유한 텍스트는 Osthelia에 귀속됩니다.",
+      "posts": "게시글의 내용(소개, 티어리스트, 가능 시간)은 작성자에게 귀속되며, 작성자는 게시글이 게시되어 있는 동안 웹사이트에 표시하고 Discord와 X에 공유하는 것을 허락합니다.",
+      "thirdParty": "<b>제3자 콘텐츠:</b> 팀, 대회, 요원, 랭크의 이름, 로고, 이미지는 각 소유자에게 귀속되며 정보 제공 목적으로만 표시됩니다. GC Scouting은 Riot Games의 보증을 받지 않았으며, Riot Games 또는 Riot Games 자산의 제작이나 관리에 공식적으로 관여한 누구의 견해나 의견도 반영하지 않습니다. Riot Games 및 관련된 모든 자산은 Riot Games, Inc.의 상표 또는 등록 상표입니다.",
+      "takedown": "일부 콘텐츠에 대한 권리를 가지고 있고 삭제를 원하시나요? <mail>이 주소</mail>로 문의하거나, 모든 게시글에 있는 <b>신고</b> 버튼을 이용하세요."
+    },
+    "rules": {
+      "title": "게시 규칙",
+      "intro": "게시글을 게시하면 다음에 동의하는 것으로 간주됩니다.",
+      "truthful": "프로필, 랭크, 경력에 대해 정확한 정보를 제공합니다",
+      "respect": "혐오, 차별, 괴롭힘 또는 불법적인 콘텐츠를 게시하지 않습니다",
+      "contact": "본인 소유이거나 에이전트가 표시를 허락한 연락처만 기재합니다",
+      "ads": "게시글을 광고, 도박 또는 모집과 관련 없는 용도로 사용하지 않습니다",
+      "moderation": "운영팀은 이 규칙을 위반한 게시글을 예고 없이 삭제할 수 있습니다. 게시글은 있는 그대로 제공되며, Osthelia는 모든 정보를 확인하지 않고 플레이어와 팀 사이의 대화에 관여하지 않습니다."
+    },
+    "privacy": {
+      "title": "개인정보",
+      "text": "데이터 처리 방식은 <policy>개인정보 처리방침</policy>에 자세히 설명되어 있습니다. GDPR에 따라 열람, 정정, 삭제 권리가 있으며, <mail>{email}</mail>로 문의하여 행사할 수 있습니다."
+    },
+    "credits": {
+      "title": "크레딧",
+      "gcs": "대회 기록, 팀, 인증된 프로필: <link>GC Stats</link>.",
+      "valorantApi": "요원 및 랭크 아이콘: <link>valorant-api.com</link>.",
+      "riot": "VALORANT는 Riot Games, Inc.의 상표입니다."
+    }
+  },
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "updated": "최종 업데이트: {date}",
+    "intro": "GC Scouting은 게시글을 게시하고, 팀과 대화하고, 게시글 만료를 알리는 데 필요한 정보만 수집합니다. 저장하는 정보, 그 이유, 삭제 방법은 다음과 같습니다.",
+    "login": {
+      "title": "GC Stats로 로그인",
+      "text": "GC Stats 계정으로 로그인하며, 비밀번호는 저희에게 전달되지 않습니다. 로그인할 때마다 동의하에 GC Stats가 다음 정보를 보냅니다.",
+      "identity": "<b>신원:</b> GC Stats 식별자, 사용자 이름, 아바타.",
+      "email": "<b>이메일:</b> 인증된 주소이며, 알림을 켠 경우 만료 알림에만 사용됩니다.",
+      "discord": "<b>Discord:</b> 연동된 Discord 계정의 식별자이며, 다이렉트 메시지 알림과 게시글 신고 시 본인 확인에 사용됩니다.",
+      "player": "<b>플레이어 프로필:</b> 계정에 연동된 GC Stats 프로필이며, 인증 배지와 대회 기록을 표시하는 데 사용됩니다.",
+      "tokens": "GC Stats 액세스 토큰은 데이터베이스에 암호화되어 저장되며, GC Stats에서 대신 작업을 수행할 때(예: 프로필 연동 요청)에만 사용됩니다. 계정을 삭제하면 폐기됩니다.",
+      "created": "<b>계정 연령:</b> GC Stats 계정의 생성일이며, 생성 후 7일 동안 메시지에 \"신규 계정\" 배지를 표시하는 데 사용됩니다.",
+      "sanctions": "<b>제재:</b> 활성 상태의 GC Stats 제재(채팅 금지, 정지, 영구 차단)와 종료일이며, 메시지나 게시글을 보내기 전에 확인하여 제재 기간 동안 전송을 차단합니다. 활성 경고가 있으면 메시지에 \"경고됨\" 배지가 표시됩니다."
+    },
+    "public": {
+      "title": "공개되는 정보",
+      "text": "게시글은 로그인하지 않아도 누구나 볼 수 있습니다. 사용자 이름, 게시글 유형, 지역, 국가, 언어, 랭크, 역할, 티어리스트, 경력, 가능 시간, 소개가 공개됩니다.",
+      "contact": "<b>연락처:</b> 게시글에 추가한 Discord, X 계정 또는 이메일은 팀이 연락할 수 있도록 공개로 표시됩니다. 공개해도 괜찮은 정보만 추가하세요.",
+      "gcs": "프로필이 연동된 경우 표시되는 기록(팀, 대회, 성적)은 GC Stats의 공개 데이터에서 가져옵니다."
+    },
+    "relay": {
+      "title": "Discord 및 X 공유",
+      "text": "활성 게시글은 저희 봇을 설정한 Discord 채널로 자동 전송되며, 공유 이미지와 함께 저희 X 계정에 공유될 수 있습니다. 게시글이 마감, 삭제 또는 제거되거나 계정을 삭제하면 저희 봇도 이 채널에서 해당 메시지를 삭제합니다. 만료된 게시글은 그때까지 남아 있습니다. 이미 X에 공유된 게시글과 다른 사람이 만든 사본은 그대로 남아 있습니다."
+    },
+    "private": {
+      "title": "기술 데이터",
+      "sessions": "<b>세션:</b> 세션 토큰의 지문(토큰 자체는 절대 저장하지 않음), 사용한 브라우저(user agent), 생성일과 만료일이며, 세션을 확인하고 보호할 수 있도록 합니다.",
+      "country": "<b>국가:</b> Cloudflare가 제공하는 접속 국가는 필터에서 지역을 미리 선택하는 데만 사용되며 저장되지 않습니다.",
+      "logs": "<b>로그:</b> 호스팅 업체는 문제 해결을 위해 단기간만 보관되는 기술 로그(오류, 요청)를 유지합니다.",
+      "noTracking": "방문자 분석, 광고, 제3자 트래커, 데이터 판매는 없습니다."
+    },
+    "notifications": {
+      "title": "만료 알림",
+      "text": "이메일과 Discord 다이렉트 메시지 알림은 기본적으로 꺼져 있으며, 켠 경우에만 전송됩니다. 알림에는 로그인 없이 게시글을 갱신하거나 삭제할 수 있는 링크가 포함되며, 14일 동안 유효합니다. 언제든지 끌 수 있습니다."
+    },
+    "delegation": {
+      "title": "위임된 접근",
+      "text": "다른 사람(에이전트, 매니저)에게 내 프로필 접근 권한을 주면, 그 사람이 내 이름으로 게시글을 작성하고 관리할 수 있도록 해당 연결을 저장합니다. 계정에서 언제든지 이 권한을 취소할 수 있습니다. 메시지에서는 본인의 이름으로 작성하며, 관리 중인 프로필이 옆에 표시됩니다."
+    },
+    "messages": {
+      "title": "메시지",
+      "text": "게시글에서 회원에게 메시지를 보내면 대화 내용을 저장합니다. 양쪽 프로필, 대화가 시작된 게시글, 날짜가 포함된 모든 메시지, 다른 사람의 프로필을 관리하는 경우 실제로 작성한 계정이 포함됩니다. 읽지 않은 메시지 표시를 위해 마지막으로 읽은 시점과 차단한 회원 목록도 저장합니다.",
+      "staff": "대화는 종단 간 암호화되지 않습니다. 운영팀은 신고 처리, 보류된 메시지 검토, 악용 조사를 위해 대화를 읽을 수 있으며, 메시지를 숨길 수 있습니다. 민감한 정보는 공유하지 마세요.",
+      "automod": "<b>자동 검수:</b> 각 메시지는 전달 전에 사용자 이름이나 식별자 없이 OpenAI 검수 API(미국)로 전송됩니다. OpenAI는 이를 모델 학습에 사용하지 않으며 최대 30일 동안만 보관합니다. 유해한 것으로 표시된 메시지는 운영팀이 결정할 때까지 보류됩니다.",
+      "links": "<b>링크:</b> Discord, X, GC Stats, VLR, Liquipedia 링크만 클릭할 수 있습니다. 다른 링크는 경고 뒤에 숨겨지며, 메시지 외에는 아무것도 확인하거나 저장하지 않습니다.",
+      "alerts": "<b>알림:</b> 읽지 않은 메시지가 이어지는 동안 한 번만, 내용을 복사하지 않고 이메일 또는 Discord 다이렉트 메시지로 새 메시지를 알려드립니다. 기본적으로 켜져 있으며 <account>내 계정</account> 페이지에서 끌 수 있습니다. 다른 사람의 프로필을 관리하는 경우 해당 대화의 알림도 본인 설정에 따라 받습니다."
+    },
+    "moderation": {
+      "title": "신고 및 운영",
+      "text": "게시글이나 메시지를 신고하면 사유, 신고 내용, 계정을 저장합니다. 운영은 비공개 Discord 채널과 웹사이트의 관리자 영역에서 이루어지며, 모든 조치(삭제, 복원, 메시지 숨김, X 공유)는 수행한 운영팀원의 계정과 함께 기록됩니다.",
+      "reporter": "신고자의 신원은 신고된 게시글이나 메시지의 작성자에게 절대 공개되지 않습니다. 운영팀만 확인할 수 있습니다."
+    },
+    "retention": {
+      "title": "보관 기간",
+      "posts": "게시글은 게시 또는 마지막 갱신 후 10일이 지나면 만료됩니다. 이후 목록과 Discord 채널에서는 사라지지만, 삭제하기 전까지 배너와 함께 링크는 계속 사용할 수 있습니다.",
+      "sessions": "세션은 30일 동안 유지되며, 로그아웃하면 종료됩니다.",
+      "account": "계정과 이에 연결된 모든 정보(게시글, 보낸 메시지, 차단, 세션, 위임된 접근, 프로필 연동)는 <account>내 계정</account> 페이지에서 삭제할 때까지 보관됩니다. 이때 제출한 신고와 게시글의 Discord 메시지도 함께 삭제됩니다.",
+      "messages": "메시지는 대화가 존재하는 동안 보관됩니다. 계정을 삭제하면 보낸 메시지가 삭제됩니다. 상대 회원의 메시지는 그 회원의 목록에 남아 있습니다."
+    },
+    "rights": {
+      "title": "내 권리 (GDPR)",
+      "text": "데이터에 대한 열람, 정정, 처리 반대, 삭제 권리가 있습니다. <account>내 계정</account> 페이지에서 모든 데이터를 JSON으로 내보내거나 클릭 한 번으로 계정을 삭제할 수 있습니다. GC Stats 계정에는 영향이 없습니다.",
+      "contact": "그 밖의 요청은 <mail>{email}</mail>로 문의하세요. 권리가 존중되지 않는다고 생각되면 CNIL(프랑스 개인정보 보호 당국)에 민원을 제기할 수도 있습니다."
+    },
+    "cookies": {
+      "title": "쿠키 및 로컬 저장소",
+      "text": "웹사이트 작동에 필요한 기술적 쿠키만 사용하므로 동의 배너가 필요하지 않습니다.",
+      "session": "<b>__Host-sc_session:</b> 로그인 세션 (30일).",
+      "profile": "<b>sc_profile:</b> 다른 사람의 프로필을 관리할 때의 활성 프로필.",
+      "oauth": "<b>sc_oauth:</b> GC Stats 로그인을 보호하며, 직후에 삭제됩니다.",
+      "theme": "<b>sc_theme:</b> 라이트 또는 다크 테마.",
+      "storage": "<b>로컬 저장소:</b> 게시글 필터와 시간대이며, 브라우저에 보관됩니다."
+    }
+  },
+  "chat": {
+    "title": "메시지",
+    "unreadLabel": "메시지, 읽지 않음 {count}개",
+    "seeAll": "모든 메시지 보기",
+    "writtenBy": "<strong>{name}</strong>, {profile}의 매니저",
+    "managerName": "{name} ({profile}의 매니저)",
+    "delegateNotice": "{profile}을(를) 대신해 작성 중입니다. 메시지에는 내 이름({name})이 표시되며 이 프로필을 관리한다는 내용이 함께 표시됩니다.",
+    "you": "나:",
+    "hiddenMessage": "운영진이 삭제한 메시지",
+    "held": "검토 대기 중",
+    "back": "대화 목록으로 돌아가기",
+    "fromPost": "{name}의 {code} 게시글에서 시작됨",
+    "block": "차단",
+    "blockConfirm": "차단 확인",
+    "unblock": "차단 해제",
+    "unblockConfirm": "확인",
+    "cancel": "취소",
+    "loadOlder": "이전 메시지 불러오기",
+    "loadMoreConversations": "대화 더 보기",
+    "loading": "대화 불러오는 중",
+    "emptyConversation": "아직 메시지가 없습니다.",
+    "blockedByMe": "{name}님을 차단했습니다. 다시 메시지를 보내려면 차단을 해제하세요.",
+    "blockedByPeer": "더 이상 이 사람에게 메시지를 보낼 수 없습니다.",
+    "reportTitle": "{name}님의 메시지 신고",
+    "staffNotice": "GC Scouting 운영팀은 운영 목적에 한해 대화를 읽을 수 있습니다.",
+    "placeholder": "메시지를 입력하세요",
+    "send": "보내기",
+    "errors": {
+      "body": {
+        "required": "보내기 전에 메시지를 입력하세요.",
+        "tooLong": "최대 {max}자입니다.",
+        "invalidCharacters": "제어 문자 또는 보이지 않는 문자를 제거하세요."
+      },
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "notFound": "이 대화 또는 게시글은 더 이상 사용할 수 없습니다.",
+      "ownPost": "자기 자신에게는 메시지를 보낼 수 없습니다.",
+      "chatDisabled": "이 게시글의 작성자는 개인 메시지를 받지 않습니다.",
+      "blockedByMe": "이 사람을 차단했습니다.",
+      "blockedByPeer": "더 이상 이 사람에게 메시지를 보낼 수 없습니다.",
+      "sanctioned": "GC Stats 계정이 제재를 받고 있어(채팅 금지, 정지 또는 영구 차단) 현재 메시지를 보낼 수 없습니다.",
+      "sanctionedUntil": "GC Stats 계정이 {date}까지 제재를 받고 있어(채팅 금지, 정지 또는 영구 차단) 그때까지 메시지를 보낼 수 없습니다.",
+      "rateLimited": "메시지를 너무 많이 보내고 있습니다. 1분 기다리세요.",
+      "tooManyConversations": "오늘 너무 많은 대화를 시작했습니다. 내일 다시 시도하세요.",
+      "server": "메시지를 보내지 못했습니다. 잠시 후 다시 시도하세요."
+    },
+    "empty": {
+      "title": "대화 없음",
+      "text": "게시글 페이지에서 작성자에게 메시지를 보내 대화를 시작하세요."
+    },
+    "pick": {
+      "title": "대화를 선택하세요",
+      "text": "플레이어, 팀, 스태프와의 대화가 왼쪽에 표시됩니다."
+    },
+    "login": {
+      "title": "메시지를 보려면 로그인하세요",
+      "text": "메시지는 GC Stats 계정을 사용합니다.",
+      "cta": "GC Stats로 로그인"
+    },
+    "link": {
+      "hidden": "숨겨진 링크",
+      "hiddenHint": "이 링크는 신뢰할 수 있는 사이트가 아니어서 기본적으로 숨겨져 있습니다.",
+      "warning": "이 링크는 신뢰할 수 있는 사이트(Discord, X, GC Stats, VLR, Liquipedia)로 연결되지 않습니다. 계정이나 데이터를 탈취하는 데 사용될 수 있습니다. 아는 사람인 경우에만 여세요.",
+      "show": "링크 보기",
+      "cancel": "계속 숨기기"
+    },
+    "peer": {
+      "recent": "신규 계정",
+      "recentHint": "{days}일 이내에 생성된 GC Stats 계정",
+      "warned": "경고됨",
+      "warnedHint": "이 사람은 GC Stats 운영진에게 경고를 받았습니다",
+      "warnedNotice": "{name}님은 GC Stats 운영진에게 경고를 받았습니다. 주의하시고 부적절한 메시지는 신고하세요.",
+      "recentNotice": "{name}님의 GC Stats 계정은 생성된 지 {days}일 미만입니다. 링크, 결제, 인증 정보 등 평소와 다른 요청에 주의하세요."
+    },
+    "posts": {
+      "title": "{name}님의 게시 중인 글",
+      "toggle": "{count, plural, =0 {게시 중인 글 없음} one {게시 중인 글 #개} other {게시 중인 글 #개}}",
+      "none": "게시 중인 글이 없습니다.",
+      "published": "{date} 업데이트"
+    },
+    "start": {
+      "button": "메시지 보내기",
+      "open": "대화 보기",
+      "title": "{name}님에게 메시지 보내기",
+      "close": "닫기",
+      "loginHint": "이 게시글의 작성자에게 메시지를 보내려면 GC Stats로 로그인하세요.",
+      "login": "로그인"
+    },
+    "alert": {
+      "subject": "GC Scouting에서 {name}님이 보낸 새 메시지",
+      "title": "{name}님이 메시지를 보냈습니다",
+      "body": "GC Scouting에서 {name}님에게 메시지를 받았습니다. 사이트에서 답장하세요. 대화는 두 분과 운영진 사이에서만 비공개로 유지됩니다.",
+      "managedSubject": "GC Scouting에서 {profile}님에게 온 새 메시지",
+      "managedTitle": "{name}님이 {profile}님에게 메시지를 보냈습니다",
+      "managedBody": "관리 중인 프로필 {profile}이(가) GC Scouting에서 {name}님에게 메시지를 받았습니다. 사이트에서 답장하세요. 답장에는 본인의 이름이 표시됩니다.",
+      "open": "대화 보기",
+      "footer": "GC Scouting 설정에서 메시지 알림이 켜져 있어 이 알림을 받으셨습니다."
+    },
+    "switch": {
+      "title": "이 대화는 {name}님의 것입니다",
+      "managedText": "이 프로필을 관리하고 있습니다. 대화를 읽고 답장하려면 전환하세요. 메시지에는 본인의 이름이 표시됩니다.",
+      "selfText": "다른 프로필로 활동 중입니다. 대화를 읽고 답장하려면 내 프로필로 다시 전환하세요.",
+      "button": "{name}(으)로 전환",
+      "error": "프로필을 전환하지 못했습니다. 잠시 후 다시 시도하세요."
+    }
+  },
+  "admin": {
+    "nav": {
+      "title": "관리자",
+      "dashboard": "대시보드",
+      "groupChat": "메시지",
+      "conversations": "대화",
+      "automod": "자동 검수",
+      "messageReports": "신고된 메시지",
+      "groupPosts": "게시글",
+      "posts": "게시글",
+      "postReports": "신고된 게시글",
+      "groupAdmin": "관리",
+      "users": "사용자",
+      "access": "접근 권한",
+      "backToSite": "사이트로 돌아가기",
+      "toggle": "메뉴 표시 또는 숨기기",
+      "menuTitle": "메뉴",
+      "menuDescription": "관리자 내비게이션."
+    },
+    "roles": {
+      "user": "회원",
+      "staff": "스태프",
+      "admin": "관리자"
+    },
+    "common": {
+      "cancel": "취소",
+      "total": "{count, plural, =0 {결과 없음} one {결과 #개} other {결과 #개}}",
+      "previous": "이전 페이지",
+      "next": "다음 페이지",
+      "gcsAdmin": "GC Stats 관리자에서 열기",
+      "search": "검색",
+      "close": "닫기"
+    },
+    "sanctions": {
+      "note": "메모",
+      "warning": "경고",
+      "mute": "채팅 금지",
+      "suspension": "정지",
+      "ban": "영구 차단"
+    },
+    "errors": {
+      "auth": "세션이 만료되었거나 더 이상 관리자 접근 권한이 없습니다.",
+      "invalid": "잘못된 요청입니다.",
+      "notFound": "찾을 수 없습니다.",
+      "conflict": "이미 다른 사람이 처리했습니다. 페이지가 새로고침되었습니다.",
+      "reasonLength": "사유는 {min}자 이상 {max}자 이하여야 합니다.",
+      "reasonInvalidCharacters": "사유에서 제어 문자 또는 보이지 않는 문자를 제거하세요.",
+      "activeExists": "작성자에게 이미 이 유형의 다른 게시글이 게시되어 있습니다.",
+      "selfDemote": "내 관리자 역할은 제거할 수 없습니다.",
+      "bootstrap": "이 계정은 사이트 설정을 통해 관리자이므로 여기서 역할을 변경할 수 없습니다.",
+      "server": "작업에 실패했습니다. 잠시 후 다시 시도하세요."
+    },
+    "dashboard": {
+      "title": "대시보드",
+      "subtitle": "운영진이 처리해야 할 항목과 최근 7일간의 활동입니다.",
+      "todo": "처리 대기",
+      "held": "자동 검수로 보류된 메시지",
+      "messageReports": "신고된 메시지",
+      "postReports": "신고된 게시글",
+      "activity": "활동",
+      "activePosts": "게시 중인 글",
+      "newPosts": "게시된 글 (7일)",
+      "activeConversations": "활성 대화 (7일)",
+      "messagesWeek": "보낸 메시지 (7일)",
+      "users": "계정",
+      "staff": "스태프 및 관리자"
+    },
+    "conversations": {
+      "title": "대화",
+      "subtitle": "모든 비공개 대화이며, 최신순입니다.",
+      "search": "회원의 사용자 이름",
+      "empty": "대화가 없습니다.",
+      "members": "회원",
+      "messages": "메시지",
+      "flags": "확인 필요",
+      "lastMessage": "마지막 메시지",
+      "held": "보류 {count}개",
+      "reports": "{count, plural, one {신고 #건} other {신고 #건}}",
+      "open": "열기",
+      "back": "대화 목록으로 돌아가기",
+      "detailTitle": "대화 #{id}",
+      "older": "이전 메시지",
+      "latest": "최근 메시지",
+      "fromPost": "{name}의 {code} 게시글에서 시작됨",
+      "noMessages": "메시지가 없습니다."
+    },
+    "messages": {
+      "status": {
+        "visible": "표시됨",
+        "blocked": "자동 검수로 보류됨",
+        "hidden": "숨김"
+      },
+      "unchecked": "자동 검수로 확인되지 않음",
+      "writtenBy": "{name}님이 작성 (프로필 매니저)",
+      "reported": "{count, plural, one {신고 #건} other {신고 #건}}",
+      "reviewedBy": "{name}님이 {date}에 처리함",
+      "approve": "통과시키기",
+      "reject": "계속 차단",
+      "hide": "숨기기",
+      "hideConfirm": "확인",
+      "show": "표시하기"
+    },
+    "automod": {
+      "title": "자동 검수",
+      "subtitle": "OpenAI 자동 검수로 보류된 메시지입니다. 통과시키면 전달되고(수신자에게 알림이 감) 계속 차단하면 영구적으로 삭제됩니다.",
+      "empty": "대기 중인 메시지가 없습니다.",
+      "context": "대화 보기"
+    },
+    "messageReports": {
+      "title": "신고된 메시지",
+      "subtitle": "메시지에서 접수된 신고입니다. 누군가를 차단하려면 GC Stats 관리자에서 해당 프로필로 이동하세요.",
+      "empty": "신고가 없습니다.",
+      "by": "신고자",
+      "hide": "메시지 숨기기",
+      "dismiss": "기각"
+    },
+    "reportStatus": {
+      "label": "상태",
+      "open": "대기 중",
+      "handled": "처리됨",
+      "dismissed": "기각됨",
+      "handledBy": "{name}님이 처리함",
+      "dismissedBy": "{name}님이 기각함"
+    },
+    "postReports": {
+      "title": "신고된 게시글",
+      "subtitle": "Discord 운영 채널과 동일한 신고이며, 여기서든 그곳에서든 처리할 수 있습니다.",
+      "empty": "신고가 없습니다.",
+      "by": "{name}님이 신고함",
+      "dismiss": "기각",
+      "postState": {
+        "active": "만료됨",
+        "closed": "마감됨",
+        "removed": "삭제됨"
+      }
+    },
+    "posts": {
+      "title": "게시글",
+      "subtitle": "모든 게시글입니다. 여기서 삭제하면 Discord 채널에서도 삭제됩니다.",
+      "search": "게시글 이름 또는 사용자 이름",
+      "stateLabel": "상태",
+      "anyState": "모든 상태",
+      "typeLabel": "유형",
+      "anyType": "모든 유형",
+      "state": {
+        "visible": "게시 중",
+        "expired": "만료됨",
+        "closed": "마감됨",
+        "removed": "운영진이 삭제함",
+        "deleted": "작성자가 삭제함"
+      },
+      "post": "게시글",
+      "author": "작성자",
+      "bumped": "업데이트",
+      "actions": "작업",
+      "reports": "{count, plural, one {신고 #건} other {신고 #건}}",
+      "remove": "삭제",
+      "restore": "복원",
+      "restoreConfirm": "복원 확인",
+      "removeTitle": "게시글 {name} 삭제",
+      "removeHint": "게시글이 사이트와 Discord 채널에서 사라지고, 접수된 신고는 처리됩니다. 사유는 운영진에게 표시됩니다.",
+      "reason": "사유",
+      "edit": "수정"
+    },
+    "users": {
+      "title": "사용자",
+      "subtitle": "한 번 이상 로그인한 계정입니다. 제재는 GC Stats에서 관리됩니다.",
+      "search": "사용자 이름",
+      "anyRole": "모든 역할",
+      "empty": "계정이 없습니다.",
+      "user": "계정",
+      "posts": "게시글",
+      "gcsAccount": "GC Stats 계정 생성일",
+      "lastLogin": "마지막 로그인",
+      "back": "사용자 목록으로 돌아가기",
+      "joined": "GC Scouting 가입일",
+      "email": "이메일",
+      "discord": "Discord",
+      "sanctions": "활성 GC Stats 제재",
+      "noSanction": "활성 제재가 없습니다.",
+      "sanctionUntil": "{date}까지",
+      "sanctionPermanent": "영구",
+      "sanctionsChecked": "{date}에 GC Stats에서 확인함.",
+      "sanctionsNever": "GC Stats에서 확인한 적 없음.",
+      "sanctionsHint": "채팅 금지, 정지, 영구 차단은 메시지와 게시글을 차단합니다.",
+      "conversations": "대화",
+      "noConversation": "대화가 없습니다.",
+      "seePosts": "게시글 보기"
+    },
+    "access": {
+      "title": "접근 권한",
+      "subtitle": "스태프는 이 페이지를 제외한 전체 관리자 기능을 사용할 수 있습니다. 관리자는 역할을 부여하고 제거할 수도 있습니다.",
+      "current": "스태프 및 관리자",
+      "grant": "역할 부여",
+      "search": "계정의 사용자 이름",
+      "noResult": "일치하는 계정이 없습니다.",
+      "hint": "계정은 GC Scouting에 한 번 이상 로그인한 적이 있어야 합니다.",
+      "role": "역할",
+      "save": "저장",
+      "locked": "내 역할과 설정으로 지정된 관리자는 여기서 변경할 수 없습니다."
+    },
+    "error": {
+      "title": "이 페이지를 불러오지 못했습니다",
+      "body": "서버 오류가 발생했습니다. 다시 시도하거나 대시보드로 돌아가세요.",
+      "retry": "다시 시도"
+    }
+  },
+  "postTweet": {
+    "siteTitle": "GC Scouting이 내 게시글을 X에 공유합니다",
+    "siteText": "저희 계정으로 게시되며, @를 입력하셨다면 함께 표시됩니다.",
+    "switchToAuthor": "직접 게시할게요",
+    "switchToSite": "GC Scouting이 게시하도록 하기",
+    "switching": "저장 중...",
+    "tweeted": "게시글이 GC Scouting X 계정에 올라갔습니다.",
+    "retweeted": "GC Scouting이 게시글을 리트윗했습니다.",
+    "authorTitle": "게시글을 X에 공유하세요",
+    "authorText": "이 트윗을 내 계정에서 게시한 뒤 링크를 여기에 붙여넣으세요. GC Scouting이 리트윗합니다.",
+    "authorSavedTitle": "링크를 받았습니다. 게시글을 리트윗하겠습니다",
+    "authorSavedText": "리트윗이 완료되기 전까지는 링크를 바꿀 수 있습니다.",
+    "language": "트윗 언어",
+    "draftUnavailable": "트윗 문구를 준비하지 못했습니다. 잠시 후 페이지를 새로고침하세요.",
+    "length": "{length}/{max}자",
+    "tooLong": "X에 올리기에는 너무 깁니다. 게시하기 전에 줄이세요.",
+    "open": "X에 게시",
+    "opened": "X에서 열림",
+    "linkLabel": "트윗 링크",
+    "linkPlaceholder": "https://x.com/username/status/...",
+    "save": "링크 보내기",
+    "saving": "전송 중...",
+    "saved": "링크를 보냈습니다",
+    "viewTweet": "트윗 보기",
+    "errors": {
+      "invalid": "이 게시글은 유효하지 않습니다.",
+      "required": "트윗 링크를 붙여넣으세요.",
+      "tweetUrlInvalid": "트윗 링크가 아닙니다. https://x.com/username/status/123 형식이어야 합니다.",
+      "auth": "세션이 만료되었습니다. 다시 로그인하세요.",
+      "notFound": "이 게시글은 더 이상 게시 중이 아닙니다.",
+      "alreadyTweeted": "이 게시글은 이미 X에 올라가 있어 이 선택을 더 이상 변경할 수 없습니다.",
+      "notAuthorTweet": "이 게시글은 GC Scouting이 게시합니다. 먼저 직접 게시하도록 선택하세요.",
+      "server": "문제가 발생했습니다. 잠시 후 다시 시도하세요."
+    }
+  },
+  "tweetImage": {
+    "share": "이미지와 함께 공유",
+    "copy": "이미지 복사",
+    "preparing": "준비 중...",
+    "shared": "공유됨",
+    "copied": "이미지가 복사되었습니다",
+    "pasteHint": "X가 열리면 트윗에 이미지를 붙여넣으세요 (Ctrl+V 또는 ⌘V).",
+    "failed": "이미지를 준비하지 못했습니다.",
+    "download": "다운로드"
+  },
+  "moderationNotice": {
+    "edited": {
+      "subject": "{code} 게시글이 운영진에 의해 수정되었습니다",
+      "title": "{code} 게시글 \"{name}\"이(가) 수정되었습니다",
+      "body": "GC Scouting 운영팀원이 게시글을 수정했습니다. 게시글은 같은 만료일로 계속 게시됩니다.",
+      "reason": "사유: {reason}",
+      "open": "게시글 보기",
+      "footer": "GC Scouting의 게시글이 운영진에 의해 수정되어 이 메시지를 받으셨습니다."
+    }
+  },
+  "ageGroups": {
+    "minor": "미성년자",
+    "adult": "성인"
+  },
+  "minorsPolicy": {
+    "accepted": "미성년자 가능",
+    "adultsOnly": "성인만 가능"
+  },
+  "tierListGuide": {
+    "title": "티어리스트 이해하기",
+    "intro": "모든 플레이어 게시글에는 요원 티어리스트가 포함됩니다. 지금의 형태가 된 이유와, 팀에 실제로 도움이 되도록 작성하는 방법을 안내합니다.",
+    "scene": {
+      "title": "씬과 함께 만들었습니다",
+      "text": "이 형식은 무작위로 정한 것이 아닙니다. 매 스플릿 스카우팅과 영입을 하는 <b>Game Changers 씬의 경험 많은 플레이어, 코치, 매니저</b>와 함께 설계했습니다.",
+      "why": "그들의 의견은 분명했습니다. 긴 요원 목록은 팀에 아무것도 알려주지 않습니다. 팀이 알고 싶은 것은 내일 경기에서 어떤 요원을 플레이할 수 있는지, 어떤 요원은 연습이 필요한지, 팀을 위해 어떤 요원을 배울 준비가 되어 있는지입니다.",
+      "credit": "이 티어 리스트는 ZennIT Orange GC의 IGL인 <b>LittleBigSpy</b>를 비롯한 분들과 함께 만들었으며, 씬에서의 경험이 에이전트를 분류하는 방식을 정하는 데 큰 도움이 되었습니다."
+    },
+    "tiers": {
+      "title": "세 가지 단계",
+      "confident": "관련 라인업, 유틸리티, 습관까지 갖추어 지금 바로 공식 경기에서 플레이할 수 있는 요원.",
+      "improve": "이미 플레이할 줄 알지만, 경기에서 편하게 쓰려면 연습이 필요한 요원.",
+      "canLearn": "아직 플레이하지 않지만, 팀이 필요로 하면 기꺼이 배우려는 요원.",
+      "aside": "제외한 요원은 게시글에 표시되지 않습니다. \"못하는\" 행은 없습니다. 비어 있는 칸이 추측보다 더 많은 것을 알려줍니다."
+    },
+    "highlight": {
+      "title": "플레이할 줄 아는 요원을 강조하세요",
+      "text": "티어리스트는 게임의 모든 요원을 순위 매기거나 메타에 대한 의견을 밝히기 위한 것이 아니라, <b>플레이할 줄 아는 요원을 강조</b>하기 위한 것입니다.",
+      "honest": "솔직하게 작성하세요. 팀은 트라이아웃에서 확인하므로, 짧고 정확한 티어리스트가 전부 채운 목록보다 가치가 있습니다.",
+      "notMeta": "현재 패치에서 요원이 얼마나 강한지가 아니라, 각 요원에 대한 내 실력을 기준으로 분류하세요.",
+      "filter": "처음 두 행은 사이트와 Discord의 \"가능 요원\" 필터에 사용됩니다. 어떤 검색에서 내 게시글이 표시될지를 결정합니다.",
+      "example": "예시: Controller와 Sentinel을 플레이하며 주력 요원에 자신 있고, 다듬어야 할 Initiator가 몇 명 있는 플레이어."
+    }
+  }
+}

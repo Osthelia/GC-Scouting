@@ -1,0 +1,2 @@
+ALTER TABLE "posts" ADD COLUMN "tracker_riot_id" varchar(22);--> statement-breakpoint
+ALTER TABLE "posts" ADD CONSTRAINT "posts_tracker_riot_id_type" CHECK ("posts"."tracker_riot_id" is null or "posts"."type" = 'lft');

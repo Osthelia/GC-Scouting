@@ -1,0 +1,51 @@
+{
+  "name": "@scouting/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test \"src/**/*.test.ts\"",
+    "test:db": "tsx --test tests/action-tokens.test.ts",
+    "test:admin-guard": "tsx --test tests/admin-guard.test.ts",
+    "preview": "npm run cf-build && opennextjs-cloudflare preview",
+    "deploy": "npm run cf-build && opennextjs-cloudflare deploy",
+    "upload": "npm run cf-build && opennextjs-cloudflare upload",
+    "cf-build": "npm run cf-typegen && cross-env OPENNEXT_BUILD_TARGET=cloudflare opennextjs-cloudflare build",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "og:icons": "node scripts/og-icons.mjs"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.8.0",
+    "@dnd-kit/core": "^6.3.1",
+    "@scouting/db": "^0.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "flag-icons": "^7.5.0",
+    "jose": "^6.2.12",
+    "lucide-react": "^1.34.0",
+    "next": "^16.3.2",
+    "next-intl": "^4.13.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "cross-env": "^10.1.0",
+    "shadcn": "^4.21.1",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.143.1"
+  }
+}

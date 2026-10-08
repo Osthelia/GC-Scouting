@@ -1,0 +1,11 @@
+# Discord application (Developer Portal > General Information / Bot).
+DISCORD_APPLICATION_ID=
+DISCORD_PUBLIC_KEY=
+DISCORD_BOT_TOKEN=
+# Only server allowed to host the moderation channel.
+MODERATION_GUILD_ID=
+# Bearer key of /internal/*, same value as SCOUTING_BOT_KEY on the site.
+BOT_INTERNAL_KEY=
+APP_URL=http://localhost:3001
+# "Ouvrir KASM" link of the moderation messages.
+KASM_TWEETS_URL=http://localhost:3001/tweets
