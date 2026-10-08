@@ -69,7 +69,7 @@ function TweetCard({ tweet, onDone }: { tweet: PendingTweet; onDone(): void }) {
         <PostTypeBadge type={tweet.type} />
         <span className="font-semibold text-neutral-100">{tweet.displayName}</span>
         <span className="text-[13px] text-neutral-500">{tRegions(tweet.region)}</span>
-        <span className="text-[13px] text-neutral-500">{t("published", { date: format.relativeTime(new Date(tweet.publishedAt)) })}</span>
+        <span className="text-[13px] text-neutral-500">{t("published", { date: format.relativeTime(new Date(tweet.publishedAt), new Date()) })}</span>
         <Link href={`/posts/${tweet.type}/${tweet.id}`} target="_blank" className="ml-auto text-[13px] font-medium text-[var(--sc-accent)] hover:underline active:opacity-70">
           {t("viewPost")}
         </Link>
