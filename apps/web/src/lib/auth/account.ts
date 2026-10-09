@@ -12,6 +12,7 @@ import { and, eq, inArray, ne } from "drizzle-orm";
 import { db } from "@scouting/db/client";
 import { oauthTokens, playerLinks, posts, users } from "@scouting/db";
 import { decryptSecret, encryptSecret } from "./crypto";
+import { dropIfGcsAccountGone } from "./account-data";
 import { gcsOAuthConfig, GcsOAuthError, refreshTokens, type GcsTokens, type GcsUserinfo } from "./gcs-oauth";
 
 export type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
@@ -112,6 +113,8 @@ export async function syncPlayerLink(tx: Tx, userId: string, info: Pick<GcsUseri
   return true;
 }
 
+const DEAD_REFRESH = Symbol("dead_refresh");
+
 /** Valid GC Stats access token of a user, refreshed when expired. Null when the user must log in again. */
 export async function getGcsAccessToken(userId: string): Promise<string | null> {
   const config = gcsOAuthConfig();
@@ -122,7 +125,7 @@ export async function getGcsAccessToken(userId: string): Promise<string | null> 
   if (current.expiresAt.getTime() > Date.now()) return decryptSecret(current.accessTokenEnc);
 
   // Row lock: GC Stats rotates refresh tokens and revokes everything on reuse, two parallel refreshes would log the user out.
-  return db.transaction(async (tx) => {
+  const result = await db.transaction(async (tx) => {
     const [row] = await tx.select().from(oauthTokens).where(eq(oauthTokens.userId, userId)).for("update").limit(1);
     if (!row) return null;
     if (row.expiresAt.getTime() > Date.now()) return decryptSecret(row.accessTokenEnc);
@@ -141,12 +144,14 @@ export async function getGcsAccessToken(userId: string): Promise<string | null> 
         .where(eq(oauthTokens.userId, userId));
       return tokens.accessToken;
     } catch (error) {
-      // Revoked or reused refresh token: the stored pair is dead.
-      if (error instanceof GcsOAuthError && error.code === "invalid_grant") {
-        await tx.delete(oauthTokens).where(eq(oauthTokens.userId, userId));
-        return null;
-      }
+      if (error instanceof GcsOAuthError && error.code === "invalid_grant") return DEAD_REFRESH;
       throw error;
     }
   });
+  if (result !== DEAD_REFRESH) return result;
+
+  // Revoked or reused refresh token, or a deleted GC Stats account. Outside the transaction: the account delete cascades to the locked row.
+  // When GC Stats cannot answer, the tokens are kept so the next call asks again.
+  if ((await dropIfGcsAccountGone(userId)) === "exists") await db.delete(oauthTokens).where(eq(oauthTokens.userId, userId));
+  return null;
 }

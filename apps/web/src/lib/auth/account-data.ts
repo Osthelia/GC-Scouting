@@ -28,7 +28,7 @@ import {
 } from "@scouting/db";
 import { notifyBotPurge } from "@/lib/notify/bot";
 import { decryptSecret } from "./crypto";
-import { gcsOAuthConfig, revokeToken } from "./gcs-oauth";
+import { gcsAccountExists, gcsOAuthConfig, revokeToken } from "./gcs-oauth";
 import { deleteShareImages } from "@/lib/share-image";
 import { loggable } from "@scouting/db/log";
 
@@ -119,6 +119,20 @@ export async function exportAccountData(userId: string) {
     blockedUsers: blocked,
     messageReports: messageReportRows,
   };
+}
+
+/** Deletes the account when its GC Stats account is gone. "unknown" when GC Stats cannot tell, nothing is deleted then. */
+export async function dropIfGcsAccountGone(userId: string): Promise<"deleted" | "exists" | "unknown"> {
+  const config = gcsOAuthConfig();
+  const [user] = await db.select({ gcsUserId: users.gcsUserId }).from(users).where(eq(users.id, userId)).limit(1);
+  if (!config || !user) return "unknown";
+
+  const exists = await gcsAccountExists(config, user.gcsUserId);
+  if (exists === null) return "unknown";
+  if (exists) return "exists";
+
+  await deleteAccount(userId);
+  return "deleted";
 }
 
 /** Revokes the GC Stats tokens, then deletes the account and everything attached to it (posts included). */

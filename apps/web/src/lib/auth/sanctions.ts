@@ -13,7 +13,8 @@ import { db } from "@scouting/db/client";
 import { users, type GcsSanction } from "@scouting/db";
 import { blockingSanction } from "@/lib/sanction-rules";
 import { getGcsAccessToken } from "./account";
-import { fetchUserinfo } from "./gcs-oauth";
+import { dropIfGcsAccountGone } from "./account-data";
+import { fetchUserinfo, GcsOAuthError } from "./gcs-oauth";
 import { loggable } from "@scouting/db/log";
 
 /** Sanctions are read again from GC Stats before an action once they are this old. */
@@ -38,6 +39,8 @@ async function freshSanctions(userId: string): Promise<GcsSanction[]> {
       .where(eq(users.id, userId));
     return info.activeSanctions;
   } catch (error) {
+    // A fresh token refused by userinfo: revoked, or the GC Stats account was deleted.
+    if (error instanceof GcsOAuthError && error.code === "invalid_token" && (await dropIfGcsAccountGone(userId)) === "deleted") return [];
     console.warn("GC Stats sanctions refresh failed", userId, loggable(error));
     // The stored sanctions count as fresh for a minute, so a down GC Stats is not called on every action.
     await db

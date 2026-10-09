@@ -121,6 +121,21 @@ export async function revokeToken(config: GcsOAuthConfig, token: string): Promis
   if (!res.ok) throw new GcsOAuthError(`http_${res.status}`);
 }
 
+/** Whether a GC Stats account still exists. Null when GC Stats cannot answer, so nothing gets deleted on a doubt. */
+export async function gcsAccountExists(config: GcsOAuthConfig, sub: string): Promise<boolean | null> {
+  try {
+    const res = await gcsFetch("/api/oauth/account-status", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ sub, client_id: config.clientId, client_secret: config.clientSecret }),
+    });
+    const json = (await res.json().catch(() => null)) as { exists?: unknown } | null;
+    return res.ok && typeof json?.exists === "boolean" ? json.exists : null;
+  } catch {
+    return null;
+  }
+}
+
 const userinfoSchema = z.object({
   sub: z.string().min(1),
   username: z.string().nullish(),

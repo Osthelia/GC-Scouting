@@ -12,7 +12,8 @@ import { and, asc, eq, isNull, lt, or } from "drizzle-orm";
 import { db } from "@scouting/db/client";
 import { playerLinks } from "@scouting/db";
 import { getGcsAccessToken, syncPlayerLink } from "./account";
-import { fetchUserinfo } from "./gcs-oauth";
+import { dropIfGcsAccountGone } from "./account-data";
+import { fetchUserinfo, GcsOAuthError } from "./gcs-oauth";
 import { syncAuthorGcsSummaries } from "@/lib/gcs-summary";
 import { loggable } from "@scouting/db/log";
 
@@ -46,6 +47,7 @@ export async function checkPendingPlayerLinks(limit = 50): Promise<{ checked: nu
       if (status === "approved") result.approved++;
       if (status === "rejected") result.rejected++;
     } catch (error) {
+      if (error instanceof GcsOAuthError && error.code === "invalid_token") await dropIfGcsAccountGone(link.userId);
       result.failed++;
       console.error(`Player link check failed for link ${link.id}`, loggable(error));
     }
