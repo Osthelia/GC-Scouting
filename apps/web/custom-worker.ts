@@ -13,7 +13,7 @@ import { default as handler } from "./.open-next/worker.js";
 
 // Cron trigger -> cron routes: getCloudflareContext() (Hyperdrive) only resolves inside handler.fetch.
 const CRON_ROUTES: Record<string, string[]> = {
-  "0 * * * *": ["/api/cron/player-links", "/api/cron/expiry-reminders", "/api/cron/sessions"],
+  "0 * * * *": ["/api/cron/player-links", "/api/cron/expiry-reminders", "/api/cron/sessions", "/api/cron/gcs-accounts"],
 };
 
 export default {

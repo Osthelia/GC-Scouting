@@ -1,0 +1,1 @@
+ALTER TABLE "users" ADD COLUMN "gcs_account_checked_at" timestamp with time zone;

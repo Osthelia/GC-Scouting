@@ -8,7 +8,7 @@
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-import { and, eq, inArray, isNotNull, or } from "drizzle-orm";
+import { and, eq, inArray, isNotNull, or, sql } from "drizzle-orm";
 import { db } from "@scouting/db/client";
 import {
   delegationInvites,
@@ -129,10 +129,38 @@ export async function dropIfGcsAccountGone(userId: string): Promise<"deleted" | 
 
   const exists = await gcsAccountExists(config, user.gcsUserId);
   if (exists === null) return "unknown";
-  if (exists) return "exists";
+  if (exists) {
+    await db.update(users).set({ gcsAccountCheckedAt: new Date() }).where(eq(users.id, userId));
+    return "exists";
+  }
 
   await deleteAccount(userId);
   return "deleted";
+}
+
+const SWEEP_CONCURRENCY = 10;
+
+/** Checks the accounts not confirmed for the longest time, oldest first, including those with no GC Stats tokens left. */
+export async function sweepDeletedGcsAccounts(limit = 200): Promise<{ checked: number; deleted: number; unknown: number }> {
+  const due = await db.select({ id: users.id }).from(users).orderBy(sql`${users.gcsAccountCheckedAt} asc nulls first`).limit(limit);
+
+  const result = { checked: 0, deleted: 0, unknown: 0 };
+  for (let i = 0; i < due.length; i += SWEEP_CONCURRENCY) {
+    const outcomes = await Promise.all(
+      due.slice(i, i + SWEEP_CONCURRENCY).map((user) =>
+        dropIfGcsAccountGone(user.id).catch((error) => {
+          console.error(`GC Stats account check failed for ${user.id}`, loggable(error));
+          return "unknown" as const;
+        }),
+      ),
+    );
+    for (const outcome of outcomes) {
+      if (outcome === "unknown") result.unknown++;
+      else result.checked++;
+      if (outcome === "deleted") result.deleted++;
+    }
+  }
+  return result;
 }
 
 /** Revokes the GC Stats tokens, then deletes the account and everything attached to it (posts included). */

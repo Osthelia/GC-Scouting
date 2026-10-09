@@ -38,6 +38,8 @@ export const users = pgTable("users", {
   // Active sanctions read from GC Stats (scope `sanctions`), refreshed at login and before a message or a post.
   gcsSanctions: jsonb("gcs_sanctions").$type<GcsSanction[]>().notNull().default([]),
   sanctionsCheckedAt: timestamp("sanctions_checked_at", { withTimezone: true }),
+  // Last time the sweep confirmed the GC Stats account still exists, oldest first.
+  gcsAccountCheckedAt: timestamp("gcs_account_checked_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   lastLoginAt: timestamp("last_login_at", { withTimezone: true }),
 });
