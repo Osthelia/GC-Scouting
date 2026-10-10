@@ -130,8 +130,11 @@ export async function gcsAccountExists(config: GcsOAuthConfig, sub: string): Pro
       body: new URLSearchParams({ sub, client_id: config.clientId, client_secret: config.clientSecret }),
     });
     const json = (await res.json().catch(() => null)) as { exists?: unknown } | null;
-    return res.ok && typeof json?.exists === "boolean" ? json.exists : null;
-  } catch {
+    if (res.ok && typeof json?.exists === "boolean") return json.exists;
+    console.error(`GC Stats account-status unusable (HTTP ${res.status})`);
+    return null;
+  } catch (error) {
+    console.error("GC Stats account-status failed", error);
     return null;
   }
 }
