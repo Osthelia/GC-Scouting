@@ -27,6 +27,8 @@
     "typescript": "^5.6.3"
   },
   "overrides": {
-    "esbuild": "^0.28.2"
+    "@esbuild-kit/core-utils": {
+      "esbuild": "^0.25.4"
+    }
   }
 }
