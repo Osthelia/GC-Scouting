@@ -1,11 +1,10 @@
 name: Images
 
-# Three images: `gc-scouting-web` (runner), `gc-scouting-web-migrate` (migrator, the Job that runs `drizzle-kit migrate` as an
-# Argo CD PreSync hook) and `gc-scouting-bot`. Tag = commit SHA, the cluster picks the image from it.
+# Two images: `gc-scouting-web` and `gc-scouting-bot`. Tag = commit SHA, the cluster picks the image from it.
 #
 # - push on main: CI, build, scan, push, then staging is bumped in the GitOps repository. Production is promoted by hand
 #   (pull request on apps/production).
-# - pull request carrying the `preview` label: build and push of the web and migrate images at the PR head SHA, which the
+# - pull request carrying the `preview` label: build and push of the web image at the PR head SHA, which the
 #   per-PR environment expects (ApplicationSet `preview`). The bot has no per-PR environment. Internal pull requests only:
 #   a fork has no secret and no write access, and its code is never built here (the maintainer re-reads it and pushes it to
 #   a branch of this repository, see the GitOps repository).
@@ -47,7 +46,7 @@ jobs:
       fail-fast: false
       # `matrix` is not available in a job-level `if`: the bot (no per-PR environment) is left out of the matrix instead.
       matrix:
-        include: ${{ fromJSON(github.event_name == 'pull_request' && '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile.migrator","target":""}]' || '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile.migrator","target":""},{"image":"gc-scouting-bot","file":"apps/bot/Dockerfile","target":""}]') }}
+        include: ${{ fromJSON(github.event_name == 'pull_request' && '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"}]' || '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-bot","file":"apps/bot/Dockerfile","target":""}]') }}
     env:
       IMAGE: ghcr.io/osthelia/${{ matrix.image }}
       TAG: ${{ github.event.pull_request.head.sha || github.sha }}
@@ -108,14 +107,14 @@ jobs:
           ref: main
           ssh-key: ${{ secrets.GITOPS_DEPLOY_KEY }}
 
-      # All tags in one commit: the PreSync migration Job and the Deployment must move together.
+      # All tags in one commit: the web and bot images must move together.
       - name: Set tags
         env:
           TAG: ${{ github.sha }}
           FILE: apps/staging/kustomization.yaml
         run: |
           set -euo pipefail
-          for IMAGE in gc-scouting-web gc-scouting-web-migrate gc-scouting-bot; do
+          for IMAGE in gc-scouting-web gc-scouting-bot; do
             grep -qE "name: ghcr\.io/osthelia/${IMAGE}," "$FILE" \
               || { echo "::error::${IMAGE} not found in ${FILE}"; exit 1; }
             sed -i -E "s#(name: ghcr\.io/osthelia/${IMAGE},[[:space:]]*newTag:)[^}]*#\1 \"${TAG}\" #" "$FILE"
