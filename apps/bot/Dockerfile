@@ -9,6 +9,8 @@ RUN npm ci --omit=dev -w apps/bot
 
 FROM node:24-slim
 ENV NODE_ENV=production PORT=8788
+# npm and corepack ship their own dependency copies and are not needed at runtime.
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
 WORKDIR /app/apps/bot
 COPY --from=deps --chown=node:node /app/node_modules /app/node_modules
 COPY --chown=node:node packages/db /app/packages/db
