@@ -8,6 +8,9 @@ COPY apps/bot/package.json apps/bot/
 COPY packages/db/package.json packages/db/
 RUN npm ci
 COPY . .
+
+ARG ASSET_PREFIX=https://cdn.scouting.gc-stats.app
+ENV ASSET_PREFIX=${ASSET_PREFIX}
 RUN npm run build -w apps/web
 
 # Migration image (Argo CD PreSync Job): drizzle-orm and pg only, installed from packages/db/migrate/package-lock.json, plus the raw

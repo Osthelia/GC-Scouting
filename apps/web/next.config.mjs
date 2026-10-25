@@ -25,8 +25,14 @@ const nextConfig = {
   output: "standalone",
   // The workspace packages live above apps/web, the trace must include them.
   outputFileTracingRoot: root,
+  // Build-time CDN host for /_next/static (a pull zone whose origin is the app). Unset = served by the app.
+  assetPrefix: process.env.ASSET_PREFIX || undefined,
   async headers() {
     return [
+      // Fonts and chunks fetched cross-origin from the CDN host need CORS.
+      ...(process.env.ASSET_PREFIX
+        ? [{ source: "/_next/static/:path*", headers: [{ key: "Access-Control-Allow-Origin", value: "*" }] }]
+        : []),
       { source: "/:path*", headers: securityHeaders },
       // Token links must not leak through Referer. Later rules override earlier ones.
       { source: "/:locale/manage/:path*", headers: [{ key: "Referrer-Policy", value: "no-referrer" }] },

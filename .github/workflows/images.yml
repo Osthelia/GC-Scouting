@@ -71,6 +71,9 @@ jobs:
           context: .
           file: ${{ matrix.file }}
           target: ${{ matrix.target }}
+
+          build-args: |
+            ASSET_PREFIX=${{ matrix.image == 'gc-scouting-web' && github.event_name != 'pull_request' && vars.ASSET_PREFIX || '' }}
           load: true
           tags: ${{ env.IMAGE }}:${{ env.TAG }}
           cache-from: type=gha,scope=${{ matrix.image }}
