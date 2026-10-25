@@ -9,7 +9,8 @@ COPY packages/db/package.json packages/db/
 RUN npm ci
 COPY . .
 
-ARG ASSET_PREFIX=https://cdn.scouting.gc-stats.app
+# CDN host for /_next/static, baked in by Next.js: set by the `gc-scouting-web-cdn` build (production only), empty otherwise.
+ARG ASSET_PREFIX=
 ENV ASSET_PREFIX=${ASSET_PREFIX}
 RUN npm run build -w apps/web
 
