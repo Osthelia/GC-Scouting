@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {Został # tweet} few {Zostały # tweety} many {Zostało # tweetów} other {Zostało # tweeta}}",
     "empty": "Nie ma już nic do tweetowania.",
     "unavailable": "Nie udało się załadować tweetów, bot Discord jest nieosiągalny. Odśwież stronę za chwilę.",
-    "forbidden": "Odmowa dostępu: ta strona otwiera się tylko przez Cloudflare Access.",
+    "forbidden": "Odmowa dostępu: ta strona otwiera się tylko przez Authentik.",
     "published": "Opublikowano {date}",
     "viewPost": "Zobacz ogłoszenie",
     "length": "{length}/{max} znaków",
@@ -1011,7 +1011,7 @@
     "marking": "Zapisywanie...",
     "done": "Opublikowano",
     "errors": {
-      "unauthorized": "Twoja sesja Cloudflare Access wygasła, odśwież stronę.",
+      "unauthorized": "Twoja sesja Authentik wygasła, odśwież stronę.",
       "forbidden": "To żądanie nie pochodzi ze strony tweetów, odśwież ją i spróbuj ponownie.",
       "invalid": "To ID ogłoszenia jest nieprawidłowe.",
       "notFound": "To ogłoszenie już nie istnieje.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Dane techniczne",
       "sessions": "<b>Sesje:</b> odcisk tokenu Twojej sesji (nigdy sam token), używana przeglądarka (user agent) oraz daty utworzenia i wygaśnięcia, abyś mógł przeglądać i zabezpieczać swoje sesje.",
-      "country": "<b>Kraj:</b> kraj Twojego połączenia, dostarczany przez Cloudflare, służy wyłącznie do wstępnego wyboru regionu w filtrach. Nigdy nie jest zapisywany.",
+      "country": "<b>Kraj:</b> kraj Twojego połączenia, dostarczany przez naszą sieć hostingową, służy wyłącznie do wstępnego wyboru regionu w filtrach. Nigdy nie jest zapisywany.",
       "logs": "<b>Logi:</b> nasz host przechowuje krótkotrwałe logi techniczne (błędy, żądania) do rozwiązywania problemów.",
       "noTracking": "Brak pomiaru oglądalności, reklam, zewnętrznych trackerów i odsprzedaży danych."
     },

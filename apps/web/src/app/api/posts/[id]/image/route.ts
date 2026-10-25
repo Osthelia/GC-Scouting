@@ -47,7 +47,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
   if (!post) return new Response("Not found", { status: 404, headers: { "Cache-Control": "no-store" } });
 
   try {
-    const png = await getShareImage(post, request.nextUrl.origin);
+    const png = await getShareImage(post);
     // A versioned URL never changes, an outdated or missing version gets the current image for a short while.
     const current = request.nextUrl.searchParams.get("v") === shareImageVersion(post);
     return new Response(png, {

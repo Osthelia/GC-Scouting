@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tweet rimasto} other {# tweet rimasti}}",
     "empty": "Non c'è più nulla da twittare.",
     "unavailable": "Impossibile caricare i tweet, il bot Discord non è raggiungibile. Ricarica la pagina tra qualche istante.",
-    "forbidden": "Accesso negato: questa pagina si apre solo tramite Cloudflare Access.",
+    "forbidden": "Accesso negato: questa pagina si apre solo tramite Authentik.",
     "published": "Pubblicato il {date}",
     "viewPost": "Vedi l'annuncio",
     "length": "{length}/{max} caratteri",
@@ -1011,7 +1011,7 @@
     "marking": "Salvataggio...",
     "done": "Pubblicato",
     "errors": {
-      "unauthorized": "La tua sessione Cloudflare Access è scaduta, ricarica la pagina.",
+      "unauthorized": "La tua sessione Authentik è scaduta, ricarica la pagina.",
       "forbidden": "Questa richiesta non proviene dalla pagina dei tweet, ricaricala e riprova.",
       "invalid": "Questo ID annuncio non è valido.",
       "notFound": "Questo annuncio non esiste più.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Dati tecnici",
       "sessions": "<b>Sessioni:</b> un'impronta del tuo token di sessione (mai il token stesso), il browser usato (user agent) e le date di creazione e scadenza, così puoi controllare e proteggere le tue sessioni.",
-      "country": "<b>Paese:</b> il paese della tua connessione, fornito da Cloudflare, è usato solo per preselezionare la tua regione nei filtri. Non viene mai memorizzato.",
+      "country": "<b>Paese:</b> il paese della tua connessione, fornito dalla nostra rete di hosting, è usato solo per preselezionare la tua regione nei filtri. Non viene mai memorizzato.",
       "logs": "<b>Log:</b> il nostro host conserva log tecnici di breve durata (errori, richieste) per la risoluzione dei problemi.",
       "noTracking": "Nessuna misurazione di audience, nessuna pubblicità, nessun tracker di terze parti e nessuna rivendita dei dati."
     },

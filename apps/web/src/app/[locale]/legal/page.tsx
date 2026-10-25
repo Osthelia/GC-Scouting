@@ -48,7 +48,7 @@ export default async function LegalNoticePage({ params }: Props) {
       <LegalSection icon={ServerIcon} title={t("hosting.title")}>
         <LegalFields
           fields={[
-            { label: t("hosting.site"), value: "Cloudflare, Inc. (Workers, R2), 101 Townsend St, San Francisco, CA 94107, USA" },
+            { label: t("hosting.site"), value: "Infomaniak Network SA (Kubernetes, Object Storage), Rue Eugène-Marziano 25, 1227 Les Acacias (GE), Switzerland" },
             { label: t("hosting.database"), value: "Infomaniak Network SA (Public Cloud), Rue Eugène-Marziano 25, 1227 Les Acacias (GE), Switzerland" },
             { label: t("hosting.email"), value: t("hosting.emailValue") },
             { label: t("hosting.discord"), value: t("hosting.discordValue") },

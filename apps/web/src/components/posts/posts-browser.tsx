@@ -12,7 +12,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import { POST_SORTS, type PostType, type Region } from "@scouting/db/constants";
+import { POST_SORTS, type PostType } from "@scouting/db/constants";
 import { comparePosts, countActiveFilters, matchesFilters, type PostFilters } from "@scouting/db/filters";
 import type { PostCardView } from "@/lib/posts";
 import { RANKS } from "@/lib/ranks";
@@ -25,9 +25,9 @@ import { useWeekdayNames } from "@/components/post/availability-week";
 import { useDurationLabel } from "@/components/post/experience";
 import { PostsFilters, useLanguageName } from "./posts-filters";
 
-export function PostsBrowser({ type, posts, defaultRegion }: { type: PostType; posts: PostCardView[]; defaultRegion: Region | null }) {
+export function PostsBrowser({ type, posts }: { type: PostType; posts: PostCardView[] }) {
   const t = useTranslations("posts");
-  const { filters, sort, setFilters, setSort, reset } = usePostFilters(type, defaultRegion);
+  const { filters, sort, setFilters, setSort, reset } = usePostFilters(type);
   const [sheetOpen, setSheetOpen] = useState(false);
   const closeSheet = useCallback(() => setSheetOpen(false), []);
 

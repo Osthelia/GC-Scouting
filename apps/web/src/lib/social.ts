@@ -8,7 +8,7 @@
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-// Community links, set in the wrangler vars. Null when not configured, the link is then hidden.
+// Community links, set in the environment. Null when not configured, the link is then hidden.
 export function socialLinks(): { discordBot: string | null; twitter: string | null } {
   return {
     discordBot: process.env.DISCORD_BOT_INVITE_URL || null,

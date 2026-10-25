@@ -12,7 +12,7 @@ import { NextResponse } from "next/server";
 import { cronAuthorized } from "@/lib/cron";
 import { purgeExpiredSessions } from "@/lib/auth/session";
 
-// Hourly job (Worker cron trigger): deletes expired sessions.
+// Hourly job (cluster CronJob): deletes expired sessions.
 
 export async function POST(request: Request) {
   if (!(await cronAuthorized(request))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

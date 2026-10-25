@@ -12,7 +12,7 @@ import { NextResponse } from "next/server";
 import { cronAuthorized } from "@/lib/cron";
 import { sweepDeletedGcsAccounts } from "@/lib/auth/account-data";
 
-// Hourly job (Worker cron trigger): a batch of accounts per run, the least recently checked first.
+// Hourly job (cluster CronJob): a batch of accounts per run, the least recently checked first.
 
 export async function POST(request: Request) {
   if (!(await cronAuthorized(request))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

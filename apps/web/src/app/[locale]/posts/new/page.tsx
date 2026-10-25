@@ -20,7 +20,6 @@ import { getActiveProfile, type ActiveProfile } from "@/lib/auth/session";
 import { isPostType } from "@/lib/post-types";
 import { FORM_SECTIONS } from "@/lib/post-form";
 import { formAccountChannels } from "@/lib/post-form-account";
-import { visitorRegion } from "@/lib/geo";
 import { PostTypeBadge, ProfileBadge } from "@/components/post/badges";
 import { LoginGate } from "@/components/auth/login-gate";
 import { PostForm } from "@/components/post-form/post-form";
@@ -70,7 +69,7 @@ async function FormStep({ type, user }: { type: PostType; user: ActiveProfile })
   const t = await getTranslations("newPost");
   const tAuth = await getTranslations("auth.profile");
 
-  const [channels, [existing], defaultRegion] = await Promise.all([
+  const [channels, [existing]] = await Promise.all([
     formAccountChannels(user),
     (SINGLE_ACTIVE_POST_TYPES as readonly PostType[]).includes(type)
       ? db
@@ -79,7 +78,6 @@ async function FormStep({ type, user }: { type: PostType; user: ActiveProfile })
           .where(and(eq(posts.authorId, user.id), eq(posts.type, type), eq(posts.status, "active"), isNull(posts.deletedAt)))
           .limit(1)
       : Promise.resolve([]),
-    visitorRegion(),
   ]);
 
   if (existing && existing.expiresAt > new Date()) {
@@ -134,7 +132,7 @@ async function FormStep({ type, user }: { type: PostType; user: ActiveProfile })
         account={{
           username: user.username,
           delegated: user.delegated,
-          defaultRegion,
+          defaultRegion: null,
           ...channels,
           replacesExpired: !!existing,
         }}

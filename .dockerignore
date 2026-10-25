@@ -1,0 +1,11 @@
+**/node_modules
+**/.next
+**/dist
+**/.git
+**/.idea
+**/.claude
+**/.env
+**/.env.*
+!**/.env.example
+**/*.tsbuildinfo
+**/*.log

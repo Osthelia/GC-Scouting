@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tweet restante} other {# tweets restantes}}",
     "empty": "Nada mais para tweetar.",
     "unavailable": "Não foi possível carregar os tweets, o bot do Discord está inacessível. Recarregue a página em instantes.",
-    "forbidden": "Acesso negado: esta página só abre pelo Cloudflare Access.",
+    "forbidden": "Acesso negado: esta página só abre pelo Authentik.",
     "published": "Publicado em {date}",
     "viewPost": "Ver o anúncio",
     "length": "{length}/{max} caracteres",
@@ -1011,7 +1011,7 @@
     "marking": "Salvando...",
     "done": "Publicado",
     "errors": {
-      "unauthorized": "Sua sessão do Cloudflare Access expirou, recarregue a página.",
+      "unauthorized": "Sua sessão do Authentik expirou, recarregue a página.",
       "forbidden": "Este pedido não veio da página de tweets, recarregue-a e tente novamente.",
       "invalid": "Este id de anúncio não é válido.",
       "notFound": "Este anúncio não existe mais.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Dados técnicos",
       "sessions": "<b>Sessões:</b> uma impressão digital do seu token de sessão (nunca o token em si), o navegador usado (user agent) e as datas de criação e expiração, para que você possa revisar e proteger suas sessões.",
-      "country": "<b>País:</b> o país da sua conexão, fornecido pela Cloudflare, é usado apenas para pré-selecionar sua região nos filtros. Ele nunca é armazenado.",
+      "country": "<b>País:</b> o país da sua conexão, fornecido pela nossa rede de hospedagem, é usado apenas para pré-selecionar sua região nos filtros. Ele nunca é armazenado.",
       "logs": "<b>Logs:</b> nossa hospedagem mantém logs técnicos de curta duração (erros, requisições) para diagnóstico.",
       "noTracking": "Sem medição de audiência, sem anúncios, sem rastreadores de terceiros e sem revenda de dados."
     },

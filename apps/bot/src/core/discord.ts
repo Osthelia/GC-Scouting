@@ -1,20 +1,18 @@
 /**
  * GC-Scouting - discord
  *
- * Minimal Discord REST client with timeout and rate limit retry handling.
+ * Discord REST client (discord.js) with rate limit queueing, timeout and typed errors.
  *
  * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
  * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-import { MessageFlags, RESTJSONErrorCodes, Routes, type APIChannel, type APIMessage, type RESTPostAPIChannelMessageJSONBody } from "discord-api-types/v10";
+import { DiscordAPIError, REST, RESTJSONErrorCodes } from "discord.js";
+import { MessageFlags, Routes, type APIChannel, type APIMessage, type RESTPostAPIChannelMessageJSONBody } from "discord-api-types/v10";
 import type { Env } from "../env";
 
-const API_URL = "https://discord.com/api/v10";
-/** Longest rate limit wait accepted before giving up, in seconds. */
-const MAX_RETRY_AFTER = 5;
-/** A stuck Discord call must not hold a sync until the Worker is cut off. */
+/** A stuck Discord call must not hold a sync forever. */
 const REQUEST_TIMEOUT_MS = 10_000;
 
 export class DiscordApiError extends Error {
@@ -40,28 +38,35 @@ export class DiscordApiError extends Error {
   }
 }
 
-export async function discordRequest<T>(env: Env, method: string, route: `/${string}`, body?: unknown, auth = true): Promise<T> {
-  for (let attempt = 0; ; attempt++) {
-    const response = await fetch(API_URL + route, {
-      method,
-      headers: {
-        ...(auth ? { Authorization: `Bot ${env.DISCORD_BOT_TOKEN}` } : {}),
-        "Content-Type": "application/json",
-        "User-Agent": "DiscordBot (https://github.com/Osthelia/GC-Scouting, 1.0.0)",
-      },
-      body: body === undefined ? undefined : JSON.stringify(body),
-      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-    });
+export const REST_OPTIONS = { version: "10", timeout: REQUEST_TIMEOUT_MS, userAgentAppendix: "GC-Scouting" } as const;
 
-    if (response.status === 204) return undefined as T;
-    const data = (await response.json().catch(() => null)) as { code?: number; message?: string; retry_after?: number } | null;
+/** One client for the whole process: it queues requests per rate limit bucket and retries on 429. */
+let rest: REST | null = null;
 
-    if (response.status === 429 && attempt === 0 && (data?.retry_after ?? Infinity) <= MAX_RETRY_AFTER) {
-      await new Promise((resolve) => setTimeout(resolve, data!.retry_after! * 1000));
-      continue;
-    }
-    if (!response.ok) throw new DiscordApiError(response.status, data?.code, data?.message ?? response.statusText);
-    return data as T;
+/** The gateway client shares its own REST client, so a single rate limit state exists. */
+export function useRest(shared: REST): void {
+  rest = shared;
+}
+
+export function discordRest(env: Pick<Env, "DISCORD_BOT_TOKEN">): REST {
+  rest ??= new REST(REST_OPTIONS).setToken(env.DISCORD_BOT_TOKEN);
+  return rest;
+}
+
+export async function discordRequest<T>(
+  env: Pick<Env, "DISCORD_BOT_TOKEN">,
+  method: "GET" | "POST" | "PATCH" | "DELETE",
+  route: `/${string}`,
+  body?: unknown,
+  auth = true,
+): Promise<T> {
+  const client = discordRest(env);
+  const call = { GET: client.get, POST: client.post, PATCH: client.patch, DELETE: client.delete }[method].bind(client);
+  try {
+    return (await call(route, { body, auth })) as T;
+  } catch (error) {
+    if (error instanceof DiscordAPIError) throw new DiscordApiError(error.status, typeof error.code === "number" ? error.code : undefined, error.message);
+    throw error;
   }
 }
 

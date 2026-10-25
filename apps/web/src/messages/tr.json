@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tweet kaldı} other {# tweet kaldı}}",
     "empty": "Paylaşılacak tweet kalmadı.",
     "unavailable": "Tweet'ler yüklenemedi, Discord botuna ulaşılamıyor. Birkaç dakika sonra sayfayı yenile.",
-    "forbidden": "Erişim reddedildi: bu sayfa yalnızca Cloudflare Access üzerinden açılır.",
+    "forbidden": "Erişim reddedildi: bu sayfa yalnızca Authentik üzerinden açılır.",
     "published": "{date} tarihinde yayınlandı",
     "viewPost": "İlanı gör",
     "length": "{length}/{max} karakter",
@@ -1011,7 +1011,7 @@
     "marking": "Kaydediliyor...",
     "done": "Paylaşıldı",
     "errors": {
-      "unauthorized": "Cloudflare Access oturumunun süresi doldu, sayfayı yenile.",
+      "unauthorized": "Authentik oturumunun süresi doldu, sayfayı yenile.",
       "forbidden": "Bu istek tweet sayfasından gelmedi, sayfayı yenile ve tekrar dene.",
       "invalid": "Bu ilan ID'si geçerli değil.",
       "notFound": "Bu ilan artık mevcut değil.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Teknik veriler",
       "sessions": "<b>Oturumlar:</b> oturum jetonunun bir parmak izi (jetonun kendisi asla), kullanılan tarayıcı (user agent) ve oluşturulma ile bitiş tarihleri, böylece oturumlarını inceleyip güvene alabilirsin.",
-      "country": "<b>Ülke:</b> Cloudflare tarafından sağlanan bağlantı ülken, yalnızca filtrelerde bölgeni önceden seçmek için kullanılır. Asla saklanmaz.",
+      "country": "<b>Ülke:</b> Barındırma ağımız tarafından sağlanan bağlantı ülken, yalnızca filtrelerde bölgeni önceden seçmek için kullanılır. Asla saklanmaz.",
       "logs": "<b>Günlükler:</b> barındırma sağlayıcımız, sorun gidermek için kısa ömürlü teknik günlükler (hatalar, istekler) tutar.",
       "noTracking": "Kitle ölçümü yok, reklam yok, üçüncü taraf izleyici yok ve veri satışı yok."
     },

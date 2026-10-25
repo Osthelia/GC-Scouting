@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tweet left} other {# tweets left}}",
     "empty": "Nothing left to tweet.",
     "unavailable": "The tweets could not be loaded, the Discord bot is not reachable. Reload the page in a few moments.",
-    "forbidden": "Access denied: this page only opens through Cloudflare Access.",
+    "forbidden": "Access denied: this page only opens through Authentik.",
     "published": "Published {date}",
     "viewPost": "View the post",
     "length": "{length}/{max} characters",
@@ -1011,7 +1011,7 @@
     "marking": "Saving...",
     "done": "Published",
     "errors": {
-      "unauthorized": "Your Cloudflare Access session has expired, reload the page.",
+      "unauthorized": "Your Authentik session has expired, reload the page.",
       "forbidden": "This request did not come from the tweets page, reload it and try again.",
       "invalid": "This post id is not valid.",
       "notFound": "This post does not exist anymore.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Technical data",
       "sessions": "<b>Sessions:</b> a fingerprint of your session token (never the token itself), the browser used (user agent) and the creation and expiry dates, so you can review and secure your sessions.",
-      "country": "<b>Country:</b> the country of your connection, provided by Cloudflare, is only used to preselect your region in the filters. It is never stored.",
+      "country": "<b>Country:</b> the country of your connection, provided by our hosting network, is only used to preselect your region in the filters. It is never stored.",
       "logs": "<b>Logs:</b> our host keeps short lived technical logs (errors, requests) for troubleshooting.",
       "noTracking": "No audience measurement, no ads, no third party trackers and no data resale."
     },

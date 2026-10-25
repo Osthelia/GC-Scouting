@@ -1000,7 +1000,7 @@
     "count": "{count, plural, other {还剩 # 条推文}}",
     "empty": "没有需要发推的内容了。",
     "unavailable": "无法加载推文，Discord 机器人无法访问。请稍后刷新页面。",
-    "forbidden": "访问被拒绝：此页面只能通过 Cloudflare Access 打开。",
+    "forbidden": "访问被拒绝：此页面只能通过 Authentik 打开。",
     "published": "发布于 {date}",
     "viewPost": "查看帖子",
     "length": "{length}/{max} 个字符",
@@ -1011,7 +1011,7 @@
     "marking": "正在保存...",
     "done": "已发布",
     "errors": {
-      "unauthorized": "你的 Cloudflare Access 会话已过期，请刷新页面。",
+      "unauthorized": "你的 Authentik 会话已过期，请刷新页面。",
       "forbidden": "此请求不是来自推文页面，请刷新后重试。",
       "invalid": "此帖子 ID 无效。",
       "notFound": "此帖子已不存在。",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "技术数据",
       "sessions": "<b>会话：</b>你的会话令牌的指纹（绝不是令牌本身）、所用的浏览器（用户代理）以及创建和过期日期，方便你查看并保护你的会话。",
-      "country": "<b>国家：</b>由 Cloudflare 提供的你的连接所在国家，仅用于在筛选中预选你的地区。它不会被存储。",
+      "country": "<b>国家：</b>由托管网络提供的你的连接所在国家，仅用于在筛选中预选你的地区。它不会被存储。",
       "logs": "<b>日志：</b>我们的主机会保留短期的技术日志（错误、请求），用于故障排查。",
       "noTracking": "没有受众统计，没有广告，没有第三方追踪器，也不转售数据。"
     },

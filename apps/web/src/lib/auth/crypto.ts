@@ -8,7 +8,7 @@
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-// Web Crypto only: runs the same on Node and Workers.
+// Web Crypto only, no Node specific API.
 
 const encoder = new TextEncoder();
 

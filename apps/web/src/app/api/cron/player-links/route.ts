@@ -12,7 +12,7 @@ import { NextResponse } from "next/server";
 import { cronAuthorized } from "@/lib/cron";
 import { checkPendingPlayerLinks } from "@/lib/auth/player-links";
 
-// Hourly job (Worker cron trigger): approvals and refusals of pending GC Stats links.
+// Hourly job (cluster CronJob): approvals and refusals of pending GC Stats links.
 
 export async function POST(request: Request) {
   if (!(await cronAuthorized(request))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

@@ -15,7 +15,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
 import { listPosts } from "@/lib/posts-query";
 import { isPostType } from "@/lib/post-types";
-import { visitorRegion } from "@/lib/geo";
 import { PostsBrowser } from "@/components/posts/posts-browser";
 import { PostsSkeleton } from "@/components/posts/posts-skeleton";
 
@@ -33,7 +32,7 @@ export default async function PostTypePage({ params }: { params: Params }) {
   if (!isPostType(type)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale: locale as AppLocale, namespace: "home.types" });
-  const [posts, defaultRegion] = await Promise.all([listPosts({ type }), visitorRegion()]);
+  const posts = await listPosts({ type });
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6 sm:py-10">
@@ -43,7 +42,7 @@ export default async function PostTypePage({ params }: { params: Params }) {
       </div>
       {/* The filters read the URL on the client, so the list renders behind Suspense. */}
       <Suspense fallback={<PostsSkeleton />}>
-        <PostsBrowser key={type} type={type} posts={posts} defaultRegion={defaultRegion} />
+        <PostsBrowser key={type} type={type} posts={posts} />
       </Suspense>
     </div>
   );

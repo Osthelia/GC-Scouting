@@ -16,7 +16,7 @@ import feedButtons from "./buttons/feed";
 import mod from "./buttons/mod";
 import report from "./buttons/report";
 
-// Explicit registry: Workers have no file system to scan.
+// Explicit registry, so the build and the typecheck see every handler.
 const COMMANDS: CommandHandler[] = [ping, feed, moderation];
 const COMPONENTS: ComponentHandler[] = [feedButtons, mod, report];
 

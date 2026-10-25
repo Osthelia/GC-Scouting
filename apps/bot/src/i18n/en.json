@@ -215,7 +215,7 @@
     "buttons": {
       "remove": "Remove",
       "restore": "Restore",
-      "openKasm": "Open KASM",
+      "openTweets": "Open tweet queue",
       "markTweeted": "Mark as tweeted",
       "tweeted": "Tweeted",
       "markRetweeted": "Mark as retweeted",

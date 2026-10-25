@@ -28,18 +28,15 @@ export class GcsOAuthError extends Error {
 /** A slow GC Stats must not hold the actions that check sanctions (post, chat). */
 const GCS_TIMEOUT_MS = 8_000;
 
-/** Server to server calls. Service token headers when GC Stats sits behind Cloudflare Access (staging). */
+/** Server to server calls. */
 export async function gcsFetch(path: string, init: RequestInit & { headers: Record<string, string> }): Promise<Response> {
   const headers = { ...init.headers, Accept: "application/json" };
-  const accessId = process.env.GCS_ACCESS_CLIENT_ID;
-  const accessSecret = process.env.GCS_ACCESS_CLIENT_SECRET;
-  if (accessId && accessSecret) Object.assign(headers, { "CF-Access-Client-Id": accessId, "CF-Access-Client-Secret": accessSecret });
 
   const res = await fetch(`${GCS_URL}${path}`, { signal: AbortSignal.timeout(GCS_TIMEOUT_MS), ...init, headers, cache: "no-store", redirect: "manual" });
-  // The API never redirects: a redirect is a login wall (Cloudflare Access) in front of it.
+  // The API never redirects: a redirect is a login wall in front of it.
   if (res.status >= 300 && res.status < 400) {
     const location = res.headers.get("location") ?? "";
-    throw new GcsOAuthError(location.includes("cloudflareaccess.com") ? "cloudflare_access" : `redirect_${res.status}`, `${path} redirected to ${location}`);
+    throw new GcsOAuthError(`redirect_${res.status}`, `${path} redirected to ${location}`);
   }
   return res;
 }

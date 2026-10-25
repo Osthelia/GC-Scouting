@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tweet restant} other {# tweets restants}}",
     "empty": "Plus rien à tweeter.",
     "unavailable": "Les tweets n'ont pas pu être chargés, le bot Discord est injoignable. Recharge la page dans quelques instants.",
-    "forbidden": "Accès refusé : cette page ne s'ouvre qu'à travers Cloudflare Access.",
+    "forbidden": "Accès refusé : cette page ne s'ouvre qu'à travers Authentik.",
     "published": "Publiée {date}",
     "viewPost": "Voir l'annonce",
     "length": "{length}/{max} caractères",
@@ -1011,7 +1011,7 @@
     "marking": "Enregistrement...",
     "done": "Publié",
     "errors": {
-      "unauthorized": "Ta session Cloudflare Access a expiré, recharge la page.",
+      "unauthorized": "Ta session Authentik a expiré, recharge la page.",
       "forbidden": "Cette requête ne vient pas de la page des tweets, rechargez la page et réessayez.",
       "invalid": "L'identifiant de cette annonce n'est pas valide.",
       "notFound": "Cette annonce n'existe plus.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Données techniques",
       "sessions": "<b>Sessions :</b> une empreinte de ton jeton de session (jamais le jeton lui même), le navigateur utilisé (user agent) et les dates de création et d'expiration, pour te permettre de voir et de sécuriser tes connexions.",
-      "country": "<b>Pays :</b> le pays de ta connexion, fourni par Cloudflare, sert seulement à présélectionner ta région dans les filtres. Il n'est jamais enregistré.",
+      "country": "<b>Pays :</b> le pays de ta connexion, fourni par notre réseau d'hébergement, sert seulement à présélectionner ta région dans les filtres. Il n'est jamais enregistré.",
       "logs": "<b>Journaux :</b> notre hébergeur conserve des journaux techniques de courte durée (erreurs, requêtes) pour le diagnostic.",
       "noTracking": "Aucune mesure d'audience, aucune publicité, aucun traceur tiers et aucune revente de données."
     },

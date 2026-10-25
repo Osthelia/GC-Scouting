@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# Tweet übrig} other {# Tweets übrig}}",
     "empty": "Nichts mehr zu tweeten.",
     "unavailable": "Die Tweets konnten nicht geladen werden, der Discord Bot ist nicht erreichbar. Lade die Seite in ein paar Augenblicken neu.",
-    "forbidden": "Zugriff verweigert: Diese Seite öffnet sich nur über Cloudflare Access.",
+    "forbidden": "Zugriff verweigert: Diese Seite öffnet sich nur über Authentik.",
     "published": "Veröffentlicht am {date}",
     "viewPost": "Post ansehen",
     "length": "{length}/{max} Zeichen",
@@ -1011,7 +1011,7 @@
     "marking": "Wird gespeichert...",
     "done": "Veröffentlicht",
     "errors": {
-      "unauthorized": "Deine Cloudflare Access Sitzung ist abgelaufen, lade die Seite neu.",
+      "unauthorized": "Deine Authentik Sitzung ist abgelaufen, lade die Seite neu.",
       "forbidden": "Diese Anfrage kam nicht von der Tweets Seite, lade sie neu und versuche es erneut.",
       "invalid": "Diese Post-ID ist ungültig.",
       "notFound": "Dieser Post existiert nicht mehr.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Technische Daten",
       "sessions": "<b>Sitzungen:</b> ein Fingerabdruck deines Sitzungstokens (nie der Token selbst), der verwendete Browser (User Agent) und die Erstellungs- und Ablaufdaten, damit du deine Sitzungen prüfen und absichern kannst.",
-      "country": "<b>Land:</b> Das von Cloudflare bereitgestellte Land deiner Verbindung wird nur verwendet, um deine Region in den Filtern vorauszuwählen. Es wird nie gespeichert.",
+      "country": "<b>Land:</b> Das Land deiner Verbindung, vom Hosting-Netzwerk bereitgestellt, wird nur verwendet, um deine Region in den Filtern vorauszuwählen. Es wird nie gespeichert.",
       "logs": "<b>Logs:</b> Unser Hoster führt kurzlebige technische Logs (Fehler, Anfragen) zur Fehlersuche.",
       "noTracking": "Keine Reichweitenmessung, keine Werbung, keine Tracker von Drittanbietern und kein Weiterverkauf von Daten."
     },

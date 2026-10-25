@@ -17,7 +17,7 @@ const intl = createMiddleware(routing);
 
 export default function proxy(request: NextRequest) {
   const response = intl(request);
-  // On Workers, `next.config` headers are not applied to redirects issued here.
+  // Redirects issued here must carry the security headers too.
   if (response.status >= 300 && response.status < 400) {
     for (const { key, value } of securityHeaders) response.headers.set(key, value);
   }

@@ -10,7 +10,7 @@
 
 import { sha256Hex } from "@/lib/auth/crypto";
 
-/** Bearer `CRON_SECRET`, sent by the Worker cron trigger (`custom-worker.ts`). */
+/** Bearer `CRON_SECRET`, sent by the cluster CronJobs. */
 export async function cronAuthorized(request: Request): Promise<boolean> {
   const secret = process.env.CRON_SECRET;
   const header = request.headers.get("authorization");

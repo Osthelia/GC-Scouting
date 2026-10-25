@@ -11,13 +11,12 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { verifyAccess } from "@/lib/auth/cf-access";
+import { verifyAccess } from "@/lib/auth/forward-auth";
 import { fetchPendingTweets } from "@/lib/notify/bot";
 import { TweetQueue } from "@/components/tweets/tweet-queue";
 import { tweetsLocale } from "./locale";
 
-// Moderators only, behind Cloudflare Access and opened through a proxy over http:
-// relative URLs only, no cookie, the Access JWT is the identity.
+// Moderators only, behind Authentik (Traefik ForwardAuth): the headers set by the proxy are the identity.
 
 export const dynamic = "force-dynamic";
 
@@ -30,7 +29,7 @@ export default async function TweetsPage() {
   const locale = await tweetsLocale();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "tweets" });
-  if (!(await verifyAccess(await headers()))) {
+  if (!verifyAccess(await headers())) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-10">
         <p role="alert" className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-[14px] text-red-400">

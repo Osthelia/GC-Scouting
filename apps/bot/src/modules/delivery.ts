@@ -20,7 +20,7 @@ import { feedMessage } from "./post-message";
 import { isVisible, loadPost, moderationRemoval, toMatchable, visiblePost, type BotPost, type Queryable } from "./posts";
 import { loggable } from "@scouting/db/log";
 
-/** A sync cut off by the Worker limit frees its post once this is past. */
+/** A sync cut short (restart, crash) frees its post once this is past. */
 const LEASE_MS = 90 * 1000;
 /** Posts bumped earlier than this are left alone by the catch up. */
 const CATCH_UP_WINDOW_MS = 6 * 60 * 60 * 1000;
@@ -164,7 +164,7 @@ async function runSync(ctx: BotContext, postId: number, refresh: boolean): Promi
 
     if (upToDate) {
       if (refresh && channel.kind === "moderation") {
-        await editMessage(ctx.env, channel.channelId, last.messageId, moderationMessage(post, removal, locale, ctx.env.APP_URL, ctx.env.KASM_TWEETS_URL)).catch((error) =>
+        await editMessage(ctx.env, channel.channelId, last.messageId, moderationMessage(post, removal, locale, ctx.env.APP_URL)).catch((error) =>
           console.warn(`[bot] moderation message of post ${post.id} not refreshed`, loggable(error)),
         );
       }
@@ -177,7 +177,7 @@ async function runSync(ctx: BotContext, postId: number, refresh: boolean): Promi
     // Channels only receive what was bumped after they were set up.
     if (!isVisible(post) || post.bumpedAt <= channel.createdAt || !wants(channel, post)) return;
 
-    const body = channel.kind === "moderation" ? moderationMessage(post, null, locale, ctx.env.APP_URL, ctx.env.KASM_TWEETS_URL) : feedMessage(post, locale, ctx.env.APP_URL);
+    const body = channel.kind === "moderation" ? moderationMessage(post, null, locale, ctx.env.APP_URL) : feedMessage(post, locale, ctx.env.APP_URL);
     let messageId: string;
     try {
       messageId = (await sendMessage(ctx.env, channel.channelId, body)).id;
@@ -223,7 +223,7 @@ export async function catchUp(ctx: BotContext): Promise<void> {
 
   for (const { id } of pending) await syncPost(ctx, id);
 
-  // Syncs cut off by the Worker limit: a refresh asked meanwhile is run now, a bare lease just expires.
+  // Syncs cut short by a restart: a refresh asked meanwhile is run now, a bare lease just expires.
   const stale = await ctx.db
     .delete(discordSyncLeases)
     .where(sql`${discordSyncLeases.lockedUntil} < now()`)
@@ -334,7 +334,7 @@ export async function refreshModeration(ctx: BotContext, postId: number, skipMes
 
   const edits: (() => Promise<unknown>)[] = [];
   if (delivered && delivered.messageId !== skipMessageId) {
-    edits.push(() => editMessage(ctx.env, config.channelId, delivered.messageId, moderationMessage(post, removal, locale, ctx.env.APP_URL, ctx.env.KASM_TWEETS_URL)));
+    edits.push(() => editMessage(ctx.env, config.channelId, delivered.messageId, moderationMessage(post, removal, locale, ctx.env.APP_URL)));
   }
   for (const { id } of postReports) {
     const report = await loadReport(ctx.db, id);

@@ -8,20 +8,23 @@
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import createNextIntlPlugin from "next-intl/plugin";
 import { securityHeaders } from "./security-headers.mjs";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
-// Only set by `cf-build`. DEPLOY_TARGET is a runtime var, the build must not reach Hyperdrive.
-const isCloudflareBuild = process.env.OPENNEXT_BUILD_TARGET === "cloudflare";
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   allowedDevOrigins: ["localhost", "127.0.0.1"],
   transpilePackages: ["@scouting/db"],
-  // pg-cloudflare has a "workerd" export that only wrangler's bundler resolves.
-  serverExternalPackages: isCloudflareBuild ? ["pg", "pg-cloudflare"] : [],
+  // Self contained server for the container image (node server.js).
+  output: "standalone",
+  // The workspace packages live above apps/web, the trace must include them.
+  outputFileTracingRoot: root,
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

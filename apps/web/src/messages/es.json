@@ -1000,7 +1000,7 @@
     "count": "{count, plural, one {# tuit pendiente} other {# tuits pendientes}}",
     "empty": "No queda nada por tuitear.",
     "unavailable": "No se pudieron cargar los tuits, el bot de Discord no responde. Recarga la página en unos momentos.",
-    "forbidden": "Acceso denegado: esta página solo se abre a través de Cloudflare Access.",
+    "forbidden": "Acceso denegado: esta página solo se abre a través de Authentik.",
     "published": "Publicado {date}",
     "viewPost": "Ver el anuncio",
     "length": "{length}/{max} caracteres",
@@ -1011,7 +1011,7 @@
     "marking": "Guardando...",
     "done": "Publicado",
     "errors": {
-      "unauthorized": "Tu sesión de Cloudflare Access ha caducado, recarga la página.",
+      "unauthorized": "Tu sesión de Authentik ha caducado, recarga la página.",
       "forbidden": "Esta solicitud no viene de la página de tweets, recárgala y vuelve a intentarlo.",
       "invalid": "El identificador de este anuncio no es válido.",
       "notFound": "Este anuncio ya no existe.",
@@ -1107,7 +1107,7 @@
     "private": {
       "title": "Datos técnicos",
       "sessions": "<b>Sesiones:</b> una huella de tu token de sesión (nunca el token en sí), el navegador usado (user agent) y las fechas de creación y expiración, para que puedas revisar y proteger tus sesiones.",
-      "country": "<b>País:</b> el país de tu conexión, proporcionado por Cloudflare, solo sirve para preseleccionar tu región en los filtros. Nunca se guarda.",
+      "country": "<b>País:</b> el país de tu conexión, proporcionado por nuestra red de alojamiento, solo sirve para preseleccionar tu región en los filtros. Nunca se guarda.",
       "logs": "<b>Registros:</b> nuestro proveedor de alojamiento conserva registros técnicos de corta duración (errores, peticiones) para el diagnóstico.",
       "noTracking": "Sin medición de audiencia, sin publicidad, sin rastreadores de terceros y sin venta de datos."
     },

@@ -1,13 +1,15 @@
 /**
- * GC-Scouting - open-next.config
+ * GC-Scouting - healthz route
  *
- * OpenNext configuration for the Cloudflare build.
+ * Liveness probe: the process answers.
  *
  * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
  * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+export const dynamic = "force-dynamic";
 
-export default defineCloudflareConfig();
+export function GET() {
+  return new Response("ok", { headers: { "Cache-Control": "no-store" } });
+}

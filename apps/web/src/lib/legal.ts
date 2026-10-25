@@ -12,4 +12,4 @@ export const LEGAL_CONTACT = "contact@gc-stats.app";
 export const PRIVACY_CONTACT = "board@osthelia.org";
 
 // Bump when the content of the legal pages changes.
-export const LEGAL_UPDATED_AT = new Date("2026-10-05T00:00:00Z");
+export const LEGAL_UPDATED_AT = new Date("2026-10-20T00:00:00Z");

@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
     return Response.redirect(url, 302);
   }
   try {
-    const png = await getShareImage(DEMO_POST, request.nextUrl.origin, "home/demo.png");
+    const png = await getShareImage(DEMO_POST, "home/demo.png");
     return new Response(png, { headers: { "Content-Type": "image/png", "Cache-Control": "public, max-age=31536000, immutable" } });
   } catch (error) {
     console.error("Demo share image failed", loggable(error));

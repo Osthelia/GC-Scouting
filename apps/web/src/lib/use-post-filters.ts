@@ -13,7 +13,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FILTER_PARAM_KEYS, filtersFromParams, filtersToParams, type PostFilters } from "@scouting/db/filters";
-import type { PostSort, PostType, Region } from "@scouting/db/constants";
+import type { PostSort, PostType } from "@scouting/db/constants";
 import { FILTER_GROUPS, type FilterGroup } from "./post-types";
 
 const GROUP_KEYS: Record<FilterGroup, (keyof PostFilters)[]> = {
@@ -41,16 +41,13 @@ function parse(params: { get(key: string): string | null }, type: PostType) {
 
 /**
  * Filters of a /posts/{type} page: the URL wins (shared links), then the last filters saved in this browser for this type,
- * then the visitor's region.
+ * then the defaults.
  */
-export function usePostFilters(type: PostType, defaultRegion: Region | null) {
+export function usePostFilters(type: PostType) {
   const storageKey = `sc:posts:filters:${type}`;
   const searchParams = useSearchParams();
   const hasParams = FILTER_PARAM_KEYS.some((key) => searchParams.has(key));
-  const [state, setState] = useState(() => {
-    const parsed = parse(searchParams, type);
-    return hasParams || !defaultRegion ? parsed : { ...parsed, filters: { regions: [defaultRegion] } };
-  });
+  const [state, setState] = useState(() => parse(searchParams, type));
   const hydrated = useRef(false);
 
   useEffect(() => {

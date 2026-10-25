@@ -9,15 +9,15 @@
  */
 
 import { parseId } from "@scouting/db";
-import { verifyAccess } from "@/lib/auth/cf-access";
+import { verifyAccess } from "@/lib/auth/forward-auth";
 import { markBotTweeted } from "@/lib/notify/bot";
 
-// Marks a post as tweeted (or retweeted) from the tweets page. Behind Cloudflare Access, like the page, its JWT is checked here too.
+// Marks a post as tweeted (or retweeted) from the tweets page. Behind Authentik, like the page, its identity headers are checked here too.
 
 const STATUS = { ok: 200, notFound: 404, alreadyTweeted: 409, awaitingAuthor: 409, unavailable: 503 } as const;
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
-  // The Access cookie rides along cross site requests too: only the tweets page itself may post.
+  // The Authentik cookie rides along cross site requests too: only the tweets page itself may post.
   // Sec-Fetch-Site is set by the browser and reliable behind proxies, where request.url may not be the public origin.
   const site = request.headers.get("sec-fetch-site");
   const from = request.headers.get("origin");
@@ -25,7 +25,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   const sameOrigin = site ? site === "same-origin" : !from || (host !== null && URL.canParse(from) && new URL(from).host === host);
   if (!sameOrigin) return Response.json({ ok: false, error: "forbidden" }, { status: 403 });
 
-  const identity = await verifyAccess(request.headers);
+  const identity = verifyAccess(request.headers);
   if (!identity) return Response.json({ ok: false, error: "unauthorized" }, { status: 401 });
 
   const { id } = await params;

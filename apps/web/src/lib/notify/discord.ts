@@ -8,15 +8,12 @@
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 
-import { getCloudflareContext } from "@opennextjs/cloudflare";
 import { loggable } from "@scouting/db/log";
 
-// Discord DMs through the shared Osthelia DiscordNotificationsWorker.
-// On Cloudflare it is reached with the DISCORD_NOTIFICATIONS Service Binding (the Worker has no public URL),
-// DISCORD_NOTIFICATIONS_WORKER_URL is only for local dev. Payload shapes mirror the Worker's own types.
+// Discord DMs through the shared Osthelia DiscordNotificationsWorker, reached at DISCORD_NOTIFICATIONS_WORKER_URL.
+// Payload shapes mirror the notification service types.
 
 const SERVICE_NAME = "scouting";
-const BINDING_BASE_URL = "http://discord-notifications";
 const SEND_TIMEOUT_MS = 5000;
 
 export type DiscordButton = { label: string; url: string };
@@ -32,23 +29,14 @@ export type DiscordContainer = { accentColor?: number; spoiler?: boolean; blocks
 /** `dm_blocked` and validation errors are permanent, the others are worth a retry. */
 export type DiscordDmResult = { ok: true } | { ok: false; error: string };
 
-function transport(): { url: string; fetch: typeof fetch } | null {
-  if (process.env.DEPLOY_TARGET === "cloudflare") {
-    const binding = getCloudflareContext().env.DISCORD_NOTIFICATIONS;
-    return { url: BINDING_BASE_URL, fetch: binding.fetch.bind(binding) as typeof fetch };
-  }
-  const url = process.env.DISCORD_NOTIFICATIONS_WORKER_URL;
-  return url ? { url: url.replace(/\/$/, ""), fetch } : null;
-}
-
 /** Never throws, a failure comes back as a result. */
 export async function sendDiscordDm(discordId: string, container: DiscordContainer): Promise<DiscordDmResult> {
-  const target = transport();
+  const baseUrl = process.env.DISCORD_NOTIFICATIONS_WORKER_URL?.replace(/\/$/, "");
   const key = process.env.DISCORD_NOTIFICATIONS_WORKER_KEY;
-  if (!target || !key) return { ok: false, error: "not_configured" };
+  if (!baseUrl || !key) return { ok: false, error: "not_configured" };
 
   try {
-    const response = await target.fetch(`${target.url}/notify`, {
+    const response = await fetch(`${baseUrl}/notify`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
       body: JSON.stringify({ discordId, service: SERVICE_NAME, type: "container", container }),

@@ -12,7 +12,7 @@ import { NextResponse } from "next/server";
 import { cronAuthorized } from "@/lib/cron";
 import { sendExpiryReminders } from "@/lib/post-expiry";
 
-// Hourly job (Worker cron trigger): expiry reminder of posts reaching day 7.
+// Hourly job (cluster CronJob): expiry reminder of posts reaching day 7.
 
 export async function POST(request: Request) {
   if (!(await cronAuthorized(request))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

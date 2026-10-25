@@ -74,7 +74,7 @@ export default {
 
       const post = await loadPost(ctx.db, postId);
       if (!post) return { error: t(locale, "mod.errors.notFound") };
-      return { update: moderationMessage(post, await moderationRemoval(ctx.db, post), configLocale(guard.config), ctx.env.APP_URL, ctx.env.KASM_TWEETS_URL) };
+      return { update: moderationMessage(post, await moderationRemoval(ctx.db, post), configLocale(guard.config), ctx.env.APP_URL) };
     });
   },
 
@@ -110,7 +110,7 @@ export default {
         update:
           report && report.moderationMessageId === messageId
             ? reportMessage(report, post, channelLocale, ctx.env.APP_URL)
-            : moderationMessage(post, await moderationRemoval(ctx.db, post), channelLocale, ctx.env.APP_URL, ctx.env.KASM_TWEETS_URL),
+            : moderationMessage(post, await moderationRemoval(ctx.db, post), channelLocale, ctx.env.APP_URL),
       };
     });
   },

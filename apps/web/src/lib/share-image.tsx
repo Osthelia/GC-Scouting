@@ -9,7 +9,8 @@
  */
 
 import { ImageResponse } from "next/og";
-import { getCloudflareContext } from "@opennextjs/cloudflare";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { getTranslations } from "next-intl/server";
 import { shareImageVersion, type ShareImagePost } from "@scouting/db/share-image";
 import { POST_TYPE_BY_KEY, type PostType } from "@/lib/post-types";
@@ -19,9 +20,10 @@ import { TIERS, groupByTier } from "@/lib/tiers";
 import { AGENTS_BY_SLUG } from "@/lib/agents";
 import { initials, postRankRange } from "@/lib/posts";
 import { loggable } from "@scouting/db/log";
+import { deleteObjects, getObject, putObject } from "@/lib/object-storage";
 
 // Share image of a post (OG, Twitter, Discord), 1200x630, always in English.
-// Stored in R2 on Cloudflare, rendered on each request elsewhere.
+// Stored in the object storage bucket when configured, rendered on each request otherwise.
 
 export const SHARE_IMAGE_SIZE = { width: 1200, height: 630 };
 
@@ -35,13 +37,10 @@ const TIER_LABEL_WIDTH = 190;
 const ICON_GAP = 5;
 const MIN_ICON_SIZE = 24;
 
-/** Bytes of a file of `public/`: ASSETS binding on Cloudflare, the dev server otherwise. */
-async function publicFile(path: string, origin: string): Promise<ArrayBuffer> {
-  const url = new URL(path, origin);
-  const assets = process.env.DEPLOY_TARGET === "cloudflare" ? getCloudflareContext().env.ASSETS : undefined;
-  const response = assets ? await assets.fetch(url) : await fetch(url);
-  if (!response.ok) throw new Error(`${path} answered ${response.status}`);
-  return response.arrayBuffer();
+/** Bytes of a file of `public/`. */
+async function publicFile(file: string): Promise<ArrayBuffer> {
+  const bytes = await readFile(path.join(process.cwd(), "public", file));
+  return bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer;
 }
 
 function dataUri(bytes: ArrayBuffer): string {
@@ -52,9 +51,9 @@ function dataUri(bytes: ArrayBuffer): string {
 }
 
 /** Null when the icon is missing, the caller draws a fallback. */
-async function iconUri(path: string, origin: string): Promise<string | null> {
+async function iconUri(file: string): Promise<string | null> {
   try {
-    return dataUri(await publicFile(path, origin));
+    return dataUri(await publicFile(file));
   } catch {
     return null;
   }
@@ -62,12 +61,12 @@ async function iconUri(path: string, origin: string): Promise<string | null> {
 
 let fontsPromise: Promise<NonNullable<ConstructorParameters<typeof ImageResponse>[1]>["fonts"]> | null = null;
 
-function loadFonts(origin: string) {
+function loadFonts() {
   fontsPromise ??= Promise.all(
     (["latin", "latin-ext"] as const).flatMap((subset) =>
       ([500, 700] as const).map(async (weight) => ({
         name: FONT,
-        data: await publicFile(`/og/fonts/instrument-sans-${subset}-${weight}.woff`, origin),
+        data: await publicFile(`/og/fonts/instrument-sans-${subset}-${weight}.woff`),
         weight,
         style: "normal" as const,
       })),
@@ -129,7 +128,7 @@ function Brand({ scale = 1 }: { scale?: number }) {
   );
 }
 
-async function ShareImage({ post, origin }: { post: ShareImagePost; origin: string }) {
+async function ShareImage({ post }: { post: ShareImagePost }) {
   const [t, tTypes, tRegions, tRoles, tIgl, tStaff, tSpots, tTiers] = await Promise.all([
     getTranslations({ locale: LOCALE, namespace: "postPage" }),
     getTranslations({ locale: LOCALE, namespace: "home.types" }),
@@ -149,8 +148,8 @@ async function ShareImage({ post, origin }: { post: ShareImagePost; origin: stri
   const ranks = [range?.rank, range?.rankMax].filter((r): r is Rank => !!r);
   const agents = tierRows?.flat() ?? [];
   const [rankIcons, agentIcons] = await Promise.all([
-    Promise.all(ranks.map((r) => iconUri(`/og/ranks/${r}.png`, origin))),
-    Promise.all(agents.map((slug) => iconUri(`/og/agents/${slug}.png`, origin))),
+    Promise.all(ranks.map((r) => iconUri(`/og/ranks/${r}.png`))),
+    Promise.all(agents.map((slug) => iconUri(`/og/agents/${slug}.png`))),
   ]);
   const agentIcon = Object.fromEntries(agents.map((slug, i) => [slug, agentIcons[i]]));
 
@@ -273,50 +272,39 @@ async function ShareImage({ post, origin }: { post: ShareImagePost; origin: stri
   );
 }
 
-/** PNG bytes of the share image. `origin` serves `public/` in dev. */
-async function renderShareImage(post: ShareImagePost, origin: string): Promise<ArrayBuffer> {
-  const [element, fonts] = await Promise.all([ShareImage({ post, origin }), loadFonts(origin)]);
+/** PNG bytes of the share image. */
+async function renderShareImage(post: ShareImagePost): Promise<ArrayBuffer> {
+  const [element, fonts] = await Promise.all([ShareImage({ post }), loadFonts()]);
   const response = new ImageResponse(element, { ...SHARE_IMAGE_SIZE, fonts });
   return response.arrayBuffer();
-}
-
-/** R2 bucket of the images, only bound on Cloudflare. */
-function bucket(): R2Bucket | null {
-  return process.env.DEPLOY_TARGET === "cloudflare" ? getCloudflareContext().env.SHARE_IMAGES : null;
 }
 
 const imageKey = (postId: number) => `posts/${postId}.png`;
 
 /** Stored image when it matches the post, otherwise rendered then stored. One object per post (`key`). */
-export async function getShareImage(post: ShareImagePost, origin: string, key = imageKey(post.id)): Promise<ArrayBuffer> {
-  const store = bucket();
+export async function getShareImage(post: ShareImagePost, key = imageKey(post.id)): Promise<ArrayBuffer> {
   const version = shareImageVersion(post);
-  if (store) {
-    try {
-      const stored = await store.get(key);
-      if (stored?.customMetadata?.version === version) return await stored.arrayBuffer();
-    } catch (error) {
-      console.error("Share image read failed", key, loggable(error));
-    }
+  try {
+    const stored = await getObject(key);
+    if (stored?.metadata.version === version) return stored.bytes.slice().buffer;
+  } catch (error) {
+    console.error("Share image read failed", key, loggable(error));
   }
 
-  const png = await renderShareImage(post, origin);
-  if (store) {
-    try {
-      await store.put(key, png, { httpMetadata: { contentType: "image/png" }, customMetadata: { version } });
-    } catch (error) {
-      console.error("Share image write failed", key, loggable(error));
-    }
+  const png = await renderShareImage(post);
+  try {
+    await putObject(key, png, "image/png", { version });
+  } catch (error) {
+    console.error("Share image write failed", key, loggable(error));
   }
   return png;
 }
 
 /** Drops the stored images of posts that are gone (removed, deleted account). Never throws. */
 export async function deleteShareImages(postIds: number[]): Promise<void> {
-  const store = bucket();
-  if (!store || postIds.length === 0) return;
+  if (postIds.length === 0) return;
   try {
-    await store.delete(postIds.map(imageKey));
+    await deleteObjects(postIds.map(imageKey));
   } catch (error) {
     console.error("Share image delete failed", postIds, loggable(error));
   }

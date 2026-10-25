@@ -68,7 +68,7 @@ export async function restorePost(db: Db, postId: number, discordUserId: string)
   }
 }
 
-/** Moderator on Discord, or Cloudflare Access identity (email or Service Token) on the site tweets page. */
+/** Moderator on Discord, or Authentik identity (email or username) on the site tweets page. */
 export type TweetedBy = { discordUserId: string } | { accessSubject: string };
 
 /** Tweeted, or the author's tweet retweeted. */

@@ -1,7 +1,7 @@
 /**
  * GC-Scouting - bot
  *
- * Calls the Discord bot worker for internal notifications.
+ * Calls the Discord bot for internal notifications.
  *
  * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
  * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
@@ -9,34 +9,22 @@
  */
 
 import type { PostType, Region, TweetBy } from "@scouting/db";
-import { getCloudflareContext } from "@opennextjs/cloudflare";
 import type { AppLocale } from "@/i18n/routing";
 import { loggable } from "@scouting/db/log";
 
-// Scouting Discord bot (apps/bot). On Cloudflare it is reached with the SCOUTING_BOT Service Binding,
-// SCOUTING_BOT_URL is only for local dev. The bot answers at once and talks to Discord afterwards,
-// its cron catches up on any call lost here.
+// Scouting Discord bot (apps/bot), reached at SCOUTING_BOT_URL. It answers at once and talks to Discord afterwards,
+// its periodic catch up covers any call lost here.
 
-const BINDING_BASE_URL = "http://scouting-bot";
 const REQUEST_TIMEOUT_MS = 5000;
-
-function transport(): { url: string; fetch: typeof fetch } | null {
-  if (process.env.DEPLOY_TARGET === "cloudflare") {
-    const binding = getCloudflareContext().env.SCOUTING_BOT;
-    return { url: BINDING_BASE_URL, fetch: binding.fetch.bind(binding) as typeof fetch };
-  }
-  const url = process.env.SCOUTING_BOT_URL;
-  return url ? { url: url.replace(/\/$/, ""), fetch } : null;
-}
 
 /** Authenticated request to the bot, null when it is not configured. */
 async function request(path: string, method: "GET" | "POST", body?: unknown): Promise<Response | null> {
-  const target = transport();
+  const baseUrl = process.env.SCOUTING_BOT_URL?.replace(/\/$/, "");
   const key = process.env.SCOUTING_BOT_KEY;
-  if (!target || !key) return null;
+  if (!baseUrl || !key) return null;
   const headers: Record<string, string> = { Authorization: `Bearer ${key}` };
   if (body !== undefined) headers["Content-Type"] = "application/json";
-  return target.fetch(`${target.url}${path}`, {
+  return fetch(`${baseUrl}${path}`, {
     method,
     headers,
     body: body === undefined ? undefined : JSON.stringify(body),

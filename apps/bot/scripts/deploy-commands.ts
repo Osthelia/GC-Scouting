@@ -12,10 +12,10 @@ import { Routes } from "discord-api-types/v10";
 import { commands } from "../src/interactions";
 
 // Registers the slash commands: `global` ones everywhere, `moderation` ones on the moderation server only.
-// Reads .dev.vars locally, the environment otherwise. Run after adding or changing a command.
+// Reads .env locally, the environment otherwise. Run after adding or changing a command.
 
 try {
-  process.loadEnvFile(".dev.vars");
+  process.loadEnvFile(".env");
 } catch {}
 
 const { DISCORD_APPLICATION_ID: applicationId, DISCORD_BOT_TOKEN: token, MODERATION_GUILD_ID: moderationGuildId } = process.env;

@@ -1,7 +1,7 @@
 /**
  * GC-Scouting - countries
  *
- * Country codes grouped by Valorant region.
+ * Country codes grouped by Valorant region, for the post form.
  *
  * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
  * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
@@ -31,8 +31,4 @@ export const COUNTRY_CODES = [...REGION_BY_COUNTRY.keys()];
 
 export function isCountryCode(value: string): boolean {
   return REGION_BY_COUNTRY.has(value);
-}
-
-export function regionFromCountry(country: string | null | undefined): Region | null {
-  return country ? (REGION_BY_COUNTRY.get(country.toUpperCase()) ?? null) : null;
 }
