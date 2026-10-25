@@ -12,6 +12,7 @@ import { loggable } from "@scouting/db/log";
 import { loadEnv } from "./env";
 import { createContext } from "./core/context";
 import { createGateway } from "./core/gateway";
+import { startHeartbeat } from "./core/heartbeat";
 import { catchUp } from "./modules/delivery";
 import { createInternalServer } from "./server";
 
@@ -39,6 +40,7 @@ function runCatchUp(): void {
 }
 
 const timer = setInterval(runCatchUp, CATCH_UP_INTERVAL_MS);
+const heartbeat = startHeartbeat(client, ctx);
 
 let stopping = false;
 async function shutdown(signal: string): Promise<void> {
@@ -48,6 +50,7 @@ async function shutdown(signal: string): Promise<void> {
   setTimeout(() => process.exit(1), SHUTDOWN_TIMEOUT_MS).unref();
 
   clearInterval(timer);
+  if (heartbeat) clearInterval(heartbeat);
   await client.destroy();
   await new Promise<void>((resolve) => server.close(() => resolve()));
   await drain();
