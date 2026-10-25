@@ -1,0 +1,21 @@
+# Build from the repository root: docker build -f apps/web/Dockerfile.migrator .
+# PreSync Job running drizzle-kit migrate. Needs drizzle-kit (devDependency) and the raw drizzle/ SQL folder.
+FROM node:24-slim
+WORKDIR /app
+COPY package.json package-lock.json ./
+COPY apps/web/package.json apps/web/
+COPY apps/bot/package.json apps/bot/
+COPY packages/db/package.json packages/db/
+RUN npm ci -w packages/db
+
+# drizzle-kit's esbuild 0.25 binary is built with a vulnerable Go: use the 0.28 copy nested in tsx instead.
+RUN rm -rf node_modules/esbuild node_modules/@esbuild \
+    && cp -r node_modules/tsx/node_modules/esbuild node_modules/esbuild \
+    && cp -r node_modules/tsx/node_modules/@esbuild node_modules/@esbuild
+
+# npm and corepack ship their own dependency copies and are not needed at runtime.
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
+
+COPY packages/db /app/packages/db
+WORKDIR /app/packages/db
+CMD ["/app/node_modules/.bin/drizzle-kit", "migrate"]

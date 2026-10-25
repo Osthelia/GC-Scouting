@@ -47,7 +47,7 @@ jobs:
       fail-fast: false
       # `matrix` is not available in a job-level `if`: the bot (no per-PR environment) is left out of the matrix instead.
       matrix:
-        include: ${{ fromJSON(github.event_name == 'pull_request' && '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile","target":"migrator"}]' || '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile","target":"migrator"},{"image":"gc-scouting-bot","file":"apps/bot/Dockerfile","target":""}]') }}
+        include: ${{ fromJSON(github.event_name == 'pull_request' && '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile.migrator","target":""}]' || '[{"image":"gc-scouting-web","file":"apps/web/Dockerfile","target":"runner"},{"image":"gc-scouting-web-migrate","file":"apps/web/Dockerfile.migrator","target":""},{"image":"gc-scouting-bot","file":"apps/bot/Dockerfile","target":""}]') }}
     env:
       IMAGE: ghcr.io/osthelia/${{ matrix.image }}
       TAG: ${{ github.event.pull_request.head.sha || github.sha }}
