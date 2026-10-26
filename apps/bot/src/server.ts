@@ -4,7 +4,7 @@
  * Internal HTTP server: routes called by the site (BOT_INTERNAL_KEY) and the health endpoints.
  *
  * @copyright Copyright (c) 2026 Osthelia - GC-Scouting
- * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia License v1.0
+ * @license   https://github.com/Osthelia/GC-Scouting/blob/main/LICENSE.md Osthelia Limited Commercial License v2.0
  * @link      https://github.com/Osthelia/GC-Scouting
  */
 

@@ -31,7 +31,7 @@ To keep the codebase clean and maintainable:
   ```
 - **Database:** The project uses PostgreSQL through Drizzle ORM. Ensure your changes are compatible with PostgreSQL (no SQLite specific logic).
 - **Translations:** Every user-facing text must be translated in every supported locale (EN/FR/ES).
-- **Copyright notice:** Do not remove or alter the Osthelia copyright notice in the footer of any page (see [LICENSE.md](LICENSE.md)).
+- **Copyright notice:** Do not remove or alter the Osthelia copyright notice in the footer of any page and in the bot's profile description (see [LICENSE.md](LICENSE.md)).
 
 ### 4. Submitting a Pull Request
 
