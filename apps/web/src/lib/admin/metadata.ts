@@ -13,7 +13,7 @@ import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
 import { getStaffUser } from "./access";
 
-type AdminNavKey = "dashboard" | "users" | "posts" | "postReports" | "messageReports" | "conversations" | "automod" | "access";
+type AdminNavKey = "dashboard" | "users" | "posts" | "postReports" | "messageReports" | "conversations" | "automod" | "access" | "tweets";
 
 /** Admin page title, empty outside the staff so the 404 keeps the site title. */
 export async function adminMetadata(params: Promise<{ locale: string }>, key: AdminNavKey, { adminOnly = false } = {}): Promise<Metadata> {

@@ -124,7 +124,7 @@ export const moderationActions = pgTable(
     // Moderator on Discord, or staff member on the site admin.
     discordUserId: text("discord_user_id"),
     actorUserId: text("actor_user_id").references(() => users.id, { onDelete: "set null" }),
-    // Cloudflare Access identity (email or Service Token) for actions from the tweets page.
+    // Identity of the former tweets page (Authentik), kept for older actions.
     accessSubject: text("access_subject"),
     reason: text("reason"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),

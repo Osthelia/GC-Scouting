@@ -36,6 +36,7 @@ const INTERNAL_ROUTES: { pattern: RegExp; run(ctx: BotContext, id: number): Prom
 
 const TWEETED_ROUTE = /^\/internal\/posts\/(\d+)\/tweeted$/;
 const AUTHOR_TWEET_ROUTE = /^\/internal\/posts\/(\d+)\/tweet$/;
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 const sha256 = (value: string) => createHash("sha256").update(value).digest();
 
@@ -59,11 +60,9 @@ async function tweets(request: Request, ctx: BotContext, path: string): Promise<
 
   const id = parseId(path.match(TWEETED_ROUTE)?.[1]);
   if (request.method !== "POST" || !id) return null;
-  const { accessSubject } = (await request.json().catch(() => ({}))) as { accessSubject?: unknown };
-  if (typeof accessSubject !== "string" || !accessSubject.trim() || accessSubject.length > 320) {
-    return Response.json({ ok: false, error: "invalid" }, { status: 400 });
-  }
-  const result = await markTweeted(ctx.db, id, { accessSubject: accessSubject.trim() });
+  const { actorUserId } = (await request.json().catch(() => ({}))) as { actorUserId?: unknown };
+  if (typeof actorUserId !== "string" || !UUID.test(actorUserId)) return Response.json({ ok: false, error: "invalid" }, { status: 400 });
+  const result = await markTweeted(ctx.db, id, { actorUserId });
   if (result !== "ok") return Response.json({ ok: false, error: result }, { status: result === "notFound" ? 404 : 409 });
   ctx.defer(() => refreshModeration(ctx, id));
   return Response.json({ ok: true });

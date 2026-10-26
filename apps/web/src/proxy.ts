@@ -25,5 +25,5 @@ export default function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|t/|tweets(?:/|$)|.*\..*).*)"],
+  matcher: ["/((?!api|_next|t/|.*\..*).*)"],
 };

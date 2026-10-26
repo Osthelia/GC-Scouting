@@ -69,7 +69,7 @@ export function moderationMessage(post: BotPost, removal: Removal | null, locale
   const buttons: APIButtonComponent[] = [];
   if (visible) buttons.push(actionButton(t(locale, "mod.buttons.remove"), customId("mod", "remove", post.id), ButtonStyle.Danger));
   if (removal) buttons.push(actionButton(t(locale, "mod.buttons.restore"), customId("mod", "restore", post.id), ButtonStyle.Success));
-  if (toTweet) buttons.push(linkButton(t(locale, "mod.buttons.openTweets"), `${appUrl}/tweets`));
+  if (toTweet) buttons.push(linkButton(t(locale, "mod.buttons.openTweets"), `${appUrl}/admin/tweets`));
   if (post.tweetedAt) {
     buttons.push(actionButton(t(locale, byAuthor ? "mod.buttons.retweeted" : "mod.buttons.tweeted"), customId("mod", "tweeted", post.id), ButtonStyle.Secondary, true));
   } else if (toTweet) {

@@ -20,7 +20,7 @@ import { saveAuthorTweet, setPostTweetBy, type PostTweetError, type PostTweetRes
 import type { TweetDraft } from "@/lib/notify/bot";
 import { Field, TextInput } from "@/components/ui/field";
 import { ToggleChip } from "@/components/ui/toggle-chip";
-import { TweetImageButton } from "@/components/tweets/tweet-image-button";
+import { TweetImageButton } from "@/components/post/tweet-image-button";
 import { LanguageFlag } from "@/components/post/language-flags";
 import { useLanguageName } from "@/components/posts/posts-filters";
 import { cn } from "@/lib/utils";

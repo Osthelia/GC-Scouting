@@ -22,7 +22,7 @@ async function forgedRscRequest(path: string): Promise<string> {
   return res.text();
 }
 
-for (const page of ["users", "conversations", "conversations/1", "reports", "message-reports", "automod", "posts", "access", "users/1"]) {
+for (const page of ["users", "conversations", "conversations/1", "reports", "message-reports", "automod", "posts", "access", "tweets", "users/1"]) {
   test(`a forged RSC request on /admin/${page} without a session gets no data`, async () => {
     const body = await forgedRscRequest(`/en/admin/${page}`);
     assert.match(body, /NEXT_REDIRECT;replace;\/api\/auth\/login/);

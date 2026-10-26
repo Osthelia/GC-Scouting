@@ -18,7 +18,16 @@ import { cn } from "@/lib/utils";
 type Mode = "share" | "copy";
 type State = "idle" | "pending" | "done" | "error";
 
-const doneStyle = "border-[color-mix(in_oklab,var(--sc-accent)_45%,transparent)] bg-[color-mix(in_oklab,var(--sc-accent)_14%,transparent)] text-[var(--sc-accent)]";
+// Site and admin palettes.
+const STYLES = {
+  site: {
+    done: "border-[color-mix(in_oklab,var(--sc-accent)_45%,transparent)] bg-[color-mix(in_oklab,var(--sc-accent)_14%,transparent)] text-[var(--sc-accent)]",
+    hint: "text-neutral-400",
+    error: "text-red-400",
+    link: "hover:text-red-300",
+  },
+  admin: { done: "border-primary/40 bg-primary/10 text-primary", hint: "text-muted-foreground", error: "text-destructive", link: "hover:opacity-80" },
+} as const;
 
 /** Touch devices that can share files get the share sheet (X app with the image attached), the others copy the image to paste in the tweet. */
 function detectMode(): Mode {
@@ -31,7 +40,19 @@ function detectMode(): Mode {
  * Hands the post's share image over to X, since a tweet intent cannot attach media.
  * Meant to sit in a wrapping flex row: its message takes a line of its own.
  */
-export function TweetImageButton({ postId, text, onShared, className }: { postId: number; text: string; onShared?(): void; className?: string }) {
+export function TweetImageButton({
+  postId,
+  text,
+  onShared,
+  className,
+  variant = "site",
+}: {
+  postId: number;
+  text: string;
+  onShared?(): void;
+  className?: string;
+  variant?: keyof typeof STYLES;
+}) {
   const t = useTranslations("tweetImage");
   const [mode, setMode] = useState<Mode>("copy");
   const [state, setState] = useState<State>("idle");
@@ -73,6 +94,7 @@ export function TweetImageButton({ postId, text, onShared, className }: { postId
   }
 
   const done = state === "done";
+  const styles = STYLES[variant];
   const Icon = mode === "share" ? Share2Icon : ClipboardCopyIcon;
 
   return (
@@ -85,20 +107,20 @@ export function TweetImageButton({ postId, text, onShared, className }: { postId
         onClick={handOver}
         disabled={state === "pending"}
         aria-busy={state === "pending"}
-        className={cn(className, done && doneStyle)}
+        className={cn(className, done && styles.done)}
       >
         {state === "pending" ? <Loader2Icon className="h-3.5 w-3.5 animate-spin" /> : done ? <CheckIcon className="h-3.5 w-3.5" /> : <Icon className="h-3.5 w-3.5" />}
         {state === "pending" ? t("preparing") : done ? t(mode === "share" ? "shared" : "copied") : t(mode)}
       </button>
       {done && mode === "copy" && (
-        <p aria-live="polite" className="basis-full text-[12.5px] text-neutral-400">
+        <p aria-live="polite" className={cn("basis-full text-[12.5px]", styles.hint)}>
           {t("pasteHint")}
         </p>
       )}
       {state === "error" && (
-        <p role="alert" className="basis-full text-[12.5px] text-red-400">
+        <p role="alert" className={cn("basis-full text-[12.5px]", styles.error)}>
           {t("failed")}{" "}
-          <a href={src} download={`gc-scouting-${postId}.png`} className="font-semibold underline underline-offset-2 hover:text-red-300 active:opacity-70">
+          <a href={src} download={`gc-scouting-${postId}.png`} className={cn("font-semibold underline underline-offset-2 active:opacity-70", styles.link)}>
             {t("download")}
           </a>
         </p>

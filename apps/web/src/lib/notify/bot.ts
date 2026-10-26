@@ -104,10 +104,10 @@ export async function fetchPendingTweets(): Promise<PendingTweet[] | null> {
 
 export type MarkTweetedResult = "ok" | "notFound" | "alreadyTweeted" | "awaitingAuthor" | "unavailable";
 
-/** Marks a post as tweeted, or its author's tweet as retweeted. The moderation message follows. */
-export async function markBotTweeted(postId: number, accessSubject: string): Promise<MarkTweetedResult> {
+/** Marks a post as tweeted, or its author's tweet as retweeted, by an admin account. The moderation message follows. */
+export async function markBotTweeted(postId: number, actorUserId: string): Promise<MarkTweetedResult> {
   try {
-    const response = await request(`/internal/posts/${postId}/tweeted`, "POST", { accessSubject });
+    const response = await request(`/internal/posts/${postId}/tweeted`, "POST", { actorUserId });
     if (!response) return "unavailable";
     if (response.ok) return "ok";
     const { error } = (await response.json().catch(() => ({}))) as { error?: string };

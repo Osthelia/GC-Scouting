@@ -68,8 +68,8 @@ export async function restorePost(db: Db, postId: number, discordUserId: string)
   }
 }
 
-/** Moderator on Discord, or Authentik identity (email or username) on the site tweets page. */
-export type TweetedBy = { discordUserId: string } | { accessSubject: string };
+/** Moderator on Discord, or admin account (`users.id`) on the site tweets page. */
+export type TweetedBy = { discordUserId: string } | { actorUserId: string };
 
 /** Tweeted, or the author's tweet retweeted. */
 export async function markTweeted(db: Db, postId: number, by: TweetedBy): Promise<TweetedResult> {
@@ -84,7 +84,7 @@ export async function markTweeted(db: Db, postId: number, by: TweetedBy): Promis
       const post = await loadPost(tx, postId);
       return !post ? "notFound" : post.tweetedAt ? "alreadyTweeted" : "awaitingAuthor";
     }
-    await tx.insert(moderationActions).values({ postId, action: "tweeted", discordUserId, accessSubject: "accessSubject" in by ? by.accessSubject : null });
+    await tx.insert(moderationActions).values({ postId, action: "tweeted", discordUserId, actorUserId: "actorUserId" in by ? by.actorUserId : null });
     return "ok";
   });
 }

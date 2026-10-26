@@ -9,14 +9,14 @@
  */
 
 import type { ComponentType } from "react";
-import { FileText, Flag, KeyRound, LayoutDashboard, MessageSquareWarning, MessagesSquare, ShieldAlert, Users } from "lucide-react";
+import { FileText, Flag, KeyRound, LayoutDashboard, MessageSquareWarning, MessagesSquare, Send, ShieldAlert, Users } from "lucide-react";
 
 export type AdminNavItem = {
   href: string;
   labelKey: string;
   icon: ComponentType<{ className?: string }>;
   exact: boolean;
-  /** Role management, admins only. */
+  /** Shown to admins only. */
   adminOnly?: boolean;
 };
 
@@ -38,6 +38,7 @@ export const ADMIN_NAV_GROUPS: { key: string; labelKey: string; items: AdminNavI
     items: [
       { href: "/admin/posts", labelKey: "posts", icon: FileText, exact: false },
       { href: "/admin/reports", labelKey: "postReports", icon: Flag, exact: false },
+      { href: "/admin/tweets", labelKey: "tweets", icon: Send, exact: false, adminOnly: true },
     ],
   },
   {

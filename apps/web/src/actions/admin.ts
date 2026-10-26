@@ -18,7 +18,7 @@ import { getStaffUser } from "@/lib/admin/access";
 import { REMOVAL_REASON_MAX, REMOVAL_REASON_MIN } from "@/lib/admin/constants";
 import { adminGcsUserIds } from "@/lib/auth/account";
 import { notifyNewMessage } from "@/lib/chat/notify";
-import { notifyBotModerated } from "@/lib/notify/bot";
+import { markBotTweeted, notifyBotModerated, type MarkTweetedResult } from "@/lib/notify/bot";
 import { loggable } from "@scouting/db/log";
 import { cleanText } from "@scouting/db/text-input";
 
@@ -226,4 +226,17 @@ export async function setUserRole(rawUserId: unknown, rawRole: unknown): Promise
     await db.update(users).set({ role }).where(eq(users.id, rawUserId));
     return { ok: true };
   }, "setUserRole");
+}
+
+export type MarkTweetedActionResult = { ok: true } | { ok: false; error: "auth" | "invalid" | Exclude<MarkTweetedResult, "ok"> };
+
+/** Admins only: the post was tweeted on X, or its author's tweet retweeted. */
+export async function markPostTweeted(rawId: unknown): Promise<MarkTweetedActionResult> {
+  const id = parseId(rawId);
+  if (!id) return { ok: false, error: "invalid" };
+  const staff = await getStaffUser();
+  if (!staff || staff.role !== "admin") return { ok: false, error: "auth" };
+
+  const result = await markBotTweeted(id, staff.id);
+  return result === "ok" ? { ok: true } : { ok: false, error: result };
 }
